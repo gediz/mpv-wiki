@@ -1,0 +1,1 @@
+Welcome to the mplayer2 wiki!
