@@ -378,7 +378,7 @@ libmpcodecs/vf_swapuv.c
   REMOVE: divVerent
 
 libmpcodecs/vf_telecine.c
-  Already ported to vf_dlopen. Not needed in core.
+  Already ported to vf_dlopen. Not needed in core. And only does evil anyway ;)
 
   REMOVE: divVerent
 
