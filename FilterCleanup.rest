@@ -144,6 +144,10 @@ libmpcodecs/vf_divtc.c
   Not sure, never tested it, it sounds like a nice filter to fix a mess others have created.
 
   ABSTAIN: divVerent
+  
+  Useful with hard-telecined videos that were field-matched but not decimated.
+
+  KEEP: nodame
 
 libmpcodecs/vf_dlopen.c
   KEEP: divVerent
