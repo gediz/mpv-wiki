@@ -84,232 +84,343 @@ libaf/af_volume.c
   KEEP: divVerent
 
 libmpcodecs/vf_1bpp.c
-  ...
+  Isn't this scale's job?
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_2xsai.c
-  ...
+  Perhaps move to vf_dlopen instead? Not sure.
+
+  ABSTAIN: divVerent
 
 libmpcodecs/vf_ass.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_blackframe.c
-  ...
+  Not really useful on its own, messy output... probably should be coded in vf_dlopen instead.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_bmovl.c
-  ...
+  No good, only evil can be done with this. Also, weirdly complex.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_boxblur.c
-  ...
+  We only need one blur, and this is not the one.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_crop.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_cropdetect.c
-  ...
+  Probably should be merged with vf_rectangle and moved to vf_dlopen.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_decimate.c
-  ...
+  Not needed/useful with modern video codecs. Also, was an encoding-only filter. Well, maybe port it to vf_dlopen if anyone really needs it.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_delogo.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_denoise3d.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_detc.c
-  ...
+  One of the worse deteleciners.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_dint.c
-  ...
+  What is THIS thing good for?
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_divtc.c
-  ...
+  Not sure, never tested it, it sounds like a nice filter to fix a mess others have created.
+
+  ABSTAIN: divVerent
 
 libmpcodecs/vf_dlopen.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_down3dright.c
-  ...
+  Sounds useful enough. Could be ported to vf_dlopen, though.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_dsize.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_dvbscale.c
-  ...
+  Sounds useful for encoding sometimes, even though we no longer have DVB support. Also, just use -vf scale parameters...
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_eq2.c
-  ...
+  We need some way to do software gamma/saturation control. If this rather becomes a feature usable by the scale= filter, it's ok too.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_eq.c
-  ...
+  KEEP (or merge with eq2): divVerent
 
 libmpcodecs/vf_expand.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_field.c
-  ...
+  If anyone ever needs it: vf_dlopen.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_fil.c
-  ...
+  WTF. See manpage.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_filmdint.c
-  ...
+  Kind of redundant with pullup, and slightly worse.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_fixpts.c
-  ...
+  Never useful.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_flip.c
-  ...
+  Use vf_lua if you really need this.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_format.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_framestep.c
-  ...
+  REMOVE: divVerent
 
 libmpcodecs/vf_fspp.c
-  ...
+  One of the many WTF filters.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_geq.c
-  ...
+  Obsolete due to vf_lua.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_gradfun.c
-  ...
+  De-banding. Has a bad name though. Fix name please!
+
+  KEEP (but rename): divVerent
 
 libmpcodecs/vf_halfpack.c
-  ...
+  Can't scale do this?
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_harddup.c
-  ...
+  Does as much as the goggles: nothing.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_hqdn3d.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_hue.c
-  ...
+  REMOVE (and merge with eq2): divVerent
 
 libmpcodecs/vf_il.c
-  ...
+  Do this with vf_lua instead. Can clearly be done in an one-liner.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_ilpack.c
-  ...
+  This sounds kind of more useful.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_ivtc.c
-  ...
+  Another of the worse deteleciners.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_kerndeint.c
-  ...
+  A bad deinterlacer.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_lavc.c
-  ...
+  For DVB output devices. We removed that support.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_lavcdeint.c
-  ...
+  A bad deinterlacer.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_mcdeint.c
-  ...
+  A broken deinterlacer that uses lavc internals.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_mirror.c
-  ...
+  Use vf_lua if you really need this.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_noformat.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_noise.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_ow.c
-  ...
+  Some denoiser. May help. Not tried it.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_palette.c
-  ...
+  REMOVE: divVerent
 
 libmpcodecs/vf_perspective.c
-  ...
+  We're not GIMP. And you can always do this quite easily using vf_lua...
+
+  REMOVE: divVerent.
 
 libmpcodecs/vf_phase.c
-  ...
+  Sounds useful to properly detelecine broken input, so keep it.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_pp7.c
-  ...
+  A WTF filter.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_pp.c
-  ...
+  Useful for old MPEG-1 and DivX stuff.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_pullup.c
-  ...
+  The one good de-teleciner.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_qp.c
-  ...
+  Who would ever need this?
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_rectangle.c
-  ...
+  See vf_cropdetect.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_remove_logo.c
-  ...
+  delogo is way more convenient and usually good enough.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_rgbtest.c
-  ...
+  REMOVE: divVerent
 
 libmpcodecs/vf_rotate.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_sab.c
-  ...
+  We only need one blur. For any more there is vf_lua.
+
+  REMOVE: divVeremt
 
 libmpcodecs/vf_scale.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_screenshot.c
-  ...
+  Does this have to stay a filter? Functionality wise,
+
+  KEEP: divVerent
 
 libmpcodecs/vf_smartblur.c
-  ...
+  We only need one blur.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_softpulldown.c
-  ...
+  Is needed for proper MPEG-2 support in some cases, when encoding.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_softskip.c
-  ...
+  Does nothing.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_spp.c
-  ...
+  A WTF filter.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_stereo3d.c
-  ...
+  Sometimes useful.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_swapuv.c
-  ...
+  vf_lua. Nuff said.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_telecine.c
-  ...
+  Already ported to vf_dlopen. Not needed in core.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_test.c
-  ...
+  REMOVE: divVerent
 
 libmpcodecs/vf_tfields.c
-  ...
+  I can see this being useful. Maybe should be moved to dlopen though.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_tile.c
-  ...
+  Already ported to vf_dlopen. Not needed in core.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_tinterlace.c
-  ...
+  I can see this being useful. Maybe should be moved to dlopen though.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_unsharp.c
-  ...
+  The good blur/sharpener.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_uspp.c
-  ...
+  A WTF filter.
 
-libmpcodecs/vf_vo.c
-  ...
+  REMOVE: divVerent
 
 libmpcodecs/vf_yadif.c
-  ...
+  The good deinterlacer.
+
+  KEEP: divVerent
 
 libmpcodecs/vf_yuvcsp.c
-  ...
+  Is this needed?
+
+  ABSTAIN: divVerent
 
 libmpcodecs/vf_yvu9.c
-  ...
+  Already deprecated.
+
+  REMOVE: divVerent
