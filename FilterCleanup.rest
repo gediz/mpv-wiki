@@ -166,12 +166,14 @@ libmpcodecs/vf_dvbscale.c
   REMOVE: divVerent
 
 libmpcodecs/vf_eq2.c
-  We need some way to do software gamma/saturation control. If this rather becomes a feature usable by the scale= filter, it's ok too.
+  vf_scale lacks gamma, is otherwise equivalent to this one (note: use --brightness, --contrast, --saturation options to control vf_scale). Gamma can be done trivially using vf_lua.
 
-  KEEP: divVerent
+  REMOVE: divVerent
 
 libmpcodecs/vf_eq.c
-  KEEP (or merge with eq2): divVerent
+  Redundant with vf_scale which has a superset of these controls (it also has saturation).
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_expand.c
   KEEP: divVerent
