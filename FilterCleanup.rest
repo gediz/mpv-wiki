@@ -339,7 +339,7 @@ libmpcodecs/vf_scale.c
   KEEP: divVerent
 
 libmpcodecs/vf_screenshot.c
-  Does this have to stay a filter? Functionality wise,
+  Still in use for ordering purposes.
 
   KEEP: divVerent
 
