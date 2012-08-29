@@ -193,9 +193,7 @@ libmpcodecs/vf_fixpts.c
   REMOVE: divVerent
 
 libmpcodecs/vf_flip.c
-  Use vf_lua if you really need this.
-
-  REMOVE: divVerent
+  KEEP (but maybe make the name clearer): divVerent
 
 libmpcodecs/vf_format.c
   KEEP: divVerent
@@ -270,9 +268,7 @@ libmpcodecs/vf_mcdeint.c
   REMOVE: divVerent
 
 libmpcodecs/vf_mirror.c
-  Use vf_lua if you really need this.
-
-  REMOVE: divVerent
+  KEEP (but maybe make the name clearer): divVerent
 
 libmpcodecs/vf_noformat.c
   KEEP: divVerent
