@@ -1,77 +1,87 @@
 libaf/af_bs2b.c
-  ...
+  Sounds useful. Kind of the 2ch variant of hrtf...  now, if we had a filter that is hrtf for multichannel input, and bs2b for 2ch...
+
+  KEEP: divVerent
 
 libaf/af_center.c
-  ...
+  Sounds useful.
+
+  KEEP: divVerent
 
 libaf/af_channels.c
-  ...
+  KEEP: divVerent
 
 libaf/af_delay.c
-  ...
+  KEEP: divVerent
 
 libaf/af_dummy.c
-  ...
+  REMOVE: divVerent
 
 libaf/af_equalizer.c
-  ...
+  KEEP: divVerent
 
 libaf/af_export.c
-  ...
+  Does anyone use this?
+
+  REMOVE: divVerent
 
 libaf/af_extrastereo.c
-  ...
+  KEEP: divVerent
 
 libaf/af_format.c
-  ...
+  KEEP: divVerent
 
 libaf/af_hrtf.c
-  ...
+  KEEP: divVerent
 
 libaf/af_karaoke.c
-  ...
+  Better done via LADSPA, or -af pan
+
+  REMOVE: divVerent
 
 libaf/af_ladspa.c
-  ...
+  KEEP: divVerent
 
 libaf/af_lavcac3enc.c
-  ...
+  Apparently useful for SPDIF guys.
+
+  KEEP: divVerent
 
 libaf/af_lavcresample.c
-  ...
+  Do we need two resamplers? Is this one better, or is af_resample? Probably we only want to keep whichever is the better one?
+
+  ABSTAIN: divVerent
 
 libaf/af_pan.c
-  ...
+  KEEP: divVerent
 
 libaf/af_resample.c
-  ...
-
-libaf/af_resample_template.c
-  ...
+  KEEP: divVerent
 
 libaf/af_scaletempo.c
-  ...
+  KEEP: divVerent
 
 libaf/af_sinesuppress.c
-  ...
+  KEEP: divVerent
 
 libaf/af_sub.c
-  ...
+  KEEP: divVerent
 
 libaf/af_surround.c
-  ...
+  KEEP: divVerent
 
 libaf/af_sweep.c
-  ...
+  Use LADSPA if you really want this.
 
-libaf/af_tools.c
-  ...
+  REMOVE: divVerent
 
 libaf/af_volnorm.c
-  ...
+  Generally a very good filter, but I just can't get it to work. Maybe needs fixing bugs.
+
+  ABSTAIN: divVerent
 
 libaf/af_volume.c
-  ...
+  KEEP: divVerent
 
 libmpcodecs/vf_1bpp.c
   ...
