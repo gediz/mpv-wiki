@@ -89,9 +89,9 @@ libmpcodecs/vf_1bpp.c
   REMOVE: divVerent
 
 libmpcodecs/vf_2xsai.c
-  Perhaps move to vf_dlopen instead? Not sure.
+  Perhaps move to vf_dlopen instead? Sure shouldn't be in mplayer (it's a filter for palette images like old video game footage, but all the nice properties 2xSaI depends on break when using lossy codecs anyway).
 
-  ABSTAIN: divVerent
+  REMOVE: divVerent
 
 libmpcodecs/vf_ass.c
   KEEP: divVerent
