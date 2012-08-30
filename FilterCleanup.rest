@@ -49,8 +49,10 @@ libaf/af_lavcac3enc.c
 
 libaf/af_lavcresample.c
   Do we need two resamplers? Is this one better, or is af_resample? Probably we only want to keep whichever is the better one?
+  I don't know, but lavcresample is the default resampler.
 
   ABSTAIN: divVerent
+  KEEP: wm4
 
 libaf/af_pan.c
   KEEP: divVerent
@@ -126,6 +128,7 @@ libmpcodecs/vf_decimate.c
 
 libmpcodecs/vf_delogo.c
   KEEP: divVerent
+  REMOVE: wm4 (does this thing really work?)
 
 libmpcodecs/vf_denoise3d.c
   KEEP: divVerent
@@ -154,6 +157,7 @@ libmpcodecs/vf_dlopen.c
 
 libmpcodecs/vf_down3dright.c
   Sounds useful enough. Could be ported to vf_dlopen, though.
+  What's the difference to vf_stereo3d?
 
   KEEP: divVerent
 
@@ -219,6 +223,7 @@ libmpcodecs/vf_geq.c
 
 libmpcodecs/vf_gradfun.c
   De-banding. Has a bad name though. Fix name please!
+  The name is just the algorithm's name. Everyone calls it like this.
 
   KEEP (but rename): divVerent
 
@@ -245,8 +250,10 @@ libmpcodecs/vf_il.c
 
 libmpcodecs/vf_ilpack.c
   This sounds kind of more useful.
+  It "sounds" useful? Is it useful or not? Would you actually miss it?
 
   KEEP: divVerent
+  REMOVE: wm4
 
 libmpcodecs/vf_ivtc.c
   Another of the worse deteleciners.
@@ -286,6 +293,7 @@ libmpcodecs/vf_ow.c
   Some denoiser. May help. Not tried it.
 
   KEEP: divVerent
+  REMOVE: wm4 (I don't want to keep things just because they "may" be good.)
 
 libmpcodecs/vf_palette.c
   REMOVE: divVerent
@@ -299,6 +307,7 @@ libmpcodecs/vf_phase.c
   Sounds useful to properly detelecine broken input, so keep it.
 
   KEEP: divVerent
+  REMOVE: wm4 (same as before, "sounds useful" != "is useful")
 
 libmpcodecs/vf_pp7.c
   A WTF filter.
@@ -391,6 +400,7 @@ libmpcodecs/vf_tfields.c
   I can see this being useful. Maybe should be moved to dlopen though.
 
   KEEP: divVerent
+  REMOVE: wm4 (how useful?)
 
 libmpcodecs/vf_tile.c
   Already ported to vf_dlopen. Not needed in core.
@@ -421,6 +431,7 @@ libmpcodecs/vf_yuvcsp.c
   Is this needed?
 
   ABSTAIN: divVerent
+  REMOVE: wm4 (doesn't sound terribly useful)
 
 libmpcodecs/vf_yvu9.c
   Already deprecated.
