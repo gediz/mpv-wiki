@@ -13,3 +13,35 @@ libmpcodecs is split into multiple toplevel directories:
 * img_format*, mp_image* -> vf/ (Maybe. Like af/format.h defines audio formats, vf/ contains files that define the image format.)
 
 After that, libmpcodecs should be empty.
+
+From pigoz:
+As I mentioned on IRC: I think a /core directory containing files in the root and the following directories /input, /timeline would be beneficial.
+
+I'd also like this kind of directory structure
+
+```
+ /
+ |- audio/
+  |- format.h
+  |- decoders/
+  |- demuxers/
+  |- filters/
+  |- outputs/
+ |- core/
+  |- mplayer.c
+ ....
+  |- input/
+  |- timeline/
+ |- osdep/
+ |- stream/
+ |- subtitle/
+ |- video/
+  |- format.h
+  |- decoders/
+  |- demuxers/
+  |- filters/
+  |- outputs/
+ |- README
+ |- LICENSE
+ |- Makefile
+```
