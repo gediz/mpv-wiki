@@ -3,7 +3,7 @@
   F=foo.mkv
   test_f_1()
   {
-    /usr/bin/time -p mplayer "$F" -endpos 60 -quiet -no-audio -vo null "$@" 2>&1 >/dev/null | tail -n 3 | head -n 1 | cut -d ' ' -f 2
+    /usr/bin/time -p mplayer "$F" -endpos 60 -quiet -untimed -no-audio -vo null "$@" 2>&1 >/dev/null | tail -n 3 | head -n 1 | cut -d ' ' -f 2
   }
   test_f()
   {
