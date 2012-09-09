@@ -9,7 +9,7 @@
   {
     echo -n "$1: "
     shift
-    for t in 1 2 3 4 5; do test_f_1 "$@"; done | sort -n | head -n 3 | tail -n 1
+    for t in 1 2 3; do test_f_1 "$@"; done | sort -n | head -n 3 | tail -n 1
   }
   test_f "No filter"
   test_f "eq2"       -vf eq2=1:-1
