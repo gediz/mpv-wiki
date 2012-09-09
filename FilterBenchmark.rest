@@ -1,6 +1,6 @@
 ::
 
-  F=foo.mkv
+  F=foo.mp4
   test_f_1()
   {
     /usr/bin/time -p mplayer "$F" -endpos 60 -quiet -untimed -no-audio -vo null "$@" 2>&1 >/dev/null | tail -n 3 | head -n 1 | cut -d ' ' -f 2
@@ -16,4 +16,81 @@
   test_f "lua"       -vf lua=:'1-p(x\,y)'::
   test_f "geq"       -vf geq='255-p(X\,Y)':'p(X\,Y)':'p(X\,Y)'
   test_f "dlopen"    -vf dlopen=./invert_y.so
-  test_f "dlopen32"  -vf dlopen=./invert_y32.so
+
+invert_y.c::
+  #include <assert.h>
+  #include <stdio.h>
+  #include <stdlib.h>
+  #include <string.h>
+  
+  #include "vf_dlopen.h"
+  #include "filterutils.h"
+  
+  /*
+   * luma inverter
+   *
+   * usage: -vf dlopen=./invert_y.so
+   *
+   * inverts the luma plane. Duh.
+   */
+  
+  static void invert_plane(
+      unsigned char *dest, unsigned dest_stride,
+      const unsigned char *src, unsigned src_stride,
+      unsigned length,
+      unsigned rows
+      )
+  {
+      unsigned i, j;
+      assert(dest_stride >= length);
+      assert(src_stride >= length);
+      for (i = 0; i < rows; ++i)
+      {
+          const unsigned char *s = &src[src_stride * i];
+          unsigned char *d = &dest[dest_stride * i];
+          for (j = 0; j < length; ++j)
+              *d++ = *s++ ^ 0xFF;
+      }
+  }
+  
+  static int iy_put_image(struct vf_dlopen_context *ctx)
+  {
+      unsigned int p;
+  
+      assert(ctx->inpic.planes == ctx->outpic->planes);
+  
+      for (p = 0; p < ctx->outpic->planes; ++p) {
+          assert(ctx->inpic.planewidth[p] == ctx->outpic->planewidth[p]);
+          assert(ctx->inpic.planeheight[p] == ctx->outpic->planeheight[p]);
+      }
+  
+      invert_plane(
+              ctx->outpic->plane[0], ctx->outpic->planestride[0],
+              ctx->inpic.plane[0], ctx->inpic.planestride[0],
+              ctx->inpic.planewidth[0], ctx->inpic.planeheight[0]
+          );
+      for (p = 1; p < ctx->outpic->planes; ++p) {
+          copy_plane(
+                  ctx->outpic->plane[p], ctx->outpic->planestride[p],
+                  ctx->inpic.plane[p], ctx->inpic.planestride[p],
+                  ctx->inpic.planewidth[p], ctx->inpic.planeheight[p]
+              );
+      }
+  
+      ctx->outpic->pts = ctx->inpic.pts;
+      return 1;
+  }
+  
+  int vf_dlopen_getcontext(struct vf_dlopen_context *ctx, int argc, const char **argv)
+  {
+      VF_DLOPEN_CHECK_VERSION(ctx);
+      (void) argc;
+      (void) argv;
+      static struct vf_dlopen_formatpair map[] = {
+          { "yv12", "yv12" },
+          { NULL, NULL }
+      };
+      ctx->format_mapping = map;
+      ctx->put_image = iy_put_image;
+      return 1;
+  }
