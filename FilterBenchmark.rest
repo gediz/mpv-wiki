@@ -1,0 +1,16 @@
+  F=foo.mkv
+  test_f_1()
+  {
+    /usr/bin/time -p mplayer "$F" -quiet -no-audio -vo null "$@" 2>&1 >/dev/null | tail -n 3 | head -n 1 | cut -d ' ' -f 2
+  }
+  test_f()
+  {
+    echo -n "$1: "
+    shift
+    for t in 1 2 3 4 5; do test_f_1 "$@"; done | sort -n | head -n 3 | tail -n 1
+  }
+  test_f "No filter"
+  test_f "eq2"       -vf eq2=1:-1:0:-1
+  test_f "dlopen"    -vf dlopen=./invert_y.so
+  test_f "lua"       -vf lua=:'1-p(x\,y)'::
+  test_f "geq"       -vf geq='255-p(X\,Y)':'p(X\,Y)':'p(X\,Y)'
