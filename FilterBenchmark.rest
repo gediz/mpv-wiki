@@ -31,6 +31,14 @@ Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 P
   dlopen: 7.98 8.02 7.98 7.98 7.98 -> 7.98
   geq: 333.80
 
+Results (by wm4, running LuaJIT 2.0.0-beta9 on Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz)::
+
+  No filter: 14.32 14.44 14.54 14.43 14.51 -> 14.44
+  eq2: 15.24 15.29 15.21 15.24 15.27 -> 15.24
+  lua: 23.04 23.10 23.14 23.30 22.93 -> 23.10
+  dlopen: 16.44 16.30 16.24 16.20 16.03 -> 16.24
+  geq: 555.20
+
 invert_y.c::
 
   #include <assert.h>
