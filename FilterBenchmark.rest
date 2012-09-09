@@ -14,8 +14,8 @@
   test_f "No filter"
   test_f "eq2"       -vf eq2=1:-1
   test_f "lua"       -vf lua=:'1-p(x\,y)'::
-  test_f "geq"       -vf geq='255-p(X\,Y)':'p(X\,Y)':'p(X\,Y)'
   test_f "dlopen"    -vf dlopen=./invert_y.so
+  test_f "geq"       -vf geq='255-p(X\,Y)':'p(X\,Y)':'p(X\,Y)'
 
 Input file "$F"::
 
@@ -38,8 +38,8 @@ Results::
   No filter: 5.98
   eq2: 6.26
   lua: 20.20
-  geq: 146.75
   dlopen: 6.41
+  geq: 146.75
 
 Results (by wm4, running LuaJIT 2.0.0-beta9)::
 
