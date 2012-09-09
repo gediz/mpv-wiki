@@ -8,9 +8,13 @@ Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big
   }
   test_f()
   {
-    echo -n "$1: "
+    f=$1
+    echo -n "$f: "
     shift
-    for t in 1 2 3; do test_f_1 "$@"; done | sort -n | head -n 2 | tail -n 1
+    case "$f" in
+      geq) test_f_1 "$@" ;;
+      *)   for t in 1 2 3; do test_f_1 "$@"; done | sort -n | head -n 2 | tail -n 1 ;;
+    esac
   }
   test_f "No filter"
   test_f "eq2"       -vf eq2=1:-1
@@ -20,10 +24,10 @@ Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big
 
 Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 Processor @ 2.6GHz)::
 
-  No filter: 7.40
-  eq2: 8.12
-  lua: 41.39
-  dlopen: 8.30
+  No filter: 7.11
+  eq2: 8.01
+  lua: 40.96
+  dlopen: 8.04
   geq: <RUNNING>
 
 invert_y.c::
