@@ -46,8 +46,8 @@ Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 P
   No filter: 15.86
   eq2: 16.29
   lua: 63.70
-  dlopen: <RUNNING>
-  geq: <RUNNING>
+  dlopen: 16.88
+  geq: <TOO IMPATIENT>
 
 Results (by wm4, running LuaJIT 2.0.0-beta9)::
 
