@@ -41,7 +41,7 @@ Results::
   geq: 146.75
   dlopen: 6.41
 
-Results (by wm4, running LuaJIT 2.0.0-beta9):
+Results (by wm4, running LuaJIT 2.0.0-beta9)::
 
   No filter: 7.65
   eq2: 8.22
