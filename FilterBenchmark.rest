@@ -16,3 +16,4 @@
   test_f "lua"       -vf lua=:'1-p(x\,y)'::
   test_f "geq"       -vf geq='255-p(X\,Y)':'p(X\,Y)':'p(X\,Y)'
   test_f "dlopen"    -vf dlopen=./invert_y.so
+  test_f "dlopen32"  -vf dlopen=./invert_y32.so
