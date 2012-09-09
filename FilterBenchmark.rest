@@ -1,4 +1,4 @@
-Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg::
+Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg (shortened mirror: http://ompldr.org/vZmZmeQ/big_buck_bunny_1080p_stereo-61s.ogg)::
 
   F=big_buck_bunny_1080p_stereo.ogg
   D=60
