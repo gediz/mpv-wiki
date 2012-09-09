@@ -25,10 +25,10 @@ Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big
 
 Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 Processor @ 2.6GHz)::
 
-  No filter: 7.11
-  eq2: 8.01
-  lua: 40.96
-  dlopen: 8.04
+  No filter: 7.19 7.11 7.10 7.11 7.11 -> 7.11
+  eq2: 7.68 7.72 7.84 8.09 7.87 -> 7.84
+  lua: 40.93 40.92 40.91 40.90 40.92 -> 40.92
+  dlopen: 7.98 8.02 7.98 7.98 7.98 -> 7.98
   geq: 333.80
 
 invert_y.c::
