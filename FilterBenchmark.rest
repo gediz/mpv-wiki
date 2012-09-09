@@ -43,7 +43,11 @@ Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 P
 
 Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 Processor @ 0.8GHz)::
 
-  No filter: <running>
+  No filter: 15.86
+  eq2: 16.29
+  lua: 63.70
+  dlopen: <RUNNING>
+  geq: <RUNNING>
 
 Results (by wm4, running LuaJIT 2.0.0-beta9)::
 
