@@ -3,11 +3,10 @@
   F=foo.mkv
   test_f_1()
   {
-    /usr/bin/time -p mplayer "$F" -endpos 60 -quiet -untimed -no-audio -vo null "$@" 2>&1 >/dev/null | tail -n 3 | head -n 1 | cut -d ' ' -f 2
+    /usr/bin/time -p mplayer "$F" -quiet -untimed -no-audio -vo null "$@" 2>&1 >/dev/null | tail -n 3 | head -n 1 | cut -d ' ' -f 2
   }
   test_f()
   {
-    mplayer "$F" -endpos 60 -quiet -no-audio "$@"
     echo -n "$1: "
     shift
     for t in 1 2 3 4 5; do test_f_1 "$@"; done | sort -n | head -n 3 | tail -n 1
