@@ -18,43 +18,13 @@
   test_f "dlopen"    -vf dlopen=./invert_y.so
   test_f "geq"       -vf geq='255-p(X\,Y)':'p(X\,Y)':'p(X\,Y)'
 
-Input file "$F"::
-
-  Detected file format: Matroska
-  [stream] Video (+) --vid=0 'Episode 01' (avc1/V_MPEG4/ISO/AVC)
-  [stream] Audio (+) --aid=0 --alang=eng (*) 'AC3 2.0' (0x2000/A_AC3)
-  [stream] Audio     --aid=1 --alang=jpn 'FLAC 2.0' (fLaC/A_FLAC)
-  [stream] Subs  (+) --sid=0 --slang=eng (*) 'Signs/Songs' (ASS/S_TEXT/ASS)
-  [stream] Subs      --sid=1 --slang=jpn 'Dialogue' (ASS/S_TEXT/ASS)
-  [V] filefmt:18  fourcc:0x31637661  size:1280x720  fps:23.976  ftime:=0.0417
-  [ass] auto-open
-  Opening video filter: [screenshot]
-  Selected video codec: H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 [libavcodec]
-  Selected audio codec: ATSC A/52A (AC-3) [libavcodec]
-  AO: [alsa] 48000Hz 2ch s16le (2 bytes per sample)
-  VO: [xv] 1280x720 => 1280x720 yv12 
-
 Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 Processor @ 2.6GHz)::
 
-  No filter: 5.98
-  eq2: 6.26
-  lua: 20.20
-  dlopen: 6.41
-  geq: 146.75
-
-Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 Processor @ 0.8GHz)::
-
-  No filter: 15.86
-  eq2: 16.29
-  lua: 63.70
-  dlopen: 16.88
-  geq: <TOO IMPATIENT>
-
-Results (by wm4, running LuaJIT 2.0.0-beta9)::
-
-  No filter: 7.65
-  eq2: 8.22
-  lua: 11.76
+  No filter: 7.40
+  eq2: 8.12
+  lua: 41.39
+  dlopen: 8.30
+  geq: <RUNNING>
 
 invert_y.c::
 
