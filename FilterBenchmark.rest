@@ -109,3 +109,5 @@ invert_y.c::
       ctx->put_image = iy_put_image;
       return 1;
   }
+
+To compile this filter, put it in TOOLS/vf_dlopen/invert_y.c and edit the Makefile so that FILTERS includes invert_y, then run make.
