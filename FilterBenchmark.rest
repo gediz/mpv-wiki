@@ -13,7 +13,7 @@ Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big
     shift
     case "$f" in
       geq) test_f_1 "$@" ;;
-      *)   for t in 1 2 3 4 5; do test_f_1 "$@"; done | sort -n | head -n 3 | tail -n 1 ;;
+      *)   a=; for t in 1 2 3 4 5; do r=`test_f_1 "$@"`; echo -n "$r "; a="$a $r"; done; echo -n "-> "; echo "$a" | xargs -n 1 echo | sort -n | head -n 3 | tail -n 1 ;;
     esac
   }
   test_f "No filter"
@@ -21,6 +21,7 @@ Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big
   test_f "lua"       -vf lua=:'1-p(x\,y)'::
   test_f "dlopen"    -vf dlopen=./invert_y.so
   test_f "geq"       -vf geq='255-p(X\,Y)':'p(X\,Y)':'p(X\,Y)'
+
 
 Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 Processor @ 2.6GHz)::
 
