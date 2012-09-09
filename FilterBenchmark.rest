@@ -17,7 +17,32 @@
   test_f "geq"       -vf geq='255-p(X\,Y)':'p(X\,Y)':'p(X\,Y)'
   test_f "dlopen"    -vf dlopen=./invert_y.so
 
+Input file "$F"::
+
+  Detected file format: Matroska
+  [stream] Video (+) --vid=0 'Episode 01' (avc1/V_MPEG4/ISO/AVC)
+  [stream] Audio (+) --aid=0 --alang=eng (*) 'AC3 2.0' (0x2000/A_AC3)
+  [stream] Audio     --aid=1 --alang=jpn 'FLAC 2.0' (fLaC/A_FLAC)
+  [stream] Subs  (+) --sid=0 --slang=eng (*) 'Signs/Songs' (ASS/S_TEXT/ASS)
+  [stream] Subs      --sid=1 --slang=jpn 'Dialogue' (ASS/S_TEXT/ASS)
+  [V] filefmt:18  fourcc:0x31637661  size:1280x720  fps:23.976  ftime:=0.0417
+  [ass] auto-open
+  Opening video filter: [screenshot]
+  Selected video codec: H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 [libavcodec]
+  Selected audio codec: ATSC A/52A (AC-3) [libavcodec]
+  AO: [alsa] 48000Hz 2ch s16le (2 bytes per sample)
+  VO: [xv] 1280x720 => 1280x720 yv12 
+
+Results::
+
+  No filter: 5.98
+  eq2: 6.26
+  lua: 20.20
+  geq: 146.75
+  dlopen: 6.41
+
 invert_y.c::
+
   #include <assert.h>
   #include <stdio.h>
   #include <stdlib.h>
