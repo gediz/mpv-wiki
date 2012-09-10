@@ -33,6 +33,11 @@ Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 P
   dlopen: 7.98 8.02 7.98 7.98 7.98 -> 7.98
   geq: 333.80
 
+Results (by divVerent, running LuaJIT 2.0.0-beta10 on Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz)::
+
+  No filter: 13.14 12.53 12.23 12.44 12.01 -> 12.44
+  ...
+
 Results (by wm4, running LuaJIT 2.0.0-beta9 on Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz)::
 
   No filter: 14.32 14.44 14.54 14.43 14.51 -> 14.44
