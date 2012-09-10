@@ -61,6 +61,17 @@ Results (by wm4, running LuaJIT 2.0.0-beta9 on Intel(R) Core(TM)2 Duo CPU     E6
   dlopen: 16.44 16.30 16.24 16.20 16.03 -> 16.24
   geq: 555.20
 
+Results (by wm4, same as above)::
+
+  No filter: 15.49 14.25 14.53 14.42 14.41 -> 14.42
+  eq2: 16.09 15.39 15.29 15.38 15.70 -> 15.39
+  lua-pxy: 23.04 23.01 25.07 23.50 23.18 -> 23.18
+  lua-c: 20.20 18.90 19.16 19.01 18.98 -> 19.01
+  lua-lut: 16.19 15.93 16.14 16.18 16.07 -> 16.14
+  dlopen: 14.37 14.50 14.62 14.35 15.44 -> 14.50
+  geq: 402.70
+
+
 invert_y.c::
 
   #include <assert.h>
