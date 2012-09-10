@@ -135,7 +135,9 @@ libmpcodecs/vf_delogo.c
   REMOVE: wm4 (does this thing really work?)
 
 libmpcodecs/vf_denoise3d.c
-  KEEP: divVerent
+  hqdn3d is supposedly higher quality, and not much slower. So this one has no point.
+
+  REMOVE: divVerent
 
 libmpcodecs/vf_detc.c
   One of the worse deteleciners.
@@ -294,9 +296,9 @@ libmpcodecs/vf_noise.c
   KEEP: divVerent
 
 libmpcodecs/vf_ow.c
-  Some denoiser. May help. Not tried it.
+  It is very slow, like, 1 frame per 2 seconds. I highly doubt it has enough quality benefit over hqdn3d to warrant that. Kill it with fire.
 
-  KEEP: divVerent
+  REMOVE: divVerent
   REMOVE: wm4 (I don't want to keep things just because they "may" be good.)
 
 libmpcodecs/vf_palette.c
