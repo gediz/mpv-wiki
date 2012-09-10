@@ -43,6 +43,16 @@ Results (by divVerent, running LuaJIT 2.0.0-beta10 on Intel(R) Core(TM)2 Duo CPU
   dlopen: 13.70 13.86 13.83 13.80 13.74 -> 13.80
   geq: 293.17
 
+Results (by divVerent, running LuaJIT 2.0.0-beta10 on Intel(R) Celeron(R) M processor          900MHz @ 630MHz)::
+
+  No filter: 102.13 102.95 105.53 101.93 101.77 -> 102.13
+  eq2: 110.79 110.83 110.70 110.62 110.27 -> 110.70
+  lua-pxy: 192.31 192.82 192.78 192.95 192.44 -> 192.78
+  lua-c: 154.13 154.32 154.12 154.08 154.37 -> 154.13
+  lua-lut: 110.91 110.82 110.98 111.08 110.79 -> 110.91
+  dlopen: 113.65 113.27 113.15 113.28 113.67 -> 113.28
+  geq: 2830.33
+
 Results (by wm4, running LuaJIT 2.0.0-beta9 on Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz)::
 
   No filter: 14.32 14.44 14.54 14.43 14.51 -> 14.44
