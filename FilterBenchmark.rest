@@ -36,7 +36,12 @@ Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 P
 Results (by divVerent, running LuaJIT 2.0.0-beta10 on Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz)::
 
   No filter: 13.14 12.53 12.23 12.44 12.01 -> 12.44
-  ...
+  eq2: 13.81 12.87 12.94 12.86 12.90 -> 12.90
+  lua-pxy: 19.50 19.51 19.62 19.52 19.56 -> 19.52
+  lua-c: 15.85 15.58 15.61 15.70 15.46 -> 15.61
+  lua-lut: 13.35 13.50 13.49 13.45 13.48 -> 13.48
+  dlopen: 13.70 13.86 13.83 13.80 13.74 -> 13.80
+  geq: 293.17
 
 Results (by wm4, running LuaJIT 2.0.0-beta9 on Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz)::
 
