@@ -18,7 +18,9 @@ Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big
   }
   test_f "No filter"
   test_f "eq2"       -vf eq2=1:-1
-  test_f "lua"       -vf lua=:'1-p(x\,y)'::
+  test_f "lua-pxy"   -vf lua=fn_l='1-p(x\,y)'
+  test_f "lua-c"     -vf lua=fn_l='1-c'
+  test_f "lua-lut"   -vf lua=lut_l='1-c'
   test_f "dlopen"    -vf dlopen=./invert_y.so
   test_f "geq"       -vf geq='255-p(X\,Y)':'p(X\,Y)':'p(X\,Y)'
 
@@ -27,7 +29,7 @@ Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 P
 
   No filter: 7.19 7.11 7.10 7.11 7.11 -> 7.11
   eq2: 7.68 7.72 7.84 8.09 7.87 -> 7.84
-  lua: 40.93 40.92 40.91 40.90 40.92 -> 40.92
+  lua-pxy: 40.93 40.92 40.91 40.90 40.92 -> 40.92
   dlopen: 7.98 8.02 7.98 7.98 7.98 -> 7.98
   geq: 333.80
 
@@ -35,7 +37,7 @@ Results (by wm4, running LuaJIT 2.0.0-beta9 on Intel(R) Core(TM)2 Duo CPU     E6
 
   No filter: 14.32 14.44 14.54 14.43 14.51 -> 14.44
   eq2: 15.24 15.29 15.21 15.24 15.27 -> 15.24
-  lua: 23.04 23.10 23.14 23.30 22.93 -> 23.10
+  lua-pxy: 23.04 23.10 23.14 23.30 22.93 -> 23.10
   dlopen: 16.44 16.30 16.24 16.20 16.03 -> 16.24
   geq: 555.20
 
