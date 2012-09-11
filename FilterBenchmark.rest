@@ -27,10 +27,12 @@ Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big
 
 Results (by divVerent, running LuaJIT 2.0.0-beta10 on AMD Athlon(tm) II X4 620 Processor @ 2.6GHz)::
 
-  No filter: 7.19 7.11 7.10 7.11 7.11 -> 7.11
-  eq2: 7.68 7.72 7.84 8.09 7.87 -> 7.84
-  lua-pxy: 40.93 40.92 40.91 40.90 40.92 -> 40.92
-  dlopen: 7.98 8.02 7.98 7.98 7.98 -> 7.98
+  No filter: 7.09 7.09 7.11 7.11 7.16 -> 7.11
+  eq2: 7.67 7.63 7.67 7.64 7.66 -> 7.66
+  lua-pxy: 40.92 40.92 40.90 40.89 40.90 -> 40.90
+  lua-c: 16.52 16.51 16.51 16.52 16.51 -> 16.51
+  lua-lut: 7.74 7.78 7.75 7.80 7.76 -> 7.76
+  dlopen: 7.09 7.10 7.10 7.07 7.06 -> 7.09
   geq: 333.80
 
 Results (by divVerent, running LuaJIT 2.0.0-beta10 on Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz)::
