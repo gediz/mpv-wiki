@@ -11,12 +11,16 @@ libaf/af_center.c
   Sounds useful.
 
   KEEP: divVerent
+  REMOVE: lachs0r – That kind of mixing can be done with af_pan. In fact, such mixing should be (and usually is) done by the audio driver.
 
 libaf/af_channels.c
-  KEEP: divVerent
+  Somewhat useful for multichannel audio with messed-up channel mappings (such as FLAC).
+
+  KEEP: divVerent, lachs0r
 
 libaf/af_delay.c
   KEEP: divVerent
+  ABSTAIN: lachs0r – Useful, but maybe audio drivers can do that?
 
 libaf/af_dummy.c
   REMOVE: divVerent
@@ -31,6 +35,7 @@ libaf/af_export.c
 
 libaf/af_extrastereo.c
   KEEP: divVerent
+  REMOVE: lachs0r – Doesn’t sound good at all. Also, equivalent filters exist at least as LADSPA plugins and in most newer Windows audio drivers.
 
 libaf/af_format.c
   KEEP: divVerent
@@ -40,8 +45,9 @@ libaf/af_hrtf.c
 
 libaf/af_karaoke.c
   Better done via LADSPA, or -af pan
+  Most Windows audio drivers can do that too.
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
 
 libaf/af_ladspa.c
   KEEP: divVerent
@@ -50,19 +56,21 @@ libaf/af_lavcac3enc.c
   Apparently useful for SPDIF guys.
 
   KEEP: divVerent
+  ABSTAIN: lachs0r – Need to check if it actually works. Also, at least on Linux, there’s an ALSA plugin to do that.
 
 libaf/af_lavcresample.c
   Do we need two resamplers? Is this one better, or is af_resample? Probably we only want to keep whichever is the better one?
   I don't know, but lavcresample is the default resampler.
 
   ABSTAIN: divVerent
-  KEEP: wm4
+  KEEP: wm4, lachs0r
 
 libaf/af_pan.c
   KEEP: divVerent
 
 libaf/af_resample.c
   KEEP: divVerent
+  REMOVE: lachs0r – Just let libav take care of it.
 
 libaf/af_scaletempo.c
   KEEP: divVerent
@@ -72,6 +80,7 @@ libaf/af_sinesuppress.c
 
 libaf/af_sub.c
   KEEP: divVerent
+  REMOVE: lachs0r – See af_center. ALSA doesn’t do lowpass filtering by default, but there are very good LADSPA plugins for that. Some drivers do it on Windows. In a lot of cases, the speaker/amplifier hardware does it anyway.
 
 libaf/af_surround.c
   KEEP: divVerent
@@ -79,12 +88,14 @@ libaf/af_surround.c
 libaf/af_sweep.c
   Use LADSPA if you really want this.
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
 
 libaf/af_volnorm.c
   Generally a very good filter, but I just can't get it to work. Maybe needs fixing bugs.
 
   ABSTAIN: divVerent
+
+  lachs0r: This isn’t proper normalization but more like drc with a huge delay. Actual, decent volume normalization is done by tools like normalize(1).
 
 libaf/af_volume.c
   KEEP: divVerent
@@ -92,12 +103,12 @@ libaf/af_volume.c
 libmpcodecs/vf_1bpp.c
   Isn't this scale's job?
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
 
 libmpcodecs/vf_2xsai.c
   Perhaps move to vf_dlopen instead? Sure shouldn't be in mplayer (it's a filter for palette images like old video game footage, but all the nice properties 2xSaI depends on break when using lossy codecs anyway).
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
 
 libmpcodecs/vf_ass.c
   KEEP: divVerent
@@ -105,17 +116,17 @@ libmpcodecs/vf_ass.c
 libmpcodecs/vf_blackframe.c
   Not really useful on its own, messy output... probably should be coded in vf_dlopen instead.
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
 
 libmpcodecs/vf_bmovl.c
   No good, only evil can be done with this. Also, weirdly complex.
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
 
 libmpcodecs/vf_boxblur.c
   We only need one blur, and this is not the one.
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
 
 libmpcodecs/vf_crop.c
   KEEP: divVerent
@@ -131,8 +142,10 @@ libmpcodecs/vf_decimate.c
   REMOVE: divVerent
 
 libmpcodecs/vf_delogo.c
-  KEEP: divVerent
+  KEEP: divVerent, lachs0r
   REMOVE: wm4 (does this thing really work?)
+
+  lachs0r: There’s a less obvious use case for this filter that I’ve suggested to someone in #mplayer2 once. The guy had some 16:9 plasma TV which would exhibit nasty burn-in on pillarboxed 4:3 footage. This filter can be used to mask the black bars. Works surprisingly well.
 
 libmpcodecs/vf_denoise3d.c
   hqdn3d is supposedly higher quality, and not much slower. So this one has no point.
@@ -173,7 +186,9 @@ libmpcodecs/vf_dsize.c
 libmpcodecs/vf_dvbscale.c
   Sounds useful for encoding sometimes, even though we no longer have DVB support. Also, just use -vf scale parameters...
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
+
+  lachs0r: You don’t do aspect scaling while encoding from DVB. You set the AR info in the container/video stream.
 
 libmpcodecs/vf_eq2.c
   vf_scale lacks gamma, is otherwise equivalent to this one (note: use --brightness, --contrast, --saturation options to control vf_scale). Gamma can be done trivially using vf_lua.
@@ -232,16 +247,17 @@ libmpcodecs/vf_gradfun.c
   The name is just the algorithm's name. Everyone calls it like this.
 
   KEEP (but rename): divVerent
+  ABSTAIN: lachs0r – Better/tweaked implementations of this filter as well as more effective alternatives exist  as AviSynth filters and should replace this one once Someone™ ports one of them. Also, some of the inline assembly is broken (should be yasm-ified and put into separate files anyway).
 
 libmpcodecs/vf_halfpack.c
   Can't scale do this?
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
 
 libmpcodecs/vf_harddup.c
   Does as much as the goggles: nothing.
 
-  REMOVE: divVerent
+  REMOVE: divVerent, lachs0r
 
 libmpcodecs/vf_hqdn3d.c
   KEEP: divVerent
@@ -307,13 +323,16 @@ libmpcodecs/vf_palette.c
 libmpcodecs/vf_perspective.c
   We're not GIMP. And you can always do this quite easily using vf_lua...
 
-  REMOVE: divVerent.
+  REMOVE: divVerent, lachs0r
+
+  lachs0r: Files with incorrect perspective are extremely rare too. About the only real-world use for this is keystone correction, which is usually done in hardware by the projector or by graphics drivers/compositors.
 
 libmpcodecs/vf_phase.c
   Sounds useful to properly detelecine broken input, so keep it.
 
-  KEEP: divVerent
+  KEEP: divVerent, lachs0r
   REMOVE: wm4 (same as before, "sounds useful" != "is useful")
+  REMOVE: lachs0r – Use --field-dominance.
 
 libmpcodecs/vf_pp7.c
   A WTF filter.
@@ -407,6 +426,7 @@ libmpcodecs/vf_tfields.c
 
   KEEP: divVerent
   REMOVE: wm4 (how useful?)
+  REMOVE: lachs0r (not at all)
 
 libmpcodecs/vf_tile.c
   Already ported to vf_dlopen. Not needed in core.
@@ -417,6 +437,7 @@ libmpcodecs/vf_tinterlace.c
   I can see this being useful. Maybe should be moved to dlopen though.
 
   KEEP: divVerent
+  REMOVE: lachs0r – No. Just no. Interlacing should die in a fire.
 
 libmpcodecs/vf_unsharp.c
   The good blur/sharpener.
@@ -438,6 +459,7 @@ libmpcodecs/vf_yuvcsp.c
 
   ABSTAIN: divVerent
   REMOVE: wm4 (doesn't sound terribly useful)
+  REMOVE: lachs0r
 
 libmpcodecs/vf_yvu9.c
   Already deprecated.
