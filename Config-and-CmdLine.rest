@@ -1,6 +1,4 @@
-Command line example:
-
-::
+Command line example::
 
         --include=local.conf
         --softvol=yes
@@ -22,7 +20,7 @@ Command line example:
         --ass-force-style="Fontname=sans"
         --ovcopts-add=[ tune=animation threads=4 ]
 
-::
+Config example 1::
 
         include = local.conf
         # softvol = yes
@@ -87,9 +85,7 @@ Command line example:
         #       SUPER
         # ]
 
-Possible change ideas: [ currently must always follow =. Do we even need the = then? Not requiring the = here would help the command line parser to handle this as --vo=vdpau [ deint=-4 ] vs --vo=vdpau=deint=-4. Example below:
-
-::
+Config example 2 (basically = [ replaced by mere [)::
 
         include = local.conf
         # softvol = yes
