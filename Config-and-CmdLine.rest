@@ -1,4 +1,4 @@
-Command line example::
+Command line example 1::
 
         --include=local.conf
         --softvol=yes
@@ -84,6 +84,28 @@ Config example 1::
         #       XYZZY
         #       SUPER
         # ]
+
+Command line example 2 (list starters are their own argument; an ambiguity ensues and is resolved by "if [ can be a list starter, it is and starts a list in the innermost scope possible"); we basically replaced =[ by space and [::
+
+        --include=local.conf
+        --softvol=yes
+        --ass=yes
+        --embeddedfonts=yes
+        --vf-add=screenshot
+        --vo=vdpau [ deint=-4 pullup ]
+        --vc [ item=ffmpeg12vdpau item=ffwmv3vdpau item=ffc1vdpau item=ffh264vdpau SUPER ]
+        --vc-pre=ffh264vdpau
+        --vc-pre [ item=ffc1vdpau ]
+        --vc-pre ffwmv3vdpau
+        --vc-pre ffmpeg12vdpau
+        --vo=xv
+        --lavdopts [ threads=4 ]
+        --ao=alsa
+        --include=/usr/share/doc/mplayer/examples/encoding-example-profiles.conf
+        --profile=enc-to-iphone
+        --vf-add=ass
+        --ass-force-style="Fontname=sans"
+        --ovcopts-add [ tune=animation threads=4 ]
 
 Config example 2 (basically = [ replaced by mere [)::
 
