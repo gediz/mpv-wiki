@@ -1,4 +1,4 @@
-Will remove: vf_1bpp, vf_2xsai, vf_blackframe, vf_bmovl, vf_boxblur, vf_cropdetect, vf_decimate, vf_detc, vf_dint, vf_dvbscale, vf_eq2, vf_eq, vf_field, vf_fil, vf_filmdint, vf_fixpts, vf_framestep, vf_fspp, vf_geq, vf_halfpack, vf_harddup, vf_hue, vf_il, vf_ivtc, vf_kerndeint, vf_lavc, vf_lavcdeint, vf_mcdeint, vf_palette, vf_perpective, vf_pp7, vf_qp, vf_rectangle, vf_remove_logo, vf_rgbtest, vf_sab, vf_smartblur, vf_softskip, vf_spp, vf_swapuv, vf_telecine, vf_test, vf_tile, vf_uspp, vf_yuvcsp, vf_yvu9, vf_denoise3d, vf_ow, vf_phase, vf_tfields, vf_tinterlace
+Will remove: vf_1bpp, vf_2xsai, vf_blackframe, vf_bmovl, vf_boxblur, vf_cropdetect, vf_decimate, vf_detc, vf_dint, vf_dvbscale, vf_eq2, vf_eq, vf_field, vf_fil, vf_filmdint, vf_fixpts, vf_framestep, vf_fspp, vf_geq, vf_halfpack, vf_harddup, vf_hue, vf_il, vf_ivtc, vf_kerndeint, vf_lavc, vf_lavcdeint, vf_mcdeint, vf_palette, vf_perpective, vf_pp7, vf_qp, vf_rectangle, vf_remove_logo, vf_rgbtest, vf_sab, vf_smartblur, vf_softskip, vf_spp, vf_telecine, vf_test, vf_tile, vf_uspp, vf_yuvcsp, vf_yvu9, vf_denoise3d, vf_ow, vf_phase, vf_tfields, vf_tinterlace
 
 Reasons etc. see below.
 
@@ -412,6 +412,7 @@ libmpcodecs/vf_swapuv.c
   vf_lua. Nuff said.
 
   REMOVE: divVerent
+  KEEP: wm4 (Might sometimes be useful for rawvideo. I removed vd_raw and demux_rawvideo uses ffmpeg's raw decoder now. Since we pass a libav pixel format to that decoder as input format, information about the plane order gets lost. I think.)
 
 libmpcodecs/vf_telecine.c
   Already ported to vf_dlopen. Not needed in core. And only does evil anyway ;)
