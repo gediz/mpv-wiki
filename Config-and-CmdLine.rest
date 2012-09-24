@@ -1,3 +1,4 @@
+::
         include = local.conf
 
         # softvol = yes
@@ -72,6 +73,7 @@
 
 Possible change ideas: [ currently must always follow =. Do we even need the = then? Not requiring the = here would help the command line parser to handle this as --vo=vdpau [ deint=-4 ] vs --vo=vdpau=deint=-4. Example below:
 
+::
         include = local.conf
 
         # softvol = yes
