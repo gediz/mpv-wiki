@@ -1,12 +1,10 @@
 ::
-        include = local.conf
 
+        include = local.conf
         # softvol = yes
         # softvol-max = 1200
-
         ass = yes
         embeddedfonts = yes
- 
         vf-add = screenshot
         #vo = vdpau = [
         #       deint = -4
@@ -24,17 +22,12 @@
         #vc-pre = ffc1vdpau
         #vc-pre = ffwmv3vdpau
         #vc-pre = ffmpeg12vdpau
- 
-        vo = xv
- 
-        lavdopts = [
+         vo = xv
+         lavdopts = [
                 threads = 4
         ]
- 
         ao = alsa
- 
         include = /usr/share/doc/mplayer/examples/encoding-example-profiles.conf
- 
         [enc]
         profile = enc-to-iphone
         vf-add = ass
@@ -43,7 +36,6 @@
                 tune = animation
                 threads = 4
         ]
- 
         # NOTE:
         # general shortcut for list options:
         #
@@ -74,14 +66,12 @@
 Possible change ideas: [ currently must always follow =. Do we even need the = then? Not requiring the = here would help the command line parser to handle this as --vo=vdpau [ deint=-4 ] vs --vo=vdpau=deint=-4. Example below:
 
 ::
-        include = local.conf
 
+        include = local.conf
         # softvol = yes
         # softvol-max = 1200
-
         ass = yes
         embeddedfonts = yes
- 
         vf-add = screenshot
         #vo = vdpau [
         #       deint = -4
@@ -99,17 +89,12 @@ Possible change ideas: [ currently must always follow =. Do we even need the = t
         #vc-pre = ffc1vdpau
         #vc-pre = ffwmv3vdpau
         #vc-pre = ffmpeg12vdpau
- 
         vo = xv
- 
         lavdopts [
                 threads = 4
         ]
- 
         ao = alsa
- 
         include = /usr/share/doc/mplayer/examples/encoding-example-profiles.conf
- 
         [enc]
         profile = enc-to-iphone
         vf-add = ass
@@ -118,7 +103,6 @@ Possible change ideas: [ currently must always follow =. Do we even need the = t
                 tune = animation
                 threads = 4
         ]
- 
         # NOTE:
         # general shortcut for list options:
         #
