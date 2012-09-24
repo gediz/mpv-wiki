@@ -1,3 +1,26 @@
+Command line example:
+
+::
+        --include=local.conf
+        --softvol=yes
+        --ass=yes
+        --embeddedfonts=yes
+        --vf-add=screenshot
+        --vo=vdpau=[ deint=-4 pullup ]
+        --vc=[ item=ffmpeg12vdpau item=ffwmv3vdpau item=ffc1vdpau item=ffh264vdpau SUPER ]
+        --vc-pre=ffh264vdpau
+        --vc-pre=[ item=ffc1vdpau ]
+        --vc-pre=ffwmv3vdpau
+        --vc-pre=ffmpeg12vdpau
+        --vo=xv
+        --lavdopts=[ threads=4 ]
+        --ao=alsa
+        --include=/usr/share/doc/mplayer/examples/encoding-example-profiles.conf
+        --profile=enc-to-iphone
+        --vf-add=ass
+        --ass-force-style="Fontname=sans"
+        --ovcopts-add=[ tune=animation threads=4 ]
+
 ::
 
         include = local.conf
@@ -22,8 +45,8 @@
         #vc-pre = ffc1vdpau
         #vc-pre = ffwmv3vdpau
         #vc-pre = ffmpeg12vdpau
-         vo = xv
-         lavdopts = [
+        vo = xv
+        lavdopts = [
                 threads = 4
         ]
         ao = alsa
