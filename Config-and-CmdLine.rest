@@ -61,10 +61,11 @@ Config example 1::
         # NOTE:
         # general shortcut for list options:
         #
-        # listoption = FOO
+        # listoption = FOO,BAR
         # means
         # listoption = [
         #       item = FOO
+        #       item = BAR
         # ]
         #
         # listoption-add = [
@@ -148,10 +149,11 @@ Config example 2 (basically = [ replaced by mere [)::
         # NOTE:
         # general shortcut for list options:
         #
-        # listoption = FOO
+        # listoption = FOO,BAR
         # means
         # listoption [
         #       item = FOO
+        #       item = BAR
         # ]
         #
         # listoption-add [
