@@ -160,6 +160,35 @@ libmpcodecs/vf_detc.c
 libmpcodecs/vf_dint.c
   What is THIS thing good for?
 
+  Apparently, it is for generating abort()s::
+
+    mplayer: libmpcodecs/vf.c:288: vf_get_image: Assertion `vf->w > 0' failed.
+    
+    Program received signal SIGABRT, Aborted.
+    0x00007ffff0daafa5 in raise () from /lib/libc.so.6
+    (gdb) bt
+    #0  0x00007ffff0daafa5 in raise () from /lib/libc.so.6
+    #1  0x00007ffff0dac428 in abort () from /lib/libc.so.6
+    #2  0x00007ffff0da4002 in __assert_fail_base () from /lib/libc.so.6
+    #3  0x00007ffff0da40b2 in __assert_fail () from /lib/libc.so.6
+    #4  0x00000000004ad660 in vf_get_image (vf=0xd560f0, outfmt=842094169, mp_imgtype=2, mp_imgflag=0, w=720,     h=480) at libmpcodecs/vf.c:288
+    #5  0x00000000004b787c in config (vf=0xb9b9b0, width=720, height=480, d_width=853, d_height=480, flags=0,     outfmt=842094169)
+        at libmpcodecs/vf_dint.c:51
+    #6  0x00000000004aeada in vf_config_wrapper (vf=0xb9b9b0, width=720, height=480, d_width=853, d_height=480,     flags=0, outfmt=842094169)
+        at libmpcodecs/vf.c:690
+    #7  0x00000000004aa5fc in mpcodecs_config_vo2 (sh=0x88d3a0, w=720, h=480, outfmts=0x7fffffffe1d0,     preferred_outfmt=842094169)
+        at libmpcodecs/vd.c:277
+    #8  0x00000000004abb11 in init_vo (sh=0x88d3a0, pix_fmt=PIX_FMT_YUV420P) at libmpcodecs/vd_ffmpeg.c:447
+    #9  0x00000000004ac957 in decode (sh=0x88d3a0, packet=0xc159d0, data=0xc3e9e0, len=28100, flags=0,     reordered_pts=0x7fffffffe398)
+        at libmpcodecs/vd_ffmpeg.c:733
+    #10 0x00000000004a602e in decode_video (sh_video=0x88d3a0, packet=0xc159d0, start=0xc3e9e0 "",     in_size=28100, drop_frame=0, pts=1)
+        at libmpcodecs/dec_video.c:417
+    #11 0x0000000000423322 in update_video (mpctx=0x8175a0) at mplayer.c:2546
+    #12 0x0000000000425647 in run_playloop (mpctx=0x8175a0) at mplayer.c:3163
+    #13 0x0000000000428e35 in play_current_file (mpctx=0x8175a0) at mplayer.c:4097
+    #14 0x000000000042901e in play_files (mpctx=0x8175a0) at mplayer.c:4146
+    #15 0x0000000000429bcd in main (argc=5, argv=0x7fffffffe7b0) at mplayer.c:4407
+
   REMOVE: divVerent
 
 libmpcodecs/vf_divtc.c
