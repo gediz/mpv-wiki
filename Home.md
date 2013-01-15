@@ -1,1 +1,3 @@
-Welcome to the mplayer2 wiki!
+Leave before it's too late.
+
+Go to https://github.com/mpv-player/mpv/
