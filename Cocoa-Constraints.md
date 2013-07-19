@@ -23,7 +23,7 @@ And you send the message to the pointer to and instance like this:
 
 A fun side note is there can be secondary RunLoops that are used mainly for mouse tracking operations such as navigating menus or resizing a window with the mouse. These nested RunLoops can be made aware of timers and event sources too, so this isn't really a problem if you follow "the Cocoa way". Why this is currently problematic is explained in point 4.
 
-File Descriptors cannot be event sources for the NSRunLoop so if you want to do async polling on them you must do so in a separate thread. mplayer2 does this in: [`osdep/cocoa_events.m`]`(https://github.com/wm4/mplayer2/blob/master/osdep/cocoa_events.m)`
+File Descriptors cannot be event sources for the NSRunLoop so if you want to do async polling on them you must do so in a separate thread. mplayer2 does this in: [`osdep/cocoa_events.m`](https://github.com/wm4/mplayer2/blob/master/osdep/cocoa_events.m)
 
 2) File open events: non terminal applications on OSX do no receive files in the argv. That is because you couldn't deal with new file opens with a process that is already running (on OSX you generally get only one instance of each application and can open several documents with it). So in the argv you get something like `--psn-numbers-numbers` when you open files from the finder. You can actually deal with the file open events by implementing some NSApplication callback methods. This is all taken care of in the [`osdep/macosx_finder_args.m`](https://github.com/wm4/mplayer2/blob/master/osdep/macosx_finder_args.m) file.
 
