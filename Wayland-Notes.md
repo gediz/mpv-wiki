@@ -16,7 +16,7 @@ Note down stuff when I am currently not at home (like work) to not forget it.
 - Make a separate configure check for EGL and SHM rendering.
 - Restructure the format table to to have an addition alpha field for the corresponding alpha format.
   Also make it const and use a linked list to save the supported formats.
-- Remove move by dragging the surface (this might interfere with the OSC)
+- **[done]** Remove move by dragging the surface ~~(this might interfere with the OSC)~~ (no problems)
 - **[done]** Make use of opaque regions for opaque formats to give the compositor hints to optimize the drawing behavior.
 
 ```c
