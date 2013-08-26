@@ -5,7 +5,7 @@ Note down stuff when I am currently not at home (like work) to not forget it.
 - **[fixed]** If you change between fullscreen and windowed mode fast enough, the previous size gets overwritten
 - Left Shift Modifier warning. No Idea where this one comes from.
 - Flickers when resizing SHM backend. Requires full redraw before attaching.
-- [vo/wayland/wayland] logging from wayland_common.h
+- **[fixed]** [vo/wayland/wayland] logging from wayland_common.h
 
 ### Short Term:
 - **[done]** Remove left overs from the big epoll removal (like ARRAY_LENGTH).
@@ -17,7 +17,7 @@ Note down stuff when I am currently not at home (like work) to not forget it.
 - Restructure the format table to to have an addition alpha field for the corresponding alpha format.
   Also make it const and use a linked list to save the supported formats.
 - Remove move by dragging the surface (this might interfere with the OSC)
-- Make use of opaque regions for opaque formats to give the compositor hints to optimize the drawing behavior.
+- **[done]** Make use of opaque regions for opaque formats to give the compositor hints to optimize the drawing behavior.
 
 ```c
 struct fmtentry {
