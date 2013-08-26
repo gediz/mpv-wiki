@@ -1,3 +1,5 @@
+Notes down stuff when I am currently not at home (like work) to not forget it.
+
 ### Minor Bugs:
 - **[fixed]** If you resize furiously the video aspect does not match the window aspect and size, but after releasing the grap it adjusts itself.
 - **[fixed]** If you change between fullscreen and windowed mode fast enough, the previous size gets overwritten
