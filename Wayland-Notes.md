@@ -13,7 +13,7 @@ Note down stuff when I am currently not at home (like work) to not forget it.
 - **[done]** Use set_user_data for `wl_output` to map the corresponding `vo_wayland_output` to it. With this we can get rid of the iteration over all outputs in output_handle_mode.
 - **[done]** Evaluate if there is a need for set_opaque with OpenGL and If we get better performance. **Not necessary**
 - **[done]** Use a callback for resizing instead of a scheduling event to get more predictable resizing.
-- Make a separate configure check for EGL and SHM rendering.
+- **[done]** Make a separate configure check for EGL and SHM rendering.
 - Restructure the format table to to have an addition alpha field for the corresponding alpha format.
   Also make it const and use a linked list to save the supported formats.
 - **[done]** Remove move by dragging the surface ~~(this might interfere with the OSC)~~ (no problems)
