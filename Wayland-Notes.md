@@ -14,21 +14,10 @@ Note down stuff when I am currently not at home (like work) to not forget it.
 - **[done]** Evaluate if there is a need for set_opaque with OpenGL and If we get better performance. **Not necessary**
 - **[done]** Use a callback for resizing instead of a scheduling event to get more predictable resizing.
 - **[done]** Make a separate configure check for EGL and SHM rendering.
-- Restructure the format table to to have an addition alpha field for the corresponding alpha format.
-  Also make it const and use a linked list to save the supported formats.
+- **[done]** Restructure the format table to to have an addition alpha field for the corresponding 
+             alpha format. Also make it const and use a linked list to save the supported formats.
 - **[done]** Remove move by dragging the surface ~~(this might interfere with the OSC)~~ (no problems)
 - **[done]** Make use of opaque regions for opaque formats to give the compositor hints to optimize the drawing behavior.
-
-```c
-struct fmtentry {
-    int wlfmt;
-    int mpfmt;
-};
-struct fmtpair {
-    struct fmtentry opaque;
-    struct fmtentry alpha;
-};
-```
 
 ### Long Term:
 - Add Client Side Decorations in case mpv runs under a compositor which does not have Server Side Decorations (like weston). **Depends on:** Subsurface protocol
