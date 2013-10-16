@@ -1,3 +1,5 @@
+Warning: this is some old brainstorming about how the sub-option handling could be improved. It does not reflect current syntax.
+
 Command line example 1::
 
         --include=local.conf
