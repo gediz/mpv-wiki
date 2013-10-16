@@ -1,3 +1,5 @@
+Warning: obviously outdated, and uses some things that were never part of mainline mpv.
+
 Using the video from http://mirror.bigbuckbunny.de/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg (shortened mirror: http://ompldr.org/vZmZmeQ/big_buck_bunny_1080p_stereo-61s.ogg)::
 
   F=big_buck_bunny_1080p_stereo.ogg
