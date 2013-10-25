@@ -4,6 +4,8 @@ Relation to mpv
 FFmpeg and Libav are libraries for multimedia decoding (and more). Both
 libraries expose almost the same API and features.
 
+Note that both libraries actually come as a set of libraries, and both projects use the same names. The libraries are named libavcodec, libavformat, libavutil, and more. There is a FFmpeg libavcodec and a Libav libavcodec.
+
 Many things in mpv, including video decoding, are done via FFmpeg or Libav.
 It's a major mpv dependency, and differences between FFmpeg and Libav can have
 a major impact in its behavior: the number of files it can decode, whether it
