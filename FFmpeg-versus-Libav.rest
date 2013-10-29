@@ -51,7 +51,7 @@ since either library might silently or blatantly be not up to the task.
 
 FFmpeg and Libav developers also seems to have the tendency to ignore the
 damage their rivalry is causing. Apparently fighting out these issues on
-the users' backs is better than reconciling. This means everyone using the
+the users' backs is better than reconciling. This means everyone using
 these libraries either has to suffer from the differences, or reimplement
 functionality that is not the same between FFmpeg and Libav. mpv does not
 follow the latter approach to avoid bloat, thus the choice between FFmpeg
