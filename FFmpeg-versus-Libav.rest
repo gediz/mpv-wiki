@@ -27,8 +27,9 @@ Libav did.
 The reason for the fork is most likely that the developers hate each other.
 While this formulation seems somewhat sloppy, it is most likely the truth. To
 this date, the ``#libav-devel`` IRC channel still has Michael Niedermayer (the
-FFmpeg maintainer since 2004 according to Wikipedia) on their ban list. There
-is little to no cooperation between the two projects.
+FFmpeg maintainer since 2004 according to Wikipedia) on their ban list (similar
+misbehavior is exhibited by some FFmpeg developers). There is little to no
+cooperation between the two projects.
 
 More about FFmpeg's history and the fork incident can be found on Wikipedia_.
 
@@ -39,14 +40,14 @@ FFmpeg has more features and slightly more active development than Libav,
 going by mailing list and commit volume. In particular, FFmpeg's features are
 a superset of Libav's features. This is because FFmpeg merges Libav's git
 master on a daily basis. Libav on the other hand seems to prefer to ignore
-FFmpeg development.
+FFmpeg development (with occasional cherry-picking of bug fixes and features).
 
-Some Libav developers have used their power as FFmpeg package maintainers to
-replace FFmpeg with Libav in various Linux distributions, while other
+Some Linux distributions, especially those that had Libav developers as FFmpeg
+package maintainers, replaced FFmpeg with Libav, while other
 distributions stick with FFmpeg. Application developers typically have to
 make sure their code works with both libraries. This can be trivial to hard,
 depending on the details. One larger problem is that the difference between
-the libraries makes it hard to keep up the level of the user experience,
+the libraries makes it hard to keep up a consistent level of the user experience,
 since either library might silently or blatantly be not up to the task.
 
 FFmpeg and Libav developers also seems to have the tendency to ignore the
@@ -70,6 +71,9 @@ point of view.
 It shouldn't be forgotten that Libav is doing significant and important
 development, but since everything they do ends up in FFmpeg anyway, there
 is barely any reason to prefer Libav over FFmpeg from the user point of view.
+It's also possible that FFmpeg agrees faster to gross hacks to paint over
+bugs and issues than Libav, however, in the user's perception FFmpeg
+will perform better because of that.
 
 Comparison between FFmpeg and Libav
 ===================================
@@ -89,7 +93,9 @@ FFmpeg advantages / Libav disadvantages
 - Libav has been accused of neglecting security issues (it appears that for
   some time, only FFmpeg actually cared about fixing secret bug reports
   received by Google, although it's hard to tell how accurate this is,
-  since it's a bit in the dark - it might even be completely wrong)
+  since it's a bit in the dark - Libav developers have also claimed that
+  at first only FFmpeg received these non-public bug reports from Google,
+  and started to fix bugs as soon as Google began sending them to Libav as well)
 
 FFmpeg disadvantages / Libav advantages
 ---------------------------------------
