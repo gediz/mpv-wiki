@@ -96,6 +96,8 @@ FFmpeg advantages / Libav disadvantages
   since it's a bit in the dark - Libav developers have also claimed that
   at first only FFmpeg received these non-public bug reports from Google,
   and started to fix bugs as soon as Google began sending them to Libav as well)
+- Libav has very long release cycles, which force us to be backwards compatible
+  with very old code. (At least ~500 LOC that could be deleted from mpv.)
 
 FFmpeg disadvantages / Libav advantages
 ---------------------------------------
