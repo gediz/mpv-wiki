@@ -132,4 +132,4 @@ This list is not complete. In some cases we might not be aware of differences
 in functionality and performance until we encounter it. Most mpv developers
 exclusively use FFmpeg, which makes spotting such issues harder.
 
-.. _Wikipedia: http://en.wikipedia.org/wiki/FFmpeg#History
+Wikipedia: http://en.wikipedia.org/wiki/FFmpeg#History
