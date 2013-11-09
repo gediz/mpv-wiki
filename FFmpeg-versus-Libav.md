@@ -98,6 +98,8 @@ FFmpeg advantages / Libav disadvantages
   and started to fix bugs as soon as Google began sending them to Libav as well)
 - Libav has very long release cycles, which force us to be backwards compatible
   with very old code. (At least ~500 LOC that could be deleted from mpv.)
+- Sometimes FFmpeg adds APIs we want to use, and Libav doesn't have them. This
+  causes us pain, and the blame goes to Libav for not providing them.
 
 FFmpeg disadvantages / Libav advantages
 ---------------------------------------
@@ -124,6 +126,8 @@ didn't provide the required functionality.)
   (mpv still has legacy parsers from mplayer, though)
 - we plan to replace most video/audio filters with FFmpeg's, but Libav lacks
   them
+- Audio filtering with libavfilter is unavailable, because Libav lacks certain APIs,
+  and making the code work on both FFmpeg and Libav is too much of a pain.
 - mpv can display ShoutCAST/Icy stream information on FFmpeg only
 - Libav has problems with badly interleaved AVI files
 - Libav PGS subtitle decoder doesn't handle multiple subtitle rects
