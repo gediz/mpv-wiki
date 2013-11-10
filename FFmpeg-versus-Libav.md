@@ -18,7 +18,7 @@ FFmpeg and Libav history
 In 2011, parts of the FFmpeg developers were unhappy about the FFmpeg
 leadership, and decided to take over. This didn't quite work out. Apparently
 Fabrice Bellard, original FFmpeg developer and owner of the ffmpeg.org
-domain name, decided not to hand over the domain name to the ``new``
+domain name, decided not to hand over the domain name to the _new_
 maintainers. So they followed Plan B, and forked FFmpeg, resulting in Libav.
 Since then, Libav did its own development, and completely ignored whatever
 FFmpeg did. FFmpeg, on the other hand, started to merge literally everything
@@ -31,7 +31,7 @@ FFmpeg maintainer since 2004 according to Wikipedia) on their ban list (similar
 misbehavior is exhibited by some FFmpeg developers). There is little to no
 cooperation between the two projects.
 
-More about FFmpeg's history and the fork incident can be found on Wikipedia_.
+More about FFmpeg's history and the fork incident can be found on Wikipedia.
 
 Situation today
 ===============
@@ -135,5 +135,8 @@ didn't provide the required functionality.)
 This list is not complete. In some cases we might not be aware of differences
 in functionality and performance until we encounter it. Most mpv developers
 exclusively use FFmpeg, which makes spotting such issues harder.
+
+External Reading
+================
 
 Wikipedia: http://en.wikipedia.org/wiki/FFmpeg#History
