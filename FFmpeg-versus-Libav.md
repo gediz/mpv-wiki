@@ -90,12 +90,6 @@ FFmpeg advantages / Libav disadvantages
   and the bug tracker)
 - FFmpeg definitely has more features and more complete implementations of at
   least some file formats
-- Libav has been accused of neglecting security issues (it appears that for
-  some time, only FFmpeg actually cared about fixing secret bug reports
-  received by Google, although it's hard to tell how accurate this is,
-  since it's a bit in the dark - Libav developers have also claimed that
-  at first only FFmpeg received these non-public bug reports from Google,
-  and started to fix bugs as soon as Google began sending them to Libav as well)
 - Libav has very long release cycles, which force us to be backwards compatible
   with very old code. (At least ~500 LOC that could be deleted from mpv.)
 - Sometimes FFmpeg adds APIs we want to use, and Libav doesn't have them. This
