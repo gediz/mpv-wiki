@@ -94,6 +94,13 @@ FFmpeg advantages / Libav disadvantages
   with very old code. (At least ~500 LOC that could be deleted from mpv.)
 - Sometimes FFmpeg adds APIs we want to use, and Libav doesn't have them. This
   causes us pain, and the blame goes to Libav for not providing them.
+- Really messy backporting of major FFmpeg features. (E.g. see VP9
+  decoder: after it was developed and merged in FFmpeg, Libav picked
+  up the VP9 patches, made their own changes, both functional and
+  cosmetic, squashed it into one commit. The original authors of the
+  decoder had to figure out what was changed and possibly improved,
+  and what was purely cosmetic.)
+  (See also HEVC incident.)
 
 FFmpeg disadvantages / Libav advantages
 ---------------------------------------
@@ -105,6 +112,12 @@ FFmpeg disadvantages / Libav advantages
   development and adding stupid artifacts to the FFmpeg ABI
 - Libav is going somewhat clean directions in API development (although
   everything from this ends up in FFmpeg anyway)
+- FFmpeg seems to have an "anything goes" attitude, and merges/accepts just
+  about anything, sometimes only for the purpose come before Libav. (E.g. see
+  HEVC decoder: developed mainly on the Libav side, though separate from the
+  Libav repository, it was hastily merged by FFmpeg shortly before Libav was
+  done with the merge that was prepared for months.)
+  (See also VP9 incident.)
 
 Disadvantages of using Libav with mpv
 =====================================
