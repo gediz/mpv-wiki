@@ -136,7 +136,8 @@ didn't provide the required functionality.)
 - Audio filtering with libavfilter is unavailable, because Libav lacks certain APIs,
   and making the code work on both FFmpeg and Libav is too much of a pain.
 - mpv can display ShoutCAST/Icy stream information on FFmpeg only
-- Libav has problems with badly interleaved AVI files
+- Libav has problems with badly interleaved AVI files (which means certain old
+  AVI files might randomly desync after playing fine for some time)
 - Libav PGS subtitle decoder doesn't handle multiple subtitle rects
 - Libav http implementation doesn't return the content type, which makes opening
   web radio streams slow (plus mp3 streams might fail entirely to open)
