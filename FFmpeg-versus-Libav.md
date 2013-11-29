@@ -138,6 +138,8 @@ didn't provide the required functionality.)
 - mpv can display ShoutCAST/Icy stream information on FFmpeg only
 - Libav has problems with badly interleaved AVI files
 - Libav PGS subtitle decoder doesn't handle multiple subtitle rects
+- Libav http implementation doesn't return the content type, which makes opening
+  web radio streams slow (plus mp3 streams might fail entirely to open)
 
 This list is not complete. In some cases we might not be aware of differences
 in functionality and performance until we encounter it. Most mpv developers
