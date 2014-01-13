@@ -4,7 +4,7 @@ Note down stuff when I am currently not at home (like work) to not forget it.
 - **[fixed]** If you resize furiously the video aspect does not match the window aspect and size, but after releasing the grap it adjusts itself.
 - **[fixed]** If you change between fullscreen and windowed mode fast enough, the previous size gets overwritten
 - Left Shift Modifier warning. No Idea where this one comes from.
-- Flickers when resizing SHM backend. Requires full redraw before attaching.
+- **[partial fixed]** Flickers when resizing SHM backend. Requires full redraw before attaching.
 - **[fixed]** [vo/wayland/wayland] logging from wayland_common.h
 
 ### Short Term:
@@ -18,7 +18,10 @@ Note down stuff when I am currently not at home (like work) to not forget it.
              alpha format. Also make it const and use a linked list to save the supported formats.
 - **[done]** Remove move by dragging the surface ~~(this might interfere with the OSC)~~ (no problems)
 - **[done]** Make use of opaque regions for opaque formats to give the compositor hints to optimize the drawing behavior.
+- Integrate subsurfaces in wayland/shm and/or wayland/egl
+- Add VA-API through OpenGL. (Get more familiar with libva)
+
 
 ### Long Term:
-- Add Client Side Decorations in case mpv runs under a compositor which does not have Server Side Decorations (like weston). **Depends on:** Subsurface protocol
+- **[wont do]** Add Client Side Decorations in case mpv runs under a compositor which does not have Server Side Decorations (like weston). **Depends on:** Subsurface protocol
 - Multithreading: The current polling solution should already be threadsafe (theoretically)
