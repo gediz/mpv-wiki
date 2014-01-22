@@ -50,7 +50,7 @@ depending on the details. One larger problem is that the difference between
 the libraries makes it hard to keep up a consistent level of the user experience,
 since either library might silently or blatantly be not up to the task.
 
-FFmpeg and Libav developers also seems to have the tendency to ignore the
+FFmpeg and Libav developers also seem to have the tendency to ignore the
 damage their rivalry is causing. Apparently fighting out these issues on
 the users' backs is better than reconciling. This means everyone using
 these libraries either has to suffer from the differences, or reimplement
