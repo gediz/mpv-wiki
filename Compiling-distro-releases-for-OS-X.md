@@ -8,3 +8,7 @@ TL;DR version only
 ffmpeg: ``./configure --extra-cflags="$CFLAGS" ...``
 
 mpv: ``... CFLAGS="$CFLAGS" ./waf configure ...``
+
+
+To bundle the dependency libs, run this in mpv's folder:
+``TOOLS/osxbundle.py build/mpv``
