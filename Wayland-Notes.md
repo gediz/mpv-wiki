@@ -4,7 +4,7 @@ Note down stuff when I am currently not at home (like work) to not forget it.
 - **[fixed]** If you resize furiously the video aspect does not match the window aspect and size, but after releasing the grap it adjusts itself.
 - **[fixed]** If you change between fullscreen and windowed mode fast enough, the previous size gets overwritten
 - Left Shift Modifier warning. No Idea where this one comes from.
-- **[partial fixed]** Flickers when resizing SHM backend. Requires full redraw before attaching.
+- **[fixed]** Flickers when resizing SHM backend. Requires full redraw before attaching.
 - **[fixed]** [vo/wayland/wayland] logging from wayland_common.h
 
 ### Short Term:
