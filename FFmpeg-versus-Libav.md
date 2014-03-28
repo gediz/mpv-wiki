@@ -129,17 +129,24 @@ FFmpeg functionality. (In some cases, it turned out only later that Libav
 didn't provide the required functionality.)
 
 - external vobsubs (.sub/.idx files) can be read only if built with FFmpeg
+  (http://bugzilla.libav.org/show_bug.cgi?id=419)
 - Libav misses support for a big number of various text subtitle formats
+  (http://bugzilla.libav.org/show_bug.cgi?id=419)
   (mpv still has legacy parsers from mplayer, though)
 - we plan to replace most video/audio filters with FFmpeg's, but Libav lacks
-  some of them
+  some of them: vf_noise, vf_phase, vf_stereo3d, vf_pullup
+  (some more MPlayer filters have been removed from mpv, but are available
+  in ffmpeg's libavfilter)
 - mpv can display ShoutCAST/Icy stream information on FFmpeg only
   (fixed in Libav 10)
 - Libav has problems with badly interleaved AVI files (which means certain old
   AVI files might randomly desync after playing fine for some time)
+  (http://bugzilla.libav.org/show_bug.cgi?id=666)
 - Libav PGS subtitle decoder doesn't handle multiple subtitle rects
+  (http://bugzilla.libav.org/show_bug.cgi?id=418)
 - Libav http implementation doesn't return the content type, which makes opening
   web radio streams slow (plus mp3 streams might fail entirely to open)
+  (fixed in Libav 10?)
 
 This list is not complete. In some cases we might not be aware of differences
 in functionality and performance until we encounter it. Most mpv developers
