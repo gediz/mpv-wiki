@@ -132,10 +132,9 @@ didn't provide the required functionality.)
 - Libav misses support for a big number of various text subtitle formats
   (mpv still has legacy parsers from mplayer, though)
 - we plan to replace most video/audio filters with FFmpeg's, but Libav lacks
-  them
-- Audio filtering with libavfilter is unavailable, because Libav lacks certain APIs,
-  and making the code work on both FFmpeg and Libav is too much of a pain.
+  some of them
 - mpv can display ShoutCAST/Icy stream information on FFmpeg only
+  (fixed in Libav 10)
 - Libav has problems with badly interleaved AVI files (which means certain old
   AVI files might randomly desync after playing fine for some time)
 - Libav PGS subtitle decoder doesn't handle multiple subtitle rects
