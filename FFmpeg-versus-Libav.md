@@ -142,6 +142,7 @@ didn't provide the required functionality.)
 - Libav has problems with badly interleaved AVI files (which means certain old
   AVI files might randomly desync after playing fine for some time)
   (http://bugzilla.libav.org/show_bug.cgi?id=666)
+  (fixed in Libav 10.1 and possibly 9.x)
 - Libav PGS subtitle decoder doesn't handle multiple subtitle rects
   (http://bugzilla.libav.org/show_bug.cgi?id=418)
 - Libav http implementation doesn't return the content type, which makes opening
