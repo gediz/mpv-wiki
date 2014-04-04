@@ -149,6 +149,7 @@ didn't provide the required functionality.)
   web radio streams slow (plus mp3 streams might fail entirely to open)
   (fixed in Libav 10?)
 - Libav doesn't support mid-stream ogg tag updates (popular with web radios)
+  (http://bugzilla.libav.org/show_bug.cgi?id=668)
 
 This list is not complete. In some cases we might not be aware of differences
 in functionality and performance until we encounter it. Most mpv developers
