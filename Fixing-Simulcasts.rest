@@ -3,7 +3,7 @@ How to make Simulcasts (ripped by HorribleSubs) watchable with mpv
 
 Motivation
 ----------
-Due to massive incompetence, time and resource constraints simulcasts often suffer from various quality degrading issues. This documents gives a summary on how to fix some of those as best as possible during playback with mpv's means.
+Due to massive incompetence, time and resource constraints simulcasts often suffer from various quality degrading issues. This document gives a summary on how to fix some of those as best as possible during playback with mpv's means.
 
 Video
 -----
