@@ -74,5 +74,5 @@ When "é" shows up as "Ã©", or similar, the script's character-encoding is mes
 - Open the script as UTF-8
 - Save the script as "Windows 1252" or something like that
 - Open it as UTF-8 again. It should now look correctly.
-- If your movie is named ``file.mkv```, save the fixed script as ``file.ass`` and put it in the same folder as ``file.mkv``, mpv will pick it up and show it automatically.
+- If your movie is named ``file.mkv``, save the fixed script as ``file.ass`` and put it in the same folder as ``file.mkv``, mpv will pick it up and show it automatically.
 - (Optionally: Mux your fixed script back into the mkv file)
