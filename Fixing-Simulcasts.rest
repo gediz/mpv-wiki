@@ -63,7 +63,7 @@ Subtitles
 
 Timing
 ~~~~~~
-The subtitles of most series are timed one frame too late, causing scene bleeds all over the place. Use ``--sub-delay=-0.04`` to fix this or add ``<key> add sub-delay -0.04`` to your input.conf.
+The subtitles of most series are timed one frame too late, causing scene bleeds all over the place. Use ``--sub-delay=-0.04`` to apply the fix at startup or add ``<key> cycle_values sub-delay "-0.04" "0"`` to your input.conf to toggle it during playback.
 
 Messed up Character-encoding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
