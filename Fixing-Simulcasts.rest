@@ -19,7 +19,11 @@ When you need to use multiple fixes that require VS, try to combine the filters 
 
 Banding
 ~~~~~~~
-Since simulcast releases are always tight on bitrate and encoded with "quick" instead of "good" settings they suffer heavily from banding. Use flash3kyuu_db through VapourSynth to deband the video::
+| Since simulcast releases are always tight on bitrate and encoded with "quick" instead of "good" settings they suffer heavily from banding. See:
+| http://screenshotcomparison.com/comparison/70784
+| http://screenshotcomparison.com/comparison/70286
+
+Use flash3kyuu_db through VapourSynth to deband the video::
 
 	import vapoursynth as vs
 	core = vs.get_core()
