@@ -69,7 +69,7 @@ Messed up Character-encoding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 When "é" shows up as "Ã©", or similar, the script's character-encoding is messed up (First spotted in SAO2 Ep 03 by "Daisuki"). This can sadly not be fixed during playback, here's what you need to do:
 
-- Demux the script using: ``mkvextract tracks <file> <sid>:<file.ass>``
+- Demux the script using: ``mkvextract tracks <file.mkv> <sid>:<file.ass>``
 - Get an editor that can convert between character-encodings (Sublime Text)
 - Open the script as UTF-8
 - Save the script as "Windows 1252" or something like that
