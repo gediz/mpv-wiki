@@ -15,6 +15,8 @@ You will need VapourSynth for some of these fixes. On Linux you may find VapourS
 Save the following scripts each to a file and feed it as needed to the VapourSynth video-filter. To load the filter with a script at startup, add ``--vf vapoursynth=path/to/script.vpy``.
 Alternatively, you can add bind a hotkey to load a specific script during playback. Add ``b vf toggle vapoursynth=/path/to/script.vpy`` to your input.conf to toggle the filter using the ``b`` key.
 
+When you need to use multiple fixes that require VS, try to combine the filters into a single VS script.
+
 Banding
 ~~~~~~~
 Since simulcast releases are always tight on bitrate and encoded with "quick" instead of "good" settings they suffer heavily from banding. Use flash3kyuu_db through VapourSynth to deband the video::
@@ -66,6 +68,7 @@ The subtitles of most series are timed one frame too late, causing scene bleeds 
 Messed up Character-encoding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 When "é" shows up as "Ã©", or similar, the script's character-encoding is messed up (First spotted in SAO2 Ep 03 by "Daisuki"). This can sadly not be fixed during playback, here's what you need to do:
+
 - Demux the script using: ``mkvextract tracks <file> <sid>:<file.ass>``
 - Get an editor that can convert between character-encodings (Sublime Text)
 - Open the script as UTF-8
