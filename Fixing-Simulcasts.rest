@@ -1,0 +1,75 @@
+How to make Simulcasts (ripped by HorribleSubs) watchable with mpv
+==================================================================
+
+Motivation
+----------
+Due to massive incompetence, time and resource constraints simulcasts often suffer from various quality degrading issues. This documents gives a summary on how to fix some of those as best as possible during playback with mpv's means.
+
+Video
+-----
+
+VapourSynth
+~~~~~~~~~~~
+You will need VapourSynth for some of these fixes. On Linux you may find VapourSynth packages in your package manager. Archlinux has excellent PKGBUILDs in the AUR. See https://gist.github.com/ChrisK2/10606922 as example on how to set VS and f3k_db up on OS X. Remember to recompile mpv after installing VS and to make sure that configure actually picks up VS' libs.
+
+Save the following scripts each to a file and feed it as needed to the VapourSynth video-filter. To load the filter with a script at startup, add ``--vf vapoursynth=path/to/script.vpy``.
+Alternatively, you can add bind a hotkey to load a specific script during playback. Add ``b vf toggle vapoursynth=/path/to/script.vpy`` to your input.conf to toggle the filter using the ``b`` key.
+
+Banding
+~~~~~~~
+Since simulcast releases are always tight on bitrate and encoded with "quick" instead of "good" settings they suffer heavily from banding. Use flash3kyuu_db through VapourSynth to deband the video::
+
+	import vapoursynth as vs
+	core = vs.get_core()
+	
+	clip = video_in
+	clip = core.std.Trim(clip, first=0, length=500000)
+	clip = core.f3kdb.Deband(clip, grainy=0, grainc=0, output_depth=16)
+	
+	clip.set_output()
+
+Always use this.
+
+Wrong Framerate
+~~~~~~~~~~~~~~~
+Some simulcast encoders are so incompetent that they can't even get the frame-rate right and end up encoding a 24fps video at 30fps which will lead to horrible judder. 
+
+Use this script to handle this::
+
+	import vapoursynth as vs
+	core = vs.get_core()
+
+	clip = video_in
+	clip = core.std.Trim(clip, first=0, length=500000)
+	clip = core.vivtc.VDecimate(clip)
+	clip = core.std.AssumeFPS(clip, fpsnum=24000, fpsden=1001)
+
+	clip.set_output()
+
+Note that this is will desync when trying to play back on a 24 Hz display (due to mpv's framedrop being unable to deal with framerates that were changed by filtering).
+
+
+Wrong Color Range
+~~~~~~~~~~~~~~~~~
+Rips from Funimation are encoded at full-range but are tagged as limited range. As a result the player will "cut off" a lot of important image information (see: http://screenshotcomparison.com/comparison/83071).
+Add the command-line option ``--colormatrix-input-range=full`` to correct this at startup or add ``<key> cycle colormatrix-input-range`` to your input.conf to toggle the setting during playback.
+
+
+
+Subtitles
+---------
+
+Timing
+~~~~~~
+The subtitles of most series are timed one frame too late, causing scene bleeds all over the place. Use ``--sub-delay=-0.04`` to fix this or add ``<key> add sub-delay -0.04`` to your input.conf.
+
+Messed up Character-encoding
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+When "é" shows up as "Ã©", or similar, the script's character-encoding is messed up (First spotted in SAO2 Ep 03 by "Daisuki"). This can sadly not be fixed during playback, here's what you need to do:
+- Demux the script using: ``mkvextract tracks <file> <sid>:<file.ass>``
+- Get an editor that can convert between character-encodings (Sublime Text)
+- Open the script as UTF-8
+- Save the script as "Windows 1252" or something like that
+- Open it as UTF-8 again. It should now look correctly.
+- If your movie is named file.mkv, save the fixed script as file.ass and put it in the same folder as file.mkv, mpv will pick it up and show it automatically.
+- (Optionally: Mux your fixed script back into the mkv file)
