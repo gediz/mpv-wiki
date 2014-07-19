@@ -65,7 +65,7 @@ Timing
 ~~~~~~
 The subtitles of most series are timed one frame too late, causing scene bleeds all over the place. Use ``--sub-delay=-0.04`` to apply the fix at startup or add ``<key> cycle_values sub-delay "-0.04" "0"`` to your input.conf to toggle it during playback.
 
-Messed up Character-encoding
+Messed up Character-Encoding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 When "é" shows up as "Ã©", or similar, the script's character-encoding is messed up (First spotted in SAO2 Ep 03 by "Daisuki"). This can sadly not be fixed during playback, here's what you need to do:
 
