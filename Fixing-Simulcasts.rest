@@ -10,7 +10,7 @@ Video
 
 VapourSynth
 ~~~~~~~~~~~
-You will need VapourSynth for some of these fixes. On Linux you may find VapourSynth packages in your package manager. Archlinux has excellent PKGBUILDs in the AUR. For Mac OS X, see https://gist.github.com/ChrisK2/10606922 as example on how to set VS and f3k_db up there. Remember to recompile mpv after installing VS and to make sure that configure actually picks up VS' libs.
+You will need `VapourSynth <http://www.vapoursynth.com/>`_ for some of these fixes. On Linux you may find VapourSynth and the needed filter-plugins in your package manager. Archlinux has excellent PKGBUILDs in the AUR. For Mac OS X, see https://gist.github.com/ChrisK2/10606922 as example on how to set VS and f3k_db up there. Remember to recompile mpv after installing VS and to make sure that configure actually picks up VS' libs.
 
 Save the following scripts each to a file and feed it as needed to the VapourSynth video-filter. To load the filter with a script at startup, add ``--vf vapoursynth=path/to/script.vpy``.
 Alternatively, you can add bind a hotkey to load a specific script during playback. Add ``b vf toggle vapoursynth=/path/to/script.vpy`` to your input.conf to toggle the filter using the ``b`` key.
