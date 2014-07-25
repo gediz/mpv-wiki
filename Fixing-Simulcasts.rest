@@ -23,7 +23,7 @@ Banding
 | http://screenshotcomparison.com/comparison/70784
 | http://screenshotcomparison.com/comparison/70286
 
-Use flash3kyuu_db through VapourSynth to deband the video::
+Use `flash3kyuu_db </SAPikachu/flash3kyuu_deband>`_ through VapourSynth to deband the video::
 
 	import vapoursynth as vs
 	core = vs.get_core()
@@ -38,7 +38,7 @@ Always use this.
 
 Wrong Framerate
 ~~~~~~~~~~~~~~~
-Some simulcast encoders are so incompetent that they can't even get the frame-rate right and end up encoding a 24fps video at 30fps which will lead to horrible judder. 
+Some simulcast encoders are so incompetent that they can't even get the frame-rate right and end up encoding a 24fps video at 30fps which will lead to horrible judder (Frame pattern: ABCDD).
 
 Use this script to handle this::
 
@@ -54,6 +54,9 @@ Use this script to handle this::
 
 Note that this is will desync when trying to play back on a 24 Hz display (due to mpv's framedrop being unable to deal with framerates that were changed by filtering).
 
+Decimation gone wrong
+~~~~~~~~~~~~~~~~~~~~~
+Sometimes something seems to go wrong with the decimation mid-show and a show that is encoded at 24fps and playing smoothly at first suddenly starts to judder. For whatever reason, a frame that wasn't a duplicate got killed, and the frame that actually is a duplicate remains. This means a whole frame of motion is lost and pans get very jerky (Frame pattern: ABDD). Due to a frame actually getting lost, this is pretty much impossible to fix.
 
 Wrong Color Range
 ~~~~~~~~~~~~~~~~~
