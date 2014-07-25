@@ -56,7 +56,7 @@ Note that this is will desync when trying to play back on a 24 Hz display (due t
 
 Decimation gone wrong
 ~~~~~~~~~~~~~~~~~~~~~
-Sometimes something seems to go wrong with the decimation mid-show and a show that is encoded at 24fps and playing smoothly at first suddenly starts to judder. For whatever reason, a frame that wasn't a duplicate got killed, and the frame that actually is a duplicate remains. This means a whole frame of motion is lost and pans get very jerky (Frame pattern: ABDD). Due to a frame actually getting lost, this is pretty much impossible to fix.
+Sometimes something seems to go wrong with the decimation mid-show and a show that is encoded at 24fps and playing smoothly at first suddenly starts to judder. For whatever reason, a frame that wasn't a dupe got removed, and the frame that actually is a dupe remains. This means a whole frame of motion is lost and pans get very jerky (Frame pattern: ABDD). Due to a frame actually getting lost, this is pretty much impossible to fix.
 
 Wrong Color Range
 ~~~~~~~~~~~~~~~~~
