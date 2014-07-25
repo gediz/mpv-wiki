@@ -38,7 +38,7 @@ Always use this.
 
 Wrong Framerate
 ~~~~~~~~~~~~~~~
-Some simulcast encoders are so incompetent that they can't even get the frame-rate right and end up encoding a 24fps video at 30fps which will lead to horrible judder (Frame pattern: ABCDD).
+Some simulcast encoders are so incompetent that they can't even get the frame-rate right and end up encoding a 24fps video at 30fps which will lead to annoying judder (Frame pattern: ABCDD).
 
 Use this script to handle this::
 
