@@ -1,4 +1,4 @@
-Warning: this is some old brainstorming about how the sub-option handling could be improved. It does not reflect current syntax.
+Warning: this is some old brainstorming about how the sub-option handling could be improved. It does not reflect current syntax. Whether something like this will be implemented or not is up to the stars.
 
 Command line example 1::
 
