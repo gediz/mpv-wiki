@@ -1,3 +1,6 @@
-For now, you can have a look at the manpages, which are accessible from the web via github's rst renderer: https://github.com/mpv-player/mpv/tree/master/DOCS/man
+For now, you can have a look at the manpages:
 
-(Keep in mind the manpage there refers to mpv git master, not the release! Also, unfortunately, the github renderer sucks, and some formatting ends up strange or broken.)
+- PDF rendering of the manpages: http://mpv.srsfckn.biz/manual.pdf
+- via github's rst renderer (doesn't render everything well): https://github.com/mpv-player/mpv/tree/master/DOCS/man
+
+Keep in mind the manpages here refer to mpv git master, not the release!
