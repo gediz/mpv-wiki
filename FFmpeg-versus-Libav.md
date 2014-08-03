@@ -8,7 +8,7 @@ Note that both libraries actually come as a set of libraries, and both projects 
 
 Many things in mpv, including video decoding, are done via FFmpeg or Libav.
 It's a major mpv dependency, and differences between FFmpeg and Libav can have
-a major impact in its behavior: the number of files it can decode, whether it
+a major impact on its behavior: the number of files it can decode, whether it
 decodes correctly, what video and audio filters are provided, network behavior,
 and more.
 
@@ -48,7 +48,10 @@ distributions stick with FFmpeg. Application developers typically have to
 make sure their code works with both libraries. This can be trivial to hard,
 depending on the details. One larger problem is that the difference between
 the libraries makes it hard to keep up a consistent level of the user experience,
-since either library might silently or blatantly be not up to the task.
+since either library might silently or blatantly be not up to the task. It
+also encourages library users to implement some features themselves, rather
+than dealing with the library differences, or the question to which project
+to contribute.
 
 FFmpeg and Libav developers also seem to have the tendency to ignore the
 damage their rivalry is causing. Apparently fighting out these issues on
@@ -63,7 +66,7 @@ Is FFmpeg or Libav preferred for use with mpv?
 
 Although mpv attempts to work well with both FFmpeg and Libav,  FFmpeg is
 preferred in general. This is simply because FFmpeg merges from Libav, and
-seems have more features and fewer bugs than Libav. Although we don't
+seems to have more features and fewer bugs than Libav. Although we don't
 agree with everything FFmpeg does, and we like some of Libav's general
 goals and development directions, FFmpeg is just better from a practical
 point of view.
@@ -71,7 +74,7 @@ point of view.
 It shouldn't be forgotten that Libav is doing significant and important
 development, but since everything they do ends up in FFmpeg anyway, there
 is barely any reason to prefer Libav over FFmpeg from the user point of view.
-It's also possible that FFmpeg agrees faster to gross hacks to paint over
+It's also possible that FFmpeg agrees faster to accept gross hacks to paint over
 bugs and issues than Libav, however, in the user's perception FFmpeg
 will perform better because of that.
 
@@ -91,7 +94,7 @@ FFmpeg advantages / Libav disadvantages
 - FFmpeg definitely has more features and more complete implementations of at
   least some file formats
 - Libav has very long release cycles, which force us to be backwards compatible
-  with very old code. (At least ~500 LOC that could be deleted from mpv.)
+  with very old code. Libav also likes to miss Debian/Ubuntu deadlines.
 - Sometimes FFmpeg adds APIs we want to use, and Libav doesn't have them. This
   causes us pain, and the blame goes to Libav for not providing them.
 - Really messy backporting of major FFmpeg features. (E.g. see VP9
@@ -113,7 +116,7 @@ FFmpeg disadvantages / Libav advantages
 - Libav is going somewhat clean directions in API development (although
   everything from this ends up in FFmpeg anyway)
 - FFmpeg seems to have an "anything goes" attitude, and merges/accepts just
-  about anything, sometimes only for the purpose come before Libav. (E.g. see
+  about anything, sometimes only for the purpose to have it before Libav. (E.g. see
   HEVC decoder: developed mainly on the Libav side, though separate from the
   Libav repository, it was hastily merged by FFmpeg shortly before Libav was
   done with the merge that was prepared for months.)
