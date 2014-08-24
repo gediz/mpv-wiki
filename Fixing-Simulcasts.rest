@@ -52,7 +52,7 @@ Use this script to handle this::
 
 	clip.set_output()
 
-Note that this is will desync when trying to play back on a 24 Hz display (due to mpv's framedrop being unable to deal with framerates that were changed by filtering).
+If you want to watch this on a 24 Hz display, make sure to (only!) enable vo framedropping (``--framedrop=vo``), otherwise you may get heavy desyncing.
 
 Decimation gone wrong
 ~~~~~~~~~~~~~~~~~~~~~
