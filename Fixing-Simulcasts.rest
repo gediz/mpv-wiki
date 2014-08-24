@@ -10,18 +10,16 @@ Video
 
 VapourSynth
 ~~~~~~~~~~~
-You will need `VapourSynth <http://www.vapoursynth.com/>`_ for some of these fixes. On Linux you may find VapourSynth and the needed filter-plugins in your package manager. Archlinux has excellent PKGBUILDs in the AUR. For Mac OS X, see https://gist.github.com/ChrisK2/10606922 as example on how to set VS and f3k_db up there. Remember to recompile mpv after installing VS and to make sure that configure actually picks up VS' libs.
+You will need `VapourSynth <http://www.vapoursynth.com/>`_ for some of these fixes. On Linux you may find VapourSynth and the needed filter-plugins in your package manager. Archlinux has excellent PKGBUILDs in the AUR. For Mac OS X, see `this gist <https://gist.github.com/ChrisK2/10606922>`_ as example on how to set VS and f3k_db up there. Remember to recompile mpv after installing VS and to make sure that configure actually picks up VS' libs.
 
 Save the following scripts each to a file and feed it as needed to the VapourSynth video-filter. To load the filter with a script at startup, add ``--vf vapoursynth=path/to/script.vpy``.
-Alternatively, you can add bind a hotkey to load a specific script during playback. Add ``b vf toggle vapoursynth=/path/to/script.vpy`` to your input.conf to toggle the filter using the ``b`` key.
+Alternatively, you can add a keybinding to load a specific script during playback. Add ``b vf toggle vapoursynth=/path/to/script.vpy`` to your input.conf to toggle the filter using the ``b`` key.
 
 When you need to use multiple fixes that require VS, try to combine the filters into a single VS script.
 
 Banding
 ~~~~~~~
-| Since simulcast releases are always tight on bitrate and encoded with "quick" instead of "good" settings they suffer heavily from banding. See:
-| http://screenshotcomparison.com/comparison/70784
-| http://screenshotcomparison.com/comparison/70286
+Since simulcast releases are always tight on bitrate and encoded with "quick" instead of "good" settings they suffer heavily from banding. See `comparison 1 <http://screenshotcomparison.com/comparison/70784>`_ and `comparison 2 <http://screenshotcomparison.com/comparison/70286>`_.
 
 Use `flash3kyuu_db </SAPikachu/flash3kyuu_deband>`_ through VapourSynth to deband the video::
 
@@ -60,7 +58,7 @@ Sometimes something seems to go wrong with the decimation mid-show and a show th
 
 Wrong Color Range
 ~~~~~~~~~~~~~~~~~
-Rips from Funimation are encoded at full-range but are tagged as limited range. As a result the player will "cut off" a lot of important image information (see: http://screenshotcomparison.com/comparison/83071).
+Rips from Funimation are encoded at full-range but are tagged as limited range. As a result the player will "cut off" a lot of important image information (see `comparison <http://screenshotcomparison.com/comparison/83071>`_).
 Add the command-line option ``--colormatrix-input-range=full`` to correct this at startup or add ``<key> cycle colormatrix-input-range`` to your input.conf to toggle the setting during playback.
 
 
@@ -72,8 +70,10 @@ Timing
 ~~~~~~
 The subtitles of most series are timed one frame too late, causing scene bleeds all over the place. Use ``--sub-delay=-0.04`` to apply the fix at startup or add ``<key> cycle_values sub-delay "-0.04" "0"`` to your input.conf to toggle it during playback.
 
-Messed up Character-Encoding
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Messed up Character-Encoding (obsolete)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(Note: This was apparently a one-time issue only)
+
 When "é" shows up as "Ã©", or similar, the script's character-encoding is messed up (First spotted in SAO2 Ep 03 by "Daisuki"). This can sadly not be fixed during playback, here's what you need to do:
 
 - Demux the script using: ``mkvextract tracks <file.mkv> <sid>:<file.ass>``
