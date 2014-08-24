@@ -21,7 +21,7 @@ Banding
 ~~~~~~~
 Since simulcast releases are always tight on bitrate and encoded with "quick" instead of "good" settings they suffer heavily from banding. See `comparison 1 <http://screenshotcomparison.com/comparison/70784>`_ and `comparison 2 <http://screenshotcomparison.com/comparison/70286>`_.
 
-Use `flash3kyuu_db </SAPikachu/flash3kyuu_deband>`_ through VapourSynth to deband the video::
+Use `flash3kyuu_deband </SAPikachu/flash3kyuu_deband>`_ through VapourSynth to deband the video::
 
 	import vapoursynth as vs
 	core = vs.get_core()
