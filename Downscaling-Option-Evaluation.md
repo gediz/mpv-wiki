@@ -32,13 +32,9 @@ intel_gpu_top reports a percentage value named "render busy", to this value the 
 
 (The CPU consumption while playing was at ~8% and did not change with the scaling options.)
 
-Baseline power consumption while laptop was not playing anything: 6.49 W.
-Power consumption while mpv was playing 4k video file with all of `lscale-down=mitchell:fancy-downscaling:fbo-format=rgba16`: 23.2 W
-Power consumption while mpv was playing 4k video file without these three options: 19.6 W
-
-
-
-
+* 6.49 W baseline power consumption while laptop was not playing anything.
+* 23.2 W power consumption while mpv was playing 4k video file with all of `lscale-down=mitchell:fancy-downscaling:fbo-format=rgba16`
+* 19.6 W power consumption while mpv was playing 4k video file without these three options
 
 
 
