@@ -1,6 +1,6 @@
 ### Does mpv have an official GUI?
 
-No. But there is the OSC (on-screen-controller), which lets you control playback with the mouse.
+No. But there is the OSC (on-screen-controller), which lets you control playback with the mouse. Requires mpv to be compiled with LUA support.
 
 ### I can't see the OSC/OSD/GUI!
 
