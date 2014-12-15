@@ -30,8 +30,10 @@ pcm.!default {
                     # YMMV, remove or adjust values as you see fit
                     period_time 0
                     period_size 1024 # double if you notice increased CPU load or crackling
+                                     # halve if you like lower latency
+                                     # (e.g. when adjusting volume with softvol enabled)
                     buffer_time 0
-                    buffer_size 8192
+                    buffer_size 8192 # some applications do not like smaller buffers
                 }
             }
         }
