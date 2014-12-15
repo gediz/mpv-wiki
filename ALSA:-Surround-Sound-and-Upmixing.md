@@ -25,6 +25,13 @@ pcm.!default {
                 slave {
                     pcm hw
                     channels 6 # adjust as necessary (e.g. 8 for 7.1 audio)
+
+                    # MAY be necessary to avoid buffer underruns/audio skipping
+                    # YMMV, remove or adjust values as you see fit
+                    period_time 0
+                    period_size 1024 # double if you notice increased CPU load or crackling
+                    buffer_time 0
+                    buffer_size 8192
                 }
             }
         }
