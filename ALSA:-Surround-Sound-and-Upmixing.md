@@ -4,7 +4,7 @@ The automatic device selection may have been convenient for some users, but thes
 
 With that removed, mpv is limited to the capabilities of the `default` device unless the user specifies a different one. This is a problem because distributions generally do not ship ALSA with a configuration that allows playing anything with more than two channels on the default device. But of course, manually setting a device every time you want to play something with a channel map that your default device can’t handle is not acceptable.
 
-Hence, the solution is to change your ALSA configuration so that it *does* allow multiple streams of different channel configurations and upmixes on demand, thus fixing both problems. For this to work, you need the `upmix` plugin for ALSA, which distributions typically include in an `alsa-plugins` package (you should have this installed anyway since otherwise the default ALSA resampler will sound terrible).
+Hence, the solution is to change your ALSA configuration so that it *does* allow multiple streams of different channel configurations and upmixes on demand, thus fixing both problems. For this to work, you need the `upmix` plugin for ALSA, which distributions typically include in an `alsa-plugins` package (you should have this installed anyway since otherwise the default ALSA resampler will sound terrible). Remember to install the 32-bit version too if you are running 32-bit applications on a 64-bit system!
 
 You can use this default device in your `~/.asoundrc` or the system-wide `/etc/asound.conf`:
 
