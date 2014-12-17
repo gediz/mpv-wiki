@@ -153,10 +153,6 @@ didn't provide the required functionality.)
   (fixed in Libav 10?)
 - Libav doesn't support mid-stream ogg tag updates (popular with web radios)
   (http://bugzilla.libav.org/show_bug.cgi?id=668)
-- Libav doesn't support libpostproc. Actually it does, via an external libpostproc
-  repository, but that doesn't support runtime CPU detection, which we require now.
-  Also, Libav doesn't export qscale values, which libpostproc needs for some filters
-  to be effective.
 
 This list is not complete. In some cases we might not be aware of differences
 in functionality and performance until we encounter it. Most mpv developers
