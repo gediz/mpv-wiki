@@ -48,3 +48,5 @@ pcm.!default {
 ```
 
 Once you have saved the file, simply restart any applications using ALSA to reload the settings.
+
+Depending on your distro, you may need to install additional packages. For example, on Debian ``libasound2-plugins`` is needed.
