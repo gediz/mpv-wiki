@@ -50,3 +50,9 @@ pcm.!default {
 Once you have saved the file, simply restart any applications using ALSA to reload the settings.
 
 Depending on your distro, you may need to install additional packages. For example, on Debian ``libasound2-plugins`` is needed.
+
+If you get the following error while trying to use it
+```
+ALSA lib pcm_direct.c:955:(snd1_pcm_direct_initialize_slave) unable to set buffer size
+```
+you have to adjust the buffer sizes. Just commenting all buffer options may help too.
