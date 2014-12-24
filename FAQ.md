@@ -14,3 +14,7 @@ Also note that the OSC is invisible by default, but it should appear once you mo
 mpv is a command line program and doesn't provide an actual GUI. You need to start it with a media file. On Windows, you can create a file association with the ``Open with…`` context menu. For Linux, a ``mpv.desktop`` file is provided.
 
 You can also start mpv with ``mpv --force-window --idle``. Then it will show an empty window that does nothing - but it will play files you drop on the window.
+
+### Is FFmpeg or Libav preferred for use with mpv?
+
+Read the comprehensive answer to this question [[here|FFmpeg versus Libav]].
