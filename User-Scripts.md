@@ -6,4 +6,6 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[excerpt](https://github.com/lvml/plugins/tree/master/excerpt)** - Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
 
+* **[streamcache](https://github.com/lvml/mpv-plugin-streamcache)** - Provides for more network-glitch-robust caching of live streams by adjusting replay speed. 
+
 If you want to write your own scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
