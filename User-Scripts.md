@@ -4,7 +4,7 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)** - Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
 
-* **[excerpt](https://github.com/lvml/plugins/tree/master/excerpt)** - Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
+* **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)** - Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
 
 * **[streamcache](https://github.com/lvml/mpv-plugin-streamcache)** - Provides for more network-glitch-robust caching of live streams by adjusting replay speed.
 
