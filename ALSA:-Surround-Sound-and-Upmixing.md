@@ -8,6 +8,8 @@ Hence, the solution is to change your ALSA configuration so that it *does* allow
 
 **For this to work, you need the `upmix` plugin for ALSA, which distributions typically include in an `alsa-plugins` or `libasound2-plugins` package (you should have this installed anyway since otherwise the default ALSA resampler will sound terrible).** Remember to install the 32-bit version too if you are running 32-bit applications on a 64-bit system!
 
+Also, the configuration below will not work with sound cards that the kernel exposes as several stereo subdevices instead of one true multichannel card. This restriction applies e.g. to everything based on the EMU10K1 chip.
+
 You can use this default device in your `~/.asoundrc` or the system-wide `/etc/asound.conf`:
 
 ```
