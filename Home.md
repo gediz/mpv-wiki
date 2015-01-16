@@ -1,6 +1,6 @@
-# mpv-player Wiki
+# mpv Wiki
 
-Welcome to the mpv-player Wiki. Feel invited to contribute your mpv specific knowledge to this service!
+Welcome to the mpv Wiki. Feel invited to contribute your mpv specific knowledge to this service!
 
 ## Manual Pages
 
