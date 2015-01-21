@@ -12,9 +12,9 @@ Here are some results evaluating downscaling options available with the opengl v
 
 Regarding optimal visual quality, best results were achieved with
 
-`-vo opengl:lscale-down=mitchell:lparam1=0.3:lparam2=0.3:cscale-down=mitchell:cparam1=0.3:cparam2=0.3:scaler-resizes-only:fancy-downscaling:dither-depth=auto:fbo-format=rgba16`
+`-vo opengl:lscale-down=mitchell:lparam1=0.3:lparam2=0.3:scaler-resizes-only:fancy-downscaling:dither-depth=auto:fbo-format=rgba16`
 
-The options `lparam1=0.3:lparam2=0.3` and `cparam1=0.3:cparam2=0.3` are default for the Mitchell-Netravali filter method, anyway, `scaler-resizes-only` and `dither-depth=auto` are sane defaults that shall not be further discussed in the scope of this page.
+The options `lparam1=0.3:lparam2=0.3` are default for the Mitchell-Netravali filter method, anyway, `scaler-resizes-only` and `dither-depth=auto` are sane defaults that shall not be further discussed in the scope of this page.
 
 The most determining options for visual quality are `lscale-down=mitchell` to choose the method for downscaling, `fancy-downscaling` to use a larger convolution matrix, and to a lesser degree `fbo-format=rgba16`, which sets a destination pixel format for the scaler that (unlike e.g. YUV 4:2:0 or any 8-bit-per-pixel format) allows to retain as much luminance and chroma information as there is available.
 
