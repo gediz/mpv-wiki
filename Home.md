@@ -13,6 +13,10 @@ You can read the manual pages of mpv...
 
 Any questions left after reading above linked manual pages? Then find or contribute answers to your favorite Frequently Asked Questions in our [[FAQ]].
 
+## Downloads
+
+See [mpv.io](http://mpv.io/installation/).
+
 ## mpv Extensions and Related Software
 
 ### User Scripts
