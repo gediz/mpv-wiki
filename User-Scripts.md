@@ -10,4 +10,6 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[xrandr](https://github.com/lvml/mpv-plugin-xrandr)** - Automatically sets the display refresh rate to the one best suitable for the video played
 
+* **[ontop-playback](https://gist.github.com/Shudouken/5f918ce6ded8b2034806)** - Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled.
+
 If you want to write your own scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
