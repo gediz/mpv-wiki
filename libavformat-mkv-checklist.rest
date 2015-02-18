@@ -1,0 +1,37 @@
+The following things need to be implemented in libavformat's demuxer to get feature-parity with mpv's internal demuxer:
+
+* Exporting ordered chapters info. mpv uses this internally:
+  ```C
+struct matroska_segment_uid {
+    unsigned char segment[16];
+    uint64_t edition;
+};
+
+struct matroska_data {
+    struct matroska_segment_uid uid;
+    // Ordered chapter information if any
+    struct matroska_chapter {
+        uint64_t start;
+        uint64_t end;
+        bool has_segment_uid;
+        struct matroska_segment_uid uid;
+        char *name;
+    } *ordered_chapters;
+    int num_ordered_chapters;
+};
+  ```
+  Actually opening and piecing the segments together is done separately and on a higher level.
+* Fast checking for ordered chapters segment info
+  mpv passes these things to a demuxer when opening:
+  ```C
+char *demuxer_format; // set to "mkv"
+
+int matroska_num_wanted_uids;
+struct matroska_segment_uid *matroska_wanted_uids;
+
+int matroska_wanted_segment;
+  ```
+  The first field tells the demuxer that it should fully open the file only if it's matroska. This can probably be emulated with libavformat (by using the probe API separately). The next 2 fields select the wanted segment/edition. If it's not in the file, opening is skipped. The last field selects the wanted segment. Most mkv files contain only 1 segment, but some contain multiple, _and_ lnik them with ordered chapters. This last case is probably one of the most useless Matroska features ever that actually work in Haali.
+* Subtitle preroll: attempting to grab subtitle packets that start before the seek target, but overlap with the seek target. This is very specific: for example, it is enabled by default when doing absolute hr-seeks in mpv, but needs to be enabled explicitly for normal seeks. This can also make use of the CueDuration element.
+* Export timestamp type. Vfw-muxed mkv files use avi-style timestamps (frame number starting from 0). This is different from PTS and DTS, and the mpv demuxer exports this as a per-stream flag.
+* Exporting picture attachments. This is trivial.
