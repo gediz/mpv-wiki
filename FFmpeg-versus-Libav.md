@@ -121,6 +121,8 @@ FFmpeg disadvantages / Libav advantages
   Libav repository, it was hastily merged by FFmpeg shortly before Libav was
   done with the merge that was prepared for months.)
   (See also VP9 incident.)
+- FFmpeg never cleans up anything. The shit keeps piling up.
+- Libav does major work cleaning up the API and internals.
 
 Disadvantages of using Libav with mpv
 =====================================
