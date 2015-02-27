@@ -37,3 +37,4 @@ int matroska_wanted_segment;
 * lavf is too strict with font attachments (tries to strictly map mimetype to codec ID). This is not only unnecessarily complex, but breaks some files.
 * Exporting picture attachments. This is trivial.
 * Unique packet file positions. Needed for the fast stream switching hack.
+* Opus preroll/padding things. (I think libavformat lacks some of these, at least if the AV_PKT_DATA_SKIP_SAMPLES mechanism is used.)
