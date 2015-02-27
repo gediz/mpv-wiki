@@ -36,3 +36,4 @@ int matroska_wanted_segment;
 * Export timestamp type. Vfw-muxed mkv files use avi-style timestamps (frame number starting from 0). This is different from PTS and DTS, and the mpv demuxer exports this as a per-stream flag.
 * lavf is too strict with font attachments (tries to strictly map mimetype to codec ID). This is not only unnecessarily complex, but breaks some files.
 * Exporting picture attachments. This is trivial.
+* Unique packet file positions. Needed for the fast stream switching hack.
