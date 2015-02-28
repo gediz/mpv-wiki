@@ -5,7 +5,7 @@ Welcome to the mpv Wiki. Feel invited to contribute your mpv specific knowledge 
 ## Manual Pages
 
 You can read the manual pages of mpv...
-* [online for the latest stable realease](http://mpv.io/manual/stable/)
+* [online for the latest stable release](http://mpv.io/manual/stable/)
 * [online for the current git master](http://mpv.io/manual/master/)
 * [rendered as PDF document for the current git master](http://mpv.srsfckn.biz/manual.pdf)
 
