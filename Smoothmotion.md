@@ -77,3 +77,29 @@ has not been affected - the lines are still clearly distinct.
 This is not only easy to calculate (no motion-based prediction whatsoever, just
 a simple blending operation of two frames), but also preserves the perceived
 framerate of the original clip, so there's no soap opera effect or similar.
+
+Essentially, smoothmotion is like using a nearest neighbour resize but
+oversampling the result (similar to how multi-sampling works in video games to
+reduce aliasing).
+
+Sphinx interpolation
+====================
+
+<img align="right" src="smoothmotion-sphinx.png" />
+
+This experimental mode of operation is based on the experimental idea to treat
+the time dimension of a video clip as just another static dimension, the same
+as the resolution - essentially, we are treating the input as a big 3D signal
+of size Width×Height×Duration, reconstructing this filter using a kernel that
+has a perfectly spherical frequency response (which is sinc for 1D, jinc for 2D
+and “sphinx” for 3D, named after “sphere”).
+
+The main difference to smoothmotion is that it essentially low-passes the
+time axis to make sure no high frequency distortions get added (which can look
+like irregularities with the current smoothmotion code), and that it can
+reconstruct some “intermediate” pixel values, which works well for slow motion
+in particular, but can add extra motion blur in some cases.
+
+As you can see, the overall appearance looks similar to smoothmotion, but
+instead of frame transitions alternating between sharp and blended, each frame
+is always blended into the next one.
