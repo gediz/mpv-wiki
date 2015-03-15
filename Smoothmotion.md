@@ -88,7 +88,7 @@ Convolution-based interpolation
 <img align="right" src="smoothmotion-sphinx.png" />
 
 This mode of operation is based on the idea to treat the time dimension of a video clip as just another static dimension, the same as the resolution - essentially, we are treating the input as a big 3D signal
-of size Width×Height×Duration, reconstructing this filter using standard techniques from signal theory.
+of size Width×Height×Duration, reconstructing this input using standard techniques from signal theory. Basically, instead of convolving the kernel with discrete pixels in the source image, we convolve the kernel with the same pixels across discrete frames.
 
 The main difference to smoothmotion is that it essentially low-passes the
 time axis to make sure no high frequency distortions get added (which can look
