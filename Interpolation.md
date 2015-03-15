@@ -1,13 +1,11 @@
-Smoothmotion
-============
+Interpolation techniques
+========================
 
-Many people have come to misunderstand the functionality and purpose of
-smoothmotion, going as far as confusing it with motion interpolation (such as
-found in SVP or MVTools).
+This article will cover a few of the standard techniques for temporal video frame interpolation, outlining in particular the difference between techniques like SVP/MVtools (also known as motion-based interpolation) and algorithms like smoothmotion.
 
 <img align="right" src="smoothmotion-original.png" />
 
-To demonstrate the difference, we will look at what happens when trying to
+To demonstrate the differences, we will look at what happens when trying to
 display a 24 Hz video file on 60 Hz monitor. This is the source file I will be
 using. For illustration, each video frame will appear as one horizontal line of
 the image. (So the vertical axis is the time axis)
@@ -32,14 +30,16 @@ that the first frame will be shown 3 times, the second frame 2 times, the third
 As can be clearly seen, the inconsistent width results in a jagged appearance,
 which is a visualization of the phenomenon known as judder.
 
-Motion interpolation
-====================
+This technique is essentially like nearest neighbour upscaling - each frame simply picks the source frame that's closest to it in the original video source (rounded down).
+
+Motion-based interpolation
+==========================
 
 <img align="right" src="smoothmotion-interpolated.png" />
 
-True motion interpolation algorithms like SVP, MVTools or the chips built into
+Motion-based interpolation algorithms like SVP, MVTools or the chips built into
 various TV devices employ complex algorithms to try and recognize movement in
-the video, and fill in the missing gaps as needed.
+the video (motion vectors), and fill in the missing gaps as needed.
 
 This drastically alters the result - it's now one continuous motion, similar
 to a true 60 Hz clip. However, this comes at a cost - not only are the
@@ -54,6 +54,8 @@ Hz rather than the (more expensive) film format that most cinematic content
 uses, which is usually shot at 24 Hz. Many people therefore subconsciously
 associate the visual appearance of 60 Hz content with soap operas, and thus
 think it looks worse.
+
+This is essentially similar to "smart" upscaling filters, eg. NEDI or NNEDI3 - which are also expensive to compute and produce results that drastically alter the source image.
 
 Smoothmotion
 ============
