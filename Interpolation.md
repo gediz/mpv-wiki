@@ -25,7 +25,7 @@ passed. Due to the particular ratio in this example (24/60 = 0.4), it means
 that the first frame will be shown 3 times, the second frame 2 times, the third
 3 times, the fourth 2 times and so on. The pattern looks like this:
 
-```A A A B B C C C D D E E E F F```
+    A A A B B C C C D D E E E F F
 
 As can be clearly seen, the inconsistent width results in a jagged appearance,
 which is a visualization of the phenomenon known as judder.
@@ -66,7 +66,7 @@ The smoothmotion approach is to display each frame exactly 2.5 times, where we
 display frames for 0.5 times by blending two adjacent frames together. In terms
 of the pattern, it results in something like this:
 
-```A A A+B B B C C C+D D D E E E+F F F```
+    A A A+B B B C C C+D D D E E E+F F F
 
 Here, A+B refers to a frame that is exactly half of A and half of B, blended
 together. The overall result is that each frame is displayed for a consistent
