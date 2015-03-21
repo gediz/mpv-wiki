@@ -1,0 +1,99 @@
+Upscaling
+=========
+
+There are many available upscaling (interpolation) techniques in mpv, of which this article aims to provide some comparison screenshots.
+
+Methodology
+===========
+
+The source image for all of these is imagemagic's built-in “rose” test pattern, which can be obtained like this:
+
+    convert rose: rose.png
+
+Each of the screenshots was obtained like this:
+
+    mpv --no-config --pause rose.png --geometry=560x368 -vo opengl-hq:dither-depth=8:scale=SCALER
+
+The resulting output was captured using imagemagick:
+
+    import -depth 8 SCALER.png
+
+Results
+=======
+
+    scale=bilinear
+![](upscaling/bilinear.png)
+
+    scale=lanczos
+![](upscaling/lanczos.png)
+
+    scale=mitchell
+![](upscaling/mitchell.png)
+
+    scale=spline16
+![](upscaling/spline16.png)
+
+    scale=spline36
+![](upscaling/spline36.png)
+
+    scale=spline64
+![](upscaling/spline64.png)
+
+    scale=ewa_lanczos
+![](upscaling/ewa_lanczos3.png)
+
+    scale=ewa_lanczos:scale-radius=3.2383154841662362
+![](upscaling/ewa_lanczos3.2383.png)
+
+    scale=ewa_lanczossharp
+![](upscaling/ewa_lanczossharp.png)
+
+    scale=robidoux
+![](upscaling/robidoux.png)
+
+    scale=robidouxsharp
+![](upscaling/robidouxsharp.png)
+
+    scale=ewa_ginseng
+![](upscaling/ewa_ginseng.png)
+
+    scale=ewa_hanning
+![](upscaling/ewa_hanning.png)
+
+    scale=bicubic
+![](upscaling/bicubic.png)
+
+    scale=gaussian
+![](upscaling/gaussian.png)
+
+    scale=catmull_rom
+![](upscaling/catmull_rom.png)
+
+    scale=nearest
+![](upscaling/nearest.png)
+
+    scale=oversample
+![](upscaling/oversample.png)
+
+    scale=sharpen3
+![](upscaling/sharpen3.png)
+
+    scale=sharpen5
+![](upscaling/sharpen5.png)
+
+    scale=sinc:scale-radius=16
+![](upscaling/sinc16.png)
+
+Antiringing
+===========
+
+Some of the upscalers support antiringing, which is a naive technique that attempts to reduce ringing in some cases, but can also introduce artifacts. The antiringing algorithm in mpv is not very sophisticated.
+
+    scale=spline36:scale-antiring=1
+![](upscaling/spline36-ar.png)
+
+    scale=lanczos:scale-antiring=1
+![](upscaling/lanczos-ar.png)
+
+    scale=ewa_lanczossharp:scale-antiring=1
+![](upscaling/ewa_lanczossharp-ar.png)
