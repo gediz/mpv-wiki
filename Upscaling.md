@@ -97,3 +97,11 @@ Some of the upscalers support antiringing, which is a naive technique that attem
 
     scale=ewa_lanczossharp:scale-antiring=1
 ![](upscaling/ewa_lanczossharp-ar.png)
+
+Other upscaling methods
+=======================
+
+There are also ways to upscale images other than by using the scale option, such as using a vapoursynth script. (Note that using vapoursynth on still images in mpv is somewhat tricky, and working with RGB colors is also difficult. To produce these images, the source PNG was split into three separate grayscale images (for R, G and B) and merged into a movie clip of length 3. Each frame of the output was captured and converted back to an RGB image)
+
+    core.nnedi3.nnedi3_rpow2(video_in, 8).set_output()
+![](upscaling/nnedi3.png)
