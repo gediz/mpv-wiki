@@ -142,19 +142,11 @@ didn't provide the required functionality.)
   some of them: vf_noise, vf_phase, vf_stereo3d, vf_pullup
   (some more MPlayer filters have been removed from mpv, but are available
   in ffmpeg's libavfilter)
-- mpv can display ShoutCAST/Icy stream information on FFmpeg only
-  (fixed in Libav 10)
-- Libav has problems with badly interleaved AVI files (which means certain old
-  AVI files might randomly desync after playing fine for some time)
-  (http://bugzilla.libav.org/show_bug.cgi?id=666)
-  (fixed in Libav 10.1 and possibly 9.x)
 - Libav PGS subtitle decoder doesn't handle multiple subtitle rects
   (http://bugzilla.libav.org/show_bug.cgi?id=418)
 - Libav http implementation doesn't return the content type, which makes opening
   web radio streams slow (plus mp3 streams might fail entirely to open)
   (fixed in Libav 10?)
-- Libav doesn't support mid-stream ogg tag updates (popular with web radios)
-  (http://bugzilla.libav.org/show_bug.cgi?id=668)
 
 This list is not complete. In some cases we might not be aware of differences
 in functionality and performance until we encounter it. Most mpv developers
