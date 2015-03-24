@@ -26,6 +26,7 @@ See [mpv.io](http://mpv.io/installation/).
 ### Software that makes use of mpv
 
 * [[SpaceTV]] - an mpv-based plugin for the SpaceFM file manager
+* [xt7-player-mpv] (https://github.com/kokoko3k/xt7-player-mpv) is a frontend to mpv with extra features.
 
 ## Miscellaneous Technical Detail Articles
 
