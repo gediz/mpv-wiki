@@ -18,4 +18,6 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[youtube-starttime](https://gist.github.com/Shudouken/0233126a99627be217a4)** - Seek to the given time if the URL contains a timestamp annotation (eg. ```#t=1m20s```).
 
+* **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)** - Script to quickly convert and crop videos from within mpv, with a GUI.
+
 If you want to write your own scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
