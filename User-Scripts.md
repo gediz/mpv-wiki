@@ -16,4 +16,6 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[skipchapters](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/scripts/skipchapters.lua)** - Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
+* **[youtube-starttime](https://gist.github.com/Shudouken/0233126a99627be217a4)** - Seek to the given time if the URL contains a timestamp annotation (eg. ```#t=1m20s```).
+
 If you want to write your own scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
