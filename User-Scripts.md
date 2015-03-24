@@ -12,4 +12,8 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[ontop-playback](https://gist.github.com/Shudouken/5f918ce6ded8b2034806)** - Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled.
 
+* **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/scripts/fpsadjust.lua)** - Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
+
+* **[skipchapters](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/scripts/skipchapters.lua)** - Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
+
 If you want to write your own scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
