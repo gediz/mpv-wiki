@@ -2,6 +2,8 @@
 
 Here is a list of scripts that users of mpv have published, adding functionality that is not part of the core mpv player:
 
+* **[autoload](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)** - Automatically load playlist entries before and after the currently playing file, by scanning the directory.
+
 * **[autosub](https://gist.github.com/selsta/ce3fb37e775dbd15c698)** - Automatically download subtitles using **subliminal**.
 
 * **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)** - Script to quickly convert and crop videos from within mpv, with a GUI.
