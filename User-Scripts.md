@@ -2,9 +2,11 @@
 
 Here is a list of scripts that users of mpv have published, adding functionality that is not part of the core mpv player:
 
-* **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)** - Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
+* **[autosub](https://gist.github.com/selsta/ce3fb37e775dbd15c698)** - Automatically download subtitles using **subliminal**.
 
 * **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)** - Script to quickly convert and crop videos from within mpv, with a GUI.
+
+* **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)** - Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
 
 * **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/scripts/fpsadjust.lua)** - Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
 
