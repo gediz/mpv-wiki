@@ -43,3 +43,5 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[mvtools](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/filters/mvtools.vpy)** - Use [MVTools](https://github.com/dubhater/vapoursynth-mvtools)'s BlockFPS function to perform motion interpolation on the video in realtime.
 
 * **[nnedi3](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/filters/nnedi3.vpy)** - Use [NNEDI3](https://github.com/dubhater/vapoursynth-nnedi3) to double the resolution of the video. This always performs a single doubling. Note that the vapoursynth-nnedi3 filter is so slow that this practically can't be used in realtime, so it's not much use in practice.
+
+* **[flash3kyuu](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/filters/flash3kyuu.vpy)** - Use [flash3kyuu](https://github.com/SAPikachu/flash3kyuu_deband) to deband the video, with reasonable (mildly grainy) default settings.
