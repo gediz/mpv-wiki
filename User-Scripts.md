@@ -2,6 +2,8 @@
 
 Here is a list of scripts that users of mpv have published, adding functionality that is not part of the core mpv player:
 
+## Lua
+
 * **[autocrop](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autocrop.lua)** - Automatically crop the video by using lavfi's cropdetect filter to detect black bars.
 
 * **[autodeint](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)**- Automatically deinterlace the video by using lavfi's idet filter to detect interlaced content.
@@ -34,4 +36,10 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[youtube-starttime](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/youtube-starttime.lua)** - Seek to the given time if the URL contains a timestamp annotation (eg. ```#t=1m20s```).
 
-If you want to write your own scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
+If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
+
+## VapourSynth scripts
+
+* **[mvtools](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/filters/mvtools.vpy)** - Use [MVTools](https://github.com/dubhater/vapoursynth-mvtools)'s BlockFPS function to perform motion interpolation on the video in realtime.
+
+* **[nnedi3](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/filters/nnedi3.vpy)** - Use [NNEDI3](https://github.com/dubhater/vapoursynth-nnedi3) to double the resolution of the video. This always performs a single doubling. Note that the vapoursynth-nnedi3 filter is so slow that this practically can't be used in realtime, so it's not much use in practice.
