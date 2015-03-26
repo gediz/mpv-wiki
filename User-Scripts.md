@@ -2,11 +2,19 @@
 
 Here is a list of scripts that users of mpv have published, adding functionality that is not part of the core mpv player:
 
+* **[autocrop](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autocrop.lua)** - Automatically crop the video by using lavfi's cropdetect filter to detect black bars.
+
+* **[autodeint](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)**- Automatically deinterlace the video by using lavfi's idet filter to detect interlaced content.
+
 * **[autoload](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)** - Automatically load playlist entries before and after the currently playing file, by scanning the directory.
 
 * **[autosub](https://gist.github.com/selsta/ce3fb37e775dbd15c698)** - Automatically download subtitles using **subliminal**.
 
 * **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)** - Script to quickly convert and crop videos from within mpv, with a GUI.
+
+* **[cycle-deinterlace-pullup](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/cycle-deinterlace-pullup.lua)** - Cycle between deinterlacing, pullup (IVTC), and both filters off.
+
+* **[drc-control](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/drc-control.lua)**- Cycle through DRC (dynamic range compression) modes during runtime.
 
 * **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)** - Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
 
@@ -14,7 +22,9 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)** - Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
 
-* **[ontop-playback](https://gist.github.com/Shudouken/5f918ce6ded8b2034806)** - Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled.
+* **[ontop-playback](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/ontop-playback.lua)** - Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled.
+
+* **[pause-when-minimize](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/pause-when-minimize.lua)** - Pauses the player video when minimizing, and unpauses it when brought up again.
 
 * **[skipchapters](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/scripts/skipchapters.lua)** - Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
@@ -22,6 +32,6 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[xrandr](https://github.com/lvml/mpv-plugin-xrandr)** - Automatically sets the display refresh rate to the one best suitable for the video played
 
-* **[youtube-starttime](https://gist.github.com/Shudouken/0233126a99627be217a4)** - Seek to the given time if the URL contains a timestamp annotation (eg. ```#t=1m20s```).
+* **[youtube-starttime](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/youtube-starttime.lua)** - Seek to the given time if the URL contains a timestamp annotation (eg. ```#t=1m20s```).
 
 If you want to write your own scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
