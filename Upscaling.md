@@ -48,6 +48,9 @@ Results
     scale=ewa_lanczossharp
 ![](upscaling/ewa_lanczossharp.png)
 
+    scale=ewa_lanczossoft
+![](upscaling/ewa_lanczossoft.png)
+
     scale=robidoux
 ![](upscaling/robidoux.png)
 
