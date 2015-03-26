@@ -3,7 +3,7 @@ Interpolation techniques
 
 This article will cover a few of the standard techniques for temporal video frame interpolation, outlining in particular the difference between techniques like SVP/MVtools (also known as motion-based interpolation) and algorithms like smoothmotion.
 
-<img align="right" src="smoothmotion-original.png" />
+<img align="right" src="interpolation/original.png" />
 
 To demonstrate the differences, we will look at what happens when trying to
 display a 24 Hz video file on 60 Hz monitor. This is the source file I will be
@@ -17,7 +17,7 @@ vertical axis will be rescaled from 100 pixels to 250 pixels. (60/24 = 2.5)
 3:2 pulldown
 ============
 
-<img align="right" src="smoothmotion-pulldown.png" />
+<img align="right" src="interpolation/pulldown.png" />
 
 The traditional technique, including the default mpv behavior, is to simply
 hold each source frame until the corresponding timestamp of the next frame has
@@ -35,7 +35,7 @@ This technique is essentially like nearest neighbour upscaling - each frame simp
 Motion-based interpolation
 ==========================
 
-<img align="right" src="smoothmotion-interpolated.png" />
+<img align="right" src="interpolation/interpolated.png" />
 
 Motion-based interpolation algorithms like SVP, MVTools or the chips built into
 various TV devices employ complex algorithms to try and recognize movement in
@@ -60,7 +60,7 @@ This is essentially similar to "smart" upscaling filters, eg. NEDI or NNEDI3 - w
 Smoothmotion
 ============
 
-<img align="right" src="smoothmotion-smoothmotion.png" />
+<img align="right" src="interpolation/smoothmotion.png" />
 
 The smoothmotion approach is to display each frame exactly 2.5 times, where we
 display frames for 0.5 times by blending two adjacent frames together. In terms
@@ -87,7 +87,7 @@ reduce aliasing). Due to this, it's called "oversample" in the mpv implementatio
 Convolution-based interpolation
 ===============================
 
-<img align="right" src="smoothmotion-sphinx.png" />
+<img align="right" src="interpolation/tscale.png" />
 
 This mode of operation is based on the idea to treat the time dimension of a video clip as just another static dimension, the same as the resolution - essentially, we are treating the input as a big 3D signal
 of size Width×Height×Duration, reconstructing this input using standard techniques from signal theory. Basically, instead of convolving the kernel with discrete pixels in the source image, we convolve the kernel with the same pixels across discrete frames.
