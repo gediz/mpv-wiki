@@ -35,7 +35,6 @@ int matroska_wanted_segment;
 * Subtitle preroll: attempting to grab subtitle packets that start before the seek target, but overlap with the seek target. This is very specific: for example, it is enabled by default when doing absolute hr-seeks in mpv, but needs to be enabled explicitly for normal seeks. This can also make use of the CueDuration element.
 * Export timestamp type. Vfw-muxed mkv files use avi-style timestamps (frame number starting from 0). This is different from PTS and DTS, and the mpv demuxer exports this as a per-stream flag.
 * lavf is too strict with font attachments (tries to strictly map mimetype to codec ID). This is not only unnecessarily complex, but breaks some files.
-* Exporting picture attachments. This is trivial.
 * Unique packet file positions. Needed for the fast stream switching hack.
 * Opus preroll/padding things. (I think libavformat lacks some of these, at least if the AV_PKT_DATA_SKIP_SAMPLES mechanism is used.)
 * Distinguishing metadata and file tags: libavformat has, in its utterly misled way of making everything "generic", no separation between metadata (like extra information not expressible with lavf API), and file tags (like "artist", and other fields which could be stored as key/value lists in the file and are editable by the user). They're both stored in "metadata" fields.
