@@ -12,6 +12,8 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[autosub](https://gist.github.com/selsta/ce3fb37e775dbd15c698)** - Automatically download subtitles using **subliminal**.
 
+* **[betterchapters](https://gist.github.com/Hakkin/4f978a5c87c31f7fe3ae)** - Loads the next or previous playlist entry if there are no more chapters in the seek direction.
+
 * **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)** - Script to quickly convert and crop videos from within mpv, with a GUI.
 
 * **[cycle-deinterlace-pullup](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/cycle-deinterlace-pullup.lua)** - Cycle between deinterlacing, pullup (IVTC), and both filters off.
