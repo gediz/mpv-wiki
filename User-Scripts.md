@@ -32,7 +32,7 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[skipchapters](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/scripts/skipchapters.lua)** - Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
-* **[stats](https://gist.github.com/Argon-/1c8a33be280e65db1eb3)** - Display some statistics about the currently played file on-screen.
+* **[stats](https://github.com/Argon-/mpv-stats/)** - Display some statistics about the currently played file on-screen.
 
 * **[streamcache](https://github.com/lvml/mpv-plugin-streamcache)** - Provides for more network-glitch-robust caching of live streams by adjusting replay speed.
 
