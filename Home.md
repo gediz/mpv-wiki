@@ -35,8 +35,3 @@ See [mpv.io](http://mpv.io/installation/).
 * [[Downscaling Option Evaluation]]
 * [[Fixing Simulcasts]]
 * [[Scripting language bindings]]
-
-## Background
-
-* [[FFmpeg versus Libav]]
-
