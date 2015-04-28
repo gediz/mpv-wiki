@@ -1,6 +1,8 @@
 # User Scripts
 
-Here is a list of scripts that users of mpv have published, adding functionality that is not part of the core mpv player:
+Here is a list of scripts that users of mpv have published, adding functionality that is not part of the core mpv player.
+
+**Warning:** all of these scripts are unofficial 3rd party scripts. Anyone can add their own script by editing this wiki.
 
 ## Lua
 
