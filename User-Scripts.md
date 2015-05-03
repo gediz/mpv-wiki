@@ -20,7 +20,7 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[cycle-deinterlace-pullup](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/cycle-deinterlace-pullup.lua)** - Cycle between deinterlacing, pullup (IVTC), and both filters off.
 
-* **[cycle_messages](https://gist.github.com/robin007bond/59f57ff5f5a952e56bbb)** - Cycle between custom OSD messages.
+* **[cycle_messages](https://gist.github.com/rrooij/59f57ff5f5a952e56bbb)** - Cycle between custom OSD messages.
 
 * **[drc-control](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/drc-control.lua)**- Cycle through DRC (dynamic range compression) modes during runtime.
 
