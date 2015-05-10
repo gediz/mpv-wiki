@@ -24,7 +24,7 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[drc-control](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/drc-control.lua)**- Cycle through DRC (dynamic range compression) modes during runtime.
 
-* **[dessubdb](https://github.com/demanuel/dessubdb/blob/master/mpv.lua)** - Download automatically subtitles from the thesubdb.com using [DESSubdb](https://github.com/demanuel/dessubdb) .
+* **[dessubdb](https://github.com/demanuel/dessubdb/blob/master/mpv.lua)** - Download automatically subtitles from the thesubdb.com using [DESSubdb](https://github.com/demanuel/dessubdb)
 
 * **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)** - Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
 
