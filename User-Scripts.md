@@ -32,6 +32,8 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)** - Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
 
+* **[lua-mpris](https://github.com/dodo/lua-mpris)** - Adds mpris support to mpv.
+
 * **[notify](https://github.com/rohieb/mpv-notify)** - Adds desktop notifications to the mpv media player, which show metadata like artist, album name and track name when the track changes.
 
 * **[ontop-playback](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/ontop-playback.lua)** - Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled.
