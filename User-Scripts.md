@@ -34,6 +34,8 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[lua-mpris](https://github.com/dodo/lua-mpris)** - Adds mpris support to mpv.
 
+* **[mpvmenu](https://github.com/nezumisama/mpvmenu)** - Adds a pop-up menu to mpv, which can be bound to a key or button
+
 * **[notify](https://github.com/rohieb/mpv-notify)** - Adds desktop notifications to the mpv media player, which show metadata like artist, album name and track name when the track changes.
 
 * **[ontop-playback](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/ontop-playback.lua)** - Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled.
