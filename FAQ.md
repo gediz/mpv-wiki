@@ -15,6 +15,14 @@ mpv is a command line program and doesn't provide an actual GUI. You need to sta
 
 You can also start mpv with ``mpv --profile=pseudo-gui``. You play files by dropping them on the window.
 
+### Can I set volume over 100%?
+
+On some systems, 100% is the maximum. You can put ``softvol=yes`` to force mpv's own volume filter. Then the ``softvol-max`` option controls the maximum. It's 130 by default.
+
+Also consider using ``af=drc``, which helps especially with crappy speakers.
+
+Note that in older versions of mpv, a volume of ``100`` always meant maximum, even if the maximum mapped to a linear gain factor over ``1.0``.
+
 ### Is FFmpeg or Libav preferred for use with mpv?
 
 Generally FFmpeg, simply because it has more features.
