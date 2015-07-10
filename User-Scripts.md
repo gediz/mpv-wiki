@@ -58,6 +58,10 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
 
+## Shaders
+
+* **[deband.glsl](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/shaders/deband.glsl)** - f3kdb-like deband shader.
+
 ## VapourSynth scripts
 
 * **[mvtools](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/filters/mvtools.vpy)** - Use [MVTools](https://github.com/dubhater/vapoursynth-mvtools)'s BlockFPS function to perform motion interpolation on the video in realtime.
