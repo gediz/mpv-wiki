@@ -17,3 +17,5 @@ FFmpeg:
 - Piles hacks upon hacks. A patch is questionable both in implementation and the improvement it adds? Doesn't matter, merge anyway. Someone wants to add a half-baken API half of the developers are against? It gets merged. Completely useless filters easily get in as well; apparently, as long as "it does what the documentation says", it can get in (even if it's useless). More features = better, fuck code quality.
 - Weak code reviews. Reviewer's concerns are ignored, and often stuff is pushed without review or without even showing up on the mailing list.
 - Pretends Libav doesn't exist, but merges absolutely everything it does. Sometimes with consequences; for example there are now 2 prores decoders, and 3 prores encoders.
+
+Note: this is my personal opinion, and mostly an expression about my frustration with the FFmpeg development process. It isn't necessarily neutral or free of my own personal faults and misconceptions.
