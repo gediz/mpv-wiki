@@ -42,7 +42,7 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[pause-when-minimize](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/pause-when-minimize.lua)** - Pauses the player video when minimizing, and unpauses it when brought up again.
 
-* **[skipchapters](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/scripts/skipchapters.lua)** - Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
+* **[skipchapters](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/skipchapters.lua)** - Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
 * **[stats](https://github.com/Argon-/mpv-stats/)** - Display some statistics about the currently played file on-screen.
 
