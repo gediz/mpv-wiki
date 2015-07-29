@@ -60,7 +60,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 
 ## Shaders
 
-* **[deband.glsl](https://github.com/haasn/gentoo-conf/blob/master/home/nand/.mpv/shaders/deband.glsl)** - f3kdb-like deband shader.
+* **[deband.glsl](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/deband.glsl)** - f3kdb-like deband shader.
 
 ## VapourSynth scripts
 
