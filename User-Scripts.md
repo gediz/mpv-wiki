@@ -54,8 +54,6 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[xrandr](https://github.com/lvml/mpv-plugin-xrandr)** - Automatically sets the display refresh rate to the one best suitable for the video played
 
-* **[youtube-starttime](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/youtube-starttime.lua)** - Seek to the given time if the URL contains a timestamp annotation (eg. ```#t=1m20s```).
-
 If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
 
 ## Shaders
