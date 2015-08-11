@@ -3,6 +3,8 @@ Upscaling
 
 There are many available upscaling (interpolation) techniques in mpv, of which this article aims to provide some comparison screenshots.
 
+**Note:** This article has mostly been superseded by [this repository](https://github.com/haasn/mpvhq-upscalers), which catalogs and compares more upscalers and test files than this page, and will also be kept more up-to-date.
+
 Methodology
 ===========
 
