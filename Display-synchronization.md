@@ -14,7 +14,7 @@ For example, suppose (for simplicity) that you're watching a video with 60 Hz vi
 
 Except in practice, clocks start drifting - so you'd end up with audio/video desynchronization over time if you did that.
 
-Apart from that, there is also the (somewhat separate) issue of clock *mismatch*. For example, suppose your audio hardware can only do 44.1 kHz, but your audio is still 48 kHz - or suppose your video is 24 Hz, but your display only runs at 60 Hz. For audio, the solution (resampling) is uncontroversial and well-known, but for video the situation is more complicated. For that, we have [an entirely separate article](Interpolation.md).
+Apart from that, there is also the (somewhat separate) issue of clock *mismatch*. For example, suppose your audio hardware can only do 44.1 kHz, but your audio is still 48 kHz - or suppose your video is 24 Hz, but your display only runs at 60 Hz. For audio, the solution (resampling) is uncontroversial and well-known, but for video the situation is more complicated. For that, we have [[an entirely separate article|Interpolation]].
 
 The classic approach
 --------------------
