@@ -40,7 +40,7 @@ The solution that fpsadjust.lua uses is to make the video file play slightly fas
 
 (This has the side-effect of making the audio play slightly faster, which requires additional resampling - and may also result in artifacts if using an option like ``--audio-pitch-correction``, which is unfortunately on by default)
 
-Note: Conversely, if you had a 59.95 Hz display and, say, a 30.00 Hz or 60.00 Hz clip (which are relatively common), then this script would set ``--speed=0.999``, thus preventing preventing dropped frames (again every ≈16s).
+Note: Conversely, if you had a 59.95 Hz display and, say, a 30.00 Hz or 60.00 Hz clip (which are relatively common), then this script would set ``--speed=0.999``, thus preventing dropped frames (again every ≈16s).
 
 It's important to note that this is a *static* change only, meaning that it only sets the speed once, at the beginning of playback. This means it's potentially useless for VFR content, or if your video header/container has incorrect or missing FPS tags. (And, in such cases, it might actually make the problem worse.)
 
