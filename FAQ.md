@@ -2,6 +2,34 @@
 
 No. But there is the OSC (on-screen-controller), which lets you control playback with the mouse. Requires mpv to be compiled with Lua support.
 
+### Tearing
+
+[Tearing](https://en.wikipedia.org/wiki/Screen_tearing) is a very annoying artifact that makes it look like the video has a horizontal line across the video. The video isn't properly joining on that line. The line can be fixed or moving. Sometimes it's not a line, but a bunch of blocks. It can be unnoticeable if there is no movement, but very apparent if the camera moves e.g. at low speed.
+
+Tearing is generally not something a video player can do anything about. It depends on the hardware, drivers, the video output selected in mpv (VO), and possibly the desktop environment / compositor.
+
+Changing the compositor settings can sometimes help with tearing.
+
+* Windows/OSX
+
+  Tearing should never happen.
+* Nvidia
+
+ Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not in fullscreen (solution unknown). There are additional problems on multimonitor systems. 
+    * Try enabling ``ForceFullCompositionPipeline``.
+    * Try with and without a compositor.
+    * Try ``--vo=vdpau``.
+
+* Intel
+
+  Intel tears out of the box.
+    * Try enabling SNA and the ``TearFree`` option.
+
+      Unfortunately, this can cause stability issues - GL applications sometimes randomly crash. Somewhere, there's a claim that adding ``i915.semaphores=1`` to your kernel parameters fixes the crashes.
+    * Try disabling SNA by using UXA (on older hardware).
+    * Try ``--vo=xv:adaptor=N``, and try 0 or 1 for ``N``. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly recommended.
+    * Try ``--vo=vaapi``. Although this is Intel's native video output method, it seems to fix tearing only very rarely.
+
 ### I can't see the OSC/OSD/GUI!
 
 The OSC requires Lua support. Install Lua (including development headers) and rebuild mpv.
