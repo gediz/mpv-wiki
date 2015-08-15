@@ -13,7 +13,7 @@ Banding (Shader Fix)
 The only consistently occurring problem these days is banding, which can now be fixed using a simple shader, without the hassle and performance-hit of VapourSynth.
 
 - download `deband.glsl <https://raw.githubusercontent.com/haasn/gentoo-conf/nanodesu/home/nand/.mpv/shaders/deband.glsl>`_ and put it in your mpv folder (e.g. ``~/.config/mpv/shaders/deband.glsl``)
-- If you always want to use the shader, simply add the ``source-shader`` parameter with the path to the shader to your vo config line::
+- If you always want to use the shader, simply add the ``source-shader`` parameter with the path to the shader to your vo config line in your ``mpv.conf``::
 
 	vo=opengl-hq:source-shader=~~/shaders/deband.glsl
 
