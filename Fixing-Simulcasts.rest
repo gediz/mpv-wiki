@@ -8,6 +8,29 @@ Due to massive incompetence, time and resource constraints simulcasts often suff
 Video
 -----
 
+Banding (Shader Fix)
+~~~~~~~~~~~~~~~~~~~~
+The only consistently occurring problem these days is banding, which can now be fixed using a simple shader, without the hassle and performance-hit of VapourSynth.
+
+- download `deband.glsl <https://raw.githubusercontent.com/haasn/gentoo-conf/nanodesu/home/nand/.mpv/shaders/deband.glsl>`_ and put it in your mpv folder (e.g. ``~/.config/mpv/shaders/deband.glsl``)
+- If you always want to use the shader, simply add the ``source-shader`` parameter with the path to the shader to your vo config line::
+
+	vo=opengl-hq:source-shader=~~/shaders/deband.glsl
+
+- If you want to enable the shader optionally using a profile, add your regular options to the ``vo-defaults`` option instead and use a profile to override the vo option::
+
+	vo-defaults=opengl-hq:cscale=ewa_lanczos:scale=ewa_lanczos:scaler-resizes-only:icc-profile-auto:3dlut-size=128x256x128
+	vo=opengl-hq
+	
+	[db]
+	vo=opengl-hq:source-shader=~~/shaders/deband.glsl
+
+Now you can enable the shader by activating the db profile on the command line: `` mpv --profile=db file.mkv``
+
+
+That's pretty much all you need to do, consider everything below deprecated.
+
+
 VapourSynth
 ~~~~~~~~~~~
 You will need `VapourSynth <http://www.vapoursynth.com/>`_ for some of these fixes. On Linux you may or may not find VapourSynth and the needed filter-plugin, namely flash3kyuu_deband, in your package manager. For Mac OS X, see `this gist <https://gist.github.com/ChrisK2/10606922>`_ as example on how to set VS and f3k_db up there. Remember to recompile mpv after installing VS and to make sure that configure actually picks up VS' libs. (This is also necessary on Archlinux as the package is built to be small, without dependency on vapoursynth)
@@ -17,8 +40,8 @@ Alternatively, you can add a keybinding to load a specific script during playbac
 
 When you need to use multiple fixes that require VS, try to combine the filters into a single VS script.
 
-Banding
-~~~~~~~
+Banding (VS fix)
+~~~~~~~~~~~~~~~~
 Since simulcast releases are always tight on bitrate and encoded with "quick" instead of "good" settings they suffer heavily from banding. See `comparison 1 <http://screenshotcomparison.com/comparison/70784>`_ and `comparison 2 <http://screenshotcomparison.com/comparison/70286>`_.
 
 Use `flash3kyuu_deband </SAPikachu/flash3kyuu_deband>`_ through VapourSynth to deband the video::
