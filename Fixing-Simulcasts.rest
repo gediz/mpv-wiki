@@ -19,7 +19,7 @@ The only consistently occurring problem these days is banding, which can now be 
 
 - If you want to enable the shader optionally using a profile, add your regular options to the ``vo-defaults`` option instead and use a profile to override the vo option::
 
-	vo-defaults=opengl-hq:cscale=ewa_lanczos:scale=ewa_lanczos:scaler-resizes-only:icc-profile-auto:3dlut-size=128x256x128
+	vo-defaults=opengl-hq:scale=[...]
 	vo=opengl-hq
 	
 	[db]
