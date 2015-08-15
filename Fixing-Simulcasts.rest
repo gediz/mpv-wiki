@@ -24,8 +24,7 @@ The only consistently occurring problem these days is banding, which can now be 
 	
 	[db]
 	vo=opengl-hq:source-shader=~~/shaders/deband.glsl
-
-Now you can enable the shader by activating the db profile on the command line: `` mpv --profile=db file.mkv``
+Now you can enable the shader by activating the db profile on the command line: ``mpv --profile=db file.mkv``
 
 
 That's pretty much all you need to do, consider everything below deprecated.
