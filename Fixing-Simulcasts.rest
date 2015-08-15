@@ -28,7 +28,7 @@ The only consistently occurring problem these days is banding, which can now be 
 
 	mpv --profile=db file.mkv
 
-That's pretty much all you need to do, consider everything below deprecated.
+That's pretty much all you need to do these days, consider everything below *deprecated*.
 
 
 VapourSynth
