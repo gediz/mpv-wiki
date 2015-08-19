@@ -17,14 +17,14 @@ The only consistently occurring problem these days is banding, which can now be 
 
 	vo=opengl-hq:source-shader=~~/shaders/deband.glsl
 
-- If you want to enable the shader optionally using a profile, add your regular options to the ``vo-defaults`` option instead and use a profile to override the vo option::
+- If you want to enable the shader optionally using a profile, add your regular options to the ``vo-defaults`` option instead and use a profile to override the ``vo`` option::
 
 	vo-defaults=opengl-hq:scale=[...]
 	vo=opengl-hq
 	
 	[db]
 	vo=opengl-hq:source-shader=~~/shaders/deband.glsl
-  Now you can enable the shader by activating the db profile on the command line::
+  Now you can enable the shader by activating the ``db`` profile on the command line::
 
 	mpv --profile=db file.mkv
 
