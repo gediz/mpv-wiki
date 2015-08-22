@@ -22,6 +22,8 @@ pcm.!default {
         slave.pcm {
             type upmix # on-demand upmixing
 
+            slave.channels 6 # number of channels to upmix to
+                             # should be equal to the number set below
             slave.pcm {
                 type dmix # multi-stream mixing
                 ipc_key 4897
