@@ -18,6 +18,15 @@ Changing the compositor settings can sometimes help with tearing.
  Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not in fullscreen (solution unknown). There are additional problems on multimonitor systems. 
     * Try enabling ``ForceFullCompositionPipeline``.
     * Try with and without a compositor.
+    * Try disabling the composite extension in xorg.conf:
+
+      ```
+      Section "Extensions"
+          Option "Composite" "Disable"
+      EndSection
+      ```
+
+
     * Try ``--vo=vdpau``.
 
 * Intel
