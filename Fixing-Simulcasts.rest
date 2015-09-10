@@ -10,12 +10,11 @@ Video
 
 Banding (Shader Fix)
 ~~~~~~~~~~~~~~~~~~~~
-The only consistently occurring problem these days is banding, which can now be fixed using a simple shader, without the hassle and performance-hit of VapourSynth.
+The only consistently occurring problem these days is banding, which can now be fixed using a simple integrated shader, without the hassle and performance-hit of VapourSynth.
 
-- download `deband.glsl <https://raw.githubusercontent.com/haasn/gentoo-conf/nanodesu/home/nand/.mpv/shaders/deband.glsl>`_ and put it in your mpv folder (e.g. ``~/.config/mpv/shaders/deband.glsl``)
-- If you always want to use the shader, simply add the ``source-shader`` parameter with the path to the shader to your vo config line in your ``mpv.conf``::
+- If you always want to use the shader, simply add the ``:deband`` option to your vo config line in your ``mpv.conf``::
 
-	vo=opengl-hq:source-shader=~~/shaders/deband.glsl
+	vo=opengl-hq:deband
 
 - If you want to enable the shader optionally using a profile, add your regular options to the ``vo-defaults`` option instead and use a profile to override the ``vo`` option::
 
@@ -23,7 +22,7 @@ The only consistently occurring problem these days is banding, which can now be 
 	vo=opengl-hq
 	
 	[db]
-	vo=opengl-hq:source-shader=~~/shaders/deband.glsl
+	vo=opengl-hq:deband
   Now you can enable the shader by activating the ``db`` profile on the command line::
 
 	mpv --profile=db file.mkv
