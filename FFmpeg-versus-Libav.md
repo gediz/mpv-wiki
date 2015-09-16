@@ -9,7 +9,7 @@ Libav:
 - Strict code reviews. Libav prides itself on this, but it's a mixed bag. Some of it might contribute to development stagnation.
 - Suffers from a lack of manpower, drive-by contributions, and 3rd party testing. FFmpeg is winning. Most of these points are due to lack of exposure; if more people use FFmpeg, more people will report bugs. _(All the users from having Libav be shipped instead of FFmpeg on both Ubuntu and Debian don't count for the sake of this poor attempt at self-victimisation.)_
 - Pretends FFmpeg doesn't exist, though sometimes merges individual patches.
-- Developers spend time making derogatory statements about FFmpeg on various websites and GitHub wikis as well as sending [legal threats devoid of substance](https://ffmpeg.org/threat1.png) and instead of developing software.
+- Developers spend time making derogatory statements about FFmpeg on various websites and GitHub wikis as well as sending [legal threats devoid of substance](https://ffmpeg.org/threat1.png) instead of developing software.
 - Makes changes to the command line interface just to make scripts written for Libav incompatible with FFmpeg.
 - Home to the same people who forced the mplayer/mplayer2 split, only this time their attempt at hijacking a project failed as Bellard stepped out from the shadows and let them know that claiming ownership of trademarks, infrastructure and maintainership over FFmpeg is not something that can be done with a mailing list posting.
 
