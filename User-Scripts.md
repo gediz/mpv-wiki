@@ -32,11 +32,11 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/fpsadjust.lua)** - Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
 
-* **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)** - show frame info, similar to ffdshow's OSD.
-
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)** - Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
 
 * **[lua-mpris](https://github.com/dodo/lua-mpris)** - Adds mpris support to mpv.
+
+* **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)** - show frame info, similar to ffdshow's OSD.
 
 * **[mpvmenu](https://github.com/nezumisama/mpvmenu)** - Adds a pop-up menu to mpv, which can be bound to a key or button
 
