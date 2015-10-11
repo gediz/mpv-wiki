@@ -36,7 +36,9 @@ Here is a list of scripts that users of mpv have published, adding functionality
 
 * **[lua-mpris](https://github.com/dodo/lua-mpris)** - Adds mpris support to mpv.
 
-* **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)** - show frame info, similar to ffdshow's OSD.
+* **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)** - Show frame info, similar to ffdshow's OSD.
+
+* **[mpv_slicing](https://github.com/Kagami/mpv_slicing)** - Cut uncompressed fragments of the video.
 
 * **[mpvmenu](https://github.com/nezumisama/mpvmenu)** - Adds a pop-up menu to mpv, which can be bound to a key or button
 
