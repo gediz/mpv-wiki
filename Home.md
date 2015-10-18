@@ -32,6 +32,5 @@ See [mpv.io](http://mpv.io/installation/).
 
 * [[ALSA: Surround Sound and Upmixing]]
 * [[Compiling distro releases for OS X]]
-* [[Downscaling Option Evaluation]]
 * [[Fixing Simulcasts]]
 * [[Scripting language bindings]]
