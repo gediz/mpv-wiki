@@ -67,7 +67,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 
 ## Custom shaders
 
-* **[sharpen complex 2](https://gist.github.com/zxx1/862dcfb171ddc3fa8832)** - Port from MPC-HC
+* **[sharpen complex 2](https://gist.github.com/zxx1/862dcfb171ddc3fa8832)** - Port from MPC-HC.
 
 
 ## VapourSynth scripts
