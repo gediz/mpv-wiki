@@ -46,6 +46,10 @@ If you didn't build mpv yourself, ask the packager to enable Lua.
 
 Also note that the OSC is invisible by default, but it should appear once you move the mouse over the mpv window.
 
+### Why do YouTube videos take forever to load?
+
+Older ffmpeg versions didn't support DASH properly, update to ffmpeg to git/HEAD.
+
 ### If I click mpv, nothing happens.
 
 mpv is a command line program and doesn't provide an actual GUI. You need to start it with a media file. On Windows, you can create a file association with the ``Open with…`` context menu. Also, if you start ``mpv.exe`` from ``explorer.exe``, it will enter [pseudo-gui mode](http://mpv.io/manual/master/#pseudo-gui-mode). For Linux, a ``mpv.desktop`` file is provided.
