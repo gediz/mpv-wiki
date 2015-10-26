@@ -64,6 +64,21 @@ Also consider using ``af=drc``, which helps especially with crappy speakers.
 
 Note that in older versions of mpv, a volume of ``100`` always meant maximum, even if the maximum mapped to a linear gain factor over ``1.0``.
 
+### How can I change volume using the mouse wheel?
+
+By default, volume is changed by scrolling horizontally. If you want to use vertical scrolling for that (rather than seeking), put this in your `input.conf`:
+
+```
+MOUSE_BTN3 add volume 2
+MOUSE_BTN4 add volume -2
+```
+
+### How can I find out the names and commands associated with each key?
+
+Run mpv in [input test mode](http://mpv.io/manual/master/#options-input-test):
+
+`mpv --input-test --force-window --idle`
+
 ### Is FFmpeg or Libav preferred for use with mpv?
 
 Generally FFmpeg, simply because it has more features.
