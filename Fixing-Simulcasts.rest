@@ -82,7 +82,7 @@ Wrong Color Range
 (Obsolete as of Summer 2015 as HorribleSubs fixes this during ripping)
 
 Rips from Funimation are encoded at full-range but are tagged as limited range. As a result the player will "cut off" a lot of important image information (see `comparison <http://screenshotcomparison.com/comparison/83071>`_).
-Add the command-line option ``--video-output-levels=full`` to correct this at startup or add ``<key> cycle video-output-levels`` to your input.conf to toggle the setting during playback.
+Add the command-line option ``--vf-add=format=colorlevels=full`` to correct this at startup or add ``<key> vf toggle format=colorlevels=full`` to your input.conf to toggle the setting during playback.
 
 
 
