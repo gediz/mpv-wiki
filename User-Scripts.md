@@ -66,6 +66,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 
 
 ## Pixel shaders
+* **[luma sharpen](https://gist.github.com/voltmtr/023ec76d1c22d3854863)** - A sharpen filter similar to using Unsharp Mask in Photoshop. Ported from SweetFX shader pack.
 
 * **[sharpen complex 2](https://gist.github.com/zxx1/862dcfb171ddc3fa8832)** - Port from MPC-HC.
 
