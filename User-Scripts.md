@@ -69,7 +69,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 
 * **[sharpen complex 2](https://gist.github.com/zxx1/862dcfb171ddc3fa8832)** - Port from MPC-HC.
 
-* **[adaptive sharpen](https://gist.github.com/bjin/e22e96861669e897cf65)** - A two-pass sharpen filter to sharpen medium sharp edges the most. Ported from a [HLSL](http://forum.doom9.org/showthread.php?t=172131) shader. Note that this shader expects gamma light and requires all linear scaling options (`linear-scaling` and `sigmoid-upscaling`) turned off to work properly.
+* **[adaptive sharpen](https://gist.github.com/bjin/152a2f8bdf87d83261ac)** - A two-pass sharpen filter to sharpen medium sharp edges the most. Ported from a [HLSL](http://forum.doom9.org/showthread.php?t=172131) shader. Note that this shader expects gamma light and requires all linear scaling options (`linear-scaling` and `sigmoid-upscaling`) turned off to work properly.
 
 
 ## VapourSynth scripts
