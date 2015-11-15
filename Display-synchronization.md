@@ -19,7 +19,7 @@ Apart from that, there is also the (somewhat separate) issue of clock *mismatch*
 The classic approach
 --------------------
 
-Conventionally, mpv (and I believe also VLC, MPlayer, MPC-HC etc.) used this relatively simple design: Just let the (resampled) audio play as fast as it wants (so you get no audio glitches like pops or repeated sections), and if audio/video desynchronization gets too high, then omit or repeat a frame as necessary to keep them synchronized.
+Conventionally, mpv (and I believe also VLC, MPlayer, MPC-HC etc.) use this relatively simple design: Just let the (resampled) audio play as fast as it wants (so you get no audio glitches like pops or repeated sections), and if audio/video desynchronization gets too high, then omit or repeat a frame as necessary to keep them synchronized.
 
 This works out fine in practice because dropped or duplicated frames are just barely perceivable as small stutters (unlike audio glitches, which would be much more noticeable pops and clicks), but it still leaves a lot to be desired - especially if you *are* sensitive to video stuttering.
 
@@ -32,7 +32,7 @@ Over time, we've come up with multiple ways of improving on or mitigating the is
 fpsadjust.lua
 -------------
 
-[This script](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/fpsadjust.lua) tries to mitigate the (relatively common) issue of watching 23.976 Hz video on a monitor that is more compatible with 24.00 Hz (for example 60.00 Hz, 72.00 Hz or 120.00 Hz - in contrast to 59.94 Hz, 71.93 Hz or 119.88 Hz).
+This (now unnecessary) script tries to mitigate the (relatively common) issue of watching 23.976 Hz video on a monitor that is more compatible with 24.00 Hz (for example 60.00 Hz, 72.00 Hz or 120.00 Hz - in contrast to 59.94 Hz, 71.93 Hz or 119.88 Hz).
 
 This is only a difference of exactly 0.1%, but it was introduced some decades ago due to historical reasons that I won't go into here. The modern upshot is that almost all media is at 23.976 Hz, so unless you have an aforementioned 59.94 Hz (or similar) device, you will run into a 0.1% mismatch between the video timestamps and your display refresh rate, which results in a repeated frame every ``1000 / 60 Hz = 16.6 s``, which can therefore be quite annoying due to how often it occurs.
 
@@ -58,7 +58,7 @@ This is also a static adjustment, since it again only updates at the beginning o
 demuxer-mkv-fix-timestamps
 --------------------------
 
-This setting in mpv tries to fix another related problem - timestamp jitter. This only affects Matroska files (and by extension, WebM), because Matroska timestamps are rounded to 1ms precision - rather than being based on an arbitrary rational time basis like the one MP4 etc. have been using for ages. So for a 60 Hz video (which has a frame duration of 16.6ms), a Matroska file would store a series of frame durations like ``17 17 16 17 17 16`` which averages out to the true 16.6ms, but unfortunately introduces a lot of jitter and uncertainty in each individual timestamp.
+This (now removed and unnecessary) setting in mpv tries to fix another related problem - timestamp jitter. This only affects Matroska files (and by extension, WebM), because Matroska timestamps are rounded to 1ms precision - rather than being based on an arbitrary rational time basis like the one MP4 etc. have been using for ages. So for a 60 Hz video (which has a frame duration of 16.6ms), a Matroska file would store a series of frame durations like ``17 17 16 17 17 16`` which averages out to the true 16.6ms, but unfortunately introduces a lot of jitter and uncertainty in each individual timestamp.
 
 The net result of this is that it makes display synchronization even more difficult, because even if you did have perfect clocks in your system, then you might still miss or duplicate a frame due to a frame being slightly ahead or slightly behind of your actual timestamps.
 
@@ -73,7 +73,7 @@ Instead of ignoring vsync timings and just “pushing” out frames whenever the
 
 A simpler way of putting it would be that: instead of timing being based on the audio clock, it's now based on the video clock (or “display” clock, hence the name). In essence, whereas before we were letting the audio play as fast as it wanted to (and adjusting the video to keep them in sync), we are now letting the video play as fast as it wants to - leaving the question of how to ensure audio/video stay synchronized.
 
-To this end, there are multiple modes, expressed as possible parameters for ``--video-sync``, but the most interesting one is called ``display-resample``. If audio and video get out of sync, this mode will make the audio play slightly faster or slightly slower in order to keep them synchronized, and only resorts to dropping or duplicating video frames if stuff gets badly out of sync (eg. when the hardware is insufficient to keep up). The speed change defaults to 0.125%, which should be barely noticeable even to trained ears.
+To this end, there are multiple modes, expressed as possible parameters for ``--video-sync``, but the most interesting one is called ``display-resample``. If audio and video get out of sync, this mode will make the audio play slightly faster or slightly slower in order to keep them synchronized, and only resorts to dropping or duplicating video frames if stuff gets badly out of sync (eg. when the hardware is insufficient to keep up). The maximum allowed speed change defaults to 1% (+/- 0.125%), which should be barely noticeable even to trained ears.
 
 In addition to dynamically updating the audio speed, this mode will *also* minimize unnecessary frame drops by slightly changing the video playback speed (eg. for 23.976 Hz ⇔ 24.000 Hz mismatch - similar to **fpsadjust.lua**), and by correcting for jittering timestamps (as ``--demuxer-mkv-fix-timestamps`` did previously, but it's now part of the playback loop instead of the demuxer). So in other words, display-sync completely deprecates both **fpsadjust.lua** and ``--demuxer-mkv-fix-timestamps``, though it does not do any of what **xrandr.lua** tries to do.
 
@@ -81,4 +81,8 @@ Basically, ``--video-sync=display-resample`` makes video playback as perfect as 
 
 It's important to note that, in order to avoid messing with playback completely when the file has broken or unusual timestamps, this mode automatically deactivates itself if the timestamps do not make sense (which should generally only affect badly broken files, eg. the ridiculously shitty twitch.tv streams, but also affects VFR content).
 
-Finally, ``--video-sync=display-*`` currently comes with one important drawback: Due to OpenGL's rather severe limitations when it comes to timing, the only way to reliably figure out when vsyncs happen is to actually draw a frame on every vsync. The consequence of this is that, even for 24 Hz video, you need to draw frames at 60 Hz even if they are the same frame over and over again - thus increasing power usage by a factor of 2x-3x in such a case. Though this can be worked around by caching the frame result, that logic has not been implemented.
+Finally, ``--video-sync=display-*`` currently comes with one important drawback: Due to OpenGL's rather severe limitations when it comes to timing, the only way to reliably figure out when vsyncs happen is to actually draw a frame on every vsync. The consequence of this is that, even for 24 Hz video, you need to draw frames at 60 Hz even if they are the same frame over and over again - thus increasing power usage by a factor of 2x-3x in such a case. This is usually somewhat alleviated by caching the frame result, and redrawing the cached frame, instead of scaling and rendering the source frame every time. The problem that there's less time to render subtitles on a 60 Hz screen remains.
+
+The problem with OpenGL and vsync is rather messy. While there are some methods for determining the vsync time, or making sure that a frame gets rendered "immediately", these methods seem to be neither reliable, nor are they cheap. Forcing the driver to sync to the GPU can reduce efficiency. The timing issues are still not necessarily taken care of. Instead of putting a lot of effort into trying to reason with these things on every platform/driver combination, mpv has opted for executing one buffer flip per vsync instead (basically, trying to render as fast as possible). This makes it easy to lock on to the display refresh frequency, and gives us rather good control and knowledge what is going on. It also allows us to deal with other driver quirks to an extent. For example, drivers may not even return from vsync at a consistent phase (i.e. the actual return time jitters from the predicted time), but still assure a constant frame rate.
+
+Ideally, OpenGL would add an API that allows predictable scheduling and feedback of display frames. In such a situation, we'd e.g. specify that we want a frame to be displayed at a specific wall clock time, and receive feedback when the frame was actually displayed. (The vdpau presentation queue achieves this, but it's very limited to a specific platform and driver vendor.)
