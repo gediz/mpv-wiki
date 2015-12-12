@@ -12,5 +12,3 @@ mpv: ``CFLAGS="-mmacosx-version-min=10.8" ./waf configure ...``
 
 To bundle the dependency libs, run this in mpv's folder:
 ``TOOLS/osxbundle.py build/mpv``
-
-Adding a fonts.conf to the bundle (Resources) may also be a good idea.
