@@ -104,6 +104,9 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[Adaptive Sharpen](https://gist.github.com/bjin/152a2f8bdf87d83261ac)**  
   A two-pass sharpen filter to sharpen medium sharp edges the most. Ported from a [HLSL](http://forum.doom9.org/showthread.php?t=172131) shader. Note that this shader expects gamma light and requires all linear scaling options (`linear-scaling` and `sigmoid-upscaling`) turned off to work properly.
 
+* **[Adaptive Sharpen One-Pass](http://forum.doom9.org/showthread.php?p=1744468#post1744468)**  
+  Adaptive Sharpen one-pass shader customized by ts1.
+
 
 ## VapourSynth Scripts
 
