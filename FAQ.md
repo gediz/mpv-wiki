@@ -52,7 +52,7 @@ Older ffmpeg versions didn't support DASH properly, update to ffmpeg to git/HEAD
 
 ### (How) can I play YouTube playlists?
 
-Pretty much like anything else, just pass the playlist URL to mpv. Note that you need a link to the actual playlist (`https://www.youtube.com/playlist?list=...`), NOT to a video in the playlist (`https://www.youtube.com/watch?v=...&list=...&index=...`). You can get that link by clicking on the title of playlist on the right.
+Pretty much like anything else, just pass the playlist URL to mpv. Note that you need a link to the actual playlist (`https://www.youtube.com/playlist?list=...`), NOT to a video in the playlist (`https://www.youtube.com/watch?v=...&list=...&index=...`). You can get that link by clicking on the title of the playlist on the right.
 
 ### If I click mpv, nothing happens.
 
