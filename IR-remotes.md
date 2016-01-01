@@ -4,4 +4,22 @@ Likewise, if you use them in mpv, mpv should complain about an unmapped key. You
 
 Some IR devices (in particular very old ones) might not work.
 
-mpv cannot bind global key bindings; if you really need to control mpv while mpv is not focused, consider writing a script that controls mpv through a [FIFO](http://mpv.io/manual/master/#options-input-file) or [JSON IPC](http://mpv.io/manual/master/#json-ipc).
+If you're using [lirc](http://lirc.org/), `irxevent` can be useful in routing appropriate commands to mpv:
+
+```
+begin
+  prog = irxevent
+  button = Play
+  config = Key space mpv
+end
+
+begin
+  prog = irxevent
+  button = Volume+
+  config = Key 0 mpv
+  repeat = 1
+  delay = 1
+end
+```
+
+Alternatively, and since mpv cannot natively bind global key bindings, if you really need to control mpv while mpv is not focused, consider writing a script that controls mpv through a [FIFO](http://mpv.io/manual/master/#options-input-file) or [JSON IPC](http://mpv.io/manual/master/#json-ipc).
