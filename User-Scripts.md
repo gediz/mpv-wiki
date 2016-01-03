@@ -42,8 +42,9 @@ All of these scripts are **unofficial 3rd party scripts**. Anyone can add their 
 * **[find_subtitles](https://github.com/directorscut82/find_subtitles)**  
   (Down)load subtitles with subliminal.
 
-* **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/fpsadjust.lua)**  
+* **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/fpsadjust.lua)**  
   Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
+**Obsolete:** mpv now has a native display-sync option.
 
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)**  
   Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
@@ -114,7 +115,9 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
   Use [MVTools](https://github.com/dubhater/vapoursynth-mvtools)'s BlockFPS function to perform motion interpolation on the video in realtime.
 
 * **[nnedi3](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/filters/nnedi3.vpy)**  
-  Use [NNEDI3](https://github.com/dubhater/vapoursynth-nnedi3) to double the resolution of the video. This always performs a single doubling. Note that the vapoursynth-nnedi3 filter is so slow that this practically can't be used in realtime, so it's not much use in practice. **Obsolete:** mpv now has a built-in nnedi3 prescaler.
+  Use [NNEDI3](https://github.com/dubhater/vapoursynth-nnedi3) to double the resolution of the video. This always performs a single doubling. Note that the vapoursynth-nnedi3 filter is so slow that this practically can't be used in realtime, so it's not much use in practice. 
+**Obsolete:** mpv now has a built-in nnedi3 prescaler.
 
 * **[flash3kyuu](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/filters/flash3kyuu.vpy)**  
-  Use [flash3kyuu](https://github.com/SAPikachu/flash3kyuu_deband) to deband the video, with reasonable (mildly grainy) default settings. **Obsolete:** mpv now ships with a similar debanding filter as shader.
+  Use [flash3kyuu](https://github.com/SAPikachu/flash3kyuu_deband) to deband the video, with reasonable (mildly grainy) default settings. 
+**Obsolete:** mpv now ships with a similar debanding filter as shader.
