@@ -61,7 +61,7 @@ All of these scripts are **unofficial 3rd party scripts**. Anyone can add their 
 * **[mpvmenu](https://github.com/nezumisama/mpvmenu)**  
   Adds a pop-up menu to mpv, which can be bound to a key or button
 
-* **[myshows](https://github.com/gim-/mpv-plugin-myshows)**
+* **[myshows](https://github.com/gim-/mpv-plugin-myshows)**  
   Marks currently watched episode on MyShows website.
 
 * **[notify](https://github.com/rohieb/mpv-notify)**  
