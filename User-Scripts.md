@@ -82,6 +82,9 @@ All of these scripts are **unofficial 3rd party scripts**. Anyone can add their 
 * **[streamcache](https://github.com/lvml/mpv-plugin-streamcache)**  
   Provides for more network-glitch-robust caching of live streams by adjusting replay speed.
 
+* **[unseen-playlistmaker](https://github.com/donmaiq/unseen-playlistmaker)**  
+  Keeps track of watched files locally, and creates playlists of unwatched files.
+
 * **[vo_battery](https://gist.github.com/selsta/9ac023688885053d42ca)**  
   (OS X) Choose the VO based on if the laptop is on battery or not.
 
