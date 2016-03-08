@@ -94,7 +94,7 @@ All of these scripts are **unofficial 3rd party scripts**. Anyone can add their 
 * **[xrandr](https://github.com/lvml/mpv-plugin-xrandr)**  
   Automatically sets the display refresh rate to the one best suitable for the video played
 
-* **[zones](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/zones.lua)**  
+* **[zones](https://github.com/wiiaboo/mpv-scripts/blob/master/zones.lua)**  
   Handles commands depending on where the mouse pointer is at, mostly for mouse wheel handling.
 
 If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
