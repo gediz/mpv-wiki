@@ -15,7 +15,7 @@ Changing the compositor settings can sometimes help with tearing.
   Tearing should never happen.
 * Nvidia
 
- Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not in fullscreen (solution unknown). There are additional problems on multimonitor systems. 
+ Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not in fullscreen (solution unknown). There are additional problems on multimonitor systems.
     * Try enabling ``ForceFullCompositionPipeline``.
     * Try with and without a compositor.
     * Try disabling the composite extension in xorg.conf:
@@ -31,13 +31,21 @@ Changing the compositor settings can sometimes help with tearing.
 
 * Intel
 
-  Intel tears out of the box.
+  Intel tears out of the box. Intel users on Linux are going to have a pretty bad time.
     * Try enabling SNA and the ``TearFree`` option.
 
       Unfortunately, this can cause stability issues - GL applications sometimes randomly crash. Somewhere, there's a claim that adding ``i915.semaphores=1`` to your kernel parameters fixes the crashes.
     * Try disabling SNA by using UXA (on older hardware).
     * Try ``--vo=xv:adaptor=N``, and try 0 or 1 for ``N``. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.
     * Try ``--vo=vaapi``. Although this is Intel's native video output method, it seems to fix tearing only very rarely.
+
+* AMD
+
+  AMD users on Linux are going to have a pretty bad time.
+
+   * If you're getting tearing in multi-monitor setups, it seems there's nothing you can do about it. AMD drivers (apparently?) don't vsync across multiple monitors at all, let alone well.
+   * You can possibly fix some tearing-related issues by using the ``Tear Free Desktop``, but this seems to degrade the display to 30 Hz operation and adds a lot of input latency.
+   * For AMD cards it's generally a better idea to switch to the free radeon/mesa drivers and take the performance/feature hit, since the drivers provided by AMD are pretty unusable.
 
 ### I can't see the OSC/OSD/GUI!
 
