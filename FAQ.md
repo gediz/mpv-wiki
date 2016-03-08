@@ -12,7 +12,10 @@ Changing the compositor settings can sometimes help with tearing.
 
 * Windows/OSX
 
-  Tearing should never happen.
+  Tearing should never happen.(tm)
+    * Unless it does, depending on the backend and your luck. 
+    * In which case, good luck!
+
 * Nvidia
 
  Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not in fullscreen (solution unknown). There are additional problems on multimonitor systems.
