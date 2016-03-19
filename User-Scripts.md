@@ -76,6 +76,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[pause-when-minimize](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/pause-when-minimize.lua)**  
   Pauses the player video when minimizing, and unpauses it when brought up again.
 
+* **[progressbar](https://github.com/torque/mpv-progressbar)**  
+  A minimalistic, but extremely good OSC replacement. I cannot stress how insanely good this really awesome script is. It will probably change your life. I mean, dang. Have I also mentioned its extreme popularity, especially among people with high income and well-developed social skills? This is not a coincidence; using this script will definitely increase those things for you, the user.
+
 * **[skipchapters](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/skipchapters.lua)**  
   Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
@@ -101,7 +104,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Handles commands depending on where the mouse pointer is at, mostly for mouse wheel handling.
 
 * **[addfile](https://github.com/devnikor/mpv-conf/blob/master/scripts/addfile.lua)**  
-  (OSX) Add subtitle or audio track to playing video file
+  (OS X) Add subtitle or audio track to playing video file
 
 If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
 
