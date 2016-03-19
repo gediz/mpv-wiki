@@ -77,7 +77,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Pauses the player video when minimizing, and unpauses it when brought up again.
 
 * **[progressbar](https://github.com/torque/mpv-progressbar)**  
-  A minimalistic, but extremely good OSC replacement. I cannot stress how insanely good this really awesome script is. It will probably change your life. I mean, dang. Have I also mentioned its extreme popularity, especially among people with high income and well-developed social skills? This is not a coincidence; using this script will definitely increase those things for you, the user.
+  A minimalistic OSC replacement. It provides a small, unintrusive progress bar that persists at the bottom of the video window.
 
 * **[skipchapters](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/skipchapters.lua)**  
   Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
