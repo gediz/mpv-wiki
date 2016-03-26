@@ -70,6 +70,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[ontop-playback](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/ontop-playback.lua)**  
   Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled.
 
+* **[ontop-playback](https://github.com/yuzukin/mpv/blob/master/TOOLS/lua/ontop-playback.lua)**  
+  Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled. Change it only when the player is not in fullscreen to prevent screen flickering.
+
 * **[open-file-dialog](https://github.com/rossy/mpv-open-file-dialog)**  
   (Windows) Launches a regular Windows file open dialog for loading videos.
 
