@@ -30,6 +30,7 @@ Changing the compositor settings can sometimes help with tearing.
       ```
 
 
+    * Set the performance mode to maximum performance. Energy saving often interferes with proper vo_opengl operation, and sometimes even appears to cause tearing.
     * Try ``--vo=vdpau``.
 
 * Intel
