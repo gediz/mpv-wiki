@@ -10,7 +10,11 @@ Tearing is generally not something a video player can do anything about. It depe
 
 Changing the compositor settings can sometimes help with tearing.
 
-* Windows/OSX
+* OSX
+
+  Never seen it tearing.
+
+* Windows
 
   Whether tearing happens with OpenGL may depend on the backend. Try various with ``--vo=opengl:backend=NAME``, where `NAME` is the name of the backend. `dxinterop` seems to perform best generally, but it will crash randomly with some older buggy Intel drivers.
 
