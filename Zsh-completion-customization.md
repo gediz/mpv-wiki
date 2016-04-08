@@ -14,6 +14,12 @@ See [Issue #2273](https://github.com/mpv-player/mpv/issues/2273) for a discussio
 
 # URLs
 
-The current completion script suggests URL prefixes by default, most of which aren't useful to the average user and tend to get in the way. To disable them completely, unless no files match:
+Older versions of the completion script (before v0.17.0) suggest URL prefixes by default, most of which aren't useful to the average user and tend to get in the way. Recent versions suppress these by default unless no files match what you've typed. To get this behaviour in an older version, you can use this:
 
-    zstyle ':completion:*:complete:mpv:*' tag-order '!urls'
+    zstyle ':completion:*:*:mpv:*' tag-order '!urls'
+
+To get the old behaviour (URLs completed along with files) in a newer version, use:
+
+    zstyle ':completion:*:*:mpv:*' tag-order
+
+Or, you can set `tag-order` to whatever custom order you might want. The default URL suppression only happens if it isn't defined at all.
