@@ -118,7 +118,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
   A sharpen filter similar to using Unsharp Mask in Photoshop ported from SweetFX shader pack.
 
 * **[FineSharp](https://gist.github.com/igv/a9a21ad1f6dd7d0b4452)**  
-  FineSharp by Didée converted from mpc-hc shaders. Requires mpv>=0.16. [More info](http://forum.doom9.org/showthread.php?t=171346)
+  FineSharp by Didée converted from mpc-hc shaders. Expects gamma light (requires `no-sigmoid-upscaling`). Requires mpv>=0.16. [More info](http://forum.doom9.org/showthread.php?t=171346)
 
 * **[Adaptive Sharpen](https://gist.github.com/bjin/152a2f8bdf87d83261ac)**  
   A two-pass sharpen filter to sharpen medium sharp edges the most. Ported from a [HLSL](http://forum.doom9.org/showthread.php?t=172131) shader. Note that this shader expects gamma light and requires all linear scaling options (`linear-scaling` and `sigmoid-upscaling`) turned off to work properly.
