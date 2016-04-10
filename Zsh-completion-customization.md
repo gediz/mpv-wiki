@@ -23,3 +23,13 @@ To get the old behaviour (URLs completed along with files) in a newer version, u
     zstyle ':completion:*:*:mpv:*' tag-order
 
 Or, you can set `tag-order` to whatever custom order you might want. The default URL suppression only happens if it isn't defined at all.
+
+If you want URLs completed at the same time as files, but grouped by type (i.e. all the files first, then all the URLs), you can use this, in addition to the `tag-order` style:
+
+    zstyle ':completion:*:*:mpv:*' group-name ''
+
+If you want to blacklist certain URL prefixes, you can do this:
+
+    zstyle ':completion:*:*:mpv:*' ignored-patterns '(memory|md5|whatever-else)://'
+
+You'll also need to reset `tag-order` (see above) if you want the remaining prefixes to be displayed alongside files. It will work with or without grouping by type. If you want a whitelist instead of a blacklist, you'll have to set up custom tags. If you figure it out, feel free to post it here.
