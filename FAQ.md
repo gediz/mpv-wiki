@@ -20,7 +20,7 @@ Changing the compositor settings can sometimes help with tearing.
 
   ``--vo=direct3d`` should never tear. (Maybe.)
 
-* Nvidia
+* X11/Nvidia
 
  Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not in fullscreen (solution unknown). There are additional problems on multimonitor systems.
     * Try enabling ``ForceFullCompositionPipeline``.
@@ -37,7 +37,7 @@ Changing the compositor settings can sometimes help with tearing.
     * Set the performance mode to maximum performance. Energy saving often interferes with proper vo_opengl operation, and sometimes even appears to cause tearing.
     * Try ``--vo=vdpau``.
 
-* Intel
+* X11/Intel
 
   Intel tears out of the box. Intel users on Linux are going to have a pretty bad time.
     * Try enabling SNA and the ``TearFree`` option.
@@ -47,7 +47,7 @@ Changing the compositor settings can sometimes help with tearing.
     * Try ``--vo=xv:adaptor=N``, and try 0 or 1 for ``N``. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.
     * Try ``--vo=vaapi``. Although this is Intel's native video output method, it seems to fix tearing only very rarely.
 
-* AMD
+* X11/AMD
 
   AMD users on Linux are going to have a pretty bad time.
 
