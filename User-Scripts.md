@@ -139,3 +139,8 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[flash3kyuu](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/filters/flash3kyuu.vpy)**  
   Use [flash3kyuu](https://github.com/SAPikachu/flash3kyuu_deband) to deband the video, with reasonable (mildly grainy) default settings. 
 **Obsolete:** mpv now ships with a similar debanding filter as shader.
+
+## Other
+
+* **[mpv_vlive](https://github.com/Kagami/mpv_vlive)**  
+  Watch [vlive.tv](http://www.vlive.tv/) live streams.
