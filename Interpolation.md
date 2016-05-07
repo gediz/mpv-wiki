@@ -21,7 +21,7 @@ vertical axis will be rescaled from 100 pixels to 250 pixels. (60/24 = 2.5)
 
 The traditional technique, including the default mpv behavior, is to simply
 hold each source frame until the corresponding timestamp of the next frame has
-passed. Due to the particular ratio in this example (24/60 = 0.4), it means
+passed. Due to the particular ratio in this example (60/24 = 2.5), it means
 that the first frame will be shown 3 times, the second frame 2 times, the third
 3 times, the fourth 2 times and so on. The pattern looks like this:
 
