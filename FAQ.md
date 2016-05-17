@@ -79,9 +79,11 @@ You can also start mpv with ``mpv --profile=pseudo-gui``. You play files by drop
 ### How can I can change video quality on youtube?
 
 Check available format of video by **youtube-dl**:
-```youtube-dl --list-formats [link]```
+```
+youtube-dl --list-formats link
+```
 or 
-```youtube-dl -F [link]```
+```youtube-dl -F link```
 
 For example:  
 ```
@@ -89,6 +91,7 @@ youtube-dl -F https://www.youtube.com/watch?v=SYM-RJwSGQ8
 [info] Available formats for SYM-RJwSGQ8:
 format code  extension  resolution note
 ...
+251          webm       audio only DASH audio  149k , opus @160k, 4.29MiB
 135          mp4        854x480    480p 1159k , avc1.4d401e, 25fps, video only, 16.02MiB
 247          webm       1280x720   720p 1372k , vp9, 25fps, video only, 20.12MiB
 136          mp4        1280x720   720p 2318k , avc1.4d401f, 25fps, video only, 30.37MiB
@@ -104,6 +107,14 @@ mpv --ytdl-format [format code] https://www.youtube.com/watch?v=SYM-RJwSGQ8
 For 1280x720:
 ```
 mpv --ytdl-format 22 https://www.youtube.com/watch?v=SYM-RJwSGQ8
+```
+You can mix different video+audio:
+```
+mpv --ytdl-format [video format code] + [audio format code] link
+```
+For mp4 1080p video (3770k) and webm audio (149k, opus @160k):
+```
+mpv --ytdl-format 137+251 https://www.youtube.com/watch?v=SYM-RJwSGQ8
 ```
 
 ### Can I set volume over 100%?
