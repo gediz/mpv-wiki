@@ -79,27 +79,32 @@ You can also start mpv with ``mpv --profile=pseudo-gui``. You play files by drop
 ### How can I can change video quality on youtube?
 
 Check available format of video by **youtube-dl**:
-`youtube-dl --list-formats [link]`
+```youtube-dl --list-formats [link]```
 or 
-`youtube-dl -F [link]`
+```youtube-dl -F [link]```
 
 For example:  
-`youtube-dl -F https://www.youtube.com/watch?v=SYM-RJwSGQ8`
-`[info] Available formats for SYM-RJwSGQ8:`
-`format code  extension  resolution note`
-`...`
-`135          mp4        854x480    480p 1159k , avc1.4d401e, 25fps, video only, 16.02MiB`
-`247          webm       1280x720   720p 1372k , vp9, 25fps, video only, 20.12MiB`
-`136          mp4        1280x720   720p 2318k , avc1.4d401f, 25fps, video only, 30.37MiB`
-`248          webm       1920x1080  1080p 2402k , vp9, 25fps, video only, 35.54MiB`
-`137          mp4        1920x1080  1080p 3770k , avc1.640028, 25fps, video only, 55.70MiB`
-`22           mp4        1280x720   hd720 , avc1.64001F,  mp4a.40.2@192k (best)`
-`...`
-
+```
+youtube-dl -F https://www.youtube.com/watch?v=SYM-RJwSGQ8
+[info] Available formats for SYM-RJwSGQ8:
+format code  extension  resolution note
+...
+135          mp4        854x480    480p 1159k , avc1.4d401e, 25fps, video only, 16.02MiB
+247          webm       1280x720   720p 1372k , vp9, 25fps, video only, 20.12MiB
+136          mp4        1280x720   720p 2318k , avc1.4d401f, 25fps, video only, 30.37MiB
+248          webm       1920x1080  1080p 2402k , vp9, 25fps, video only, 35.54MiB
+137          mp4        1920x1080  1080p 3770k , avc1.640028, 25fps, video only, 55.70MiB
+22           mp4        1280x720   hd720 , avc1.64001F,  mp4a.40.2@192k (best)
+...
+```
 Choice format and type
-`mpv --ytdl-format [format code] https://www.youtube.com/watch?v=SYM-RJwSGQ8`
+```
+mpv --ytdl-format [format code] https://www.youtube.com/watch?v=SYM-RJwSGQ8
+```
 For 1280x720:
-`mpv --ytdl-format 22 https://www.youtube.com/watch?v=SYM-RJwSGQ8`
+```
+mpv --ytdl-format 22 https://www.youtube.com/watch?v=SYM-RJwSGQ8
+```
 
 ### Can I set volume over 100%?
 
