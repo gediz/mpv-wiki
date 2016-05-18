@@ -132,6 +132,11 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[SuperRes](https://gist.github.com/igv/2364ffa6e81540f29cb7ab4c9bc05b6b)**  
   The aim of this shader is to make corrections to the upscaled image. Works with regular scalers only, not prescalers.
 
+* **[luma noise](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/noise.glsl)**
+  Adds a tunable amount of grayscale noise to the output.
+
+* **[antiringing](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/antiring.hook)**
+  This is basically the equivalent (with some caveats) of mpv's built-in antiringing shader.
 
 ## VapourSynth Scripts
 
