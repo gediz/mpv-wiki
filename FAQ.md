@@ -80,10 +80,10 @@ You can also start mpv with ``mpv --profile=pseudo-gui``. You play files by drop
 
 Check available format of video by **youtube-dl**:
 ```
-youtube-dl --list-formats link
+youtube-dl --list-formats <link>
 ```
 or 
-```youtube-dl -F link```
+```youtube-dl -F <link>```
 
 For example:  
 ```
@@ -102,7 +102,7 @@ format code  extension  resolution note
 ```
 Choice format and type
 ```
-mpv --ytdl-format [format code] https://www.youtube.com/watch?v=SYM-RJwSGQ8
+mpv --ytdl-format <format code> https://www.youtube.com/watch?v=SYM-RJwSGQ8
 ```
 For 1280x720:
 ```
