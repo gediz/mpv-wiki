@@ -76,7 +76,7 @@ mpv is a command line program and doesn't provide an actual GUI. You need to sta
 
 You can also start mpv with ``mpv --profile=pseudo-gui``. You play files by dropping them on the window.
 
-### How I can change video quality on youtube?
+### How can I change video quality on YouTube?
 
 Check available format of video by **youtube-dl**:
 ```
