@@ -138,6 +138,9 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[antiringing](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/antiring.hook)**  
   This is basically the equivalent (with some caveats) of mpv's built-in antiringing shader.
 
+* **[nnedi3](https://gist.github.com/bjin/4b1ab282412b94200dbe09de998348e6)**
+  These user shaders are extracted from mpv builtin implementation of `prescale-luma=nnedi3`.
+
 ## VapourSynth Scripts
 
 * **[mvtools](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/filters/mvtools.vpy)**  
@@ -145,7 +148,6 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 
 * **[nnedi3](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/filters/nnedi3.vpy)**  
   Use [NNEDI3](https://github.com/dubhater/vapoursynth-nnedi3) to double the resolution of the video. This always performs a single doubling. Note that the vapoursynth-nnedi3 filter is so slow that this practically can't be used in realtime, so it's not much use in practice. 
-**Obsolete:** mpv now has a built-in nnedi3 prescaler.
 
 * **[flash3kyuu](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/filters/flash3kyuu.vpy)**  
   Use [flash3kyuu](https://github.com/SAPikachu/flash3kyuu_deband) to deband the video, with reasonable (mildly grainy) default settings. 
