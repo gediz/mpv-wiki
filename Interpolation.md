@@ -1,7 +1,7 @@
 Interpolation techniques
 ========================
 
-This article will cover a few of the standard techniques for temporal video frame interpolation, outlining in particular the difference between techniques like SVP/MVtools (also known as motion-based interpolation) and algorithms like smoothmotion.
+This article will cover a few of the standard techniques for temporal video frame interpolation, outlining in particular the difference between techniques like SVP/MVtools (also known as motion-based interpolation) and algorithms like smoothmotion. You can also find a set of test clips specifically designed to replicate the results of these algorithms, alongside some more explanation, in ![this repository](https://github.com/haasn/interpolation-samples).
 
 <img align="right" src="interpolation/original.png" />
 
