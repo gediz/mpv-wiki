@@ -138,8 +138,8 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[antiringing](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/antiring.hook)**  
   This is basically the equivalent (with some caveats) of mpv's built-in antiringing shader.
 
-* **[nnedi3](https://gist.github.com/bjin/4b1ab282412b94200dbe09de998348e6)**  
-  These user shaders are extracted from mpv's built-in implementation of `prescale-luma=nnedi3`.
+* **[superxbr and nnedi3](https://github.com/bjin/mpv-prescalers/tree/master)**  
+  User shaders for prescaling. These shaders should cover most functionality that `prescale-luma=` provides.
 
 ## VapourSynth Scripts
 
