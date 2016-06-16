@@ -79,6 +79,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[pause-when-minimize](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/pause-when-minimize.lua)**  
   Pauses the player video when minimizing, and unpauses it when brought up again.
 
+* **[Playlistmanager](https://github.com/donmaiq/Mpv-Playlistmanager)**  
+  Helps with creating playlists, saving them and modifying your current playlist.
+
 * **[progressbar](https://github.com/torque/mpv-progressbar)**  
   A minimalistic OSC replacement. It provides a small, unintrusive progress bar that persists at the bottom of the video window.
 
