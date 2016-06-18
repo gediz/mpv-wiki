@@ -79,7 +79,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[pause-when-minimize](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/pause-when-minimize.lua)**  
   Pauses the player video when minimizing, and unpauses it when brought up again.
 
-* **[peerflix-hook](https://gist.github.com/ElegantMonkey/bba287693830055a6bad90081c1ad4e2)**
+* **[peerflix-hook](https://gist.github.com/ElegantMonkey/bba287693830055a6bad90081c1ad4e2)**  
   Allows streaming of magnet links using peerflix, similar to youtube-dl.
 
 * **[Playlistmanager](https://github.com/donmaiq/Mpv-Playlistmanager)**  
