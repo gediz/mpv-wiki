@@ -36,7 +36,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[dessubdb](https://github.com/demanuel/dessubdb/blob/master/mpv.lua)**  
   Download automatically subtitles from the thesubdb.com using [DESSubdb](https://github.com/demanuel/dessubdb).
 
-* **[delogo](https://github.com/b4zz4/mpv-delogo)**
+* **[delogo](https://github.com/b4zz4/mpv-delogo)**  
   It removes the logo of the channels in a video
 
 * **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)**  
