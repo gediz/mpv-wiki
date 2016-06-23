@@ -37,7 +37,10 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Download automatically subtitles from the thesubdb.com using [DESSubdb](https://github.com/demanuel/dessubdb).
 
 * **[delogo](https://github.com/b4zz4/mpv-delogo)**  
-  It removes the logo of the channels in a video
+  It removes the logo of the channels in a video (press n)
+
+* **[deframe](https://github.com/b4zz4/mpv-deframe)**  
+  It removes the frame of youtube videos (press g)
 
 * **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)**  
   Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
