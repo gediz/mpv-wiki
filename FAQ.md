@@ -143,3 +143,23 @@ Run mpv in [input test mode](http://mpv.io/manual/master/#options-input-test):
 ### Is FFmpeg or Libav preferred for use with mpv?
 
 Generally FFmpeg, simply because it has more features.
+
+### How can I make mpv the default application to open movie files on OSX?
+
+* Install mpv as an app with Homebrew:
+
+    ```bash
+    $ brew install mpv --with-bundle
+    $ brew linkapps mpv
+    ```
+
+* Use [`duti`](https://github.com/moretension/duti) to associate files with application:
+
+    ```bash
+    $ brew install duti
+    $ duti -s io.mpv api
+    $ duti -s io.mpv mkv
+    $ duti -s io.mpv mp4
+    ```
+
+[Source](https://github.com/kdeldycke/dotfiles/commit/380fed4e58070e10be9854636b8384960d3ee1d2).
