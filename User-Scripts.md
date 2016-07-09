@@ -42,7 +42,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[deframe](https://github.com/b4zz4/mpv-deframe)**  
   It removes the frame of youtube videos (press g)
 
-* **[equalizer](https://gist.github.com/avih/41acff712abd32e1f436235388c8b523)**
+* **[equalizer](https://gist.github.com/avih/41acff712abd32e1f436235388c8b523)**  
   5-bands equalizer with colorful display.
 
 * **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)**  
