@@ -124,7 +124,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[addfile](https://github.com/devnikor/mpv-conf/blob/master/scripts/addfile.lua)**  
   (OS X) Add subtitle or audio track to playing video file
 
-If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst).
+If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://mpv.io/manual/master/#lua-scripting).
 
 
 ## Pixel Shaders
