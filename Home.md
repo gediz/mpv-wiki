@@ -29,7 +29,8 @@ See [mpv.io](http://mpv.io/installation/).
 
 ### Software that makes use of mpv
 
-* [[Applications using mpv]]
+* [[Applications using mpv]]:   
+  GUI frontends and other software.
 
 ## Miscellaneous Technical Detail Articles
 
