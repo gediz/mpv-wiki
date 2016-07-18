@@ -61,6 +61,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[lua-mpris](https://github.com/dodo/lua-mpris)**  
   Adds mpris support to mpv.
 
+* **[minesweeper](https://github.com/wm4/mpv-scripts#mineslua)**  
+  Minesweeper game.
+
 * **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)**  
   Show frame info, similar to ffdshow's OSD.
 
