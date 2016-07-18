@@ -1,6 +1,6 @@
 # Applications using mpv
 
-Here is a list of third-party programs which use mpv or libmpv in some form. These are **unofficial 3rd projects** with are not necessarily directly supported by mpv. Anyone can add their own project by editing this wiki.
+Here is a list of third-party programs which use mpv or libmpv in some form. These are **unofficial 3rd party projects** with are not necessarily directly supported by mpv. Anyone can add their own project by editing this wiki.
 
 
 ## GUI frontends
