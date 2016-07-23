@@ -103,6 +103,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[skipchapters](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/skipchapters.lua)**  
   Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
+* **[skiptofade](https://gist.github.com/bossen/3cfe86a6cdd61452dbb96865128fb327)**  
+  Seeks forward until a black screen appears. Built to skip openings. Uses the lavfi blackdetect filter. 
+
 * **[stats](https://github.com/Argon-/mpv-stats/)**  
   Display some statistics about the currently played file on-screen.
 
