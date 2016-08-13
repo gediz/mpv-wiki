@@ -177,7 +177,7 @@ It is recommended that you use a separate, non-mpv key binding to control your g
 
 If you want the old behavior, you have to switch you key-bindings manually to the audio output volume controls:
 
-* open your input.conf
+* open your input.conf (see [here](https://mpv.io/manual/master/#files) for default location)
 * add the following lines:
 
   ```
