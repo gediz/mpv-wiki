@@ -163,3 +163,24 @@ Generally FFmpeg, simply because it has more features.
     ```
 
 [Source](https://github.com/kdeldycke/dotfiles/commit/380fed4e58070e10be9854636b8384960d3ee1d2).
+
+### I want the old PulseAudio volume control back on Linux
+
+With mpv 0.18.1, volume control was forced to softvol, and the ``--softvol`` option was removed. PulseAudio volume control (as in changing the per-client volume in the server) is not used anymore. If you want to use it, you have to switch you key-bindings manually to the audio output volume controls:
+
+* open your input.conf
+* add the following lines:
+
+  ```
+  9 add ao-volume -2
+  0 add ao-volume 2
+  ```
+* or replace any occurrences of ``volume`` with ``ao-volume``
+* don't forget that lines starting with ``#`` are commented (the default input.conf has all entries commented)
+* note that mpv 0.18.1 had a bug that made PulseAudio "stuck" if the step was ``1`` and not ``2`` - this has been fixed in later versions
+
+You can also grab all volume bindings from the [default input.conf)[https://raw.githubusercontent.com/mpv-player/mpv/master/etc/input.conf] to change all ``volume`` bindings.
+
+Note this this also works on other audio outputs and platforms. Which kind of volume ``ao-volume`` controls depends entirely on the audio API. Some APIs make it the global system volume, some make it per-client or per-stream private volume.
+
+For technically inclined people: there was also a branch adding change that would have allowed to change all key bindings with a single option, but it hasn't proven popular so far: https://github.com/mpv-player/mpv/commit/7621a028bf555c9ed0430501bc6eac2fa204114c
