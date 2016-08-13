@@ -166,7 +166,16 @@ Generally FFmpeg, simply because it has more features.
 
 ### I want the old PulseAudio volume control back on Linux
 
-With mpv 0.18.1, volume control was forced to softvol, and the ``--softvol`` option was removed. PulseAudio volume control (as in changing the per-client volume in the server) is not used anymore. If you want to use it, you have to switch you key-bindings manually to the audio output volume controls:
+With mpv 0.18.1, volume control was forced to softvol, and the ``--softvol`` option was removed. PulseAudio volume control (as in changing the per-client volume in the server) is not used anymore. The following things change with this as perceived by users with default settings:
+
+* changing volume in mpv now affects only the current mpv instance
+* volume is not saved across all instances (though it will be saved for the current instance/media file if you use the watch-later feature)
+* volume is not limited to 100% anymore
+* you cannot use mpv volume controls to set the volume higher than your current PulseAudio volume settings
+
+It is recommended that you use a separate, non-mpv key binding to control your global volume.
+
+If you want the old behavior, you have to switch you key-bindings manually to the audio output volume controls:
 
 * open your input.conf
 * add the following lines:
@@ -178,6 +187,8 @@ With mpv 0.18.1, volume control was forced to softvol, and the ``--softvol`` opt
 * or replace any occurrences of ``volume`` with ``ao-volume``
 * don't forget that lines starting with ``#`` are commented (the default input.conf has all entries commented)
 * note that mpv 0.18.1 had a bug that made PulseAudio "stuck" if the step was ``1`` and not ``2`` - this has been fixed in later versions
+* options like ``--volume`` can never influence the server value
+* you can do the same with the mute key binding (``mute`` -> ``ao-mute``)
 
 You can also grab all volume bindings from the [default input.conf)[https://raw.githubusercontent.com/mpv-player/mpv/master/etc/input.conf] to change all ``volume`` bindings.
 
