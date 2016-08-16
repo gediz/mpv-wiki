@@ -76,6 +76,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[myshows](https://github.com/gim-/mpv-plugin-myshows)**  
   Marks currently watched episode on MyShows website.
 
+* **[nextfile](https://github.com/donmaiq/mpv-nextfile)**  
+  Force opens next or previous file in the currently playing files folder.
+
 * **[notify](https://github.com/rohieb/mpv-notify)**  
   Adds desktop notifications to the mpv media player, which show metadata like artist, album name and track name when the track changes.
 
