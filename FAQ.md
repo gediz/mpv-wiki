@@ -117,14 +117,6 @@ For mp4 1080p video (3770k) and webm audio (149k, opus @160k):
 mpv --ytdl-format 137+251 https://www.youtube.com/watch?v=SYM-RJwSGQ8
 ```
 
-### Can I set volume over 100%?
-
-On some systems, 100% is the maximum. You can put ``softvol=yes`` to force mpv's own volume filter. Then the ``softvol-max`` option controls the maximum. It's 130 by default.
-
-Also consider using ``af=drc``, which helps especially with crappy speakers.
-
-Note that in older versions of mpv, a volume of ``100`` always meant maximum, even if the maximum mapped to a linear gain factor over ``1.0``.
-
 ### How can I change volume using the mouse wheel?
 
 By default, volume is changed by scrolling horizontally. If you want to use vertical scrolling for that (rather than seeking), put this in your `input.conf`:
