@@ -48,6 +48,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)**  
   Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
 
+* **[Filenavigator](https://github.com/donmaiq/mpv-filenavigator)**  
+  Navigate directories and open files from your system.
+
 * **[find_subtitles](https://github.com/directorscut82/find_subtitles)**  
   (Down)load subtitles with subliminal.
 
