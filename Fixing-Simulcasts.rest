@@ -91,6 +91,9 @@ Subtitles
 
 Timing
 ~~~~~~
+
+(Obsolete—Crunchyroll has fixed the MP4 muxer so subtitles should be timed correctly)
+
 The subtitles are sometimes timed one frame too late, causing scene bleeds all over the place. Use ``--sub-delay=-0.04`` to apply the fix at startup or add ``<key> cycle_values sub-delay "-0.04" "0"`` to your input.conf to toggle it during playback.
 
 Messed up Character-Encoding (obsolete)
