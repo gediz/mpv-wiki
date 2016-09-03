@@ -8,10 +8,10 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [xt7-player-mpv](https://github.com/kokoko3k/xt7-player-mpv):  
   A frontend to mpv with extra features.
 
-* [Baka MPlayer](https://github.com/u8sand/Baka-MPlayer):
+* [Baka MPlayer](https://github.com/u8sand/Baka-MPlayer):  
    A media player based on libmpv.
 
-* [mpc-qt](https://github.com/cmdrkotori/mpc-qt):
+* [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
    A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
 
 ## Other
