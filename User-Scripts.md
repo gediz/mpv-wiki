@@ -141,7 +141,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 
 ## Pixel Shaders
 
-* **[LumaSharpen](https://gist.github.com/voltmtr/023ec76d1c22d3854863)**  
+* **[LumaSharpenHook](https://gist.github.com/voltmtr/8b4404b4e23129b226b9e64863d3e28b)**  
   A sharpen filter similar to using Unsharp Mask in Photoshop ported from SweetFX shader pack.
 
 * **[FineSharp](https://gist.github.com/igv/a9a21ad1f6dd7d0b4452)**  
