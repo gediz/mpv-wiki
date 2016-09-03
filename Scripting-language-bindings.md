@@ -11,5 +11,5 @@ Both of them use the libmpv client API: https://github.com/mpv-player/mpv/blob/m
 
 ### External bindings
 
-- Python: https://github.com/andre-d/pympv
-- Python (another one): https://github.com/jaseg/python-mpv
+- Python: https://github.com/jaseg/python-mpv
+- Python (another one): https://github.com/andre-d/pympv
