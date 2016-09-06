@@ -9,6 +9,8 @@ All VO/AO sub-options were replaced. The following list is semi-complete, but wa
     --ao=alsa:mixer-name => --alsa-mixer-name
     --ao=alsa:non-interleaved => --alsa-non-interleaved
     --ao=alsa:resample => --alsa-resample
+    --ao=coreaudio:change-physical-format => --coreaudio-change-physical-format
+    --ao=coreaudio:exclusive => --audio-exclusive
     --ao=jack:autostart => --jack-autostart
     --ao=jack:connect => --jack-connect
     --ao=jack:name => --jack-name
@@ -204,4 +206,3 @@ All VO/AO sub-options were replaced. The following list is semi-complete, but wa
     --vo=xv:colorkey => --xv-colorkey
     --vo=xv:no-colorkey => --xv-no-colorkey
     --vo=xv:port => --xv-port
-
