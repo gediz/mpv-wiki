@@ -35,6 +35,18 @@ All VO/AO sub-options were replaced. The following list is semi-complete, but wa
     --ao=pulse:sink => --pulse-sink
     --ao=sdl:buflen => --sdl-buflen
     --ao=sndio:device => --ao-sndio-device
+    --ao=wasapi:exclusive => --audio-exclusive
+    --ao=wasapi:device => --audio-device
+    --vo=direct3d:disable-shaders => --vo-direct3d-disable-shaders
+    --vo=direct3d:disable-stretchrect => --vo-direct3d-disable-stretchrect
+    --vo=direct3d:disable-texture-align => --vo-direct3d-disable-texture-align
+    --vo=direct3d:disable-textures => --vo-direct3d-disable-textures
+    --vo=direct3d:exact-backbuffer => --vo-direct3d-exact-backbuffer
+    --vo=direct3d:force-power-of-2 => --vo-direct3d-force-power-of-2
+    --vo=direct3d:only-8bit => --vo-direct3d-only-8bit
+    --vo=direct3d:prefer-stretchrect => --vo-direct3d-prefer-stretchrect
+    --vo=direct3d:swap-discard => --vo-direct3d-swap-discard
+    --vo=direct3d:texture-memory => --vo-direct3d-texture-memory
     --vo=image:format => --vo-image-format
     --vo=image:high-bit-depth => --vo-image-high-bit-depth
     --vo=image:jpeg-quality => --vo-image-jpeg-quality
