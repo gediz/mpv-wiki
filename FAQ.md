@@ -16,7 +16,7 @@ Changing the compositor settings can sometimes help with tearing.
 
 * Windows
 
-  Whether tearing happens with OpenGL may depend on the backend. Try various with ``--vo=opengl:backend=NAME``, where `NAME` is the name of the backend. `dxinterop` seems to perform best generally, but it will crash randomly with some older buggy Intel drivers.
+  Whether tearing happens with OpenGL may depend on the backend. Try various with ``--opengl-backend=NAME``, where `NAME` is the name of the backend. `dxinterop` seems to perform best generally, but it will crash randomly with some older buggy Intel drivers.
 
   ``--vo=direct3d`` should never tear. (Maybe.)
 
@@ -44,7 +44,7 @@ Changing the compositor settings can sometimes help with tearing.
 
       Unfortunately, this can cause stability issues - GL applications sometimes randomly crash. Somewhere, there's a claim that adding ``i915.semaphores=1`` to your kernel parameters fixes the crashes.
     * Try disabling SNA by using UXA (on older hardware).
-    * Try ``--vo=xv:adaptor=N``, and try 0 or 1 for ``N``. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.
+    * Try ``--xv-adaptor=N``, and try 0 or 1 for ``N``. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.
     * Try ``--vo=vaapi``. Although this is Intel's native video output method, it seems to fix tearing only very rarely.
 
 * X11/AMD
