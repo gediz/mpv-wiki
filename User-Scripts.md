@@ -15,7 +15,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autoload](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)**  
   Automatically load playlist entries before and after the currently playing file, by scanning the directory.
 
-* **[auto-profiles](https://github.com/wm4/mpv-scripts/blob/master/auto-profiles.lua)**
+* **[auto-profiles](https://github.com/wm4/mpv-scripts/blob/master/auto-profiles.lua)**  
   Automatically apply profiles based on predicates written as Lua expressions.
 
 * **[autosub](https://gist.github.com/selsta/ce3fb37e775dbd15c698)**  
