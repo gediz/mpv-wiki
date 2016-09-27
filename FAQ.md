@@ -10,50 +10,54 @@ Tearing is generally not something a video player can do anything about. It depe
 
 Changing the compositor settings can sometimes help with tearing.
 
-* OSX
+#### OSX
 
-  Never seen it tearing.
+Never seen it tearing.
 
-* Windows
+#### Windows
 
-  Whether tearing happens with OpenGL may depend on the backend. Try various with ``--opengl-backend=NAME``, where `NAME` is the name of the backend. `dxinterop` seems to perform best generally, but it will crash randomly with some older buggy Intel drivers.
+Whether tearing happens with OpenGL may depend on the backend. Try various with ``--opengl-backend=NAME``, where `NAME` is the name of the backend. `dxinterop` seems to perform best generally, but it will crash randomly with some older buggy Intel drivers.
 
-  ``--vo=direct3d`` should never tear. (Maybe.)
+``--vo=direct3d`` should never tear. (Maybe.)
 
-* X11/Nvidia
+#### X11/Nvidia
 
- Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not in fullscreen (solution unknown). There are additional problems on multimonitor systems.
-    * Try enabling ``ForceFullCompositionPipeline``.
-    * Try with and without a compositor.
-    * Try disabling the composite extension in xorg.conf:
+Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not in fullscreen (solution unknown). There are additional problems on multimonitor systems.
 
-      ```
-      Section "Extensions"
-          Option "Composite" "Disable"
-      EndSection
-      ```
+* Try enabling ``ForceFullCompositionPipeline``.
+* Try with and without a compositor.
+* Try disabling the composite extension in xorg.conf:
+    ```
+    Section "Extensions"
+        Option "Composite" "Disable"
+    EndSection
+    ```
 
 
-    * Set the performance mode to maximum performance. Energy saving often interferes with proper vo_opengl operation, and sometimes even appears to cause tearing.
-    * Try ``--vo=vdpau``.
+* Set the performance mode to maximum performance. Energy saving often interferes with proper vo_opengl operation, and sometimes even appears to cause tearing.
+* Try ``--vo=vdpau``.
 
-* X11/Intel
+#### X11/Nvidia with PRIME
 
-  Intel tears out of the box. Intel users on Linux are going to have a pretty bad time.
-    * Try enabling SNA and the ``TearFree`` option.
+If your Xorg-server is older than ABI version 23, or your kernel is older than version 4.5, or your nvidia driver is not up to date, then you will inevitably get tearing due to the lack of [PRIME buffer synchronisation](https://devtalk.nvidia.com/default/topic/957814/linux/prime-and-prime-synchronization/1). You cannot fix this tearing with any of the other methods described on this page. Assume fetal position and cry, or switch to using your Intel GPU instead.
+
+#### X11/Intel
+
+Intel tears out of the box. Intel users on Linux are going to have a pretty bad time.
+* Try enabling SNA and the ``TearFree`` option.
 
       Unfortunately, this can cause stability issues - GL applications sometimes randomly crash. Somewhere, there's a claim that adding ``i915.semaphores=1`` to your kernel parameters fixes the crashes.
-    * Try disabling SNA by using UXA (on older hardware).
-    * Try ``--xv-adaptor=N``, and try 0 or 1 for ``N``. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.
-    * Try ``--vo=vaapi``. Although this is Intel's native video output method, it seems to fix tearing only very rarely.
+* Try disabling SNA by using UXA (on older hardware).
+* Try ``--xv-adaptor=N``, and try 0 or 1 for ``N``. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.
+* Try ``--vo=vaapi``. Although this is Intel's native video output method, it seems to fix tearing only very rarely.
 
-* X11/AMD
+#### X11/AMD
 
-  AMD users on Linux are going to have a pretty bad time.
+AMD users on Linux are going to have a pretty bad time.
 
-   * If you're getting tearing in multi-monitor setups, it seems there's nothing you can do about it. AMD drivers (apparently?) don't vsync across multiple monitors at all, let alone well.
-   * You can possibly fix some tearing-related issues by using the ``Tear Free Desktop``, but this seems to degrade the display to 30 Hz operation and adds a lot of input latency.
-   * For AMD cards it's generally a better idea to switch to the free radeon/mesa drivers and take the performance/feature hit, since the drivers provided by AMD are pretty unusable.
+* If you're getting tearing in multi-monitor setups, it seems there's nothing you can do about it. AMD drivers (apparently?) don't vsync across multiple monitors at all, let alone well.
+* You can possibly fix some tearing-related issues by using the ``Tear Free Desktop``, but this seems to degrade the display to 30 Hz operation and adds a lot of input latency.
+* For AMD cards it's generally a better idea to switch to the free radeon/mesa drivers and take the performance/feature hit, since the drivers provided by AMD are pretty unusable.
 
 ### I can't see the OSC/OSD/GUI!
 
