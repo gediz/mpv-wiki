@@ -142,6 +142,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[addfile](https://github.com/devnikor/mpv-conf/blob/master/scripts/addfile.lua)**  
   (OS X) Add subtitle or audio track to playing video file
 
+* **[simple-loader](https://github.com/fhlfibh/simple-loader)**  
+  (Linux) Browse dirs and files on OSD, and launch them with mpv.  
+
 If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://mpv.io/manual/master/#lua-scripting).
 
 
