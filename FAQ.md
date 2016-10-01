@@ -186,7 +186,7 @@ If you want the old behavior, you have to switch you key-bindings manually to th
 * options like ``--volume`` can never influence the server value
 * you can do the same with the mute key binding (``mute`` -> ``ao-mute``)
 
-You can also grab all volume bindings from the [default input.conf)[https://raw.githubusercontent.com/mpv-player/mpv/master/etc/input.conf] to change all ``volume`` bindings.
+You can also grab all volume bindings from the [default input.conf](https://raw.githubusercontent.com/mpv-player/mpv/master/etc/input.conf) to change all ``volume`` bindings.
 
 Note this this also works on other audio outputs and platforms. Which kind of volume ``ao-volume`` controls depends entirely on the audio API. Some APIs make it the global system volume, some make it per-client or per-stream private volume.
 
