@@ -2,15 +2,17 @@ The following code snippets go in `~/.zshrc` unless otherwise specified.
 
 # File extensions
 
-The Zsh completion that ships with mpv currently has a hard-coded list of filename extensions that it completes by default, which does not include all possible files that mpv can play. If you want to add extensions to the list, use something like this (adds .jpg and .png files):
+Older versions of the completion that ships with mpv had a hard-coded list of filename extensions that it completes by default, which did not include all possible files that mpv can play. More recent versions will complete all files by default.
+
+If you want to complete only certain file extensions, use something like this:
+
+    zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(mkv|mp4|flac|m4a)(-.) *(-/):directories' '*:all-files'
+
+If you're using an older version of the completion script, and you want to add some file extensions in addition to the ones the script completes by default, you can do this (adds .jpg and .png files):
 
     zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(jpg|jpeg|png)(-.) %p:globbed-files *(-/):directories' '*:all-files'
 
-If you want to use *only* your specified extensions, ignoring the ones that come with the script, use something like this instead:
-
-    zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(jpg|jpeg|png)(-.) *(-/):directories' '*:all-files'
-
-See [Issue #2273](https://github.com/mpv-player/mpv/issues/2273) for a discussion on what the defaults should be. Input is wanted.
+If you want to use *only* your specified extensions, ignoring the ones that come with the script, use the form that's further up the page without the globbed-files part.
 
 # URLs
 
