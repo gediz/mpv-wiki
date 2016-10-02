@@ -8,6 +8,8 @@ If you want to complete only certain file extensions, use something like this:
 
     zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(mkv|mp4|flac|m4a)(-.) *(-/):directories' '*:all-files'
 
+It will fall back to completing all files if no files with the given extensions are present or match what you've typed.
+
 If you're using an older version of the completion script, and you want to add some file extensions in addition to the ones the script completes by default, you can do this (adds .jpg and .png files):
 
     zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(jpg|jpeg|png)(-.) %p:globbed-files *(-/):directories' '*:all-files'
