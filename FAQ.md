@@ -191,3 +191,17 @@ You can also grab all volume bindings from the [default input.conf](https://raw.
 Note this this also works on other audio outputs and platforms. Which kind of volume ``ao-volume`` controls depends entirely on the audio API. Some APIs make it the global system volume, some make it per-client or per-stream private volume.
 
 For technically inclined people: there was also a branch adding change that would have allowed to change all key bindings with a single option, but it hasn't proven popular so far: https://github.com/mpv-player/mpv/commit/7621a028bf555c9ed0430501bc6eac2fa204114c
+
+### I want the old OSC back
+
+In mpv 0.21.0 the default OSC layout was changed to bottombar, along with other settings that worked better with it.
+
+Create a `lua-settings/osc.conf` text file inside mpv's configuration directory and use the following settings:
+```ini
+layout=box
+seekbarstyle=slider
+scalewindowed=1
+scalefullscreen=1
+deadzonesize=0
+minmousemove=3
+```
