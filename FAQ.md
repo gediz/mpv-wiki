@@ -205,3 +205,5 @@ scalefullscreen=1
 deadzonesize=0
 minmousemove=3
 ```
+
+Other options are available in the [manual](https://mpv.io/manual/stable/#configurable-options).
