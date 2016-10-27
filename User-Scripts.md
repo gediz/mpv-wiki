@@ -112,6 +112,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[progressbar](https://github.com/torque/mpv-progressbar)**  
   A minimalistic OSC replacement. It provides a small, unintrusive progress bar that persists at the bottom of the video window.
 
+* **[repl](https://github.com/rossy/mpv-repl)**
+  A REPL for input commands that is displayed on the video window.
+
 * **[skipchapters](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/skipchapters.lua)**  
   Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
