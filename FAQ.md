@@ -78,7 +78,7 @@ Pretty much like anything else, just pass the playlist URL to mpv. Note that you
 
 mpv is a command line program and doesn't provide an actual GUI. You need to start it with a media file. On Windows, you can create a file association with the ``Open with…`` context menu. Also, if you start ``mpv.exe`` from ``explorer.exe``, it will enter [pseudo-gui mode](http://mpv.io/manual/master/#pseudo-gui-mode). For Linux, a ``mpv.desktop`` file is provided.
 
-You can also start mpv with ``mpv --profile=pseudo-gui``. You play files by dropping them on the window.
+You can also start mpv with ``mpv --player-operation-mode=pseudo-gui``. You play files by dropping them on the window.
 
 ### How can I change video quality on YouTube?
 
