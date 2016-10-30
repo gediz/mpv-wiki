@@ -200,8 +200,6 @@ Create a `lua-settings/osc.conf` text file inside mpv's configuration directory 
 ```ini
 layout=box
 seekbarstyle=slider
-scalewindowed=1
-scalefullscreen=1
 deadzonesize=0
 minmousemove=3
 ```
