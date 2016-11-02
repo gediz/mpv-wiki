@@ -73,7 +73,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[minesweeper](https://github.com/wm4/mpv-scripts#mineslua)**  
   Minesweeper game.
 
-* **[mpv_change_OSD_media_title](https://github.com/nmoorthy1/mpv_change_OSD_media_title)**  
+* **[mpv-Change-OSD-Media-Title](https://github.com/nmoorthy1/mpv-Change-OSD-Media-Title)**  
   Displays filename, percentage watched, current chapter, and number of frames dropped in the OSD media title and updates it whenever one of the values has changed.
 
 * **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)**  
