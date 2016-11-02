@@ -74,7 +74,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Minesweeper game.
 
 * **[mpv_change_osd_media_title](https://github.com/nmoorthy1/mpv_change_osd_media_title)**  
-  Displays percentage watched, current chapter, and number of frames dropped in the OSD media title and updates it whenever one of the values has changed.
+  Displays filename, percentage watched, current chapter, and number of frames dropped in the OSD media title and updates it whenever one of the values has changed.
 
 * **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)**  
   Show frame info, similar to ffdshow's OSD.
