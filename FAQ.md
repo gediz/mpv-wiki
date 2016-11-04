@@ -204,4 +204,10 @@ deadzonesize=0
 minmousemove=3
 ```
 
+If you were using layout=bottombar already and want the scale back as it was before 0.21.1:
+```ini
+scalewindowed=0.666
+scalefullscreen=0.666
+```
+
 Other options are available in the [manual](https://mpv.io/manual/stable/#configurable-options).
