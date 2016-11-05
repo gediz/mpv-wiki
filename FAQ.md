@@ -204,7 +204,10 @@ deadzonesize=0
 minmousemove=3
 ```
 
-If you were using layout=bottombar already and want the scale back as it was before 0.21.1:
+
+In mpv 0.21.1, bottombar and topbar layouts were enlarged to have the same size in `scalewindowed=1` as before with `scalewindowed=1.5`.
+
+If you were using those layouts already and want the scale back as it was before 0.21.1, calculate it with `𝑥/1.5` where 𝑥 is the old value. So if are looking for the equivalent to `scalewindowed=1`, use these `lua-settings/osc.conf`:
 ```ini
 scalewindowed=0.666
 scalefullscreen=0.666
