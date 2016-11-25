@@ -8,14 +8,14 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [Baka MPlayer](https://github.com/u8sand/Baka-MPlayer):  
    A media player based on libmpv.
 
+* [bomi](http://bomi-player.github.io):  
+  bomi is a media player based on mpv for Linux. By taking the advantage of mpv and GUI, bomi provides various features. Not really a frontend - uses an internal mpv fork instead of libmpv.
+
 * [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
    A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
 
 * [xt7-player-mpv](https://github.com/kokoko3k/xt7-player-mpv):  
   A frontend to mpv with extra features.
-
-* [bomi](http://bomi-player.github.io):  
-  bomi is a media player based on mpv for Linux. By taking the advantage of mpv and GUI, bomi provides various features.
 
 ## Other
 
