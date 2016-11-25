@@ -2,6 +2,8 @@
 
 No. But there is the OSC (on-screen-controller), which lets you control playback with the mouse. Requires mpv to be compiled with Lua support.
 
+There are some [3rd party GUI frontends listed here](https://github.com/mpv-player/mpv/wiki/Applications-using-mpv#gui-frontends).
+
 ### Tearing
 
 [Tearing](https://en.wikipedia.org/wiki/Screen_tearing) is a very annoying artifact that makes it look like the video has a horizontal line across the video. The video isn't properly joining on that line. The line can be fixed or moving. Sometimes it's not a line, but a bunch of blocks. It can be unnoticeable if there is no movement, but very apparent if the camera moves e.g. at low speed.
