@@ -12,20 +12,14 @@ Banding (Shader Fix)
 ~~~~~~~~~~~~~~~~~~~~
 The only consistently occurring problem these days is banding, which can now be fixed using a simple integrated shader, without the hassle and performance-hit of VapourSynth.
 
-- If you always want to use the shader, simply add the ``:deband`` option to your vo config line in your ``mpv.conf``::
+- To use the debanding shader, use the opengl-hq profile in your ``mpv.conf`` like so::
 
-	vo=opengl-hq:deband
+	profile=opengl-hq
 
-- If you want to enable the shader optionally using a profile, add your regular options to the ``vo-defaults`` option instead and use a profile to override the ``vo`` option::
+- If you wish to have a keybind (in this example, ``b``) to disable the debanding shader, add the following to your ``input.conf``::
 
-	vo-defaults=opengl-hq:scale=[...]
-	vo=opengl-hq
-	
-	[db]
-	vo=opengl-hq:deband
-  Now you can enable the shader by activating the ``db`` profile on the command line::
+	b cycle deband
 
-	mpv --profile=db file.mkv
 
 That's pretty much all you need to do these days, consider everything below **deprecated**.
 
