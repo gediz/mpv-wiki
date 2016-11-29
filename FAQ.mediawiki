@@ -194,3 +194,8 @@ If you were using those layouts already and want the scale back as it was before
 scalefullscreen=0.666</source>
 Other options are available in the [https://mpv.io/manual/stable/#configurable-options manual].
 
+== How does youtube-dl work? Does it download the stream to disk? ==
+
+The mpv youtube-dl wrapper script calls `youtube-dl -J` on everything that looks like a network URL. This returns a direct media link to mpv. mpv streams from this link directly. Nothing is download to disk.
+
+The wrapper can be configured with this and the following options: https://mpv.io/manual/master/#options-ytdl
