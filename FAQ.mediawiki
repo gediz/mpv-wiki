@@ -1,0 +1,196 @@
+== Does mpv have an official GUI? ==
+
+No. But there is the OSC (on-screen-controller), which lets you control playback with the mouse. Requires mpv to be compiled with Lua support.
+
+There are some [https://github.com/mpv-player/mpv/wiki/Applications-using-mpv#gui-frontends 3rd party GUI frontends listed here].
+
+== Tearing ==
+
+[https://en.wikipedia.org/wiki/Screen_tearing Tearing] is a very annoying artifact that makes it look like the video has a horizontal line across the video. The video isn’t properly joining on that line. The line can be fixed or moving. Sometimes it’s not a line, but a bunch of blocks. It can be unnoticeable if there is no movement, but very apparent if the camera moves e.g. at low speed.
+
+Tearing is generally not something a video player can do anything about. It depends on the hardware, drivers, the video output selected in mpv (VO), and possibly the desktop environment / compositor.
+
+Changing the compositor settings can sometimes help with tearing.
+
+=== OSX ===
+
+Never seen it tearing.
+
+=== Windows ===
+
+Whether tearing happens with OpenGL may depend on the backend. Try various with <code>--opengl-backend=NAME</code>, where <code>NAME</code> is the name of the backend. <code>dxinterop</code> seems to perform best generally, but it will crash randomly with some older buggy Intel drivers.
+
+<code>--vo=direct3d</code> should never tear. (Maybe.)
+
+=== X11/Nvidia ===
+
+Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not in fullscreen (solution unknown). There are additional problems on multimonitor systems.
+
+<ul>
+<li>Try enabling <code>ForceFullCompositionPipeline</code>.</li>
+<li>Try with and without a compositor.</li>
+<li><p>Try disabling the composite extension in xorg.conf:</p>
+<pre>Section "Extensions"
+    Option "Composite" "Disable"
+EndSection</pre></li>
+<li>Set the performance mode to maximum performance. Energy saving often interferes with proper vo_opengl operation, and sometimes even appears to cause tearing.</li>
+<li><p>Try <code>--vo=vdpau</code>.</p></li></ul>
+
+=== X11/Nvidia with PRIME ===
+
+If your Xorg-server is older than ABI version 23, or your kernel is older than version 4.5, or your nvidia driver is not up to date, then you will inevitably get tearing due to the lack of [https://devtalk.nvidia.com/default/topic/957814/linux/prime-and-prime-synchronization/1 PRIME buffer synchronisation]. You cannot fix this tearing with any of the other methods described on this page. Assume fetal position and cry, or switch to using your Intel GPU instead.
+
+=== X11/Intel ===
+
+Intel tears out of the box. Intel users on Linux are going to have a pretty bad time.
+
+<ul>
+<li><p>Try enabling SNA and the <code>TearFree</code> option.</p>
+Unfortunately, this can cause stability issues - GL applications sometimes randomly crash. Somewhere, there’s a claim that adding <code>i915.semaphores=1</code> to your kernel parameters fixes the crashes.</li>
+<li>Try disabling SNA by using UXA (on older hardware).</li>
+<li>Try <code>--xv-adaptor=N</code>, and try 0 or 1 for <code>N</code>. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.</li>
+<li><p>Try <code>--vo=vaapi</code>. Although this is Intel’s native video output method, it seems to fix tearing only very rarely.</p></li></ul>
+
+=== X11/AMD ===
+
+AMD users on Linux are going to have a pretty bad time.
+
+* If you’re getting tearing in multi-monitor setups, it seems there’s nothing you can do about it. AMD drivers (apparently?) don’t vsync across multiple monitors at all, let alone well.
+* You can possibly fix some tearing-related issues by using the <code>Tear Free Desktop</code>, but this seems to degrade the display to 30 Hz operation and adds a lot of input latency.
+* For AMD cards it’s generally a better idea to switch to the free radeon/mesa drivers and take the performance/feature hit, since the drivers provided by AMD are pretty unusable.
+
+== I can’t see the OSC/OSD/GUI! ==
+
+The OSC requires Lua support. Install Lua (including development headers) and rebuild mpv.<br />
+If you didn’t build mpv yourself, ask the packager to enable Lua.
+
+Also note that the OSC is invisible by default, but it should appear once you move the mouse over the mpv window.
+
+== Why do YouTube videos take forever to load? ==
+
+Older ffmpeg versions didn’t support DASH properly, update to ffmpeg to git/HEAD.
+
+== (How) can I play YouTube playlists? ==
+
+Pretty much like anything else, just pass the playlist URL to mpv. Note that you need a link to the actual playlist (<code>https://www.youtube.com/playlist?list=...</code>), NOT to a video in the playlist (<code>https://www.youtube.com/watch?v=...&list=...&index=...</code>). You can get that link by clicking on the title of the playlist on the right.
+
+== If I click mpv, nothing happens. ==
+
+mpv is a command line program and doesn’t provide an actual GUI. You need to start it with a media file. On Windows, you can create a file association with the <code>Open with…</code> context menu. Also, if you start <code>mpv.exe</code> from <code>explorer.exe</code>, it will enter [http://mpv.io/manual/master/#pseudo-gui-mode pseudo-gui mode]. For Linux, a <code>mpv.desktop</code> file is provided.
+
+You can also start mpv with <code>mpv --player-operation-mode=pseudo-gui</code>. You play files by dropping them on the window.
+
+== How can I change video quality on YouTube? ==
+
+Check available format of video by '''youtube-dl''':
+
+<pre>youtube-dl --list-formats <link></pre>
+or<br />
+<code>youtube-dl -F <link></code>
+
+For example:
+
+<pre>youtube-dl -F https://www.youtube.com/watch?v=SYM-RJwSGQ8
+[info] Available formats for SYM-RJwSGQ8:
+format code  extension  resolution note
+...
+251          webm       audio only DASH audio  149k , opus @160k, 4.29MiB
+135          mp4        854x480    480p 1159k , avc1.4d401e, 25fps, video only, 16.02MiB
+247          webm       1280x720   720p 1372k , vp9, 25fps, video only, 20.12MiB
+136          mp4        1280x720   720p 2318k , avc1.4d401f, 25fps, video only, 30.37MiB
+248          webm       1920x1080  1080p 2402k , vp9, 25fps, video only, 35.54MiB
+137          mp4        1920x1080  1080p 3770k , avc1.640028, 25fps, video only, 55.70MiB
+22           mp4        1280x720   hd720 , avc1.64001F,  mp4a.40.2@192k (best)
+...</pre>
+Choice format and type
+
+<pre>mpv --ytdl-format [format code] https://www.youtube.com/watch?v=SYM-RJwSGQ8</pre>
+For 1280x720:
+
+<pre>mpv --ytdl-format 22 https://www.youtube.com/watch?v=SYM-RJwSGQ8</pre>
+You can mix different video+audio:
+
+<pre>mpv --ytdl-format [video format code] + [audio format code] link</pre>
+For mp4 1080p video (3770k) and webm audio (149k, opus @160k):
+
+<pre>mpv --ytdl-format 137+251 https://www.youtube.com/watch?v=SYM-RJwSGQ8</pre>
+== How can I change volume using the mouse wheel? ==
+
+By default, volume is changed by scrolling horizontally. If you want to use vertical scrolling for that (rather than seeking), put this in your <code>input.conf</code>:
+
+<pre>MOUSE_BTN3 add volume 2
+MOUSE_BTN4 add volume -2</pre>
+
+== How can I find out the names and commands associated with each key? ==
+
+Run mpv in [http://mpv.io/manual/master/#options-input-test input test mode]:
+
+<code>mpv --input-test --force-window --idle</code>
+
+== Is FFmpeg or Libav preferred for use with mpv? ==
+
+Generally FFmpeg, simply because it has more features.
+
+== How can I make mpv the default application to open movie files on OSX? ==
+
+<ul>
+<li><p>Install mpv as an app with Homebrew:</p>
+<source lang="bash">$ brew install mpv --with-bundle
+$ brew linkapps mpv</source></li>
+<li><p>Use [https://github.com/moretension/duti <code>duti</code>] to associate files with application:</p>
+<source lang="bash">$ brew install duti
+$ duti -s io.mpv api
+$ duti -s io.mpv mkv
+$ duti -s io.mpv mp4</source></li></ul>
+
+[https://github.com/kdeldycke/dotfiles/commit/380fed4e58070e10be9854636b8384960d3ee1d2 Source].
+
+== I want the old PulseAudio volume control back on Linux ==
+
+With mpv 0.18.1, volume control was forced to softvol, and the <code>--softvol</code> option was removed. PulseAudio volume control (as in changing the per-client volume in the server) is not used anymore. The following things change with this as perceived by users with default settings:
+
+* changing volume in mpv now affects only the current mpv instance
+* volume is not saved across all instances (though it will be saved for the current instance/media file if you use the watch-later feature)
+* volume is not limited to 100% anymore
+* you cannot use mpv volume controls to set the volume higher than your current PulseAudio volume settings
+
+It is recommended that you use a separate, non-mpv key binding to control your global volume.
+
+If you want the old behavior, you have to switch you key-bindings manually to the audio output volume controls:
+
+* open your input.conf (see [https://mpv.io/manual/master/#files here] for default location)
+* add the following lines:
+
+<pre>9 add ao-volume -2
+0 add ao-volume 2</pre>
+
+* or replace any occurrences of <code>volume</code> with <code>ao-volume</code>
+* don’t forget that lines starting with <code>#</code> are commented (the default input.conf has all entries commented)
+* note that mpv 0.18.1 had a bug that made PulseAudio “stuck” if the step was <code>1</code> and not <code>2</code> - this has been fixed in later versions
+* options like <code>--volume</code> can never influence the server value
+* you can do the same with the mute key binding (<code>mute</code> -&gt; <code>ao-mute</code>)
+
+You can also grab all volume bindings from the [https://raw.githubusercontent.com/mpv-player/mpv/master/etc/input.conf default input.conf] to change all <code>volume</code> bindings.
+
+Note this this also works on other audio outputs and platforms. Which kind of volume <code>ao-volume</code> controls depends entirely on the audio API. Some APIs make it the global system volume, some make it per-client or per-stream private volume.
+
+For technically inclined people: there was also a branch adding change that would have allowed to change all key bindings with a single option, but it hasn’t proven popular so far: https://github.com/mpv-player/mpv/commit/7621a028bf555c9ed0430501bc6eac2fa204114c
+
+== I want the old OSC back ==
+
+In mpv 0.21.0 the default OSC layout was changed to bottombar, along with other settings that worked better with it.
+
+Create a <code>lua-settings/osc.conf</code> text file inside mpv’s configuration directory and use the following settings:
+
+<source lang="ini">layout=box
+seekbarstyle=slider
+deadzonesize=0
+minmousemove=3</source>
+In mpv 0.22.0, bottombar and topbar layouts were enlarged to have the same size in <code>scalewindowed=1</code> as before with <code>scalewindowed=1.5</code>.
+
+If you were using those layouts already and want the scale back as it was before 0.22.0, calculate it with <code>𝑥/1.5</code> where 𝑥 is the old value. So if are looking for the equivalent to <code>scalewindowed=1</code>, use these <code>lua-settings/osc.conf</code>:
+
+<source lang="ini">scalewindowed=0.666
+scalefullscreen=0.666</source>
+Other options are available in the [https://mpv.io/manual/stable/#configurable-options manual].
+
