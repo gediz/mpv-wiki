@@ -174,19 +174,19 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[One-Pass Adaptive Sharpen](https://gist.github.com/igv/8a77e4eb8276753b54bb94c1c50c317e)**  
   One-pass version of adaptive sharpen shader. Has built-in anti-ringing filter.
 
-* **[CrossBilateral](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637)**  
+* **[KrigBilateral](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637)**  
   Chroma scaler that uses luma information for high quality upscaling.
 
-* **[SuperRes](https://gist.github.com/igv/2364ffa6e81540f29cb7ab4c9bc05b6b)**  
+* **[SSimSuperRes](https://gist.github.com/igv/2364ffa6e81540f29cb7ab4c9bc05b6b)**  
   The aim of this shader is to make corrections to the upscaled image. Works with regular scalers only, not prescalers.
 
-* **[luma noise](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/noise.glsl)**  
+* **[Noise](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/noise.glsl)**  
   Adds a tunable amount of grayscale noise to the output.
 
-* **[antiringing](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/antiring.hook)**  
+* **[Antiringing](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/antiring.hook)**  
   This is basically the equivalent (with some caveats) of mpv's built-in antiringing shader.
 
-* **[superxbr and nnedi3](https://github.com/bjin/mpv-prescalers/tree/master)**  
+* **[SuperXBR and Nnedi3](https://github.com/bjin/mpv-prescalers/tree/master)**  
   User shaders for prescaling. These shaders should cover most functionality that `prescale-luma=` provides.
 
 ## VapourSynth Scripts
