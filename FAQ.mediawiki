@@ -61,7 +61,7 @@ AMD users on Linux are going to have a pretty bad time.
 
 == I am using NVIDIA G-Sync on Windows and running mpv in fullscreen mode reduces the frame rate of other displays ==
 
-This is likely due to how G-Sync and Windows’ compositor interact. Using <code>--opengl-backend=win</code> should fix this because mpv gets an exclusive fullscreen window that way. The compositor unredirects exclusive fullscreen windows and is not forced to run at their frame rate.
+This is likely caused by the way G-Sync interacts with Windows’ compositor. Using <code>--opengl-backend=win</code> should fix this because mpv gets an exclusive fullscreen window that way. The compositor unredirects exclusive fullscreen windows and is not forced to run at their frame rate.
 
 == I can’t see the OSC/OSD/GUI! ==
 
