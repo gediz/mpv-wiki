@@ -59,6 +59,10 @@ AMD users on Linux are going to have a pretty bad time.
 * You can possibly fix some tearing-related issues by using the <code>Tear Free Desktop</code>, but this seems to degrade the display to 30 Hz operation and adds a lot of input latency.
 * For AMD cards it’s generally a better idea to switch to the free radeon/mesa drivers and take the performance/feature hit, since the drivers provided by AMD are pretty unusable.
 
+== I am using NVIDIA G-Sync on Windows and running mpv in fullscreen mode reduces the frame rate of other displays ==
+
+This is likely due to how G-Sync and Windows’ compositor interact. Using <code>--opengl-backend=win</code> should fix this because mpv gets an exclusive fullscreen window that way. The compositor unredirects exclusive fullscreen windows and is not forced to run at their frame rate.
+
 == I can’t see the OSC/OSD/GUI! ==
 
 The OSC requires Lua support. Install Lua (including development headers) and rebuild mpv.<br />
