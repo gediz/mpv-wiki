@@ -12,6 +12,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autodeint](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)**  
   Automatically deinterlace the video by using lavfi's idet filter to detect interlaced content.
 
+* **[auto-keep-gui-open](https://github.com/SteveJobzniak/mpv-tools/blob/master/auto-keep-gui-open.lua)**  
+  Intelligently switches mpv's "keep-open" behavior based on whether you are running in video-mode or audio-only mode.
+
 * **[autoload](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)**  
   Automatically load playlist entries before and after the currently playing file, by scanning the directory.
 
