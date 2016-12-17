@@ -36,6 +36,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[cycle_messages](https://gist.github.com/rrooij/59f57ff5f5a952e56bbb)**  
   Cycle between custom OSD messages.
 
+* **[cycle-video-rotate](https://github.com/SteveJobzniak/mpv-tools/blob/master/cycle-video-rotate.lua)**  
+  Allows you to perform video rotation which perfectly cycles through all 360 degrees without any glitches.
+
 * **[drc-control](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/drc-control.lua)**  
   Cycle through DRC (dynamic range compression) modes during runtime.
 
