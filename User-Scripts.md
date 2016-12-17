@@ -121,6 +121,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[progressbar](https://github.com/torque/mpv-progressbar)**  
   A minimalistic OSC replacement. It provides a small, unintrusive progress bar that persists at the bottom of the video window.
 
+* **[quick-scale](https://github.com/SteveJobzniak/mpv-tools/blob/master/quick-scale.lua)**  
+  Quickly scale the video player to a target size, with full control over target scale and max scale. Helps you effortlessly resize a video to fit on your desktop, or any other video dimensions you need!
+
 * **[reload](https://github.com/4e6/dotfiles/blob/master/.config/mpv/scripts/reload.lua)**  
   This script provides automatic reloading of videos that doesn't have buffering progress for some time while keeping the current time position. It also adds a keybinding to reload video manually.
 
