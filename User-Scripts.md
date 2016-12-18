@@ -91,6 +91,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[mpvmenu](https://github.com/nezumisama/mpvmenu)**  
   Adds a pop-up menu to mpv, which can be bound to a key or button
 
+* **[multi-command-if](https://github.com/SteveJobzniak/mpv-tools/blob/master/multi-command-if.lua)**  
+  Very powerful conditional logic and multiple action engine for your keybindings, without having to write a single line of code!
+
 * **[myshows](https://github.com/gim-/mpv-plugin-myshows)**  
   Marks currently watched episode on MyShows website.
 
