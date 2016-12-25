@@ -118,6 +118,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[peerflix-hook](https://gist.github.com/ElegantMonkey/bba287693830055a6bad90081c1ad4e2)**  
   Allows streaming of magnet links using peerflix, similar to youtube-dl.
 
+* **[pitchcontrol](https://github.com/FichteFoll/mpv-scripts/blob/master/pitchcontrol.lua)**
+  Adjusts audio pitch in half-tone steps.
+
 * **[Playlistmanager](https://github.com/donmaiq/Mpv-Playlistmanager)**  
   Helps with creating playlists, saving them and modifying your current playlist.
 
