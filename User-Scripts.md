@@ -9,7 +9,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autocrop](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autocrop.lua)**  
   Automatically crop the video by using lavfi's cropdetect filter to detect black bars.
 
-* **[autospeed](https://github.com/kevinlekiller/mpv_scripts/blob/master/perfstats/perfstats.lua)**  
+* **[autospeed](https://github.com/kevinlekiller/mpv_scripts/blob/master/autospeed/autospeed.lua)**  
   To adjust monitor refresh rate and video speed for almost 1:1 playback (Linux Only)
 
 * **[autodeint](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)**  
