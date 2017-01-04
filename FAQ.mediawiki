@@ -200,9 +200,9 @@ Other options are available in the [https://mpv.io/manual/stable/#configurable-o
 
 == How does youtube-dl work? Does it download the stream to disk? ==
 
-The mpv youtube-dl wrapper script calls <code>youtube-dl -J</code> on everything that looks like a network URL. This returns a direct media link to mpv. mpv streams from this link directly. Nothing is download to disk.
+The mpv youtube-dl wrapper script calls <code>youtube-dl -J</code> on URLs that begin with http(s). This returns a direct media link from which mpv streams directly. Nothing is downloaded to disk.
 
-The wrapper can be configured with this and the following options: https://mpv.io/manual/master/#options-ytdl
+See the manual for available options: https://mpv.io/manual/master/#options-ytdl
 
 == On Windows, why does mpv.exe not attach to the console and what does mpv.com do? ==
 
