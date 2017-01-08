@@ -211,7 +211,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
   This is basically the equivalent (with some caveats) of mpv's built-in antiringing shader.
 
 * **[SuperXBR and Nnedi3](https://github.com/bjin/mpv-prescalers/tree/master)**  
-  User shaders for prescaling. These shaders should cover most functionality that `opengl-shaders=` provides.
+  User shaders for prescaling. These shaders should cover most functionality that `prescale-luma=` used to provide.
 
 ## VapourSynth Scripts
 
