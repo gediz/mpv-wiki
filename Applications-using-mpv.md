@@ -11,6 +11,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [bomi](http://bomi-player.github.io):  
   bomi is a media player based on mpv for Linux. By taking the advantage of mpv and GUI, bomi provides various features. Not really a frontend - uses an internal mpv fork instead of libmpv.
 
+* [IINA](https://lhc70000.github.io/iina/):
+   A media player for macOS 10.10+ based on mpv.
+
 * [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
    A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
 
