@@ -227,8 +227,5 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 
 ## Other
 
-* **[mpv_vlive](https://github.com/Kagami/mpv_vlive)**  
-  Watch [vlive.tv](http://www.vlive.tv/) live streams.
-
 * **[mpv-youtube-dl-binding](https://github.com/antoniy/mpv-youtube-dl-binding)**  
   Natively play video streams in Firefox.
