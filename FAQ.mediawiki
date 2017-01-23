@@ -207,3 +207,9 @@ See the manual for available options: https://mpv.io/manual/master/#options-ytdl
 == On Windows, why does mpv.exe not attach to the console and what does mpv.com do? ==
 
 This is a limitation of the Windows platform. There are two so-called subsystems on Windows: the GUI subsystem and the CLI subsystem. A Windows executable can only use one of them. If a program uses the CLI subsystem, it can attach to the console, print messages there and receive input. However, such a program will always open a console window of its own if it is not already being run from one. A program using the GUI subsystem on the other hand will not attach to the console it is being called from, and control will immediately return to the command prompt. To work around that limitation, mpv has a separate executable, called mpv.com, which uses the CLI subsystem and redirects input and output for mpv.exe. Since Windows looks for executables with the .com suffix first (by default; defined by the %PATHEXT% variable), just typing mpv without a suffix on the command prompt will run mpv.com and you will get console output as expected.
+
+== How do I automatically play the next file in the folder? ==
+
+Either pass all files to mpv, e.g. run this in the directory with the files:
+<pre>mpv *.*</pre>
+Or use a script like https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua .
