@@ -1,0 +1,1 @@
+The question seems straight. The default amplification level is 100% and my speaker is not so good. So , every time I have to raise it while playing any media file with  "mpv -softvol --softvol-max 200 ". How do I permanently change it so that I don't have to write that command again and again ? 
