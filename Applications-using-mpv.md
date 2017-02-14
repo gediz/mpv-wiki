@@ -8,7 +8,7 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
   A media player based on libmpv.
 
 * [bomi](http://bomi-player.github.io):  
-  bomi is a media player based on mpv for Linux. By taking the advantage of mpv and GUI, bomi provides various features. Not really a frontend - uses an internal mpv fork instead of libmpv.
+  bomi is a media player based on mpv for Linux. By taking the advantage of mpv and GUI, bomi provides various features. Not really a frontend - uses an internal mpv fork instead of libmpv. Currently outdated and unmaintained.
 
 * [gnome-mpv](https://github.com/gnome-mpv/gnome-mpv):  
   A simple GTK+ frontend for mpv.
