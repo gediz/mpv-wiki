@@ -19,6 +19,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
   A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
 
+* [mpv-android](https://github.com/mpv-android/mpv-android):  
+  A media player for Android devices based on libmpv.
+
 * [SMPlayer](http://smplayer.sourceforge.net/):  
   A cross-platform graphical front-end for MPlayer and forks of Mplayer using GUI widgets offered by Qt.
 
@@ -30,7 +33,7 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [boram](https://github.com/Kagami/boram):  
   boram is a cross-platform WebM converter which embeds libmpv as Chromium PPAPI plugin in order to preview and interactively cut/crop media file to be encoded.
 
-* [PlexMediaPlayer](https://github.com/plexinc/plex-media-player)
+* [PlexMediaPlayer](https://github.com/plexinc/plex-media-player):  
   A Plex GUI client (provides access to Plex servers), which uses libmpv for video and music playback.
 
 * [SpaceTV](https://github.com/IgnorantGuru/spacefm-plugins/wiki#wiki-ig-spacetv):  
