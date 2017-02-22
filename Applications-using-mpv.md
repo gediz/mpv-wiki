@@ -46,3 +46,7 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 
 * [webm.py](https://github.com/Kagami/webm.py):  
   Converter which uses mpv for interactive cutting and cropping of videos being transcoded to WebM.
+
+## See also
+
+* [List of packages requiring mpv](https://aur.archlinux.org/packages/mpv-full/) in AUR
