@@ -16,6 +16,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [IINA](https://lhc70000.github.io/iina/):  
   A media player for macOS 10.10+ based on mpv.
 
+* [mochi-player](https://mochi-player.github.io/):  
+  Rewrite of Baka using Qt Quick + QML.
+
 * [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
   A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
 
