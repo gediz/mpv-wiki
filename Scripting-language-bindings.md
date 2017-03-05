@@ -15,4 +15,4 @@ Both of them use the libmpv client API: https://github.com/mpv-player/mpv/blob/m
 - Python (another one): https://github.com/marcan/pympv
 - Ruby: https://github.com/woodruffw/ruby-mpv
 - JavaScript: https://github.com/rcombs/node-mpv
-- JavaScript (Pepper): https://github.com/Kagami/mpv.js
+- JavaScript (PPAPI): https://github.com/Kagami/mpv.js
