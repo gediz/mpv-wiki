@@ -31,8 +31,8 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [xt7-player-mpv](https://github.com/kokoko3k/xt7-player-mpv):  
   A frontend to mpv with extra features.
 
-* [VidCutter](https://github.com/ozmartian/vidcutter):
-  simple & fast video cutter & joiner powered by libmpv + FFmpeg and written in PyQt5.
+* [VidCutter](https://github.com/ozmartian/vidcutter):  
+  A simple & fast video cutter & joiner powered by libmpv + FFmpeg and written in PyQt5.
 
 ## Other
 
