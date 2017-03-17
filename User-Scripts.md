@@ -6,6 +6,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 ## Lua Scripts
 
+* **[acompressor](https://github.com/medhefgo/mpv-acompressor)**  
+  Dynamic range compressor using acompressor ffmpeg filter with controls to dynamically adjust parameters.
+
 * **[autocrop](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autocrop.lua)**  
   Automatically crop the video by using lavfi's cropdetect filter to detect black bars.
 
