@@ -168,6 +168,9 @@ MPlayer developers who have replied, but have not given a final answer, and want
 Isn't giving a definitive answer:
 - cehoyos
 
+In progress:
+- Gwenole Beauchesne (needs to go through corporate to get permission)
+
 Have disagreed with relicensing:
 - anders
 - iive (agrees to LGPL 3.0 or later, but not LGPL 2.1 or later)
