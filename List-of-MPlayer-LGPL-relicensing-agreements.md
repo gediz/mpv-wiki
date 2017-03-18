@@ -84,6 +84,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Joachim Breitner
 - Oswald Buddenhagen
 - Angelo Cano
+- Davide Capodaglio
 - Hugo Chargois
 - chocolateboy
 - Dan Villiom Podlaski Christiansen (danchr)
