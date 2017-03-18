@@ -174,6 +174,7 @@ Isn't giving a definitive answer:
 
 In progress:
 - Gwenole Beauchesne (needs to go through corporate to get permission)
+- rfelker
 
 Have disagreed with relicensing:
 - anders
