@@ -41,7 +41,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - komh
 - kraymer
 - ksorim
-- laaz
+- laaz (probably with restrictions: excludes most of subreader.c from relicensing agreement)
 - lgb
 - melanson
 - mgraffam
