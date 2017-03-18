@@ -41,6 +41,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - komh
 - kraymer
 - ksorim
+- laaz
 - lgb
 - melanson
 - mgraffam
@@ -174,7 +175,6 @@ In progress:
 Have disagreed with relicensing:
 - anders
 - iive (agrees to LGPL 3.0 or later, but not LGPL 2.1 or later)
-- laaz
 
 The list of people who have yet to reply isn't public.
 
