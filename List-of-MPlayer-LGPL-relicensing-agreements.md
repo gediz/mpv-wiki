@@ -156,6 +156,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Mike Swieton
 - Pedro Larroy Tovar
 - Vladimir Umnov
+- Giorgio Vazzana
 - Dennis Vshivkov
 - Per Wigren
 - Marcin Wojdyr
