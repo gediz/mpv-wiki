@@ -21,7 +21,7 @@ German Gomez Garcia
 Uwe Reder (subtitle enable/disable patch, some other small patches)
 Pascal Haakmat
 Mark Zealey (early -geometry option code)
-hephooey@gmail.com
+hephooey (at gmail.com)
 Jesper Svennevid
 Eric Lammerts
 Dénes Balatoni
