@@ -10,19 +10,17 @@ Stefan Huehner or Stefan Hühner (tons of code cleanups that touch everything)
 Sidik Isani
 Dave Lambley
 Ulion (many changes all over the place)
-Rich Felker
-Stephen Warren
 Naoya OYAMA  (ad_spdif.c)
-Aaron Holtzman (sekeleton for struct vo)
+Aaron Holtzman (his libmpeg2 code was used by arpi as skeleton for vo.h)
 Michel Lespinasse
 Martin Kebert
 Luca Abeni
-Ville Syrjälä
+Ville Syrjälä (svn name syrjala, did vo_dfbmga.c, which we removed, but a patch for nv12 touches other areas)
 Jürgen Keil (many early cleanups that touch a lot of code)
 German Gomez Garcia
-Uwe Reder
+Uwe Reder (subtitle enable/disable patch, some other small patches)
 Pascal Haakmat
-Mark Zealey
+Mark Zealey (early -geometry option code)
 hephooey@gmail.com
 Jesper Svennevid
 Eric Lammerts
@@ -30,12 +28,12 @@ Dénes Balatoni
 R.L. Horn
 seru
 Kir Kostuchenko
-Baryshkov, Dmitry (lumag)
+Baryshkov, Dmitry (svn name lumag, minor fixes in commit 175884718b19cd9, otherwise removed only remofed/doc changes)
 Arwed von Merkatz
 Zoltan Hidvegi (hzoli)
 Eviv Bulgroz
 Jeremy Huddleston (maybe jeremyhu on github, for commit 9b0d8c680f634)
-kiriuja
+kiriuja (some pretty intrusive patches that touch a lot of code)
 Wei Jiang
 Timothy Lee
 Rune Petersen
@@ -70,7 +68,7 @@ Fabian Franz
 nVidia Corporation
 Gordon Schmidt
 Bernd Ernesti
-Artur Zaprzała
+Artur Zaprzała (svn name zybi - very early changes, probably created OSD symbol font)
 Vladimir Kushnir
 
 People whose email addresses are not valid anymore
