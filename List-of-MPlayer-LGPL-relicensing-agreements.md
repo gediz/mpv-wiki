@@ -68,7 +68,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - ubitux
 - vayne (also contributed patches by mail as Erik Lunchpail)
 - voroshil
-- wanderer (inverseparadox on github), with restrictions (see discussion below)
+- wanderer (inverseparadox on github), with restrictions (see discussion on the github issue)
 - zuxy
 
 Partial map of svn usernames: https://ffmpeg.org/pipermail/ffmpeg-devel/2008-April/040487.html
