@@ -135,6 +135,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Martin Oberzalek
 - Magne Oestlyngen
 - Christian Ohm
+- Dan Oscarsson
 - Trent Piepho
 - Joakim Plate (elupus)
 - Lennart Poettering
