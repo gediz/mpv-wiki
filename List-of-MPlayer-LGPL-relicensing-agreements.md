@@ -173,4 +173,6 @@ Have disagreed with relicensing:
 - iive (agrees to LGPL 3.0 or later, but not LGPL 2.1 or later)
 - laaz
 
-A few of these agreements were received via the mplayer-dev-eng mailing list, a few on IRC, a moderate amount in this github issue, and most via personal mail.
+The list of people who have yet to reply isn't public.
+
+A few of these agreements were received via the mplayer-dev-eng mailing list, a few on IRC, a moderate amount in the relicensing github issue, and most via personal mail.
