@@ -180,6 +180,6 @@ Have disagreed with relicensing:
 - anders
 - iive (agrees to LGPL 3.0 or later, but not LGPL 2.1 or later)
 
-The list of people who have yet to reply is here: https://github.com/mpv-player/mpv/wiki/List-of-MPlayer-LGPL-missing-agreements
+The list of people who have yet to reply is here: https://github.com/mpv-player/mpv/wiki/List-of-missing-MPlayer-LGPL-relicensing-agreements
 
 A few of these agreements were received via the mplayer-dev-eng mailing list, a few on IRC, a moderate amount in the relicensing github issue, and most via personal mail.
