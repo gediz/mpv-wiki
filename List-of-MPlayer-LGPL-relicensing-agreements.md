@@ -38,6 +38,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - ivo
 - joey
 - jonas
+- kmkaplan
 - komh
 - kraymer
 - ksorim
@@ -136,6 +137,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Magne Oestlyngen
 - Christian Ohm
 - Dan Oscarsson
+- Attila Ötvös (oatilla)
 - Trent Piepho
 - Joakim Plate (elupus)
 - Lennart Poettering
