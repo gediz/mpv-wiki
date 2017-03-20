@@ -4,7 +4,6 @@ Send a mail to nfxjfg@googlemail.com, or post on: https://github.com/mpv-player/
 People who were contacted, but did not reply
 ------------------------------------------------
 - rguyom (some very early vd_ffmpeg.c fixes)
-- Stefan Huehner or Stefan Hühner (tons of code cleanups that touch everything)
 - Sidik Isani
 - Dave Lambley
 - Ulion (many changes all over the place)
