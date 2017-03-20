@@ -106,6 +106,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Bryan Henderson
 - Jens Hoffmann
 - Loring Holden
+- Stefan Hühner
 - Panagiotis Issaris
 - Robert Juliano
 - Nicholas Kain
