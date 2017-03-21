@@ -67,6 +67,7 @@ People who were contacted, but did not reply
 - Bernd Ernesti
 - Artur Zaprzała (svn name zybi - very early changes, probably created OSD symbol font)
 - Vladimir Kushnir
+- Nehal Mistry (some win32 mouse code, maybe or not still in w32_common.c)
 
 People whose email addresses are not valid anymore
 ------------------------------------
