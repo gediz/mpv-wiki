@@ -1,88 +1,91 @@
 If you are any of the people below, please contact us!
 Send a mail to nfxjfg@googlemail.com, or post on: https://github.com/mpv-player/mpv/issues/2033
 
-People who were contacted, but did not reply
-------------------------------------------------
-- rguyom (some very early vd_ffmpeg.c fixes)
-- Sidik Isani
-- Dave Lambley
-- Ulion (many changes all over the place)
-- Naoya OYAMA  (ad_spdif.c)
-- Aaron Holtzman (his libmpeg2 code was used by arpi as skeleton for vo.h)
-- Michel Lespinasse
-- Martin Kebert
-- Luca Abeni
-- Ville Syrjälä (svn name syrjala, did vo_dfbmga.c, which we removed, but a patch for nv12 touches other areas)
-- Jürgen Keil (many early cleanups that touch a lot of code)
-- German Gomez Garcia
-- Uwe Reder (subtitle enable/disable patch, some other small patches)
-- Pascal Haakmat
-- Mark Zealey (early -geometry option code)
-- hephooey (at gmail.com)
-- Jesper Svennevid
-- Eric Lammerts
-- Dénes Balatoni
-- R.L. Horn
-- seru
-- Kir Kostuchenko
-- Baryshkov, Dmitry (svn name lumag, minor fixes in commit 175884718b19cd9, otherwise removed only remofed/doc changes)
-- Arwed von Merkatz
-- Zoltan Hidvegi (hzoli)
-- Eviv Bulgroz
-- Jeremy Huddleston (maybe jeremyhu on github, for commit 9b0d8c680f634)
-- kiriuja (some pretty intrusive patches that touch a lot of code)
-- Wei Jiang
-- Timothy Lee
-- Rune Petersen
-- Sam Dennis
-- Nikolai Weibull
-- Loren Merritt (apart from mencoder, some small changes)
-- Paul Lebedev
-- Federico Menarini
-- Emanuele Giaquinta
-- Bryan Veal (probably "veal" in commit 116ca0c768219b10e)
-- Gianluigi Tiesi
-- Onur Küçük
-- Tim Wojtulewicz
-- Gábor Mizda
-- emild
-- Thomas Reitmayr
-- Chris Welton
-- James Warden
-- Sergey Malkovsky
-- Mathieu Schroeter
-- Ricardo Villalba
-- Benson Mitchell
-- Christian P. Schmidt
-- Francesco Lavra
-- Laurent
-- Melchior Franz
-- KS Ng dmbth
-- Endre Kollár
-- Yuriy Kaminskiy
-- Nikolay Nikolaev
-- Fabian Franz
-- nVidia Corporation
-- Gordon Schmidt
-- Bernd Ernesti
-- Artur Zaprzała (svn name zybi - very early changes, probably created OSD symbol font)
-- Vladimir Kushnir
-- Nehal Mistry (some win32 mouse code, maybe or not still in w32_common.c)
 
 People whose email addresses are not valid anymore
 ------------------------------------
-- Filip Kalinski (filon) <filon@pld.org.pl>
-- Alan Curry <pacman@world.std.com>
-- Bryan Chan <scorpio@acm.org> (user dead) (fakemono patch)
-- Aleksander V. Dyomin <fly@shax.ru> ("mail for shax.ru loops back to myself")
-- Evgeny Chukreev <codedj@echo.ru> ("No such user!")
-- Nick Kurshev <nickols_k@mail.ru> (user terminated) nickols_k@users.sourceforge.net (unknown user)
-- Kees Cook <mplayer@outflux.net> (user unknown)
-- Balazs Tibor <tibcu@sch.bme.hu> (user unknown)
-- Tristan <z80@oceanfree.net> (unknown user)
-- adland <adland123@yahoo.com> (account gone)
-- matthieu <mat100@ifrance.com> (probably Matthieu Castet)
-- Tom Lees <tal26@cam.ac.uk>
-- Daniel Dawson <ddawson@icehouse.net> (user does not exist)
-- Janusz Krzysztofik <jkrzyszt@tis.icnet.pl> (unrouteable address)
-- Christian <herr.mitterlehner@gsmpaaiml.com> (host not found)
+- Nick Kurshev <nickols_k@mail.ru> (user terminated) nickols_k@users.sourceforge.net (unknown user) (refactored old dec_audio.c code)
+- Daniel Dawson <ddawson@icehouse.net> (user does not exist) (demux_mkv and ordered chapters fixes in mplayer2)
+- Evgeny Chukreev <codedj@echo.ru> ("No such user!") (initial sub_delay support)
+- adland <adland123@yahoo.com> (account gone) (url escaping fix, implicit contribution to ao_alsa, dvd:// command line parsing)
+- Tristan <z80@oceanfree.net> (unknown user) (demux_mkv changes - unknown whether the same person as Tristan Seligmann, who agreed with LGPL)
+- matthieu <mat100@ifrance.com> (probably Matthieu Castet) (patch to demux_mkv in 2003 - code is probably still there)
+- Balazs Tibor <tibcu@sch.bme.hu> (user unknown) (small fixes: -frames 0, reset frame drop stats on new files)
+- Christian <herr.mitterlehner@gsmpaaiml.com> (host not found) (osd-fractions option patch, reworked by uau)
+- Alan Curry <pacman@world.std.com> (relatively trivial changes to vd_ffmpeg.c and demux_lavf.c and other areas, most contributions in removed code)
+- Aleksander V. Dyomin <fly@shax.ru> ("mail for shax.ru loops back to myself") (-sstep option)
+- Janusz Krzysztofik <jkrzyszt@tis.icnet.pl> (unrouteable address) (effectively adds a few IMGFMTs, other patches removed)
+- Filip Kalinski (filon) <filon@pld.org.pl> (a ao_alsa patch; many x11 changes but we've given up on LGPL for x11)
+- Kees Cook <mplayer@outflux.net> (user unknown) (dvdnav support, which won't be relicensed, but also potentially touches common code like input commands, which we want as LGPL)
+- Tom Lees <tal26@cam.ac.uk> (trivial ao_alsa patch, code was probably removed)
+- Bryan Chan <scorpio@acm.org> (user dead) (fakemono patch, probably fully removed?)
+
+
+People who were contacted, but did not reply
+------------------------------------------------
+- Aaron Holtzman (his libmpeg2 code was used by arpi as skeleton for vo.h and related files)
+- Ulion (many changes all over the place, added significant features)
+- Jürgen Keil (added audio_pause/audio_resume callbacks to libao2, use_sleep function, many early cleanups that are probably trivial, but touch a lot of code)
+- Michel Lespinasse (part of his libmpeg2 video output changes might have been used as skeleton for vo.h)
+- Martin Kebert (an OSD patch in 2001, introduces the osd-level concept and a key shortcut to change it)
+- Luca Abeni (introduced fmt-conversion.h for pixfmts, changed some other MPlayer code to use it - libswscale contribs not needed)
+- Dénes Balatoni (introduces demux_control, also early slave commands for getting time/position, probably turned into later properties)
+- kiriuja (audio track runtime switching be54f4813fdc9, option parser changes 43844d090c55, subtitle loading stuff (not sure if removed/replaced), video equalizer fix, some early slave mode things)
+- Naoya OYAMA  (ad_spdif.c)
+- Pascal Haakmat (-loop option, code was refactored 10 times but is still there)
+- Sidik Isani (-autosync code, absolute seeks for -ss, rest was probably removed)
+- Uwe Reder (subtitle enable/disable patch, some other small patches that were probably removed)
+- Baryshkov, Dmitry (svn name lumag, minor fixes in commit 175884718b19cd9, otherwise removed only removed/doc changes)
+- Mark Zealey (early -geometry option code)
+- Ville Syrjälä (svn name syrjala, did vo_dfbmga.c, which we removed, but a patch for nv12 touches other areas)
+- hephooey (at gmail.com) (possibly early subtitle switching code)
+- Federico Menarini (simpleblock support in demux_mkv f7e89b57fa42cbb)
+- Jesper Svennevid (2 early panscan/aspect patches)
+- seru (OSD changes 8d190244d21a4d4, some other insignificant changes)
+- Emanuele Giaquinta (a small demux_mkv fix, fixes to OSX code)
+- Eviv Bulgroz (messes with stream seeking code in 2aa6acd9747ae, other changes not needed)
+- KS Ng dmbth (demux_lavf new streams c310aa46283f)
+- Eric Lammerts (small patch for changing reading from stdin in 2002: 654a6f977134537)
+- Jeremy Huddleston (maybe jeremyhu on github, for cache fill options/impl in 9b0d8c680f634)
+- Melchior Franz (-geometry extensions 90188f0e5fce)
+- Sam Dennis (2 small fixes to demux_mkv, another minor fix to mplayer.c)
+- R.L. Horn (small patch for ALSA audio output)
+- rvm (most likely Ricardo Villalba) (-volume option, exit reason stuff in mplayer.c)
+- Nikolai Weibull (patch to get_path.c b4f2bc353b69)
+- Mathieu Schroeter (mostly slave mode extensions/fixes)
+- Onur Küçük (small change to video output aspect code)
+- Laurent (stream EOF fix a0f08fbebbdf)
+- Yuriy Kaminskiy (path handling changes e8757fb88311, ass file loading fc50523f80a probably removed)
+- Timothy Lee (some small fixes 2004-2006)
+- Dave Lambley (cookies.c code and options)
+- Zoltan Hidvegi (hzoli) (messes with common audio decode code in 067c0482d99d, vd_ffmpeg.c change in b49ee1f782340, other changes not needed)
+- Chris Welton (small demux_lavf API change update 958c41d9b69843)
+- Wei Jiang (small bug fixes in 2004, most memleaks)
+- Paul Lebedev (track names in demux_mkv 62bfae140613321a)
+- Fabian Franz (playtree extensions, most code probably removed, but mp_basename still exists in some form)
+- rguyom (some very early vd_ffmpeg.c fixes)
+- Nehal Mistry (some win32 mouse code, maybe or not still in w32_common.c)
+- German Gomez Garcia (early spdif code - probably all removed, except audio_out_format_name change)
+- Bryan Veal (probably "veal" in commit 116ca0c768219b10e, osd_show_property_text command, probably became show_text?)
+- Gianluigi Tiesi (bzero -> memset patch)
+- Nikolay Nikolaev (-http-header-fields option that is sort of present even in the new http code)
+- Kir Kostuchenko (some TV changes - TV will stay GPL, but this touches common mplayer.c code that should become LGPL)
+- Tim Wojtulewicz (-geometry for vo_corevideo, not sure if still present)
+- Loren Merritt (apart from mencoder, some small changes)
+- emild (pretty trivial demux_lavf change in afe879eb993944c5)
+- Benson Mitchell (a -geometry option fix 8e2054934ae, probably trivial or removed)
+- Artur Zaprzała (svn name zybi - very early changes, probably created OSD symbol font)
+- Francesco Lavra (DVB teletext - most likely all removed or in GPL-only code, but still touches a lot of other code)
+- Gábor Mizda (minor code changes in b39cfa205fdb8 and d2705f7abe65, mostly did hungarian docs otherwise)
+- Endre Kollár (vf_stereo3d fixes)
+- Gordon Schmidt (initial vf_stereo3d.c code)
+- Arwed von Merkatz (a patch for CDDA, the patches for removed fontconfig support are not needed)
+- Bernd Ernesti (portability patches - unclear if anything survived, TV patches not needed)
+- Sergey Malkovsky (subtitle selection change 27cdeb019dfe41fd7c349fc, probably trivial)
+- Vladimir Kushnir (very early BSD portability changes, unclear if anything survived)
+- Rune Petersen (Windows -priority option 14ecebe920e68f1)
+- Christian P. Schmidt (directory-specific config files 7e8ff35fd2)
+- James Warden (add 32 bit sample format to pulseaudio output, trivial)
+
+- Thomas Reitmayr (actually we don't need to ask him?)
+- nVidia Corporation (most vdpau code, they said they're "looking into" the relicensing request)
