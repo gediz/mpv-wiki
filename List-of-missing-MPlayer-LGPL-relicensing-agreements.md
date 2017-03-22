@@ -73,7 +73,6 @@ People who were contacted, but did not reply
 - Tim Wojtulewicz (-geometry for vo_corevideo, not sure if still present)
 - Loren Merritt (apart from mencoder, some small changes)
 - emild (pretty trivial demux_lavf change in afe879eb993944c5)
-- Benson Mitchell (a -geometry option fix 8e2054934ae, probably trivial or removed)
 - Artur Zaprzała (svn name zybi - very early changes, probably created OSD symbol font)
 - Francesco Lavra (DVB teletext - most likely all removed or in GPL-only code, but still touches a lot of other code)
 - Gábor Mizda (minor code changes in b39cfa205fdb8 and d2705f7abe65, mostly did hungarian docs otherwise)
