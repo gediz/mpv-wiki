@@ -130,6 +130,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Hector Martin
 - Sean McGovern
 - Rob McMullen
+- Benson Mitchell
 - Jack Moffitt
 - Steve(n) Mueller
 - Lauri Mylläri
