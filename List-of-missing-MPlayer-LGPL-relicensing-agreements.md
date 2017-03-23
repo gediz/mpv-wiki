@@ -5,7 +5,6 @@ Send a mail to nfxjfg@googlemail.com, or post on: https://github.com/mpv-player/
 People whose email addresses are not valid anymore
 ------------------------------------
 - Nick Kurshev <nickols_k@mail.ru> (user terminated) nickols_k@users.sourceforge.net (unknown user) (refactored old dec_audio.c code)
-- Daniel Dawson <ddawson@icehouse.net> (user does not exist) (demux_mkv and ordered chapters fixes in mplayer2)
 - Evgeny Chukreev <codedj@echo.ru> ("No such user!") (initial sub_delay support)
 - adland <adland123@yahoo.com> (account gone) (url escaping fix, implicit contribution to ao_alsa, dvd:// command line parsing)
 - Tristan <z80@oceanfree.net> (unknown user) (demux_mkv changes - unknown whether the same person as Tristan Seligmann, who agreed with LGPL)
@@ -16,7 +15,6 @@ People whose email addresses are not valid anymore
 - Aleksander V. Dyomin <fly@shax.ru> ("mail for shax.ru loops back to myself") (-sstep option)
 - Janusz Krzysztofik <jkrzyszt@tis.icnet.pl> (unrouteable address) (effectively adds a few IMGFMTs, other patches removed)
 - Filip Kalinski (filon) <filon@pld.org.pl> (a ao_alsa patch; many x11 changes but we've given up on LGPL for x11)
-- Kees Cook <mplayer@outflux.net> (user unknown) (dvdnav support, which won't be relicensed, but also potentially touches common code like input commands, which we want as LGPL)
 - Tom Lees <tal26@cam.ac.uk> (trivial ao_alsa patch, code was probably removed)
 - Bryan Chan <scorpio@acm.org> (user dead) (fakemono patch, probably fully removed?)
 
@@ -27,7 +25,6 @@ People who were contacted, but did not reply
 - Ulion (many changes all over the place, added significant features)
 - Jürgen Keil (added audio_pause/audio_resume callbacks to libao2, use_sleep function, many early cleanups that are probably trivial, but touch a lot of code)
 - Michel Lespinasse (part of his libmpeg2 video output changes might have been used as skeleton for vo.h)
-- Martin Kebert (an OSD patch in 2001, introduces the osd-level concept and a key shortcut to change it)
 - Luca Abeni (introduced fmt-conversion.h for pixfmts, changed some other MPlayer code to use it - libswscale contribs not needed)
 - Dénes Balatoni (introduces demux_control, also early slave commands for getting time/position, probably turned into later properties)
 - kiriuja (audio track runtime switching be54f4813fdc9, option parser changes 43844d090c55, subtitle loading stuff (not sure if removed/replaced), video equalizer fix, some early slave mode things)
@@ -77,7 +74,6 @@ People who were contacted, but did not reply
 - Francesco Lavra (DVB teletext - most likely all removed or in GPL-only code, but still touches a lot of other code)
 - Gábor Mizda (minor code changes in b39cfa205fdb8 and d2705f7abe65, mostly did hungarian docs otherwise)
 - Endre Kollár (vf_stereo3d fixes)
-- Gordon Schmidt (initial vf_stereo3d.c code)
 - Arwed von Merkatz (a patch for CDDA, the patches for removed fontconfig support are not needed)
 - Bernd Ernesti (portability patches - unclear if anything survived, TV patches not needed)
 - Sergey Malkovsky (subtitle selection change 27cdeb019dfe41fd7c349fc, probably trivial)
