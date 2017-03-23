@@ -68,7 +68,6 @@ People who were contacted, but did not reply
 - Gianluigi Tiesi (bzero -> memset patch)
 - Nikolay Nikolaev (-http-header-fields option that is sort of present even in the new http code)
 - Kir Kostuchenko (some TV changes - TV will stay GPL, but this touches common mplayer.c code that should become LGPL)
-- Tim Wojtulewicz (-geometry for vo_corevideo, not sure if still present)
 - Loren Merritt (apart from mencoder, some small changes)
 - emild (pretty trivial demux_lavf change in afe879eb993944c5)
 - Artur Zaprzała (svn name zybi - very early changes, probably created OSD symbol font)
