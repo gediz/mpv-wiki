@@ -172,6 +172,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Eric Yagerlener
 - Artur Zaprzala
 - Zhou Zongyi
+- Christian P. Schmidt
 
 MPlayer developers who have replied, but have not given a final answer, and want to think about it:
 - joyping
