@@ -79,7 +79,6 @@ People who were contacted, but did not reply
 - Sergey Malkovsky (subtitle selection change 27cdeb019dfe41fd7c349fc, probably trivial)
 - Vladimir Kushnir (very early BSD portability changes, unclear if anything survived)
 - Rune Petersen (Windows -priority option 14ecebe920e68f1)
-- Christian P. Schmidt (directory-specific config files 7e8ff35fd2)
 - James Warden (add 32 bit sample format to pulseaudio output, trivial)
 
 - Thomas Reitmayr (actually we don't need to ask him?)
