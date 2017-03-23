@@ -89,8 +89,10 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Hugo Chargois
 - chocolateboy
 - Dan Villiom Podlaski Christiansen (danchr)
+- Kees Cook
 - Steve Davies
 - devik
+- Daniel Dawson
 - Romain Dolbeau
 - Arne Driescher
 - Johannes Feigl
@@ -114,7 +116,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Wojtek Kaniewski
 - Anton Khirnov
 - Konstantin Khlebnikov 
-- Kmarty
+- Martin Kebert (Kmarty)
 - Gerd Knorr
 - Tomas Konir
 - Ilya Konstantinov
@@ -150,6 +152,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Gregor Riepl
 - Chris Roccati
 - Frank Scherthan
+- Gordon Schmidt
 - Steven M. Schultz
 - Stanley Seibert
 - Tristan Seligmann
