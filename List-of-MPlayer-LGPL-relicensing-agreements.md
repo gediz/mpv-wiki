@@ -152,6 +152,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Gregor Riepl
 - Chris Roccati
 - Frank Scherthan
+- Christian Schmidt
 - Gordon Schmidt
 - Steven M. Schultz
 - Stanley Seibert
@@ -168,11 +169,11 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Dennis Vshivkov
 - Per Wigren
 - Marcin Wojdyr
+- Tim Wojtulewicz
 - Timothy J. Wood
 - Eric Yagerlener
 - Artur Zaprzala
 - Zhou Zongyi
-- Christian P. Schmidt
 
 MPlayer developers who have replied, but have not given a final answer, and want to think about it:
 - joyping
