@@ -14,7 +14,6 @@ People whose email addresses are not valid anymore
 - Alan Curry <pacman@world.std.com> (relatively trivial changes to vd_ffmpeg.c and demux_lavf.c and other areas, most contributions in removed code)
 - Aleksander V. Dyomin <fly@shax.ru> ("mail for shax.ru loops back to myself") (-sstep option)
 - Francesco Lavra (DVB teletext - most likely all removed or in GPL-only code, but still touches a lot of other code)
-- Janusz Krzysztofik <jkrzyszt@tis.icnet.pl> (unrouteable address) (effectively adds a few IMGFMTs, other patches removed)
 - Filip Kalinski (filon) <filon@pld.org.pl> (a ao_alsa patch; many x11 changes but we've given up on LGPL for x11)
 - Tom Lees <tal26@cam.ac.uk> (trivial ao_alsa patch, code was probably removed)
 - Bryan Chan <scorpio@acm.org> (user dead) (fakemono patch, probably fully removed?)
@@ -80,5 +79,4 @@ People who were contacted, but did not reply
 - Rune Petersen (Windows -priority option 14ecebe920e68f1)
 - James Warden (add 32 bit sample format to pulseaudio output, trivial)
 
-- Thomas Reitmayr (actually we don't need to ask him?)
 - nVidia Corporation (most vdpau code, they said they're "looking into" the relicensing request)
