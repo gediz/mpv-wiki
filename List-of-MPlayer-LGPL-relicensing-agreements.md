@@ -124,6 +124,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Aaro Koskinen
 - Roland Kuhn
 - Sang-Uok Kum
+- Janusz Krzysztofik
 - Krister Lagerstrom
 - Bruno Lecointre
 - Matthias Lederhofer
@@ -148,6 +149,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Mikulas Patocka
 - Shachar Raindel
 - Markus Rechenberger
+- Thomas Reitmayr
 - Robert Riches
 - Gregor Riepl
 - Chris Roccati
