@@ -101,11 +101,13 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Peter Fordham
 - Kilian A. Foth
 - Lars Gemeinhardt
+- Emanuele Giaquinta
 - Steaphan Greene
 - Derk-Jan Hartman
 - Sebastian Hegler
 - Rik Hemsley
 - Bryan Henderson
+- hephooey (at gmail.com)
 - Jens Hoffmann
 - Loring Holden
 - Stefan Hühner
@@ -114,18 +116,22 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Nicholas Kain
 - Alexander Kanavin
 - Wojtek Kaniewski
+- Jürgen Keil
 - Anton Khirnov
 - Konstantin Khlebnikov 
 - Martin Kebert (Kmarty)
 - Gerd Knorr
+- Emil Kohn (emild)
 - Tomas Konir
 - Ilya Konstantinov
 - Kevin DeKorte
 - Aaro Koskinen
+- Onur Küçük
 - Roland Kuhn
 - Sang-Uok Kum
 - Janusz Krzysztofik
 - Krister Lagerstrom
+- Francesco Lavra
 - Bruno Lecointre
 - Matthias Lederhofer
 - Jerome Levreau (j.a.l)
@@ -133,6 +139,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Hector Martin
 - Sean McGovern
 - Rob McMullen
+- Federico Menarini
 - Benson Mitchell
 - Jack Moffitt
 - Steve(n) Mueller
@@ -156,6 +163,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Frank Scherthan
 - Christian Schmidt
 - Gordon Schmidt
+- Mathieu Schroeter
 - Steven M. Schultz
 - Stanley Seibert
 - Tristan Seligmann
@@ -164,7 +172,9 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - ShadowJK (on IRC)
 - Stephen Sheldon
 - Alex Sisson
+- Jesper Svennevid
 - Mike Swieton
+- Gianluigi Tiesi
 - Pedro Larroy Tovar
 - Vladimir Umnov
 - Giorgio Vazzana
