@@ -50,7 +50,6 @@ People who were contacted, but did not reply
 - Chris Welton (small demux_lavf API change update 958c41d9b69843)
 - Wei Jiang (small bug fixes in 2004, most memleaks)
 - Paul Lebedev (track names in demux_mkv 62bfae140613321a)
-- Fabian Franz (playtree extensions, most code probably removed, but mp_basename still exists in some form)
 - rguyom (some very early vd_ffmpeg.c fixes)
 - Nehal Mistry (some win32 mouse code, maybe or not still in w32_common.c)
 - German Gomez Garcia (early spdif code - probably all removed, except audio_out_format_name change)
