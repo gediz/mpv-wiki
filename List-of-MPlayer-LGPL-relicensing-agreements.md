@@ -100,6 +100,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Paul-Francois Fontigny
 - Peter Fordham
 - Kilian A. Foth
+- Fabian Franz
 - Lars Gemeinhardt
 - Emanuele Giaquinta
 - Steaphan Greene
