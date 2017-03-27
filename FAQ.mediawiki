@@ -204,6 +204,16 @@ The mpv youtube-dl wrapper script calls <code>youtube-dl -J</code> on URLs that 
 
 See the manual for available options: https://mpv.io/manual/master/#options-ytdl
 
+== Why does the cache not work for Twitch (HLS sites) and some youtube links? ==
+
+Twitch uses HLS, some youtube links use segmented DASH. These are both segmented streaming protocols, for which no single, monolithic stream exists. The stream cache works only for unsegmented input.
+
+This is not an issue for the demuxer packet cache. The demuxer cache will usually be active for those protocols, but it will be is discarded when you seek. It is limited to 10 seconds by default.
+
+It might be possible to extend either of these caches to work better. The stream cache could be extended to handle multiple files (except it won't work with FFmpeg's HLS demuxer, because it does not give us segments in advance). The demuxer cache could be extended to allow seeking by making it persistent. Both of these solution are potentially pretty complicated and would have to be implemented by someone. The demuxer cache solution would probably be preferred, because it's more flexible, and would work with HLS.
+
+Note that the HLS limitation can be worked around by using a separate HLS streamer/downloader, but seeking will be limited as well.
+
 == On Windows, why does mpv.exe not attach to the console and what does mpv.com do? ==
 
 This is a limitation of the Windows platform. There are two so-called subsystems on Windows: the GUI subsystem and the CLI subsystem. A Windows executable can only use one of them. If a program uses the CLI subsystem, it can attach to the console, print messages there and receive input. However, such a program will always open a console window of its own if it is not already being run from one. A program using the GUI subsystem on the other hand will not attach to the console it is being called from, and control will immediately return to the command prompt. To work around that limitation, mpv has a separate executable, called mpv.com, which uses the CLI subsystem and redirects input and output for mpv.exe. Since Windows looks for executables with the .com suffix first (by default; defined by the %PATHEXT% variable), just typing mpv without a suffix on the command prompt will run mpv.com and you will get console output as expected.
