@@ -36,7 +36,6 @@ People who were contacted, but did not reply
 - seru (OSD changes 8d190244d21a4d4, some other insignificant changes)
 - Eviv Bulgroz (messes with stream seeking code in 2aa6acd9747ae, other changes not needed)
 - KS Ng dmbth (demux_lavf new streams c310aa46283f)
-- Eric Lammerts (small patch for changing reading from stdin in 2002: 654a6f977134537)
 - Jeremy Huddleston (maybe jeremyhu on github, for cache fill options/impl in 9b0d8c680f634)
 - Melchior Franz (-geometry extensions 90188f0e5fce)
 - Sam Dennis (2 small fixes to demux_mkv, another minor fix to mplayer.c)
