@@ -35,6 +35,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - henry
 - hyc
 - ib (except code under MPlayer's gui subdirectory)
+- iive (but "LGPL 3.0 or later" only)
 - ivo
 - joey
 - jonas
@@ -202,7 +203,6 @@ In progress:
 
 Have disagreed with relicensing:
 - anders
-- iive (agrees to LGPL 3.0 or later, but not LGPL 2.1 or later)
 
 The list of people who have yet to reply is here: https://github.com/mpv-player/mpv/wiki/List-of-missing-MPlayer-LGPL-relicensing-agreements
 
