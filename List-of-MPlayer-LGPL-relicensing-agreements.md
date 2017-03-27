@@ -133,6 +133,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Sang-Uok Kum
 - Janusz Krzysztofik
 - Krister Lagerstrom
+- Eric Lammerts
 - Francesco Lavra
 - Bruno Lecointre
 - Matthias Lederhofer
