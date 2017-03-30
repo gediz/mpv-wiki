@@ -62,6 +62,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - rectalogic
 - reimar
 - reynaldo
+- rfelker (only certain contributions: https://github.com/mpv-player/mpv/issues/2033#issuecomment-290464627)
 - rsf
 - rtogni, rtognimp
 - siretart
@@ -199,7 +200,6 @@ Isn't giving a definitive answer:
 
 In progress:
 - Gwenole Beauchesne (needs to go through corporate to get permission)
-- rfelker
 
 Have disagreed with relicensing:
 - anders
