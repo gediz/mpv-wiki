@@ -88,6 +88,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
 **Obsolete:** mpv now has a native display-sync option.
 
+* **[KDialog-open-files](https://gist.github.com/ntasos/d1d846abd7d25e4e83a78d22ee067a22)**  
+Use KDE's KDialog to add files to playlist, subtitles to playing video or open URLs.
+
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)**  
   Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
 
