@@ -27,7 +27,6 @@ People who were contacted, but did not reply
 - Pascal Haakmat (-loop option, code was refactored 10 times but is still there)
 - Sidik Isani (-autosync code, absolute seeks for -ss, rest was probably removed)
 - Uwe Reder (subtitle enable/disable patch, some other small patches that were probably removed)
-- Baryshkov, Dmitry (svn name lumag, minor fixes in commit 175884718b19cd9, otherwise removed only removed/doc changes)
 - Mark Zealey (early -geometry option code)
 - Ville Syrjälä (svn name syrjala, did vo_dfbmga.c, which we removed, but a patch for nv12 touches other areas)
 - seru (OSD changes 8d190244d21a4d4, some other insignificant changes)
