@@ -21,7 +21,6 @@ People whose email addresses are not valid anymore
 People who were contacted, but did not reply
 ------------------------------------------------
 - Aaron Holtzman (his libmpeg2 code was used by arpi as skeleton for vo.h and related files)
-- Ulion (many changes all over the place, added significant features)
 - Michel Lespinasse (part of his libmpeg2 video output changes might have been used as skeleton for vo.h)
 - Luca Abeni (introduced fmt-conversion.h for pixfmts, changed some other MPlayer code to use it - libswscale contribs not needed)
 - Dénes Balatoni (introduces demux_control, also early slave commands for getting time/position, probably turned into later properties)
