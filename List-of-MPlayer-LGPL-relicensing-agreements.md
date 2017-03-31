@@ -70,6 +70,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - tack
 - uau
 - ubitux
+- ulion
 - vayne (also contributed patches by mail as Erik Lunchpail, real name is different)
 - voroshil
 - wanderer (inverseparadox on github), with restrictions (see discussion on the github issue)
