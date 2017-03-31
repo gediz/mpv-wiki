@@ -139,6 +139,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Francesco Lavra
 - Bruno Lecointre
 - Matthias Lederhofer
+- Timothy Lee
 - Jerome Levreau (j.a.l)
 - Oskar Liljeblad
 - Hector Martin
