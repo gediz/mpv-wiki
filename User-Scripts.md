@@ -172,6 +172,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[speed-between-subs](https://gist.github.com/bitingsock/47c5ba6466c63c68bcf991dd376f1d18)**  
   Increases playback speed if a subtitle has not been displayed (no dialog); resumes normal speed when a new subtitle is shown.
 
+* **[subit](https://github.com/wiiaboo/mpv-scripts/blob/master/subit.lua)**
+  Yet another script for downloading subtitles using subliminal. Supports better customization of options, such as easy language selection, authentication for providers that need it, and support for URLs.
+
 * **[stats](https://github.com/Argon-/mpv-stats/)**  
   Display some statistics about the currently played file on-screen.
 
