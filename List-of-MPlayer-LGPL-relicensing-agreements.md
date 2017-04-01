@@ -93,6 +93,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Mathieu Castets ("matthieu")
 - Hugo Chargois
 - chocolateboy
+- Evgeny Chukreev
 - Dan Villiom Podlaski Christiansen (danchr)
 - Kees Cook
 - Steve Davies
