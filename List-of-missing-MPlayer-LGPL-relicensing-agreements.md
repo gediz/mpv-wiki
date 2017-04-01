@@ -36,7 +36,6 @@ People who were contacted, but did not reply
 - rvm (most likely Ricardo Villalba) (-volume option, exit reason stuff in mplayer.c)
 - Nikolai Weibull (patch to get_path.c b4f2bc353b69)
 - Laurent (stream EOF fix a0f08fbebbdf)
-- Dave Lambley (cookies.c code and options)
 - Zoltan Hidvegi (hzoli) (messes with common audio decode code in 067c0482d99d, vd_ffmpeg.c change in b49ee1f782340, other changes not needed)
 - Chris Welton (small demux_lavf API change update 958c41d9b69843)
 - Wei Jiang (small bug fixes in 2004, most memleaks)
