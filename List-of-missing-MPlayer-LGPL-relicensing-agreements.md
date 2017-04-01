@@ -6,7 +6,6 @@ People whose email addresses are not valid anymore
 ------------------------------------
 - Nick Kurshev <nickols_k@mail.ru> (user terminated) nickols_k@users.sourceforge.net (unknown user) (refactored old dec_audio.c code)
 - adland <adland123@yahoo.com> (account gone) (url escaping fix, implicit contribution to ao_alsa, dvd:// command line parsing)
-- Tristan <z80@oceanfree.net> (unknown user) (demux_mkv changes - unknown whether the same person as Tristan Seligmann, who agreed with LGPL)
 - Balazs Tibor <tibcu@sch.bme.hu> (user unknown) (small fixes: -frames 0, reset frame drop stats on new files)
 - Christian <herr.mitterlehner@gsmpaaiml.com> (host not found) (osd-fractions option patch, reworked by uau)
 - Alan Curry <pacman@world.std.com> (relatively trivial changes to vd_ffmpeg.c and demux_lavf.c and other areas, most contributions in removed code)
