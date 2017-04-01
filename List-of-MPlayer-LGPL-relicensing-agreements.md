@@ -29,6 +29,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - eyck
 - faust3
 - folke
+- gabrov
 - gabucino
 - gogothebee
 - gpoirier
