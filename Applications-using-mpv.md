@@ -31,9 +31,6 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [xt7-player-mpv](https://github.com/kokoko3k/xt7-player-mpv):  
   A frontend to mpv with extra features.
 
-* [VidCutter](https://github.com/ozmartian/vidcutter):  
-  A simple & fast video cutter & joiner powered by libmpv + FFmpeg and written in PyQt5.
-
 ## Other
 
 * [boram](https://github.com/Kagami/boram):  
@@ -46,6 +43,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
   SpaceTV is an mpv-based plugin for the [SpaceFM](http://ignorantguru.github.io/spacefm/) file manager which allows SpaceFM to be used as a media center.  Since mpv doesn't include a GUI, SpaceFM can be used to select videos to play in mpv, and adds the ability to Resume Last and Resume Prior played videos.
 
   SpaceTV's [spacetv.sh script](https://raw.github.com/IgnorantGuru/spacefm-plugins/master/ig-spacetv/src/cstm_325c1cf6/spacetv.sh) can also be used independently of SpaceFM (it requires only mpv) to add more resume functionality to mpv.  It remembers the names of unfinished videos and can resume the last video played, or can step backwards through prior played videos.
+
+* [VidCutter](https://github.com/ozmartian/vidcutter):  
+  A simple & fast video cutter & joiner powered by libmpv + FFmpeg and written in PyQt5.
 
 * [webm.py](https://github.com/Kagami/webm.py):  
   Converter which uses mpv for interactive cutting and cropping of videos being transcoded to WebM.
