@@ -48,7 +48,6 @@ People who were contacted, but did not reply
 - Kir Kostuchenko (some TV changes - TV will stay GPL, but this touches common mplayer.c code that should become LGPL)
 - Loren Merritt (apart from mencoder, some small changes)
 - Artur Zaprzała (svn name zybi - very early changes, probably created OSD symbol font)
-- Gábor Mizda (minor code changes in b39cfa205fdb8 and d2705f7abe65, mostly did hungarian docs otherwise)
 - Endre Kollár (vf_stereo3d fixes)
 - Arwed von Merkatz (a patch for CDDA, the patches for removed fontconfig support are not needed)
 - Bernd Ernesti (portability patches - unclear if anything survived, TV patches not needed)
