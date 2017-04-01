@@ -209,6 +209,7 @@ In progress:
 
 Have disagreed with relicensing:
 - anders
+- Tristan z80@oceanfree.net (2 patches, all code most likely removed)
 
 The list of people who have yet to reply is here: https://github.com/mpv-player/mpv/wiki/List-of-missing-MPlayer-LGPL-relicensing-agreements
 
