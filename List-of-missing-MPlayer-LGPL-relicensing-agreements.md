@@ -5,7 +5,6 @@ Send a mail to nfxjfg@googlemail.com, or post on: https://github.com/mpv-player/
 People whose email addresses are not valid anymore
 ------------------------------------
 - Nick Kurshev <nickols_k@mail.ru> (user terminated) nickols_k@users.sourceforge.net (unknown user) (refactored old dec_audio.c code)
-- Evgeny Chukreev <codedj@echo.ru> ("No such user!") (initial sub_delay support)
 - adland <adland123@yahoo.com> (account gone) (url escaping fix, implicit contribution to ao_alsa, dvd:// command line parsing)
 - Tristan <z80@oceanfree.net> (unknown user) (demux_mkv changes - unknown whether the same person as Tristan Seligmann, who agreed with LGPL)
 - Balazs Tibor <tibcu@sch.bme.hu> (user unknown) (small fixes: -frames 0, reset frame drop stats on new files)
