@@ -11,7 +11,6 @@ People whose email addresses are not valid anymore
 - Alan Curry <pacman@world.std.com> (relatively trivial changes to vd_ffmpeg.c and demux_lavf.c and other areas, most contributions in removed code)
 - Filip Kalinski (filon) <filon@pld.org.pl> (a ao_alsa patch; many x11 changes but we've given up on LGPL for x11)
 - Tom Lees <tal26@cam.ac.uk> (trivial ao_alsa patch, code was probably removed)
-- Bryan Chan <scorpio@acm.org> (user dead) (fakemono patch, probably fully removed?)
 
 
 People who were contacted, but did not reply
