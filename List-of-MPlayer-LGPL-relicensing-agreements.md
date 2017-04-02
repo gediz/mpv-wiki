@@ -92,6 +92,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Angelo Cano
 - Davide Capodaglio
 - Mathieu Castets ("matthieu")
+- Bryan Chan
 - Hugo Chargois
 - chocolateboy
 - Evgeny Chukreev
