@@ -9,7 +9,6 @@ People whose email addresses are not valid anymore
 - Balazs Tibor <tibcu@sch.bme.hu> (user unknown) (small fixes: -frames 0, reset frame drop stats on new files)
 - Christian <herr.mitterlehner@gsmpaaiml.com> (host not found) (osd-fractions option patch, reworked by uau)
 - Alan Curry <pacman@world.std.com> (relatively trivial changes to vd_ffmpeg.c and demux_lavf.c and other areas, most contributions in removed code)
-- Filip Kalinski (filon) <filon@pld.org.pl> (a ao_alsa patch; many x11 changes but we've given up on LGPL for x11)
 - Tom Lees <tal26@cam.ac.uk> (trivial ao_alsa patch, code was probably removed)
 
 
