@@ -115,6 +115,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Lars Gemeinhardt
 - Emanuele Giaquinta
 - Steaphan Greene
+- Pascal Haakmat
 - Derk-Jan Hartman
 - Sebastian Hegler
 - Rik Hemsley
