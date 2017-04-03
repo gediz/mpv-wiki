@@ -40,7 +40,6 @@ People who were contacted, but did not reply
 - Paul Lebedev (track names in demux_mkv 62bfae140613321a)
 - rguyom (some very early vd_ffmpeg.c fixes)
 - Nehal Mistry (some win32 mouse code, maybe or not still in w32_common.c)
-- German Gomez Garcia (early spdif code - probably all removed, except audio_out_format_name change)
 - Bryan Veal (probably "veal" in commit 116ca0c768219b10e, osd_show_property_text command, probably became show_text?)
 - Nikolay Nikolaev (-http-header-fields option that is sort of present even in the new http code)
 - Kir Kostuchenko (some TV changes - TV will stay GPL, but this touches common mplayer.c code that should become LGPL)
