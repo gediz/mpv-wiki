@@ -111,6 +111,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Peter Fordham
 - Kilian A. Foth
 - Fabian Franz
+- German Gomez Garcia
 - Lars Gemeinhardt
 - Emanuele Giaquinta
 - Steaphan Greene
@@ -214,6 +215,7 @@ In progress:
 Have disagreed with relicensing:
 - anders
 - Tristan z80@oceanfree.net (2 patches, all code most likely removed)
+- Luca Abeni (basically `video/fmt-conversion.c`)
 
 The list of people who have yet to reply is here: https://github.com/mpv-player/mpv/wiki/List-of-missing-MPlayer-LGPL-relicensing-agreements
 
