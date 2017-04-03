@@ -19,7 +19,6 @@ People who were contacted, but did not reply
 - Dénes Balatoni (introduces demux_control, also early slave commands for getting time/position, probably turned into later properties)
 - kiriuja (audio track runtime switching be54f4813fdc9, option parser changes 43844d090c55, subtitle loading stuff (not sure if removed/replaced), video equalizer fix, some early slave mode things)
 - Naoya OYAMA  (ad_spdif.c)
-- Pascal Haakmat (-loop option, code was refactored 10 times but is still there)
 - Sidik Isani (-autosync code, absolute seeks for -ss, rest was probably removed)
 - Uwe Reder (subtitle enable/disable patch, some other small patches that were probably removed)
 - Mark Zealey (early -geometry option code)
