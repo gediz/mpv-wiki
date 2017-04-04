@@ -78,6 +78,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - voroshil
 - wanderer (inverseparadox on github), with restrictions (see discussion on the github issue)
 - zuxy
+- zybi (Artur Zaprzala)
 
 Partial map of svn usernames: https://ffmpeg.org/pipermail/ffmpeg-devel/2008-April/040487.html
 
@@ -201,7 +202,6 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Tim Wojtulewicz
 - Timothy J. Wood
 - Eric Yagerlener
-- Artur Zaprzala
 - Zhou Zongyi
 
 MPlayer developers who have replied, but have not given a final answer, and want to think about it:
