@@ -42,7 +42,6 @@ People who were contacted, but did not reply
 - Nikolay Nikolaev (-http-header-fields option that is sort of present even in the new http code)
 - Kir Kostuchenko (some TV changes - TV will stay GPL, but this touches common mplayer.c code that should become LGPL)
 - Loren Merritt (apart from mencoder, some small changes)
-- Artur Zaprzała (svn name zybi - very early changes, probably created OSD symbol font)
 - Endre Kollár (vf_stereo3d fixes)
 - Arwed von Merkatz (a patch for CDDA, the patches for removed fontconfig support are not needed)
 - Bernd Ernesti (portability patches - unclear if anything survived, TV patches not needed)
