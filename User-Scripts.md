@@ -97,6 +97,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[lua-mpris](https://github.com/dodo/lua-mpris)**  
   Adds mpris support to mpv.
 
+* **[mark-chapter](https://github.com/thebombzen/scripts/blob/master/src/markchapter.lua)**
+  Temporarily mark the current playback position as a chapter so you can seek to it later. Don't forget to edit input.conf to give it a keybinding.
+
 * **[minesweeper](https://github.com/wm4/mpv-scripts#mineslua)**  
   Minesweeper game.
 
