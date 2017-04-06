@@ -217,13 +217,11 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
   A sharpen filter similar to using Unsharp Mask in Photoshop ported from SweetFX shader pack.
 
 * **[FineSharp](https://gist.github.com/igv/a9a21ad1f6dd7d0b4452)**  
-  FineSharp by Didée converted from mpc-hc shaders. Tuned to work with opengl-hq. [More info](http://forum.doom9.org/showthread.php?t=171346)
+  FineSharp by Didée converted from mpc-hc shaders. [More info](http://forum.doom9.org/showthread.php?t=171346)
 
-* **[Adaptive Sharpen](https://gist.github.com/igv/4792d0abab41d436ac1a51bb171f8c2f)**  
-  A two-pass sharpen filter to sharpen medium sharp edges the most. Ported from a [HLSL](http://forum.doom9.org/showthread.php?t=172131) shader. Tuned to work with opengl-hq.
-
-* **[One-Pass Adaptive Sharpen](https://gist.github.com/igv/8a77e4eb8276753b54bb94c1c50c317e)**  
-  One-pass version of adaptive sharpen shader. Has built-in anti-ringing filter.
+* **[Adaptive Sharpen](https://gist.github.com/igv/8a77e4eb8276753b54bb94c1c50c317e)**  
+  The shader tries to sharpen somewhat blurry edges the most, it avoids to sharpen near-flat areas and very sharp edges. One-pass version of a [HLSL](http://forum.doom9.org/showthread.php?t=172131) shader, that tweaked for a better compatibility with mpv. Tuned to work with opengl-hq.
+  Direct 2-pass port is [here](https://gist.github.com/igv/4792d0abab41d436ac1a51bb171f8c2f) (Note: there is no reason to use it over one-pass version).
 
 * **[KrigBilateral](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637)**  
   Chroma scaler that uses luma information for high quality upscaling.
