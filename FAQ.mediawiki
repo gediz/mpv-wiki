@@ -18,9 +18,7 @@ Never seen it tearing.
 
 === Windows ===
 
-Whether tearing happens with OpenGL may depend on the backend. Try various with <code>--opengl-backend=NAME</code>, where <code>NAME</code> is the name of the backend. <code>dxinterop</code> seems to perform best generally, but it will crash randomly with some older buggy Intel drivers.
-
-<code>--vo=direct3d</code> should never tear. (Maybe.)
+Whether tearing happens with OpenGL may depend on the backend and how it interacts with the GPU and the compositor via the swap chain. Try with playing the <code>--angle-</code> options, which configure the d3d swapchain. You can also try various with <code>--opengl-backend=NAME</code>, where <code>NAME</code> is the name of the backend. <code>dxinterop</code> seems to perform best generally, but it will crash randomly with some older buggy Intel drivers. The deprecated <code>--vo=direct3d</code> should roughly behave like <code>--angle-renderer=d3d9</code>.
 
 === X11/Nvidia ===
 
@@ -48,7 +46,8 @@ Intel tears out of the box. Intel users on Linux are going to have a pretty bad 
 <li><p>Try enabling SNA and the <code>TearFree</code> option.</p>
 Unfortunately, this can cause stability issues - GL applications sometimes randomly crash. Somewhere, there’s a claim that adding <code>i915.semaphores=1</code> to your kernel parameters fixes the crashes.</li>
 <li>Try disabling SNA by using UXA (on older hardware).</li>
-<li>Try <code>--xv-adaptor=N</code>, and try 0 or 1 for <code>N</code>. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.</li>
+<li>Try <code>--x11-bypass-compositor=no</code></li>
+<li>Try <code>--vo=xv --xv-adaptor=N</code>, and try 0 or 1 for <code>N</code>. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.</li>
 <li><p>Try <code>--vo=vaapi</code>. Although this is Intel’s native video output method, it seems to fix tearing only very rarely.</p></li></ul>
 
 === X11/AMD ===
