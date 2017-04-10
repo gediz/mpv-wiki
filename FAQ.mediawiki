@@ -222,3 +222,7 @@ This is a limitation of the Windows platform. There are two so-called subsystems
 Either pass all files to mpv, e.g. run this in the directory with the files:
 <pre>mpv *.*</pre>
 Or use a script like https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua .
+
+== Why does mpv not support Lua 5.3? ==
+
+Lua 5.3 is a different language from 5.1 or 5.2, so it won't be supported to avoid breaking all user scripts. Lua 5.1, Lua 5.2, and LuaJIT are also different, but the differences are relatively minor.
