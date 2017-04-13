@@ -84,6 +84,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[find_subtitles](https://github.com/directorscut82/find_subtitles)**  
   (Down)load subtitles with subliminal.
 
+* **[fix_sub_timing](https://github.com/wm4/mpv-scripts/blob/master/fix-sub-timing.lua)**  
+  Compute the correct speed/delay of subtitles by manually synching two points in time.
+
 * **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/fpsadjust.lua)**  
   Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
 **Obsolete:** mpv now has a native display-sync option.
