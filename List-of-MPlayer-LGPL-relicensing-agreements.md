@@ -207,9 +207,6 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 MPlayer developers who have replied, but have not given a final answer, and want to think about it:
 - joyping
 
-Isn't giving a definitive answer:
-- cehoyos
-
 In progress:
 - Gwenole Beauchesne (needs to go through corporate to get permission)
 
@@ -217,6 +214,7 @@ Have disagreed with relicensing:
 - anders
 - Tristan z80@oceanfree.net (2 patches, all code most likely removed)
 - Luca Abeni (basically `video/fmt-conversion.c`)
+- cehoyos (probably - is unable to give a direct reply, most likely tried to make me waste time)
 
 The list of people who have yet to reply is here: https://github.com/mpv-player/mpv/wiki/List-of-missing-MPlayer-LGPL-relicensing-agreements
 
