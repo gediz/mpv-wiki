@@ -211,6 +211,10 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[simple-loader](https://github.com/fhlfibh/simple-loader)**  
   (Linux) Browse dirs and files on OSD, and launch them with mpv.  
 
+
+* **[mpv-bookmarker](https://github.com/nimatrueway/mpv-bookmark-lua-script)**  
+  Bookmark your favorite time on media files
+
 If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://mpv.io/manual/master/#lua-scripting).
 
 
