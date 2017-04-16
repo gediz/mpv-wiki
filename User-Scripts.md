@@ -190,6 +190,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[unseen-playlistmaker](https://github.com/donmaiq/unseen-playlistmaker)**  
   Keeps track of watched files locally, and creates playlists of unwatched files.
 
+* **[visualizer](https://github.com/mfcc64/mpv-scripts/blob/master/visualizer.lua)**  
+  Various audio visualization.
+
 * **[vo_battery](https://gist.github.com/selsta/9ac023688885053d42ca)**  
   (OS X) Choose the VO based on if the laptop is on battery or not.
 
