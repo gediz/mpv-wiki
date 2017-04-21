@@ -124,6 +124,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - hephooey (at gmail.com)
 - Jens Hoffmann
 - Loring Holden
+- Aaron Holtzman (mostly - not sure about libao?)
 - Stefan Hühner
 - Panagiotis Issaris
 - Robert Juliano
