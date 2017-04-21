@@ -14,7 +14,6 @@ People whose email addresses are not valid anymore
 
 People who were contacted, but did not reply
 ------------------------------------------------
-- Aaron Holtzman (his libmpeg2 code was used by arpi as skeleton for vo.h and related files)
 - Michel Lespinasse (part of his libmpeg2 video output changes might have been used as skeleton for vo.h)
 - Dénes Balatoni (introduces demux_control, also early slave commands for getting time/position, probably turned into later properties)
 - kiriuja (audio track runtime switching be54f4813fdc9, option parser changes 43844d090c55, subtitle loading stuff (not sure if removed/replaced), video equalizer fix, some early slave mode things)
