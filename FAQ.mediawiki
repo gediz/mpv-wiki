@@ -142,7 +142,7 @@ Generally FFmpeg, simply because it has more features.
 $ brew linkapps mpv</source></li>
 <li><p>Use [https://github.com/moretension/duti <code>duti</code>] to associate files with application:</p>
 <source lang="bash">$ brew install duti
-$ duti -s io.mpv api
+$ duti -s io.mpv avi
 $ duti -s io.mpv mkv
 $ duti -s io.mpv mp4</source></li></ul>
 
