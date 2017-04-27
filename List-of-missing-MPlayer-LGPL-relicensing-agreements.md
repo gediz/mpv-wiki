@@ -19,7 +19,6 @@ People who were contacted, but did not reply
 - kiriuja (audio track runtime switching be54f4813fdc9, option parser changes 43844d090c55, subtitle loading stuff (not sure if removed/replaced), video equalizer fix, some early slave mode things)
 - Naoya OYAMA  (ad_spdif.c)
 - Sidik Isani (-autosync code, absolute seeks for -ss, rest was probably removed)
-- Uwe Reder (subtitle enable/disable patch, some other small patches that were probably removed)
 - Mark Zealey (early -geometry option code)
 - Ville Syrjälä (svn name syrjala, did vo_dfbmga.c, which we removed, but a patch for nv12 touches other areas)
 - seru (OSD changes 8d190244d21a4d4, some other insignificant changes)
