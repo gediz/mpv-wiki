@@ -176,6 +176,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Mikulas Patocka
 - Shachar Raindel
 - Markus Rechenberger
+- Uwe Reder
 - Thomas Reitmayr
 - Robert Riches
 - Gregor Riepl
