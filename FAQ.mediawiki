@@ -48,15 +48,17 @@ Unfortunately, this can cause stability issues - GL applications sometimes rando
 <li>Try disabling SNA by using UXA (on older hardware).</li>
 <li>Try <code>--x11-bypass-compositor=no</code></li>
 <li>Try <code>--vo=xv --xv-adaptor=N</code>, and try 0 or 1 for <code>N</code>. This may fix tearing if the other methods fail, but keep in mind that using Xv with mpv is strongly discouraged.</li>
-<li><p>Try <code>--vo=vaapi</code>. Although this is Intel’s native video output method, it seems to fix tearing only very rarely.</p></li></ul>
+<li><p>Try <code>--vo=vaapi</code>. Although this is Intel’s native video output method, it seems to fix tearing only very rarely.</p></li>
 
-If you are using Xorg's new "modesetting" driver and are not using a [https://en.wikipedia.org/wiki/Compositing_window_manager compositing window manager] (for example, you are using a plain window manager such as Awesome without a desktop manager like Gnome or KDE), you might need to run a compositor during video play-back. [https://github.com/chjj/compton Compton] might solve the issue if started with its <em>glx</em> backend:
+<li>If you are using Xorg's new "modesetting" driver and are not using a [https://en.wikipedia.org/wiki/Compositing_window_manager compositing window manager] (for example, you are using a plain window manager such as Awesome without a desktop manager like Gnome or KDE), you might need to run a compositor during video play-back. [https://github.com/chjj/compton Compton] might solve the issue if started with its <em>glx</em> backend:
 <ol>
 <li> Install Compton from a package manager or compile from source</li>
 <li> Start Compton in a terminal as follows: <code>compton --backend=glx</code></li>
 <li> Start mpv </li>
 </ol>
-
+[https://whirm.eu/posts/fix-for-xorgs-modesetting-driver-tearing/ This post] explains the procedure in more details.
+</li>
+</ul>
 === X11/AMD ===
 
 AMD users on Linux are going to have a pretty bad time.
