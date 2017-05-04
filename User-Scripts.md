@@ -57,9 +57,6 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[cycle-video-rotate](https://github.com/SteveJobzniak/mpv-tools/blob/master/cycle-video-rotate.lua)**  
   Allows you to perform video rotation which perfectly cycles through all 360 degrees without any glitches.
 
-* **[drc-control](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/drc-control.lua)**  
-  Cycle through DRC (dynamic range compression) modes during runtime.
-
 * **[dessubdb](https://github.com/demanuel/dessubdb/blob/master/mpv.lua)**  
   Download automatically subtitles from the thesubdb.com using [DESSubdb](https://github.com/demanuel/dessubdb).
 
