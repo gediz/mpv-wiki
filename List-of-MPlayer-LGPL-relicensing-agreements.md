@@ -209,14 +209,14 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Zhou Zongyi
 
 MPlayer developers who have replied, but have not given a final answer, and want to think about it:
-- joyping
+- joyping (ao_alsa author, although relicensing it might fail due to other missing replies)
 
 In progress:
-- Gwenole Beauchesne (needs to go through corporate to get permission)
+- Gwenole Beauchesne (needs to go through corporate to get permission, or we will make vo_vaapi LGPL only, and replace the vaapi code involved with vo_opengl)
 
 Have disagreed with relicensing:
-- anders
-- Tristan z80@oceanfree.net (2 patches, all code most likely removed)
+- anders (did the audio filter chain - will be replaced by libavfilter)
+- Tristan z80@oceanfree.net (2 patches, all code most removed)
 - Luca Abeni (basically `video/fmt-conversion.c`, code will be replaced)
 - cehoyos (probably, all his code will be replaced, some tricky parts)
 
