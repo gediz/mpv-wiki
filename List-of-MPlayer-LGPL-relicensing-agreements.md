@@ -174,6 +174,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Joakim Plate (elupus)
 - Lennart Poettering
 - Mikulas Patocka
+- Zongyao Qu
 - Shachar Raindel
 - Markus Rechenberger
 - Uwe Reder
