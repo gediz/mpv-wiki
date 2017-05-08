@@ -213,6 +213,7 @@ MPlayer developers who have replied, but have not given a final answer, and want
 
 In progress:
 - Gwenole Beauchesne (needs to go through corporate to get permission, or we will make vo_vaapi LGPL only, and replace the vaapi code involved with vo_opengl)
+- nVidia (they said they will "look at it", low hopes, we'll probably just replace all vdpau code involved with vo_opengl)
 
 Have disagreed with relicensing:
 - anders (did the audio filter chain - will be replaced by libavfilter)
