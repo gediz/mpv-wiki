@@ -85,6 +85,7 @@ Partial map of svn usernames: https://ffmpeg.org/pipermail/ffmpeg-devel/2008-Apr
 Also have agreed (but no username, or have not contributed to MPlayer directly, or contributed to mplayer2/mpv):
 - Markus Appel
 - Erik Auerswald (only code in mpv, not any potential new code in MPlayer)
+- Jens Axboe
 - Michael Behrisch
 - Fabrice Bellard
 - Rocky Bernstein
