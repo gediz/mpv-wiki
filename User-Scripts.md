@@ -51,6 +51,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[cycle-deinterlace-pullup](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/cycle-deinterlace-pullup.lua)**  
   Cycle between deinterlacing, pullup (IVTC), and both filters off.
 
+* **[cycle-denoise](https://gist.github.com/myfreeer/d744c445aa71c0eeb165ca39cf6c0511)**  
+  Cycle between lavfi's denoise filters (press n)
+
 * **[cycle_messages](https://gist.github.com/rrooij/59f57ff5f5a952e56bbb)**  
   Cycle between custom OSD messages.
 
