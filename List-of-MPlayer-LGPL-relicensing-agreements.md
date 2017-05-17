@@ -202,6 +202,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Vladimir Umnov
 - Giorgio Vazzana
 - Dennis Vshivkov
+- Nikolai Weibull
 - Per Wigren
 - Marcin Wojdyr
 - Tim Wojtulewicz
