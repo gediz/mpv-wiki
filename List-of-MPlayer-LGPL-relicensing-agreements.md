@@ -91,6 +91,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Rocky Bernstein
 - Arnaud Boulan
 - Joachim Breitner
+- Rogério Brito
 - Oswald Buddenhagen
 - Angelo Cano
 - Davide Capodaglio
