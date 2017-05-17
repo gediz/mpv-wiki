@@ -28,7 +28,6 @@ People who were contacted, but did not reply
 - Sam Dennis (minor fix to mplayer.c, his changes to demux_mkv.c were pretty much removed)
 - R.L. Horn (small patch for ALSA audio output)
 - rvm (most likely Ricardo Villalba) (-volume option, exit reason stuff in mplayer.c)
-- Nikolai Weibull (patch to get_path.c b4f2bc353b69)
 - Laurent (stream EOF fix a0f08fbebbdf)
 - Zoltan Hidvegi (hzoli) (messes with common audio decode code in 067c0482d99d, vd_ffmpeg.c change in b49ee1f782340, other changes not needed)
 - Chris Welton (small demux_lavf API change update 958c41d9b69843)
