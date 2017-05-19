@@ -137,9 +137,6 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
   Adds desktop notifications to the mpv media player, which show metadata like artist, album name and track name when the track changes.
 
 * **[ontop-playback](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/ontop-playback.lua)**  
-  Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled.
-
-* **[ontop-playback](https://github.com/yuzukin/mpv/blob/master/TOOLS/lua/ontop-playback.lua)**  
   Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled. Change it only when the player is not in fullscreen to prevent screen flickering.
 
 * **[open-file-dialog](https://github.com/rossy/mpv-open-file-dialog)**  
