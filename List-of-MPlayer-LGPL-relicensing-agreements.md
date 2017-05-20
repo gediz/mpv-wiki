@@ -11,6 +11,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - al
 - al3x, alex
 - albeu
+- anders (Only commits 4943e9c52c2e200 and 242aa6ebd4061b1. Does *not* include any other changes, in particular `libaf` (the audio filter chain). The latter will be replaced by libavfilter)
 - arpi
 - astrange
 - atlka
@@ -220,7 +221,6 @@ In progress:
 - nVidia (they said they will "look at it", low hopes, we'll probably just replace all vdpau code involved with vo_opengl)
 
 Have disagreed with relicensing:
-- anders (did the audio filter chain - will be replaced by libavfilter)
 - Tristan z80@oceanfree.net (2 patches, all code most removed)
 - Luca Abeni (basically `video/fmt-conversion.c`, code will be replaced)
 - cehoyos (probably, all his code will be replaced, some tricky parts)
