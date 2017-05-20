@@ -174,6 +174,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Christian Ohm
 - Dan Oscarsson
 - Attila Ötvös (oatilla)
+- Naoya Oyama
 - Trent Piepho
 - Joakim Plate (elupus)
 - Lennart Poettering
