@@ -11,7 +11,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - al
 - al3x, alex
 - albeu
-- anders (Only commits 4943e9c52c2e200 and 242aa6ebd4061b1. Does *not* include any other changes, in particular `libaf` (the audio filter chain). The latter will be replaced by libavfilter)
+- anders (Only commits https://github.com/mpv-player/mpv/commit/4943e9c52c2e200 and https://github.com/mpv-player/mpv/commit/242aa6ebd4061b1. Does **not** include any other changes, in particular `libaf` (the audio filter chain). The latter will be replaced by libavfilter)
 - arpi
 - astrange
 - atlka
