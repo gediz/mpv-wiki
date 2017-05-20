@@ -198,6 +198,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - ShadowJK (on IRC)
 - Stephen Sheldon
 - Alex Sisson
+- Artur Skawina (e7df17dcda08cb)
 - Jesper Svennevid
 - Mike Swieton
 - Gianluigi Tiesi
