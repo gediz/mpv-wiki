@@ -197,7 +197,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
   Provides for more network-glitch-robust caching of live streams by adjusting replay speed.
 
 * **[tv-output](https://github.com/blue-sky-r/mpv/blob/master/scripts/tv.lua)**  
-  (Linux) TV output handling - activation on mpv playback and deactivation on mpv shutdown.
+  (Linux) TV output handling - activate on mpv playback and deactivate on mpv shutdown.
 
 * **[unseen-playlistmaker](https://github.com/donmaiq/unseen-playlistmaker)**  
   Keeps track of watched files locally, and creates playlists of unwatched files.
