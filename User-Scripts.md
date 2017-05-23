@@ -142,6 +142,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[open-file-dialog](https://github.com/rossy/mpv-open-file-dialog)**  
   (Windows) Launches a regular Windows file open dialog for loading videos.
 
+* **[osd-clock](https://github.com/blue-sky-r/mpv/blob/master/scripts/osd-clock.lua)**  
+  Periodically shows OSD clock (many configurable options).
+
 * **[pause-when-minimize](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/pause-when-minimize.lua)**  
   Pauses the player video when minimizing, and unpauses it when brought up again.
 
@@ -169,6 +172,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[seek-to](https://github.com/occivink/mpv-scripts#seek-tolua)**  
   Seek to an absolute timestamp specified via keyboard input.
 
+* **[show-stream-title](https://github.com/blue-sky-r/mpv/blob/master/scripts/show-stream-title.lua)**  
+  Show OSD stream/channel title when switching the IPTV channels from m3u playlist.
+
 * **[skipchapters](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/skipchapters.lua)**  
   Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
@@ -189,6 +195,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[streamcache](https://github.com/lvml/mpv-plugin-streamcache)**  
   Provides for more network-glitch-robust caching of live streams by adjusting replay speed.
+
+* **[tv-output](https://github.com/blue-sky-r/mpv/blob/master/scripts/tv.lua)**  
+  (Linux) TV output handling - activation on mpv playback and deactivation on mpv shutdown.
 
 * **[unseen-playlistmaker](https://github.com/donmaiq/unseen-playlistmaker)**  
   Keeps track of watched files locally, and creates playlists of unwatched files.
