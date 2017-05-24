@@ -180,6 +180,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Lennart Poettering
 - Mikulas Patocka
 - Zongyao Qu
+- Anton Ragnarsson (c8ac1bb62c00)
 - Shachar Raindel
 - Markus Rechenberger
 - Uwe Reder
