@@ -215,6 +215,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Tim Wojtulewicz
 - Timothy J. Wood
 - Eric Yagerlener
+- Valentin Zaretsky
 - Zhou Zongyi
 
 MPlayer developers who have replied, but have not given a final answer, and want to think about it:
