@@ -40,7 +40,6 @@ People who were contacted, but did not reply
 - Loren Merritt (apart from mencoder, some small changes)
 - Arwed von Merkatz (a patch for CDDA, the patches for removed fontconfig support are not needed)
 - Bernd Ernesti (portability patches - unclear if anything survived, TV patches not needed)
-- Sergey Malkovsky (subtitle selection change 27cdeb019dfe41fd7c349fc, probably trivial)
 - Vladimir Kushnir (very early BSD portability changes, unclear if anything survived)
 - Rune Petersen (Windows -priority option 14ecebe920e68f1)
 - James Warden (add 32 bit sample format to pulseaudio output, trivial)
