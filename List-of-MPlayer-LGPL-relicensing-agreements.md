@@ -84,6 +84,7 @@ Have agreed and had a MPlayer svn/cvs username:
 Partial map of svn usernames: https://ffmpeg.org/pipermail/ffmpeg-devel/2008-April/040487.html
 
 Also have agreed (but no username, or have not contributed to MPlayer directly, or contributed to mplayer2/mpv):
+- Christian Aistleitner
 - Markus Appel
 - Erik Auerswald (only code in mpv, not any potential new code in MPlayer)
 - Jens Axboe
