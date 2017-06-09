@@ -170,6 +170,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Steve(n) Mueller
 - Lauri Mylläri
 - Alexander Neundorf
+- K.S. Ng
 - Martin Oberzalek
 - Magne Oestlyngen
 - Christian Ohm
