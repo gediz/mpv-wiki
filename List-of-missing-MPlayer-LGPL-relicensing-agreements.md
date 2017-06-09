@@ -23,7 +23,7 @@ People who were contacted, but did not reply
 - seru (OSD changes 8d190244d21a4d4, some other insignificant changes) (agreement probably not needed - everything removed)
 - Eviv Bulgroz (messes with stream seeking code in 2aa6acd9747ae, other changes not needed) (also apparently not a real name)
 - Melchior Franz (-geometry extensions 90188f0e5fce)
-- Sam Dennis (minor fix to mplayer.c, his changes to demux_mkv.c were pretty much removed)
+- Sam Dennis (probably not needed, his changes to demux_mkv.c were pretty much removed)
 - R.L. Horn (small patch for ALSA audio output)
 - rvm (most likely Ricardo Villalba) (-volume option, exit reason stuff in mplayer.c)
 - Laurent (stream EOF fix a0f08fbebbdf)
