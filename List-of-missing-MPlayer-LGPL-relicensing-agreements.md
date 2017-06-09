@@ -37,8 +37,8 @@ People who were contacted, but did not reply
 - Kir Kostuchenko (some TV changes - TV will stay GPL, but this touches common mplayer.c code that should become LGPL)
 - Loren Merritt (apart from mencoder, some small changes)
 - Arwed von Merkatz (a patch for CDDA, the patches for removed fontconfig support are not needed)
-- Bernd Ernesti (portability patches - unclear if anything survived, TV patches not needed)
-- Vladimir Kushnir (very early BSD portability changes, unclear if anything survived)
+- Bernd Ernesti (portability patches - unclear if anything survived, agreement probably not needed)
+- Vladimir Kushnir (very early BSD portability changes, unclear if anything survived - probably not)
 - Rune Petersen (Windows -priority option 14ecebe920e68f1)
 - James Warden (add 32 bit sample format to pulseaudio output, trivial)
 
