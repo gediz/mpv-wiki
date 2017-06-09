@@ -20,7 +20,7 @@ People who were contacted, but did not reply
 - Sidik Isani (-autosync code, absolute seeks for -ss, rest was probably removed)
 - Mark Zealey (early -geometry option code)
 - Ville Syrjälä (svn name syrjala, did vo_dfbmga.c, which we removed, but a patch for nv12 touches other areas)
-- seru (OSD changes 8d190244d21a4d4, some other insignificant changes)
+- seru (OSD changes 8d190244d21a4d4, some other insignificant changes) (agreement probably not needed - everything removed)
 - Eviv Bulgroz (messes with stream seeking code in 2aa6acd9747ae, other changes not needed) (also apparently not a real name)
 - Melchior Franz (-geometry extensions 90188f0e5fce)
 - Sam Dennis (minor fix to mplayer.c, his changes to demux_mkv.c were pretty much removed)
