@@ -209,6 +209,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Pedro Larroy Tovar
 - Vladimir Umnov
 - Giorgio Vazzana
+- Ricardo Villalba
 - Dennis Vshivkov
 - Nikolai Weibull
 - Per Wigren
