@@ -131,6 +131,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Loring Holden
 - Aaron Holtzman (anything remaining in mpv)
 - Stefan Hühner
+- Sidik Isani
 - Panagiotis Issaris
 - Robert Juliano
 - Nicholas Kain
