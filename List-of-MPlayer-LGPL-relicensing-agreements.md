@@ -231,9 +231,9 @@ In progress:
 - nVidia (they said they will "look at it", low hopes, we'll probably just replace all vdpau code involved with vo_opengl)
 
 Have disagreed with relicensing:
-- Tristan z80@oceanfree.net (2 patches, all code most removed)
+- Tristan z80@oceanfree.net (2 patches, all code removed)
 - Luca Abeni (basically `video/fmt-conversion.c`, code will be replaced)
-- cehoyos (probably, all his code will be replaced, some tricky parts)
+- cehoyos (all his code will be replaced, or put under GPL guards, some tricky parts)
 
 The list of people who have yet to reply is here: https://github.com/mpv-player/mpv/wiki/List-of-missing-MPlayer-LGPL-relicensing-agreements
 
