@@ -141,7 +141,7 @@ Run mpv in [http://mpv.io/manual/master/#options-input-test input test mode]:
 
 == Is FFmpeg or Libav preferred for use with mpv? ==
 
-Generally FFmpeg, simply because it has more features.
+Generally FFmpeg, simply because it has more features. Don't expect subtitles to work on Libav.
 
 == How can I make mpv the default application to open movie files on OSX? ==
 
