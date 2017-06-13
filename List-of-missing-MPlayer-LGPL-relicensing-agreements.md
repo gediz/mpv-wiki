@@ -24,7 +24,6 @@ People who were contacted, but did not reply
 - Sam Dennis (probably not needed, his changes to demux_mkv.c were pretty much removed)
 - R.L. Horn (small patch for ALSA audio output)
 - Laurent (stream EOF fix a0f08fbebbdf)
-- Zoltan Hidvegi (hzoli) (messes with common audio decode code in 067c0482d99d, vd_ffmpeg.c change in b49ee1f782340, other changes not needed)
 - Chris Welton (small demux_lavf API change update 958c41d9b69843)
 - Wei Jiang (small bug fixes in 2004, most memleaks)
 - Paul Lebedev (track names in demux_mkv 62bfae140613321a, probably nothing copyrightable left)
