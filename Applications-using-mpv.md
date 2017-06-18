@@ -16,11 +16,17 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [IINA](https://lhc70000.github.io/iina/):  
   A media player for macOS 10.10+ based on mpv.
 
+* [Kawaii-Player](https://github.com/kanishka-linux/kawaii-player):  
+  Multimedia player, Library Manager and portable media server based on python3 and pyqt5.
+
 * [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
   A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
 
 * [mpv-android](https://github.com/mpv-android/mpv-android):  
   A media player for Android devices based on libmpv.
+
+* [OvoPlayer](http://ovoplayer.altervista.org):  
+  Multi-platform audio player & manager using libmpv & other backends.
 
 * [SMPlayer](http://smplayer.sourceforge.net/):  
   A cross-platform graphical front-end for MPlayer and forks of Mplayer using GUI widgets offered by Qt.
