@@ -136,6 +136,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Sidik Isani
 - Panagiotis Issaris
 - Robert Juliano
+- Marcin Juszkiewicz
 - Nicholas Kain
 - Yuriy Kaminskiy
 - Alexander Kanavin
