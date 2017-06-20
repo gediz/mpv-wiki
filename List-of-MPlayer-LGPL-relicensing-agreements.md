@@ -171,6 +171,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Federico Menarini
 - Benson Mitchell
 - Jack Moffitt
+- Vladimir Mosgalin
 - Steve(n) Mueller
 - Lauri Mylläri
 - Alexander Neundorf
