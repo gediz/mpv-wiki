@@ -230,6 +230,8 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Valentin Zaretsky
 - Zhou Zongyi
 
+For a partial list of mpv agreements, refer to the github issue and https://gist.github.com/phiresky/d8127643f352899fa595ae8f81e16c21 (none of them is complete).
+
 MPlayer developers who have replied, but have not given a final answer, and want to think about it:
 - joyping (ao_alsa author, although relicensing it might fail due to other missing replies)
 
