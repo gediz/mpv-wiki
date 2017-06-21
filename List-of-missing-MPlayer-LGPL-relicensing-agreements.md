@@ -20,7 +20,6 @@ People who were contacted, but did not reply
 - Ville Syrjälä (svn name syrjala, did vo_dfbmga.c, which we removed, but a patch for nv12 touches other areas) (agreement probably not needed - everything removed)
 - seru (OSD changes 8d190244d21a4d4, some other insignificant changes)
 - Eviv Bulgroz (messes with stream seeking code in 2aa6acd9747ae, other changes not needed) (also apparently not a real name)
-- Melchior Franz (-geometry extensions 90188f0e5fce)
 - Sam Dennis (probably not needed, his changes to demux_mkv.c were pretty much removed)
 - R.L. Horn (small patch for ALSA audio output)
 - Laurent (stream EOF fix a0f08fbebbdf)
