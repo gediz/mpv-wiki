@@ -118,6 +118,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Peter Fordham
 - Kilian A. Foth
 - Fabian Franz
+- Melchior Franz
 - Olivier Galibert
 - German Gomez Garcia
 - Lars Gemeinhardt
