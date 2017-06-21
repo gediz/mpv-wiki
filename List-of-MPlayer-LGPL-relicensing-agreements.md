@@ -200,6 +200,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Robert Riches
 - Gregor Riepl
 - Chris Roccati
+- Jeremy Rosen
 - Frank Scherthan
 - Christian Schmidt
 - Gordon Schmidt
