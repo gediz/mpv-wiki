@@ -167,6 +167,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Jerome Levreau (j.a.l)
 - Oskar Liljeblad
 - Sam Lin
+- Alvaro Lopes
 - Sergey M. (mplayer.win32@...)
 - Hector Martin
 - Sean McGovern
