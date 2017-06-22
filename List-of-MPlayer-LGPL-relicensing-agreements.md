@@ -50,6 +50,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - laaz (probably with restrictions: excludes most of subreader.c from relicensing agreement)
 - lgb
 - lumag
+- mark (Mark Zealey)
 - melanson
 - mgraffam
 - michael (under some conditions: http://lists.mplayerhq.hu/pipermail/mplayer-dev-eng/2016-September/073535.html)
