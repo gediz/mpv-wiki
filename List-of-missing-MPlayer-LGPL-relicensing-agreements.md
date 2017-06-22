@@ -16,7 +16,6 @@ People who were contacted, but did not reply
 - Michel Lespinasse (part of his libmpeg2 video output changes might have been used as skeleton for vo.h - NOTE: probably doesn't matter, as we won't relicense the X11 code, and other than that literally nothing is left)
 - Dénes Balatoni (introduces demux_control, also early slave commands for getting time/position, probably turned into later properties)
 - kiriuja (audio track runtime switching be54f4813fdc9, option parser changes 43844d090c55, subtitle loading stuff (not sure if removed/replaced), video equalizer fix, some early slave mode things)
-- Mark Zealey (early -geometry option code)
 - Ville Syrjälä (svn name syrjala, did vo_dfbmga.c, which we removed, but a patch for nv12 touches other areas) (agreement probably not needed - everything removed)
 - seru (OSD changes 8d190244d21a4d4, some other insignificant changes)
 - Eviv Bulgroz (messes with stream seeking code in 2aa6acd9747ae, other changes not needed) (also apparently not a real name)
