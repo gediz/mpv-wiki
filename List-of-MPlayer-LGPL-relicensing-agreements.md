@@ -106,6 +106,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Evgeny Chukreev
 - Dan Villiom Podlaski Christiansen (danchr)
 - Kees Cook
+- Björn Danielsson
 - Steve Davies
 - devik
 - Daniel Dawson
