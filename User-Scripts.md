@@ -45,6 +45,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)**  
   Script to quickly convert and crop videos from within mpv, with a GUI.
 
+* **[crop](https://github.com/occivink/mpv-scripts#croplua)**  
+  Crop the video by defining the target rectangle with the cursor
+
 * **[cycle-audio-device](https://gist.github.com/bitingsock/ad58ee5da560ecb922fa4a867ac0ecfd)**  
   Cycle through available audio devices with key binds.
 
