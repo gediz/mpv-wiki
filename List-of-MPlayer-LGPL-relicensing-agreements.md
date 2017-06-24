@@ -175,6 +175,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Sean McGovern
 - Rob McMullen
 - Federico Menarini
+- Nehal Mistry
 - Benson Mitchell
 - Jack Moffitt
 - Vladimir Mosgalin
