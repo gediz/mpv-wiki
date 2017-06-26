@@ -221,6 +221,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Mike Swieton
 - Gianluigi Tiesi
 - Pedro Larroy Tovar
+- Rico Tzschichholz
 - Vladimir Umnov
 - Giorgio Vazzana
 - Ricardo Villalba
