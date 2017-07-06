@@ -12,6 +12,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[audio-balance](https://github.com/wiiaboo/mpv-scripts/blob/master/audio-balance.lua)**  
   Port of mpv's balance property to FFmpeg lavfi pan filter.
 
+* **[audio-file-keys](https://github.com/fbriere/mpv-scripts/blob/master/scripts/audio-file-keys.lua)**  
+  Automatically apply key bindings when playing audio files.
+
 * **[autocrop](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autocrop.lua)**  
   Automatically crop the video by using lavfi's cropdetect filter to detect black bars.
 
@@ -198,6 +201,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[streamcache](https://github.com/lvml/mpv-plugin-streamcache)**  
   Provides for more network-glitch-robust caching of live streams by adjusting replay speed.
+
+* **[tree-profiles](https://github.com/fbriere/mpv-scripts/blob/master/scripts/tree-profiles.lua)**  
+Automatically apply profiles to certain directories or files.
 
 * **[tv-output](https://github.com/blue-sky-r/mpv/blob/master/scripts/tv.lua)**  
   (Linux) TV output handling - activate on mpv playback and deactivate on mpv shutdown.
