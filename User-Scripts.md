@@ -281,10 +281,12 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
   Use [flash3kyuu](https://github.com/SAPikachu/flash3kyuu_deband) to deband the video, with reasonable (mildly grainy) default settings. 
 **Obsolete:** mpv now ships with a similar debanding filter as shader.
 
+
 ## C Plugins
 
 * **[mpv-mpris](https://github.com/hoyon/mpv-mpris)**  
   Adds support for MPRIS2 protocol
+
 
 ## Other
 
