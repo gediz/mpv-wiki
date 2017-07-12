@@ -266,7 +266,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[SuperXBR and Nnedi3](https://github.com/bjin/mpv-prescalers/tree/master)**  
   User shaders for prescaling. These shaders should cover most functionality that `prescale-luma=` used to provide.
 
-* **[FSRCNN](https://github.com/haasn/fsrcnn-mpv)
+* **[FSRCNN](https://github.com/haasn/fsrcnn-mpv)**
   Prescaler based on layered convolutional networks. Pretty slow, so mostly suitable for still images rather than realtime video playback.
 
 ## VapourSynth Scripts
