@@ -151,9 +151,9 @@ Generally FFmpeg, simply because it has more features. Don't expect subtitles to
 $ brew linkapps mpv</source></li>
 <li><p>Use [https://github.com/moretension/duti <code>duti</code>] to associate files with application:</p>
 <source lang="bash">$ brew install duti
-$ duti -s io.mpv avi
-$ duti -s io.mpv mkv
-$ duti -s io.mpv mp4</source></li></ul>
+$ duti -s io.mpv avi all
+$ duti -s io.mpv mkv all
+$ duti -s io.mpv mp4 all</source></li></ul>
 
 [https://github.com/kdeldycke/dotfiles/commit/380fed4e58070e10be9854636b8384960d3ee1d2 Source].
 
