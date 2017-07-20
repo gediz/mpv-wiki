@@ -13,5 +13,3 @@ Here are some tasks that need to be done in mpv, require some effort, are not al
 ## OpenGL renderer
 
 - Figure out a way to get rid of redundant passes in a clean way, ideally kill dumb mode
-
-- Implement global scene brightness/range detection (using computer shaders)
