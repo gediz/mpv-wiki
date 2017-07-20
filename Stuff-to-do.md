@@ -13,3 +13,5 @@ Here are some tasks that need to be done in mpv, require some effort, are not al
 - Make ffmpeg load/expose embedded ICC profiles in images, and hook this up to video/out/opengl/lcms.c
 
 - Figure out a way to get rid of redundant passes inside vo_opengl in a clean way, ideally kill dumb mode
+
+- Export src_rect and dst_rect from the VO via property (perhaps read-writable?)
