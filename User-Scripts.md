@@ -6,7 +6,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 ## Lua Scripts
 
-* **[acompressor](https://github.com/medhefgo/mpv-acompressor)**  
+* **[acompressor](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/acompressor.lua)**  
   Dynamic range compressor using acompressor ffmpeg filter with controls to dynamically adjust parameters.
 
 * **[audio-balance](https://github.com/wiiaboo/mpv-scripts/blob/master/audio-balance.lua)**  
