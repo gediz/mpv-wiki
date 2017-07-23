@@ -220,6 +220,9 @@ Automatically apply profiles to certain directories or files.
 * **[vo_battery](https://gist.github.com/ElegantMonkey/04924e899648e84f2e18)**  
   (Linux) Choose the VO based on if the laptop is on battery or not.
 
+* **[webm](https://github.com/ElegantMonkey/mpv-webm)**  
+  Simple WebM maker for mpv, with no external dependencies.
+
 * **[xrandr](https://github.com/lvml/mpv-plugin-xrandr)**  
   Automatically sets the display refresh rate to the one best suitable for the video played
 
