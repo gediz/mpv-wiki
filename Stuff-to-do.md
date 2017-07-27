@@ -10,8 +10,8 @@ Here are some tasks that need to be done in mpv, require some effort, are not al
 
 - Make ytdl lua wrapper more sophisticated: async loading of playlists, loading of both playlist and video if an URL has both, preloading of ytdl videos.
 
-- Make ffmpeg load/expose embedded ICC profiles in images, and hook this up to video/out/opengl/lcms.c
-
-- Figure out a way to get rid of redundant passes inside vo_opengl in a clean way, ideally kill dumb mode
+- Figure out a way to get rid of redundant passes inside vo_opengl in a clean way, ideally kill dumb mode. (Could be done by making `struct img_tex` lazy, with `copy_img_tex` accessing the lazy result directly)
 
 - Export src_rect and dst_rect from the VO via property (perhaps read-writable?)
+
+- Make the gamma curve definitions and tone mapping functions in video_shaders.c work for full-range values, and remove the force clip to [0,1]
