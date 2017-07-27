@@ -18,6 +18,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autocrop](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autocrop.lua)**  
   Automatically crop the video by using lavfi's cropdetect filter to detect black bars.
 
+* **[autosave](https://gist.github.com/Hakkin/5489e511bd6c8068a0fc09304c9c5a82)**  
+  Periodically saves "watch later" data during playback, rather than only saving on quit.
+
 * **[autospeed](https://github.com/kevinlekiller/mpv_scripts/blob/master/autospeed/)**  
   To adjust monitor refresh rate and video speed for almost 1:1 playback. (*nix)
 
