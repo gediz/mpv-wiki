@@ -45,7 +45,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[betterchapters](https://gist.github.com/Hakkin/4f978a5c87c31f7fe3ae)**  
   Loads the next or previous playlist entry if there are no more chapters in the seek direction.
 
-* **[Tcl/Tk context menu ](https://gist.github.com/avih/bee746200b5712220b8bd2f230e535de)**
+* **[Tcl/Tk context menu](https://gist.github.com/avih/bee746200b5712220b8bd2f230e535de)**  
   Configurable context-menu based on Tcl/Tk, for *nix/Windows and probably macOS too.
 
 * **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)**  
@@ -129,6 +129,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[mpv_slicing](https://github.com/Kagami/mpv_slicing)**  
   Cut uncompressed fragments of the video.
+
+* **[mpvcontextmenu](https://github.com/carmanaught/mpvcontextmenu)**  
+  Comprehensive Tcl/Tk context-menu forked from [Tcl/Tk context menu](https://gist.github.com/avih/bee746200b5712220b8bd2f230e535de) with cascading sub-menus. Uses other scripts (see Requirements).
 
 * **[mpvmenu](https://github.com/nezumisama/mpvmenu)**  
   Adds a pop-up menu to mpv, which can be bound to a key or button
