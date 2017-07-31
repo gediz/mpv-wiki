@@ -99,6 +99,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[find_subtitles](https://github.com/directorscut82/find_subtitles)**  
   (Down)load subtitles with subliminal.
 
+* **[firequalizer15](https://github.com/mfcc64/mpv-scripts/blob/master/firequalizer15.lua)**  
+  Linear phase 15-bands equalizer.
+
 * **[fix_sub_timing](https://github.com/wm4/mpv-scripts/blob/master/fix-sub-timing.lua)**  
   Compute the correct speed/delay of subtitles by manually synching two points in time.
 
