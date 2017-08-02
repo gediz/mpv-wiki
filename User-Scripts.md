@@ -105,7 +105,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[fix_sub_timing](https://github.com/wm4/mpv-scripts/blob/master/fix-sub-timing.lua)**  
   Compute the correct speed/delay of subtitles by manually synching two points in time.
 
-* **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/fpsadjust.lua)**  
+* **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/scripts/avail/fpsadjust.lua)**  
   Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
 **Obsolete:** mpv now has a native display-sync option.
 
@@ -190,7 +190,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[show-stream-title](https://github.com/blue-sky-r/mpv/blob/master/scripts/show-stream-title.lua)**  
   Show OSD stream/channel title when switching the IPTV channels from m3u playlist.
 
-* **[skipchapters](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/scripts/avail/skipchapters.lua)**  
+* **[skipchapters](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/scripts/avail/skipchapters.lua)**  
   Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
 * **[skiptofade](https://gist.github.com/bossen/3cfe86a6cdd61452dbb96865128fb327)**  
@@ -269,10 +269,10 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[SSimSuperRes](https://gist.github.com/igv/2364ffa6e81540f29cb7ab4c9bc05b6b)**  
   The aim of this shader is to make corrections to the upscaled image. Works with regular scalers only, not prescalers.
 
-* **[Noise](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/noise.glsl)**  
+* **[Noise](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/shaders/noise.glsl)**  
   Adds a tunable amount of grayscale noise to the output.
 
-* **[Antiringing](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/antiring.hook)**  
+* **[Antiringing](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/shaders/antiring.hook)**  
   This is an antiringing filter that works by clamping to the local neighbourhood. Sort of inspired by the mpv built-in antiringing algorithm, but it's extended in such a way that it also works well for polar (EWA) filters, which the mpv built-in algorithm does not support at all.
 
 * **[nnedi3, superxbr and ravu](https://github.com/bjin/mpv-prescalers/tree/master)**  
@@ -284,13 +284,13 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 
 ## VapourSynth Scripts
 
-* **[mvtools](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/filters/mvtools.vpy)**  
+* **[mvtools](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/filters/mvtools.vpy)**  
   Use [MVTools](https://github.com/dubhater/vapoursynth-mvtools)'s BlockFPS function to perform motion interpolation on the video in realtime.
 
-* **[nnedi3](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/filters/nnedi3.vpy)**  
+* **[nnedi3](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/filters/nnedi3.vpy)**  
   Use [NNEDI3](https://github.com/dubhater/vapoursynth-nnedi3) to double the resolution of the video. This always performs a single doubling. Note that the vapoursynth-nnedi3 filter is so slow that this practically can't be used in realtime, so it's not much use in practice. 
 
-* **[flash3kyuu](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/filters/flash3kyuu.vpy)**  
+* **[flash3kyuu](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/filters/flash3kyuu.vpy)**  
   Use [flash3kyuu](https://github.com/SAPikachu/flash3kyuu_deband) to deband the video, with reasonable (mildly grainy) default settings. 
 **Obsolete:** mpv now ships with a similar debanding filter as shader.
 
