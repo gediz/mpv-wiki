@@ -273,7 +273,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
   Adds a tunable amount of grayscale noise to the output.
 
 * **[Antiringing](https://github.com/haasn/gentoo-conf/blob/nanodesu/home/nand/.mpv/shaders/antiring.hook)**  
-  This is basically the equivalent (with some caveats) of mpv's built-in antiringing shader.
+  This is an antiringing filter that works by clamping to the local neighbourhood. Sort of inspired by the mpv built-in antiringing algorithm, but it's extended in such a way that it also works well for polar (EWA) filters, which the mpv built-in algorithm does not support at all.
 
 * **[nnedi3, superxbr and ravu](https://github.com/bjin/mpv-prescalers/tree/master)**  
   User shaders for prescaling. These shaders should cover most functionality that `prescale-luma=` used to provide.
