@@ -190,6 +190,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Dan Oscarsson
 - Attila Ötvös (oatilla)
 - Naoya Oyama
+- Rune Petersen
 - Trent Piepho
 - Joakim Plate (elupus)
 - Lennart Poettering
