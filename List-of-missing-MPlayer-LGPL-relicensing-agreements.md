@@ -32,7 +32,6 @@ People who were contacted, but did not reply
 - Arwed von Merkatz (a patch for CDDA, the patches for removed fontconfig support are not needed)
 - Bernd Ernesti (portability patches - unclear if anything survived, agreement probably not needed)
 - Vladimir Kushnir (very early BSD portability changes, unclear if anything survived - probably not)
-- Rune Petersen (Windows -priority option 14ecebe920e68f1)
 - James Warden (add 32 bit sample format to pulseaudio output, trivial)
 
 - nVidia Corporation (most vdpau code, they said they're "looking into" the relicensing request)
