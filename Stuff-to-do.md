@@ -6,8 +6,6 @@ Here are some tasks that need to be done in mpv, require some effort, are not al
 
 - Write a new LGPL ALSA audio output. (Without using the old ao_alsa.c code.)
 
-- Support keyboard play/pause buttons and MCE remotes on Windows. This will probably require global hotkeys to be set up. Needs a lot of different hardware for testing since these seem to work differently with every device.
-
 - Make ytdl lua wrapper more sophisticated: async loading of playlists, loading of both playlist and video if an URL has both, preloading of ytdl videos.
 
 - Figure out a way to get rid of redundant passes inside vo_opengl in a clean way, ideally kill dumb mode. (Could be done by making `struct img_tex` lazy, with `copy_img_tex` accessing the lazy result directly)
