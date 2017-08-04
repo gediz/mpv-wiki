@@ -126,6 +126,10 @@ You can mix different video+audio:
 For mp4 1080p video (3770k) and webm audio (149k, opus @160k):
 
 <pre>mpv --ytdl-format 137+251 https://www.youtube.com/watch?v=SYM-RJwSGQ8</pre>
+
+You can also use the special aliases '''bestvideo''' and '''bestaudio''', and also use conditionals. (See '''youtube-dl --help''' for a full documentation). As an example, if you always want to use the best video stream but only up to 1440p - and falling back to the best single-file format when not playing DASH streams - you can use something like this:
+
+<pre>ytdl-format=bestvideo[height<=?1440]+bestaudio/best</pre>
 == How can I change volume using the mouse wheel? ==
 
 By default, volume is changed by scrolling horizontally. If you want to use vertical scrolling for that (rather than seeking), put this in your <code>input.conf</code>:
