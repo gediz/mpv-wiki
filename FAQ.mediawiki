@@ -134,8 +134,8 @@ You can also use the special aliases '''bestvideo''' and '''bestaudio''', and al
 
 By default, volume is changed by scrolling horizontally. If you want to use vertical scrolling for that (rather than seeking), put this in your <code>input.conf</code>:
 
-<pre>MOUSE_BTN3 add volume 2
-MOUSE_BTN4 add volume -2</pre>
+<pre>AXIS_UP    add volume 2
+AXIS_DOWN  add volume -2</pre>
 
 == How can I find out the names and commands associated with each key? ==
 
