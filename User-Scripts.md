@@ -254,7 +254,7 @@ Automatically apply profiles to certain directories or files.
 If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://mpv.io/manual/master/#lua-scripting).
 
 
-## Pixel Shaders
+## User Shaders
 
 * **[LumaSharpenHook](https://gist.github.com/voltmtr/8b4404b4e23129b226b9e64863d3e28b)**  
   A sharpen filter similar to using Unsharp Mask in Photoshop ported from SweetFX shader pack.
