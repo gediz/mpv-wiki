@@ -137,7 +137,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
   Cut uncompressed fragments of the video.
 
 * **[mpvcontextmenu](https://github.com/carmanaught/mpvcontextmenu)**  
-  Comprehensive Tcl/Tk context-menu forked from [Tcl/Tk context menu](https://gist.github.com/avih/bee746200b5712220b8bd2f230e535de) with cascading sub-menus. Uses other scripts (see Requirements).
+  Comprehensive context-menu forked from [Tcl/Tk context menu](https://gist.github.com/avih/bee746200b5712220b8bd2f230e535de). Uses other scripts (see Requirements).
 
 * **[mpvmenu](https://github.com/nezumisama/mpvmenu)**  
   Adds a pop-up menu to mpv, which can be bound to a key or button
