@@ -49,6 +49,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - ksorim
 - laaz (probably with restrictions: excludes most of subreader.c from relicensing agreement)
 - lgb
+- lorenm (Loren Merritt)
 - lumag
 - mark (Mark Zealey)
 - melanson
