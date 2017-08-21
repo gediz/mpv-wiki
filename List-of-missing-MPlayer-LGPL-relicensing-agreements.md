@@ -28,7 +28,6 @@ People who were contacted, but did not reply
 - rguyom (some very early vd_ffmpeg.c fixes)
 - "veal" in commit 116ca0c768219b10e, osd_show_property_text command, probably became show_text?
 - Kir Kostuchenko (some TV changes - TV will stay GPL, but this touches common mplayer.c code that should become LGPL)
-- Loren Merritt (apart from mencoder, some small changes)
 - Arwed von Merkatz (a patch for CDDA, the patches for removed fontconfig support are not needed)
 - Bernd Ernesti (portability patches - unclear if anything survived, agreement probably not needed)
 - Vladimir Kushnir (very early BSD portability changes, unclear if anything survived - probably not)
