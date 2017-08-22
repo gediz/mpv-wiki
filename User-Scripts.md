@@ -24,7 +24,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autospeed](https://github.com/kevinlekiller/mpv_scripts/blob/master/autospeed/)**  
   To adjust monitor refresh rate and video speed for almost 1:1 playback. (*nix)
 
-* **[autospeedwin](https://raw.githubusercontent.com/kevinlekiller/mpv_scripts/master/autospeedwin/autospeedwin.lua)**  
+* **[autospeedwin](https://github.com/kevinlekiller/mpv_scripts/tree/master/autospeedwin)**  
   To adjust monitor refresh rate and video speed for almost 1:1 playback. (Windows)
 
 * **[autodeint](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)**  
