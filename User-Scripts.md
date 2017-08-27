@@ -39,6 +39,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[auto-profiles](https://github.com/wm4/mpv-scripts/blob/master/auto-profiles.lua)**  
   Automatically apply profiles based on predicates written as Lua expressions.
 
+* **[trueautosub](https://gist.github.com/fullmetalsheep/28c397b200a7348027d983f31a7eddfa)**
+  Improved fork of autosub, Automatically downloads subtitles if not present using **subliminal**. (osx/linux only)
+
 * **[autosub](https://gist.github.com/selsta/ce3fb37e775dbd15c698)**  
   Automatically download subtitles using **subliminal**.
 
