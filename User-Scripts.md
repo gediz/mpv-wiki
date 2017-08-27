@@ -218,7 +218,6 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 Automatically apply profiles to certain directories or files.
 
 * **[trueautosub](https://gist.github.com/fullmetalsheep/28c397b200a7348027d983f31a7eddfa)**
-  
 Improved fork of autosub, Automatically downloads subtitles if not present using **subliminal**. (osx/linux only)
 
 
