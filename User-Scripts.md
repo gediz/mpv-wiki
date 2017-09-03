@@ -3,6 +3,10 @@
 Here is a list of scripts that users of mpv have published, adding functionality that is not part of the core mpv player.
 Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their own script by editing this wiki.
 
+## JavaScript
+
+* **[seek-show-position](https://gist.github.com/stax76/716c6c9b1683a9eae8cb74344a4e05bf)**  
+  Shows the position and duration when seeking formatted as: 00:00 / 120:00
 
 ## Lua Scripts
 
