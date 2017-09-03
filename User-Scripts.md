@@ -5,7 +5,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 ## JavaScript
 
-* **[seek-show-position](https://gist.github.com/stax76/716c6c9b1683a9eae8cb74344a4e05bf)**  
+* **[seek-show-position](https://github.com/stax76/mpvnet/blob/master/Scripts/seek-show-position.js)**  
   Shows the position and duration when seeking formatted as: 00:00 / 120:00
 
 ## Lua Scripts
