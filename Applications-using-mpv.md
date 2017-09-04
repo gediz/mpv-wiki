@@ -25,6 +25,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [mpv-android](https://github.com/mpv-android/mpv-android):  
   A media player for Android devices based on libmpv.
 
+* [mpv.net](https://github.com/stax76/mpvnet):  
+  Simple dotnet based player built with libmpv.
+
 * [OvoPlayer](http://ovoplayer.altervista.org):  
   Multi-platform audio player & manager using libmpv & other backends.
 
