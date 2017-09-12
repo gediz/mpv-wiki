@@ -63,9 +63,10 @@ Unfortunately, this can cause stability issues - GL applications sometimes rando
 
 AMD users on Linux are going to have a pretty bad time.
 
-* If you’re getting tearing in multi-monitor setups, it seems there’s nothing you can do about it. AMD drivers (apparently?) don’t vsync across multiple monitors at all, let alone well.
-* You can possibly fix some tearing-related issues by using the <code>Tear Free Desktop</code>, but this seems to degrade the display to 30 Hz operation and adds a lot of input latency.
-* For AMD cards it’s generally a better idea to switch to the free radeon/mesa drivers and take the performance/feature hit, since the drivers provided by AMD are pretty unusable.
+* The official drivers (AMDGPU-PRO/fglrx) are completely broken; so just avoid them altogether.
+* amdgpu/radeonsi/mesa sort of work, but have issues with vsync and mpv performance.
+* Try `echo high > /sys/class/drm/card0/device/power_dpm_force_performance_level`. amdgpu is absolutely terrible at switching between frequency modes, so this locks it in high performance mode.
+* AMDGPU/mesa are known to not vsync correctly when not in fullscreen. Unfortunately, it doesn't seem there's anything you can do about it.
 
 == I am using NVIDIA G-Sync on Windows and running mpv in fullscreen mode reduces the frame rate of other displays ==
 
