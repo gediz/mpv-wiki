@@ -63,8 +63,8 @@ Unfortunately, this can cause stability issues - GL applications sometimes rando
 
 <ul>
 <li> The official drivers (AMDGPU-PRO/fglrx) are completely broken; so just avoid them altogether.</li>
-<li> With amdgpu, you need to enable the TearFree option in xorg.conf to prevent tearing when not in fullscreen.</li>
-<li> Also, try `echo high > /sys/class/drm/card0/device/power_dpm_force_performance_level`. amdgpu is absolutely terrible at switching between frequency modes, so this locks it in high performance mode.</li>
+<li> With amdgpu, you need to enable the TearFree option (either via <code>xrandr --set TearFree on</code> or via xorg.conf) to prevent tearing when not in fullscreen.</li>
+<li> Also, try <code>echo high > /sys/class/drm/card0/device/power_dpm_force_performance_level</code>. amdgpu is absolutely terrible at switching between frequency modes, so this locks it in high performance mode.</li>
 </ul>
 
 == I am using NVIDIA G-Sync on Windows and running mpv in fullscreen mode reduces the frame rate of other displays ==
