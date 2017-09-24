@@ -215,6 +215,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[subit](https://github.com/wiiaboo/mpv-scripts/blob/master/subit.lua)**  
   Yet another script for downloading subtitles using subliminal. Supports better customization of options, such as easy language selection, authentication for providers that need it, and support for URLs.
 
+* **[subselect Tk](https://github.com/zenyd/mpv-scripts)**
+  Download subtitles with a GUI: select the one you want and automatically load them up in mpv. Supports searching for arbitrary names and different subtitle languages. Works on Windows and Linux, possibly macOS.
+
 * **[stats](https://github.com/Argon-/mpv-stats/)**  
   Display some statistics about the currently played file on-screen.
 
