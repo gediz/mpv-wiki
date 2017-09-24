@@ -215,8 +215,8 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[subit](https://github.com/wiiaboo/mpv-scripts/blob/master/subit.lua)**  
   Yet another script for downloading subtitles using subliminal. Supports better customization of options, such as easy language selection, authentication for providers that need it, and support for URLs.
 
-* **[subselect Tk](https://github.com/zenyd/mpv-scripts)**
-  Download subtitles with a GUI: select the one you want and automatically load them up in mpv. Supports searching for arbitrary names and different subtitle languages. Works on Windows and Linux, possibly macOS.
+* **[subselect Tk](https://github.com/zenyd/mpv-scripts)**  
+  Download subtitles with a GUI - select the one you want and automatically load them up in mpv. Supports searching for arbitrary names and different subtitle languages. Works on Windows and Linux, possibly macOS.
 
 * **[stats](https://github.com/Argon-/mpv-stats/)**  
   Display some statistics about the currently played file on-screen.
@@ -227,9 +227,8 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[tree-profiles](https://github.com/fbriere/mpv-scripts/blob/master/scripts/tree-profiles.lua)**  
 Automatically apply profiles to certain directories or files.
 
-* **[trueautosub](https://gist.github.com/fullmetalsheep/28c397b200a7348027d983f31a7eddfa)**
+* **[trueautosub](https://gist.github.com/fullmetalsheep/28c397b200a7348027d983f31a7eddfa)**  
 Improved fork of autosub, Automatically downloads subtitles if not present using **subliminal**. (osx/linux only)
-
 
 * **[tv-output](https://github.com/blue-sky-r/mpv/blob/master/scripts/tv.lua)**  
   (Linux) TV output handling - activate on mpv playback and deactivate on mpv shutdown.
@@ -298,7 +297,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[nnedi3, superxbr and ravu](https://github.com/bjin/mpv-prescalers/tree/master)**  
   User shaders for prescaling. These shaders should cover most functionality that `prescale-luma=` used to provide.
 
-* **[FSRCNN](https://github.com/haasn/fsrcnn-mpv)** 
+* **[FSRCNN](https://github.com/haasn/fsrcnn-mpv)**  
   Prescaler based on layered convolutional networks. Pretty slow, so mostly suitable for still images rather than realtime video playback.
 
 * **[un360](https://gist.github.com/tesu/196db5421559de3e9555d4f9da9d847d)**  
