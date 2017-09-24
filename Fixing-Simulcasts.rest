@@ -8,9 +8,10 @@ Due to massive incompetence, time and resource constraints simulcasts often suff
 Video
 -----
 
-Banding (Shader Fix)
-~~~~~~~~~~~~~~~~~~~~
-The only consistently occurring problem these days is banding, which can now be fixed using a simple integrated shader, without the hassle and performance-hit of VapourSynth.
+Banding
+~~~~~~~
+
+The only consistently occurring problem these days is banding, which can now be fixed using a simple integrated shader.
 
 - To use the debanding shader, use the opengl-hq profile in your ``mpv.conf`` like so::
 
@@ -20,54 +21,16 @@ The only consistently occurring problem these days is banding, which can now be 
 
 	b cycle deband
 
-
-That's pretty much all you need to do these days, consider everything below **deprecated**.
-
-
-VapourSynth
-~~~~~~~~~~~
-You will need `VapourSynth <http://www.vapoursynth.com/>`_ for some of these fixes. On Linux you may or may not find VapourSynth and the needed filter-plugin, namely flash3kyuu_deband, in your package manager. For Mac OS X, see `this gist <https://gist.github.com/ChrisK2/10606922>`_ as example on how to set VS and f3k_db up there. Remember to recompile mpv after installing VS and to make sure that configure actually picks up VS' libs. (This is also necessary on Archlinux as the package is built to be small, without dependency on vapoursynth)
-
-Save the following scripts each to a file and feed it as needed to the VapourSynth video-filter. To load the filter with a script at startup, add ``--vf vapoursynth=path/to/script.vpy``.
-Alternatively, you can add a keybinding to load a specific script during playback. Add ``b vf toggle vapoursynth=/path/to/script.vpy`` to your input.conf to toggle the filter using the ``b`` key.
-
-When you need to use multiple fixes that require VS, try to combine the filters into a single VS script.
-
-Banding (VS fix)
-~~~~~~~~~~~~~~~~
-Since simulcast releases are always tight on bitrate and encoded with "quick" instead of "good" settings they suffer heavily from banding. See `comparison 1 <http://screenshotcomparison.com/comparison/70784>`_ and `comparison 2 <http://screenshotcomparison.com/comparison/70286>`_.
-
-Use `flash3kyuu_deband </SAPikachu/flash3kyuu_deband>`_ through VapourSynth to deband the video::
-
-	import vapoursynth as vs
-	core = vs.get_core()
-	
-	clip = video_in
-	clip = core.f3kdb.Deband(clip, grainy=0, grainc=0, output_depth=16)
-	
-	clip.set_output()
-
-Always use this.
-
 Wrong Framerate
 ~~~~~~~~~~~~~~~
+
 Some simulcast encoders are so incompetent that they can't even get the frame-rate right and end up encoding a 24fps video at 30fps which will lead to annoying judder (Frame pattern: ABCDD).
 
-Use this script to handle this::
-
-	import vapoursynth as vs
-	core = vs.get_core()
-
-	clip = video_in
-	clip = core.vivtc.VDecimate(clip)
-	clip = core.std.AssumeFPS(clip, fpsnum=24000, fpsden=1001)
-
-	clip.set_output()
-
-If you want to watch this on a 24 Hz display, make sure to (only!) enable vo framedropping (``--framedrop=vo``), otherwise you may get heavy desyncing.
+To fix this: ``--vf=lavfi=[fps=30000/1001,decimate,fps=24000/1001]``
 
 Decimation gone wrong
 ~~~~~~~~~~~~~~~~~~~~~
+
 Sometimes something seems to go wrong with the decimation mid-show and a show that is encoded at 24fps and playing smoothly at first suddenly starts to judder. For whatever reason, a frame that wasn't a dupe got removed, and the frame that actually is a dupe remains. This means a whole frame of motion is lost and pans get very jerky (Frame pattern: ABDD). Due to a frame actually getting lost, this is pretty much impossible to fix.
 
 Wrong Color Range
@@ -78,17 +41,15 @@ Wrong Color Range
 Rips from Funimation are encoded at full-range but are tagged as limited range. As a result the player will "cut off" a lot of important image information (see `comparison <http://screenshotcomparison.com/comparison/83071>`_).
 Add the command-line option ``--vf-add=format=colorlevels=full`` to correct this at startup or add ``<key> vf toggle format=colorlevels=full`` to your input.conf to toggle the setting during playback.
 
-
-
 Subtitles
 ---------
 
 Timing
 ~~~~~~
 
-(Obsolete—Crunchyroll has fixed the MP4 muxer so subtitles should be timed correctly)
+The subtitles are sometimes a few frames out of sync, causing scene bleeds all over the place. Use ``--sub-delay=0.125125`` to apply the fix at startup or add ``<key> cycle_values sub-delay "0.125125" "0"`` to your input.conf to toggle it during playback.
 
-The subtitles are sometimes timed one frame too late, causing scene bleeds all over the place. Use ``--sub-delay=-0.04`` to apply the fix at startup or add ``<key> cycle_values sub-delay "-0.04" "0"`` to your input.conf to toggle it during playback.
+This is caused in particular by Crunchyroll’s broken stream muxing, which sometimes drops the first frame and then delays the video stream by two frames (rounded to milliseconds), hence delaying the subtitles by ``(1 / FPS) * 3`` usually fixes the issue (the value above assumes 23.976 FPS video).
 
 Messed up Character-Encoding (obsolete)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
