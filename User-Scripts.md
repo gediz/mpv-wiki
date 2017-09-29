@@ -236,9 +236,6 @@ Improved fork of autosub, Automatically downloads subtitles if not present using
 * **[visualizer](https://github.com/mfcc64/mpv-scripts/blob/master/visualizer.lua)**  
   Various audio visualization.
 
-* **[vo_battery](https://gist.github.com/selsta/9ac023688885053d42ca)**  
-  (OS X) Choose the VO based on if the laptop is on battery or not.
-
 * **[vo_battery](https://gist.github.com/ElegantMonkey/04924e899648e84f2e18)**  
   (Linux) Choose the VO based on if the laptop is on battery or not.
 
