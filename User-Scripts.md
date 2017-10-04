@@ -258,9 +258,6 @@ Improved fork of autosub, Automatically downloads subtitles if not present using
 * **[mpv-bookmarker](https://github.com/nimatrueway/mpv-bookmark-lua-script)**  
   Bookmark your favorite time on media files
 
-* **[history](https://gist.github.com/lexazloy/81bbf66950d076f8723976ce36a6a2b3)**  
-  Logging your watch history
-
 If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://mpv.io/manual/master/#lua-scripting).
 
 
