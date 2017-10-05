@@ -39,7 +39,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - hyc
 - hzoli (Zoltan Hidvegi)
 - ib (except code under MPlayer's gui subdirectory)
-- iive (but "LGPL 3.0 or later" only)
+- iive
 - ivo
 - joey
 - jonas
