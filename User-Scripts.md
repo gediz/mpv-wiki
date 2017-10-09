@@ -288,8 +288,8 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[nnedi3, superxbr and ravu](https://github.com/bjin/mpv-prescalers/tree/master)**  
   User shaders for prescaling. These shaders should cover most functionality that `prescale-luma=` used to provide.
 
-* **[FSRCNN](https://github.com/haasn/fsrcnn-mpv)**  
-  Prescaler based on layered convolutional networks. Pretty slow, so mostly suitable for still images rather than realtime video playback.
+* **[FSRCNN](https://github.com/igv/FSRCNN-TensorFlow/releases)**  
+  Prescaler based on layered convolutional networks.
 
 * **[un360](https://gist.github.com/tesu/196db5421559de3e9555d4f9da9d847d)**  
   Converts equirectangular 360 degree video to be watchable, at a fixed perspective.
