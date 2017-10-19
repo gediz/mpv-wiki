@@ -76,6 +76,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[dessubdb](https://github.com/demanuel/dessubdb/blob/master/mpv.lua)**  
   Download automatically subtitles from the thesubdb.com using [DESSubdb](https://github.com/demanuel/dessubdb).
 
+* **[delete-file](https://github.com/zenyd/mpv-scripts)**  
+  Provides the ability to delete files being played through mpv
+
 * **[delogo](https://github.com/b4zz4/mpv-delogo)**  
   It removes the logo of the channels in a video (press n)
 
