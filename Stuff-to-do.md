@@ -1,4 +1,4 @@
-Here are some tasks that need to be done in mpv, require some effort, are not already grabbed by anyone, and which are thought to be doable by anyone without requiring too much mpv-specific knowledge.
+If you're new to the project, here are some suggestions what to work on.
 
 - We need a community manager. This person would reduce the need for developers to deal with day to day operations, such as communicating with users, adjusting the website and documentation, triaging bugs and feature requests, and other non-developer tasks.
 
