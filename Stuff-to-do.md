@@ -1,4 +1,4 @@
-If you're new to the project, here are some suggestions what to work on.
+If you're new to the project, and want to help, here are some suggestions what to work on. You're also welcome to come up with your own ideas.
 
 - We need a community manager. This person would reduce the need for developers to deal with day to day operations, such as communicating with users, adjusting the website and documentation, triaging bugs and feature requests, and other non-developer tasks.
 
