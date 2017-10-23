@@ -14,4 +14,8 @@ If you're new to the project, and want to help, here are some suggestions what t
 
 - Make the gamma curve definitions and tone mapping functions in video_shaders.c work for full-range values, and remove the force clip to [0,1]
 
+- Introduce consistency in our option naming. Reorder the manpage to make options easier to find.
+
 - We need a maintainer for the OSC (the "UI" that appears as overlay over the video).
+
+For all of these you should ask on #mpv-devel for help and guidance.
