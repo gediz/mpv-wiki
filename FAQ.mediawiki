@@ -224,6 +224,8 @@ This is not an issue for the demuxer packet cache. The demuxer cache will usuall
 
 It might be possible to extend either of these caches to work better. The stream cache could be extended to handle multiple files (except it won't work with FFmpeg's HLS demuxer, because it does not give us segments in advance). The demuxer cache could be extended to allow seeking by making it persistent. Both of these solution are potentially pretty complicated and would have to be implemented by someone. The demuxer cache solution would probably be preferred, because it's more flexible, and would work with HLS.
 
+Some work has been done on this, see https://mpv.io/manual/master/#options-demuxer-seekable-cache and https://mpv.io/manual/master/#options-demuxer-max-back-bytes .
+
 Note that the HLS limitation can be worked around by using a separate HLS streamer/downloader, but seeking will be limited as well.
 
 == On Windows, why does mpv.exe not attach to the console and what does mpv.com do? ==
