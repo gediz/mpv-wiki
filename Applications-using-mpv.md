@@ -4,6 +4,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 
 ## GUI frontends
 
+* [Deepin Movies](https://github.com/linuxdeepin/deepin-movie-reborn):  
+  Deepin movie is Deepin Desktop Environment Movie Player.
+
 * [Baka MPlayer](https://github.com/u8sand/Baka-MPlayer):  
   A cross-platform media player based on libmpv.
 
