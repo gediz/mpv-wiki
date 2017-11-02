@@ -2,6 +2,8 @@ If you're new to the project, and want to help, here are some suggestions what t
 
 - We need a community manager. This person would reduce the need for developers to deal with day to day operations, such as communicating with users, adjusting the website and documentation, triaging bugs and feature requests, and other non-developer tasks.
 
+- Write a help overlay script, which shows mapped key bindings and their meaning. (This would require new mpv API to retrieve current key bindings and so on, which you could implement yourself, or which could be added by other developers.)
+
 - Think of a way how to improve security by restricting unintended "redirects" due to playlist files and similar things. For example, a playlist on disk could contain remote links, or a playlist retrieved from http could reference local files. Since HLS, a popular streaming protocol, uses "playlists", streams loading other references must be enabled by default. We should come up with a security concept that mitigates these problems.
 
 - Replace Xlib usage with XCB. (Basically writing a new backend for X11, based on XCB instead of Xlib. Preferably without using the old code, so it can be LGPL.)
