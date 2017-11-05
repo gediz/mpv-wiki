@@ -39,4 +39,5 @@ int matroska_wanted_segment;
 * Distinguishing metadata and file tags: libavformat has, in its utterly misled way of making everything "generic", no separation between metadata (like extra information not expressible with lavf API), and file tags (like "artist", and other fields which could be stored as key/value lists in the file and are editable by the user). They're both stored in "metadata" fields.
 * Probing video duration with `--demuxer-mkv-probe-video-duration`
 * (Check whether libavformat defers CUE reading even if it shouldn't, e.g. if there are other header elements at the end of the file that need to be read anyway.)
+* mpv's demuxer appears to be faster. Probably caused by additional parsing in libavformat.
 * I like that the mpv demuxer warns on incomplete files
