@@ -91,6 +91,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Markus Appel
 - Erik Auerswald (only code in mpv, not any potential new code in MPlayer)
 - Jens Axboe
+- Tibor Balázs (tibcu)
 - Michael Behrisch
 - Fabrice Bellard
 - Rocky Bernstein
