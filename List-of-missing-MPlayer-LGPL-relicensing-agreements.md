@@ -6,7 +6,6 @@ People whose email addresses are not valid anymore
 ------------------------------------
 - Nick Kurshev <nickols_k@mail.ru> (user terminated) nickols_k@users.sourceforge.net (unknown user) (refactored old dec_audio.c code)
 - adland <adland123@yahoo.com> (account gone) (url escaping fix, implicit contribution to ao_alsa, dvd:// command line parsing)
-- Balazs Tibor <tibcu@sch.bme.hu> (user unknown) (small fixes: -frames 0, reset frame drop stats on new files)
 - Alan Curry <pacman@world.std.com> (relatively trivial changes to vd_ffmpeg.c and demux_lavf.c and other areas, most contributions in removed code)
 - Tom Lees <tal26@cam.ac.uk> (trivial ao_alsa patch, code was probably removed)
 
