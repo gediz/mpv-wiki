@@ -140,6 +140,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv-Change-OSD-Media-Title](https://github.com/nmoorthy1/mpv-Change-OSD-Media-Title)**  
   Displays filename, percentage watched, current chapter, and number of frames dropped in the OSD media title and updates it whenever one of the values has changed.
 
+* **[mpv_crop_script](https://github.com/TheAMM/mpv_crop_script)**  
+  Take cropped screenshots directly within mpv, without the need for external dependencies.
+
 * **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)**  
   Show frame info, similar to ffdshow's OSD.
 
