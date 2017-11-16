@@ -92,7 +92,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Manually crop a video during playback.
 
 * **[encode](https://github.com/occivink/mpv-scripts#encodelua)**  
-  Re-encode or remux part of the current video. Can also preserve some filters, such as "crop".
+  Re-encode or  part of the current video. Can also preserve some filters, such as "crop".
 
 * **[equalizer](https://gist.github.com/avih/41acff712abd32e1f436235388c8b523)**  
   5-bands equalizer with colorful display.
@@ -121,6 +121,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 * **[KDialog-open-files](https://gist.github.com/ntasos/d1d846abd7d25e4e83a78d22ee067a22)**  
 Use KDE's KDialog to add files to playlist, subtitles to playing video or open URLs.
+
+* **[interSubs](https://github.com/oltodosel/interSubs)**  
+  Interactive subtitles for mpv, that provide instant translation for selected word. Works on Linux, macOS.
 
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)**  
   Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
