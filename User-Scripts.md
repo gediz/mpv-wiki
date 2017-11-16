@@ -92,7 +92,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Manually crop a video during playback.
 
 * **[encode](https://github.com/occivink/mpv-scripts#encodelua)**  
-  Re-encode or  part of the current video. Can also preserve some filters, such as "crop".
+  Re-encode or remux part of the current video. Can also preserve some filters, such as "crop".
 
 * **[equalizer](https://gist.github.com/avih/41acff712abd32e1f436235388c8b523)**  
   5-bands equalizer with colorful display.
