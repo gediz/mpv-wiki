@@ -43,6 +43,7 @@ Have agreed and had a MPlayer svn/cvs username:
 - ivo
 - joey
 - jonas
+- joyping
 - kmkaplan
 - komh
 - kraymer
@@ -240,9 +241,6 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Zhou Zongyi
 
 For a partial list of mpv agreements, refer to the github issue and https://gist.github.com/phiresky/d8127643f352899fa595ae8f81e16c21 (none of them is complete).
-
-MPlayer developers who have replied, but have not given a final answer, and want to think about it:
-- joyping (ao_alsa author, although relicensing it might fail due to other missing replies)
 
 In progress:
 - Gwenole Beauchesne (needs to go through corporate to get permission, or we will make vo_vaapi LGPL only, and replace the vaapi code involved with vo_opengl)
