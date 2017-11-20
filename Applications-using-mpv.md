@@ -45,9 +45,6 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [boram](https://github.com/Kagami/boram):  
   boram is a cross-platform WebM converter which embeds libmpv as Chromium PPAPI plugin in order to preview and interactively cut/crop media file to be encoded.
 
-* [PlexMediaPlayer](https://github.com/plexinc/plex-media-player):  
-  A Plex GUI client (provides access to Plex servers), which uses libmpv for video and music playback.
-
 * [SpaceTV](https://github.com/IgnorantGuru/spacefm-plugins/wiki#wiki-ig-spacetv):  
   SpaceTV is an mpv-based plugin for the [SpaceFM](http://ignorantguru.github.io/spacefm/) file manager which allows SpaceFM to be used as a media center.  Since mpv doesn't include a GUI, SpaceFM can be used to select videos to play in mpv, and adds the ability to Resume Last and Resume Prior played videos.
 
