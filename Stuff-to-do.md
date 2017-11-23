@@ -8,8 +8,6 @@ If you're new to the project, and want to help, here are some suggestions what t
 
 - Replace Xlib usage with XCB. (Basically writing a new backend for X11, based on XCB instead of Xlib. Preferably without using the old code, so it can be LGPL.)
 
-- Write a new LGPL ALSA audio output. (Without using the old ao_alsa.c code.)
-
 - Make ytdl lua wrapper more sophisticated: async loading of playlists, loading of both playlist and video if an URL has both, preloading of ytdl videos.
 
 - Export src_rect and dst_rect from the VO via property (perhaps read-writable?)
