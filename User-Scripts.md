@@ -49,6 +49,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[betterchapters](https://gist.github.com/Hakkin/4f978a5c87c31f7fe3ae)**  
   Loads the next or previous playlist entry if there are no more chapters in the seek direction.
 
+* **[blur-edges](https://github.com/occivink/mpv-scripts#blur-edgeslua)**
+  Replace black bars with a blurry copy of the video
+
 * **[Tcl/Tk context menu](https://gist.github.com/avih/bee746200b5712220b8bd2f230e535de)**  
   Configurable context-menu based on Tcl/Tk, for *nix/Windows and probably macOS too.
 
