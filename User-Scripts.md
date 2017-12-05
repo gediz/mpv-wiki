@@ -149,6 +149,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv_crop_script](https://github.com/TheAMM/mpv_crop_script)**  
   Take cropped screenshots directly within mpv, without the need for external dependencies.
 
+* **[mpv_thumbnail_script](https://github.com/TheAMM/mpv_thumbnail_script)**  
+  Show preview thumbnails when hovering over the seekbar, without the need for external dependencies.
+
 * **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)**  
   Show frame info, similar to ffdshow's OSD.
 
