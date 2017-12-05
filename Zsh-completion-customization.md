@@ -6,7 +6,7 @@ Older versions of the completion that ships with mpv had a hard-coded list of fi
 
 If you want to complete only certain file extensions, use something like this:
 
-    zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(mkv|mp4|flac|m4a)(-.) *(-/):directories' '*:all-files'
+    zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(flv|mp4|webm|mkv|wmv|mov|avi|mp3|ogg|wma|flac|wav|aiff|m4a|m4b|m4v|gif|ifo)(-.) *(-/):directories' '*:all-files'
 
 It will fall back to completing all files if no files with the given extensions are present or match what you've typed.
 
