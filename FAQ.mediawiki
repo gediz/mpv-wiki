@@ -73,7 +73,7 @@ This is likely caused by the way G-Sync interacts with Windows’ compositor. Us
 
 == I can’t see the OSC/OSD/GUI! ==
 
-The OSC requires Lua support. Install Lua (including development headers) and rebuild mpv.<br />
+The OSC requires Lua support. Install either one of Lua 5.1, 5.2 or LuaJIT, including development headers, and rebuild mpv. mpv does not and is unlikely to ever support Lua 5.3.<br />
 If you didn’t build mpv yourself, ask the packager to enable Lua.
 
 Also note that the OSC is invisible by default, but it should appear once you move the mouse over the mpv window.
