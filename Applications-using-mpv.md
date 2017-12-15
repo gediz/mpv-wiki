@@ -13,8 +13,6 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [Deepin Movies](https://github.com/linuxdeepin/deepin-movie-reborn):  
   Deepin movie is Deepin Desktop Environment Movie Player.
 
-* [ff2mpv](https://github.com/woodruffw/ff2mpv): A Firefox 52+ plugin for playing links in mpv.
-
 * [gnome-mpv](https://github.com/gnome-mpv/gnome-mpv):  
   A simple GTK+ frontend for mpv.
 
@@ -46,6 +44,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 
 * [boram](https://github.com/Kagami/boram):  
   boram is a cross-platform WebM converter which embeds libmpv as Chromium PPAPI plugin in order to preview and interactively cut/crop media file to be encoded.
+
+* [ff2mpv](https://github.com/woodruffw/ff2mpv):  
+  A Firefox 52+ plugin for playing links in mpv.
 
 * [SpaceTV](https://github.com/IgnorantGuru/spacefm-plugins/wiki#wiki-ig-spacetv):  
   SpaceTV is an mpv-based plugin for the [SpaceFM](http://ignorantguru.github.io/spacefm/) file manager which allows SpaceFM to be used as a media center.  Since mpv doesn't include a GUI, SpaceFM can be used to select videos to play in mpv, and adds the ability to Resume Last and Resume Prior played videos.
