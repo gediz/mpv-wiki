@@ -13,6 +13,8 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [Deepin Movies](https://github.com/linuxdeepin/deepin-movie-reborn):  
   Deepin movie is Deepin Desktop Environment Movie Player.
 
+* [ff2mpv](https://github.com/woodruffw/ff2mpv): A Firefox 52+ plugin for playing links in mpv.
+
 * [gnome-mpv](https://github.com/gnome-mpv/gnome-mpv):  
   A simple GTK+ frontend for mpv.
 
