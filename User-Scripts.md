@@ -5,6 +5,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 ## JavaScript
 
+* **[Backbox](https://github.com/SteveJobzniak/mpv-tools)**  
+  Advanced, modular media browser and file manager for mpv.
+
 * **[seek-show-position](https://github.com/stax76/mpvnet/blob/master/Scripts/seek-show-position.js)**  
   Shows the position and duration when seeking (formatted as: 00:00 / 120:00)
 
@@ -37,7 +40,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autodeint](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)**  
   Automatically deinterlace the video by using lavfi's idet filter to detect interlaced content.
 
-* **[auto-keep-gui-open](https://github.com/SteveJobzniak/mpv-tools/blob/master/auto-keep-gui-open.lua)**  
+* **[auto-keep-gui-open](https://github.com/SteveJobzniak/mpv-tools)**  
   Intelligently switches mpv's "keep-open" behavior based on whether you are running in video-mode or audio-only mode.
 
 * **[autoload](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)**  
@@ -76,7 +79,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[cycle_messages](https://gist.github.com/rrooij/59f57ff5f5a952e56bbb)**  
   Cycle between custom OSD messages.
 
-* **[cycle-video-rotate](https://github.com/SteveJobzniak/mpv-tools/blob/master/cycle-video-rotate.lua)**  
+* **[cycle-video-rotate](https://github.com/SteveJobzniak/mpv-tools)**  
   Allows you to perform video rotation which perfectly cycles through all 360 degrees without any glitches.
 
 * **[dessubdb](https://github.com/demanuel/dessubdb/blob/master/mpv.lua)**  
@@ -167,7 +170,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpvmenu](https://github.com/nezumisama/mpvmenu)**  
   Adds a pop-up menu to mpv, which can be bound to a key or button
 
-* **[multi-command-if](https://github.com/SteveJobzniak/mpv-tools/blob/master/multi-command-if.lua)**  
+* **[multi-command-if](https://github.com/SteveJobzniak/mpv-tools)**  
   Very powerful conditional logic and multiple action engine for your keybindings, without having to write a single line of code!
 
 * **[myshows](https://github.com/gim-/mpv-plugin-myshows)**  
@@ -203,7 +206,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[progressbar](https://github.com/torque/mpv-progressbar)**  
   A minimalistic OSC replacement. It provides a small, unintrusive progress bar that persists at the bottom of the video window.
 
-* **[quick-scale](https://github.com/SteveJobzniak/mpv-tools/blob/master/quick-scale.lua)**  
+* **[quick-scale](https://github.com/SteveJobzniak/mpv-tools)**  
   Quickly scale the video player to a target size, with full control over target scale and max scale. Helps you effortlessly resize a video to fit on your desktop, or any other video dimensions you need!
 
 * **[reload](https://github.com/4e6/dotfiles/blob/master/.config/mpv/scripts/reload.lua)**  
