@@ -6,7 +6,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 ## JavaScript
 
 * **[Backbox](https://github.com/SteveJobzniak/mpv-tools)**  
-  Advanced, modular media browser and file manager for mpv.
+  Advanced, modular media browser, file manager and playlist manager for mpv.
 
 * **[seek-show-position](https://github.com/stax76/mpvnet/blob/master/Scripts/seek-show-position.js)**  
   Shows the position and duration when seeking (formatted as: 00:00 / 120:00)
