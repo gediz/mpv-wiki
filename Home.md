@@ -25,7 +25,7 @@ See [mpv.io](http://mpv.io/installation/).
 ### User Scripts
 
 * [[User Scripts]]:   
-  Lua, VapourSynth and GLSL shaders that extend mpv's functionality.
+  Lua, JavaScript, VapourSynth and GLSL shaders that extend mpv's functionality.
 
 ### Software that makes use of mpv
 
