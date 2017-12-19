@@ -9,7 +9,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Advanced, modular media browser, file manager and playlist manager for mpv.
 
 * **[Leapfrog](https://github.com/SteveJobzniak/mpv-tools)**  
-  Effortlessly jump through your playlist, with your own custom jump size and direction. Excellent when queuing lots of images and using mpv as an image viewer.
+  Effortlessly jump through your playlist, with your own custom jump size and direction, including the ability to jump randomly. Excellent when queuing lots of images and using mpv as an image viewer.
 
 * **[seek-show-position](https://github.com/stax76/mpvnet/blob/master/Scripts/seek-show-position.js)**  
   Shows the position and duration when seeking (formatted as: 00:00 / 120:00)
