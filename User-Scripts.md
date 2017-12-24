@@ -14,6 +14,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[seek-show-position](https://github.com/stax76/mpvnet/blob/master/Scripts/seek-show-position.js)**  
   Shows the position and duration when seeking (formatted as: 00:00 / 120:00)
 
+* **[SteveJobzniak's Modules.js (for developers)](https://github.com/SteveJobzniak/mpv-tools/tree/master/scripts/modules.js)**  
+  Tons of pre-written, open source JavaScript modules which helps you rapidly create your own JS user scripts (including a very helpful [script config](https://github.com/SteveJobzniak/mpv-tools/blob/master/scripts/modules.js/ScriptConfig.js) system based on mpv's Lua `mp.options` API). All modules are free to use (and extend) in your own scripts!
+
 ## Lua Scripts
 
 * **[acompressor](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/acompressor.lua)**  
