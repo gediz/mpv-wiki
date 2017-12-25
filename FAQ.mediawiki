@@ -228,7 +228,7 @@ Some work has been done on this, see https://mpv.io/manual/master/#options-demux
 
 Note that the HLS limitation can be worked around by using a separate HLS streamer/downloader, but seeking will be limited as well.
 
-In mpv 0.28, the demuxer cache is enabled by default, and HLS streams are cached and seekable (en exchange for some memory waste).
+In mpv 0.28, the demuxer cache is enabled by default, and HLS streams are cached and seekable (in exchange for some memory waste).
 
 == On Windows, why does mpv.exe not attach to the console and what does mpv.com do? ==
 
