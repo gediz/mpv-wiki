@@ -137,6 +137,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[KDialog-open-files](https://gist.github.com/ntasos/d1d846abd7d25e4e83a78d22ee067a22)**  
 Use KDE's KDialog to add files to playlist, subtitles to playing video or open URLs.
 
+* **[image-viewer](https://github.com/occivink/mpv-image-viewer)**  
+   Configurations, scripts and tips for using mpv as an image viewer.
+
 * **[interSubs](https://github.com/oltodosel/interSubs)**  
   Interactive subtitles for mpv, that provide instant translation for selected word. Works on Linux, macOS.
 
