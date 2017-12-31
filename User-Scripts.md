@@ -131,6 +131,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
 **Obsolete:** mpv now has a native display-sync option.
 
+* **[gallery-view](https://github.com/occivink/mpv-gallery-view)**  
+  View playlist in a grid view of thumbnails.
+
 * **[gpufreq](https://gist.github.com/CounterPillow/0b764ed14c609024c9188383f7dce033)**  
   Show current and maximum GPU frequencies for GPUs using the DRM stack on Linux.
 
