@@ -11,6 +11,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[Leapfrog](https://github.com/SteveJobzniak/mpv-tools)**  
   Effortlessly jump through your playlist, with your own custom jump size and direction, including the ability to jump randomly. Excellent when queuing lots of images and using mpv as an image viewer.
 
+* **[screenshot-to-clipboard](https://github.com/zc62/mpv-scripts/blob/master/screenshot-to-clipboard.js)**  
+  Generates a temp screenshot file on desktop then copy to clipboard. (Windows only)
+
 * **[seek-show-position](https://github.com/stax76/mpvnet/blob/master/Scripts/seek-show-position.js)**  
   Shows the position and duration when seeking (formatted as: 00:00 / 120:00)
 
@@ -32,7 +35,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Automatically crop the video by using lavfi's cropdetect filter to detect black bars.
 
 * **[autoloop](https://github.com/zc62/mpv-scripts/blob/master/autoloop.lua)**  
-  Automatically loop files that are under a given duration (default 5 seconds).
+  Automatically loops files that are under a given duration (default 5 seconds).
 
 * **[autosave](https://gist.github.com/Hakkin/5489e511bd6c8068a0fc09304c9c5a82)**  
   Periodically saves "watch later" data during playback, rather than only saving on quit.
@@ -226,6 +229,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[repl](https://github.com/rossy/mpv-repl)**  
   A REPL for input commands that is displayed on the video window.
+
+* **[save-sub-delay](https://github.com/zc62/mpv-scripts/blob/master/save-sub-delay.lua)**  
+  This script saves the sub-delay quantity for each file. When next time the file is opened, sub-delay is automatically restored.
 
 * **[seek-to](https://github.com/occivink/mpv-scripts#seek-tolua)**  
   Seek to an absolute timestamp specified via keyboard input.
