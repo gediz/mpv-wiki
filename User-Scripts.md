@@ -5,7 +5,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 ## JavaScript
 
-* **[Backbox](https://github.com/SteveJobzniak/mpv-tools)**  
+* **[Blackbox](https://github.com/SteveJobzniak/mpv-tools)**  
   Advanced, modular media browser, file manager and playlist manager for mpv.
 
 * **[Leapfrog](https://github.com/SteveJobzniak/mpv-tools)**  
