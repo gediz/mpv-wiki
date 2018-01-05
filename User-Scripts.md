@@ -263,7 +263,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[streamcache](https://github.com/lvml/mpv-plugin-streamcache)**  
   Provides for more network-glitch-robust caching of live streams by adjusting replay speed.
 
-* **[timer](https://github.com/AdamD2/mpv-timer)**
+* **[timer](https://github.com/AdamD2/mpv-timer)**  
   Allows the user to set a starting time and an ending time and see the time elapsed between those points with millisecond precision.
 
 * **[tree-profiles](https://github.com/fbriere/mpv-scripts/blob/master/scripts/tree-profiles.lua)**  
