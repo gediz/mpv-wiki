@@ -364,3 +364,6 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 
 * **[mpv-youtube-dl-binding](https://github.com/antoniy/mpv-youtube-dl-binding)**  
   Natively play video streams in Firefox.
+
+* **[playphrase](https://github.com/kelciour/playphrase)**  
+  Search and play phrases from movies and audiobooks.
