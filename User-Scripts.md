@@ -257,6 +257,33 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[subselect Tk](https://github.com/zenyd/mpv-scripts)**  
   Download subtitles with a GUI - select the one you want and automatically load them up in mpv. Supports searching for arbitrary names and different subtitle languages. Works on Windows and Linux, possibly macOS.
 
+* **[sub-cut](https://github.com/kelciour/mpv-scripts/blob/master/sub-cut.lua)**  
+  Extract a part of the video as audio or video with subtitles.
+
+* **[sub-bilingual](https://github.com/kelciour/mpv-scripts/blob/master/sub-bilingual.lua)**  
+  Generate bilingual subtitles.
+
+* **[sub-bookmarks](https://github.com/kelciour/mpv-scripts/blob/master/sub-bookmarks.lua)**  
+  Save current position and subtitles in .txt file.
+
+* **[sub-export](https://github.com/kelciour/mpv-scripts/blob/master/sub-export.lua)**  
+  Extract selected subtitles from .mkv file.
+
+* **[sub-playback](https://github.com/kelciour/mpv-scripts/blob/master/sub-playback.lua)**  
+  Add interactive move, i.e. automatically pause at the end of the fragment with option to continue playback or replay it again with or without subtitles.
+
+* **[sub-replay](https://github.com/kelciour/mpv-scripts/blob/master/sub-replay.lua)**  
+  Replay previous sentence.
+
+* **[sub-search](https://github.com/kelciour/mpv-scripts/blob/master/sub-search.lua)**  
+  Search for phrase in subtitles and skip to it.
+
+* **[sub-sentences](https://github.com/kelciour/mpv-scripts/blob/master/sub-sentences.lua)**  
+  Generate subtitles with sentences.
+
+* **[subs2srs](https://github.com/kelciour/mpv-scripts/blob/master/subs2srs.lua)**  
+  Automatically add new card in Anki with audio, picture and text.
+
 * **[stats](https://github.com/Argon-/mpv-stats/)**  
   Display some statistics about the currently played file on-screen.
 
