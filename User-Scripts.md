@@ -97,6 +97,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[delete-file](https://github.com/zenyd/mpv-scripts)**  
   Provides the ability to delete files being played through mpv
 
+* **[locate-file](https://github.com/nimatrueway/mpv-locatefile-lua-script)**  
+  Locate current media file on your OS file browser 
+
 * **[delogo](https://github.com/b4zz4/mpv-delogo)**  
   It removes the logo of the channels in a video (press n)
 
