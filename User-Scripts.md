@@ -227,8 +227,8 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[quick-scale](https://github.com/SteveJobzniak/mpv-tools)**  
   Quickly scale the video player to a target size, with full control over target scale and max scale. Helps you effortlessly resize a video to fit on your desktop, or any other video dimensions you need!
 
-* **[reload](https://github.com/4e6/dotfiles/blob/master/.config/mpv/scripts/reload.lua)**  
-  This script provides automatic reloading of videos that doesn't have buffering progress for some time while keeping the current time position. It also adds a keybinding to reload video manually.
+* **[reload](https://github.com/4e6/mpv-reload)**  
+  When an online video is stuck during buffering or got slow CDN source, restarting often helps. This script provides automatic reloading of videos that didn't have buffering progress for some time, keeping the current time position. It also adds `Ctrl+r` keybinding to reload video manually.
 
 * **[repl](https://github.com/rossy/mpv-repl)**  
   A REPL for input commands that is displayed on the video window.
