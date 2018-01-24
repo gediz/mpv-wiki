@@ -78,10 +78,6 @@ If you didn’t build mpv yourself, ask the packager to enable Lua.
 
 Also note that the OSC is invisible by default, but it should appear once you move the mouse over the mpv window.
 
-== Why do YouTube videos take forever to load? ==
-
-Older ffmpeg versions didn’t support DASH properly, update to ffmpeg to git/HEAD.
-
 == (How) can I play YouTube playlists? ==
 
 Pretty much like anything else, just pass the playlist URL to mpv. Note that you need a link to the actual playlist (<code>https://www.youtube.com/playlist?list=...</code>), NOT to a video in the playlist (<code>https://www.youtube.com/watch?v=...&list=...&index=...</code>). You can get that link by clicking on the title of the playlist on the right.
@@ -212,23 +208,15 @@ Other options are available in the [https://mpv.io/manual/stable/#configurable-o
 
 == How does youtube-dl work? Does it download the stream to disk? ==
 
-The mpv youtube-dl wrapper script calls <code>youtube-dl -J</code> on URLs that begin with http(s). This returns a direct media link from which mpv streams directly. Nothing is downloaded to disk.
+The mpv youtube-dl wrapper script calls <code>youtube-dl -J</code> on URLs that begin with http(s). This returns a direct media link from which mpv streams directly. Nothing is downloaded to disk. Once playback starts, youtube-dl has exited and is not active anymore.
 
 See the manual for available options: https://mpv.io/manual/master/#options-ytdl
 
 == Why does the cache not work for Twitch (HLS sites) and some youtube links? ==
 
-Twitch uses HLS, some youtube links use segmented DASH. These are both segmented streaming protocols, for which no single, monolithic stream exists. The stream cache works only for unsegmented input.
+Twitch uses HLS, some youtube links use segmented DASH. These are both segmented streaming protocols, for which no single, monolithic stream exists. The classic stream cache works only for unsegmented input, so it can't cache these sites.
 
-This is not an issue for the demuxer packet cache. The demuxer cache will usually be active for those protocols, but it will be is discarded when you seek. It is limited to 10 seconds by default.
-
-It might be possible to extend either of these caches to work better. The stream cache could be extended to handle multiple files (except it won't work with FFmpeg's HLS demuxer, because it does not give us segments in advance). The demuxer cache could be extended to allow seeking by making it persistent. Both of these solution are potentially pretty complicated and would have to be implemented by someone. The demuxer cache solution would probably be preferred, because it's more flexible, and would work with HLS.
-
-Some work has been done on this, see https://mpv.io/manual/master/#options-demuxer-seekable-cache and https://mpv.io/manual/master/#options-demuxer-max-back-bytes .
-
-Note that the HLS limitation can be worked around by using a separate HLS streamer/downloader, but seeking will be limited as well.
-
-In mpv 0.28, the demuxer cache is enabled by default, and HLS streams are cached and seekable (in exchange for some memory waste).
+This is not an issue for the demuxer packet cache introduced in mpv 0.28.0. This extends the memory cache for demuxed packets and makes it seekable (in exchange for some wasted memory and CPU). It can be controlled with https://mpv.io/manual/master/#options-demuxer-seekable-cache and https://mpv.io/manual/master/#options-demuxer-max-back-bytes .
 
 == On Windows, why does mpv.exe not attach to the console and what does mpv.com do? ==
 
@@ -259,5 +247,3 @@ mpv went on, radically minimizing its code base, as seen here: [[https://0x0.st/
 We consider mpv's radical approach successful, making the code easier to work with, removing bugs, and making it easier to add new features. We added modern features wanted by users in exchange for removing large amounts of features barely anyone used anymore.
 
 One result is that mpv development has nothing to do with MPlayer development anymore. They are completely separate projects. The mplayer2 period might have contributed to the relative isolation between the two projects. After all these years of going separate directions, merging MPlayer and mpv back into one project wouldn't make sense.
-
-mpv actually vowed to regular merging of MPlayer changes (as the mplayer2 main developer increasingly neglected this). But this became less relevant later on, as almost none of the fixes affect code that still exists in mpv, and mpv actually stopped merging MPlayer changes a few years ago (the last commit cherry-picked from MPlayer was apparently in 2014).
