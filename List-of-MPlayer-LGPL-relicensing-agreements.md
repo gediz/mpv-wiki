@@ -166,6 +166,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Dave Lambley
 - Eric Lammerts
 - Francesco Lavra
+- Paul Lebedev (actually Pavel Lebedev)
 - Bruno Lecointre
 - Matthias Lederhofer
 - Timothy Lee
