@@ -243,9 +243,9 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 
 For a partial list of mpv agreements, refer to the github issue and https://gist.github.com/phiresky/d8127643f352899fa595ae8f81e16c21 (none of them is complete).
 
-In progress:
-- Gwenole Beauchesne (needs to go through corporate to get permission, or we will make vo_vaapi LGPL only, and replace the vaapi code involved with vo_opengl)
-- nVidia (they said they will "look at it", low hopes, we'll probably just replace all vdpau code involved with vo_opengl)
+Probably won't happen:
+- Splitted Desktop code (by Gwenole Beauchesne), vo_vaapi GPL will remain GPL only, while the vaapi generic code does not contain any GPL code anymore (GPL parts involved with vo_opengl have been deleted)
+- nVidia vdpau code (we'll just leave it GPL only, vdpau is dead anyway)
 
 Have disagreed with relicensing:
 - Tristan z80@oceanfree.net (2 patches, all code removed)
