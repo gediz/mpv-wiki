@@ -23,7 +23,6 @@ People who were contacted, but did not reply
 - Laurent (stream EOF fix a0f08fbebbdf)
 - Chris Welton (small demux_lavf API change update 958c41d9b69843)
 - Wei Jiang (small bug fixes in 2004, most memleaks)
-- Paul Lebedev (track names in demux_mkv 62bfae140613321a, probably nothing copyrightable left)
 - rguyom (some very early vd_ffmpeg.c fixes)
 - "veal" in commit 116ca0c768219b10e, osd_show_property_text command, probably became show_text?
 - Kir Kostuchenko (some TV changes - TV will stay GPL, but this touches common mplayer.c code that should become LGPL)
