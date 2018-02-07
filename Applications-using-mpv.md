@@ -7,9 +7,6 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [Baka MPlayer](https://github.com/u8sand/Baka-MPlayer):  
   A cross-platform media player based on libmpv.
 
-* [bomi](http://bomi-player.github.io):  
-  bomi is a media player based on mpv for Linux. By taking advantage of mpv and GUI, bomi provides various features. Not really a frontend - uses an internal mpv fork instead of libmpv. Currently outdated and unmaintained.
-
 * [Deepin Movies](https://github.com/linuxdeepin/deepin-movie-reborn):  
   Deepin movie is Deepin Desktop Environment Movie Player.
 
