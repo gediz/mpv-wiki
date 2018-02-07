@@ -11,8 +11,8 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[Leapfrog](https://github.com/SteveJobzniak/mpv-tools)**  
   Effortlessly jump through your playlist, with your own custom jump size and direction, including the ability to jump randomly. Excellent when queuing lots of images and using mpv as an image viewer.
 
-* **[mpv-assrt](https://github.com/AssrtOSS/mpv-assrt)**
-  Download subtitles from assrt.net, with interactive OSD menu.
+* **[mpv-assrt](https://github.com/AssrtOSS/mpv-assrt)**  
+  Download subtitles from [assrt.net](http://assrt.net), with interactive OSD menu.
 
 * **[screenshot-to-clipboard](https://github.com/zc62/mpv-scripts/blob/master/screenshot-to-clipboard.js)**  
   Generates a temp screenshot file on desktop then copy to clipboard. (Windows only)
