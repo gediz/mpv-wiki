@@ -248,6 +248,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[show-stream-title](https://github.com/blue-sky-r/mpv/blob/master/scripts/show-stream-title.lua)**  
   Show OSD stream/channel title when switching the IPTV channels from m3u playlist.
 
+* **[simple-mpv-webui](https://github.com/open-dynaMIX/simple-mpv-webui)**  
+  Web-based remote control.
+
 * **[skipchapters](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/scripts/avail/skipchapters.lua)**  
   Automatically skip chapters matching a given list of regular expressions (eg. "OP" or "Opening").
 
