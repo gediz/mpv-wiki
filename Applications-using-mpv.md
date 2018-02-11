@@ -11,7 +11,7 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
   Deepin movie is Deepin Desktop Environment Movie Player.
 
 * [gnome-mpv](https://github.com/gnome-mpv/gnome-mpv):  
-  A simple GTK+ frontend for mpv.
+  A simple GTK+ frontend for libmpv.
 
 * [IINA](https://lhc70000.github.io/iina/):  
   A media player for macOS 10.10+ based on mpv.
