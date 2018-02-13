@@ -24,7 +24,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Tons of pre-written, open source JavaScript modules which helps you rapidly create your own JS user scripts (including a very helpful [script config](https://github.com/SteveJobzniak/mpv-tools/blob/master/scripts/modules.js/Options.js) system based on mpv's Lua `mp.options` API). All modules are free to use (and extend) in your own scripts!
 *  **[make python script split mp4](https://gist.github.com/wagic520/c977949312958c64398afa794b719bcf)
     make python script .
-     use ffmpeg split
+     use ffmpeg split  . "z" key begin ,"x" key end ,"c" key make py
 ## Lua Scripts
 
 * **[acompressor](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/acompressor.lua)**  
