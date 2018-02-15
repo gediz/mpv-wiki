@@ -78,6 +78,16 @@ If you didn’t build mpv yourself, ask the packager to enable Lua.
 
 Also note that the OSC is invisible by default, but it should appear once you move the mouse over the mpv window.
 
+== Video on RPI doesn't work, or is too slow ==
+
+You need to build FFmpeg with mmal support - this is not enabled by default in FFmpeg. mpv also needs to be compiled with mmal, and the Broadcom firmware libEGL. Otherwise hardware decoding and scaling cannot be enabled.
+
+You can check whether the FFmpeg (libavcodec) linked to mpv is built with mmal with <code>mpv --hwdec=help|grep mmal</code>. If the output is empty, FFmpeg was not correctly built. You can check whether mpv was built with mmal with <code>mpv --vo=help|grep rpi</code>.
+
+It's rather complicated to get this to build correctly because RPI userland is a mess. Don't ask us for help, because we don't know your specific system. Keep in mind that the firmware libEGL and Mesa's libEGL (as often shipped by distros) are incompatible.
+
+Once all this is done, run mpv with <code>mpv --hwdec=rpi --vo=rpi file.mkv</code>. Otherwise mpv might use software decoding, which tends to be too slow.
+
 == (How) can I play YouTube playlists? ==
 
 Pretty much like anything else, just pass the playlist URL to mpv. Note that you need a link to the actual playlist (<code>https://www.youtube.com/playlist?list=...</code>), NOT to a video in the playlist (<code>https://www.youtube.com/watch?v=...&list=...&index=...</code>). You can get that link by clicking on the title of the playlist on the right.
