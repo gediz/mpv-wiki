@@ -82,7 +82,7 @@ Also note that the OSC is invisible by default, but it should appear once you mo
 
 You need to build FFmpeg with mmal support - this is not enabled by default in FFmpeg. mpv also needs to be compiled with mmal, and the Broadcom firmware libEGL. Otherwise hardware decoding and scaling cannot be enabled.
 
-You can check whether the FFmpeg (libavcodec) linked to mpv is built with mmal with <code>mpv --hwdec=help|grep mmal</code>. If the output is empty, FFmpeg was not correctly built. You can check whether mpv was built with mmal with <code>mpv --vo=help|grep rpi</code>.
+You can check whether the FFmpeg (libavcodec) linked to mpv is built with mmal with <code>mpv --hwdec=help|grep mmal</code>. Before mpv 0,.28, this might have been called <code>rpi</code> instead of <code>mmal</code>. If the output is empty, FFmpeg was not correctly built. You can check whether mpv was built with mmal with <code>mpv --vo=help|grep rpi</code>.
 
 It's rather complicated to get this to build correctly because RPI userland is a mess. Don't ask us for help, because we don't know your specific system. Keep in mind that the firmware libEGL and Mesa's libEGL (as often shipped by distros) are incompatible.
 
