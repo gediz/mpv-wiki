@@ -16,6 +16,8 @@ There's a couple of reasons why that could be, ranging from a weak GPU to broken
 
 This can happen if your drivers are broken or if your GPU is a potato from the Jurassic period. Check that you even get any OpenGL acceleration at all; on Linux with X11 you could do this with `glxinfo`. If it spits out an error or contains ominous signs like the word "llvmpipe", chances are your driver is broken in some way.
 
+If you have recently upgraded your version of Mesa, especially on a rolling-release distribution, try rebooting your computer first to see if that fixes your issues. Mesa updates can occasionally break OpenGL acceleration until the system is restarted.
+
 ## But all I have is `vo_opengl`!
 
 Stop using an outdated version of mpv.
