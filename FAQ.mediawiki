@@ -32,7 +32,11 @@ Nvidia should generally not tear. Sometimes, it tears in windowed mode, but not 
     Option "Composite" "Disable"
 EndSection</pre></li>
 <li>Set the performance mode to maximum performance. Energy saving often interferes with proper vo_opengl operation, and sometimes even appears to cause tearing.</li>
-<li><p>Try <code>--vo=vdpau</code>.</p></li></ul>
+<li><p>Try <code>--vo=vdpau</code>.</p></li>
+<li><p>To fix tearing under KDE, create file <code>/etc/profile.d/kwin.sh</code> with content:</p>
+<pre>export __GL_SYNC_TO_VBLANK=1
+export __GL_YIELD=USLEEP</pre></li>
+</ul>
 
 === X11/Nvidia with PRIME ===
 
