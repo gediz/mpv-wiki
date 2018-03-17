@@ -72,6 +72,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[blur-edges](https://github.com/occivink/mpv-scripts#blur-edgeslua)**  
   Replace black bars with a blurry copy of the video
 
+* **[bookmark](https://github.com/sorayuki-winter/mpv-plugin-bookmark)**  
+  Record and resume last play in current playing folder
+
 * **[boss-key](https://gist.github.com/detuur/7ea3609b8826d0e6f6bbc730d54a963c)**  
   Minimise and pause video at the same time, Windows only so far.
 
