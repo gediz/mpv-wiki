@@ -148,6 +148,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
 **Obsolete:** mpv now has a native display-sync option.
 
+* **[fuzzydir](https://github.com/dya-tel/mpv-scripts)**  
+  Allows using wildcards for `sub-file-paths` and `audio-file-paths`.
+
 * **[gallery-view](https://github.com/occivink/mpv-gallery-view)**  
   View playlist in a grid view of thumbnails.
 
