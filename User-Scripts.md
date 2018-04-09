@@ -164,7 +164,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
    Configurations, scripts and tips for using mpv as an image viewer.
 
 * **[interSubs](https://github.com/oltodosel/interSubs)**  
-  Interactive subtitles for mpv, that provide instant translation for selected word. Works on Linux, macOS.
+  Interactive subtitles. Instantly translate selected word/sentence. Works on Linux, macOS.
 
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)**  
   Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
