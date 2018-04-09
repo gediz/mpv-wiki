@@ -253,7 +253,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[seek-to](https://github.com/occivink/mpv-scripts#seek-tolua)**  
   Seek to an absolute timestamp specified via keyboard input.
 
-* **[show-filename](https://github.com/yuukidach/mpv-scripts)**
+* **[show-filename](https://github.com/yuukidach/mpv-scripts)**  
   Show the name of the current playing file.
 
 * **[show-stream-title](https://github.com/blue-sky-r/mpv/blob/master/scripts/show-stream-title.lua)**  
