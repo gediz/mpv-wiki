@@ -181,6 +181,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[minesweeper](https://github.com/wm4/mpv-scripts#mineslua)**  
   Minesweeper game.
 
+* **[mpegts-truncate](https://github.com/hoehermann/mpv-mpegts-truncate)**  
+  Removes beginning of MPEG TS file up to current position without re-writing the whole file.
+
 * **[mpv-Change-OSD-Media-Title](https://github.com/nmoorthy1/mpv-Change-OSD-Media-Title)**  
   Displays filename, percentage watched, current chapter, and number of frames dropped in the OSD media title and updates it whenever one of the values has changed.
 
