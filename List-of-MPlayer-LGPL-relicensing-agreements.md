@@ -100,6 +100,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Joachim Breitner
 - Rogério Brito
 - Oswald Buddenhagen
+- Eviv Bulgroz
 - Angelo Cano
 - Davide Capodaglio
 - Mathieu Castets ("matthieu")
