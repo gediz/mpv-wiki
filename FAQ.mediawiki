@@ -85,9 +85,10 @@ Also note that the OSC is invisible by default, but it should appear once you mo
 == What's the difference between opengl-hq, gpu-hq, etc.? ==
 
 The VO (video output) using GPU shader based rendering was renamed and updated a few times. Currently, the following things hold true:
-- --vo=gpu is essentially the default (replaces --vo=opengl)
-- --profile=gpu-hq is for selecting a preset with advanced scaling and so on (replaces --vo=opengl-hq and --profile=opengl-hq)
-- GPU supports multiple backends, like d3d, opengl, vulkan (they are used by default in that order); use --gpu-api=vulkan to force e.g. vulkan, use --gpu-context=... to select specific backends.
+
+* --vo=gpu is essentially the default (replaces --vo=opengl)
+* --profile=gpu-hq is for selecting a preset with advanced scaling and so on (replaces --vo=opengl-hq and --profile=opengl-hq)
+* GPU supports multiple backends, like d3d, opengl, vulkan (they are used by default in that order); use --gpu-api=vulkan to force e.g. vulkan, use --gpu-context=... to select specific backends.
 
 == Video on RPI doesn't work, or is too slow ==
 
