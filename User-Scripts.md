@@ -138,6 +138,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)**  
   Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
 
+* **[fastforward](https://github.com/jgreco/mpv-scripts/blob/master/fastfoward.lua)**  
+  Instead of skipping forward in media files, speed up the playback for a few seconds.  Playback speed decays back to 1x after a few seconds.  Tap rapidly or hold down to go faster.
+
 * **[Filenavigator](https://github.com/donmaiq/mpv-filenavigator)**  
   Navigate directories and open files from your system.
 
