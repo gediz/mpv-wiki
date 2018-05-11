@@ -24,4 +24,6 @@ If you're new to the project, and want to help, here are some suggestions what t
 
 - We need a maintainer for the OSC (the "UI" that appears as overlay over the video).
 
+- Convert the libmpv documentation from in-place doxygen to external documentation (the way vapoursynth does it might be a good idea).
+
 For all of these you should ask on #mpv-devel for help and guidance.
