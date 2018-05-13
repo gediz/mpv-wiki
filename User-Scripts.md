@@ -238,6 +238,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[osd-clock](https://github.com/blue-sky-r/mpv/blob/master/scripts/osd-clock.lua)**  
   Periodically shows OSD clock (many configurable options).
 
+* **[pause-indicator](https://gist.github.com/torque/9dbc69543118347d2e5f43239a7e609a)**  
+  Displays a momentary icon that flashes in the middle of the screen, similar to YouTube.
+
 * **[pause-when-minimize](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/pause-when-minimize.lua)**  
   Pauses the player video when minimizing, and unpauses it when brought up again.
 
