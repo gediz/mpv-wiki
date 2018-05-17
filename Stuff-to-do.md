@@ -1,5 +1,9 @@
 If you're new to the project, and want to help, here are some suggestions what to work on. You're also welcome to come up with your own ideas.
 
+- Rewrite mpv in Rust.
+
+- Write a HTML5 GUI for mpv.
+
 - We need a community manager. This person would reduce the need for developers to deal with day to day operations, such as communicating with users, adjusting the website and documentation, triaging bugs and feature requests, and other non-developer tasks.
 
 - Come up with a way how mpv user scripts (also shaders etc.) can be packaged and updated in a reasonable way. The goal is having a way to automatically manage these scripts.
