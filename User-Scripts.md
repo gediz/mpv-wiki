@@ -8,10 +8,10 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[Blackbox](https://github.com/VideoPlayerCode/mpv-tools/)**  
   Advanced, modular media browser, file manager and playlist manager for mpv.
 
-* **[Colorbox](https://github.com/VideoPlayerCode/mpv-tools/)**
+* **[Colorbox](https://github.com/VideoPlayerCode/mpv-tools/)**  
   Apply color correction presets.
 
-* **[Gallerizer](https://github.com/VideoPlayerCode/mpv-tools/)**
+* **[Gallerizer](https://github.com/VideoPlayerCode/mpv-tools/)**  
   Image gallery autoloader for mpv.
 
 * **[Leapfrog](https://github.com/VideoPlayerCode/mpv-tools/)**  
