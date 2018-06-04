@@ -259,7 +259,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[quick-scale](https://github.com/VideoPlayerCode/mpv-tools/)**  
   Quickly scale the video player to a target size, with full control over target scale and max scale. Helps you effortlessly resize a video to fit on your desktop, or any other video dimensions you need!
 
-* **[redshift_toggle](https://github.com/Q3CPMA/dotfiles/blob/master/.config/mpv/scripts/redshift_toggle.lua)**  
+* **[redshift_toggle](http://repo.or.cz/q3cpma-dotfiles.git/blob_plain/HEAD:/.config/mpv/scripts/redshift_toggle.lua)**  
   Toggle redshift when loading a video file and when reaching the end of said file.
 
 * **[reload](https://github.com/4e6/mpv-reload)**  
