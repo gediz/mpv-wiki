@@ -75,6 +75,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[betterchapters](https://gist.github.com/Hakkin/4f978a5c87c31f7fe3ae)**  
   Loads the next or previous playlist entry if there are no more chapters in the seek direction.
 
+* **[blackout](https://github.com/dya-tel/mpv-scripts)**  
+  A fast crossplatfrom boss-key, but without window minimization (and possible problems with some VO drivers).
+
 * **[blur-edges](https://github.com/occivink/mpv-scripts#blur-edgeslua)**  
   Replace black bars with a blurry copy of the video
 
