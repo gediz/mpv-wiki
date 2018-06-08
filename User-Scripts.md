@@ -208,6 +208,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)**  
   Show frame info, similar to ffdshow's OSD.
 
+* **[mpv_discordRPC](https://github.com/noaione/mpv-discordRPC)**  
+  Discord RPC integration for mpv using lua-discordRPC as base.
+
 * **[mpv_slicing](https://github.com/Kagami/mpv_slicing)**  
   Cut uncompressed fragments of the video.
 
