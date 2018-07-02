@@ -93,6 +93,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)**  
   Script to quickly convert and crop videos from within mpv, with a GUI.
 
+* **[copy-permalink](https://gist.github.com/olejorgenb/a5194d9bc183dbe0bfb02aac18fe37f9)
+  Copies `mpv --time=<current-position> <path-playing>` to clipboard. Useful for sharing positions when playing URLs
+
 * **[crop](https://github.com/occivink/mpv-scripts#croplua)**  
   Crop the video by defining the target rectangle with the cursor
 
