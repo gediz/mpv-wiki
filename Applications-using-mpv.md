@@ -53,6 +53,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 
   SpaceTV's [spacetv.sh script](https://raw.github.com/IgnorantGuru/spacefm-plugins/master/ig-spacetv/src/cstm_325c1cf6/spacetv.sh) can also be used independently of SpaceFM (it requires only mpv) to add more resume functionality to mpv.  It remembers the names of unfinished videos and can resume the last video played, or can step backwards through prior played videos.
 
+* [Syncplay](https://syncplay.pl/):  
+  Free cross-platform open source software that synchronises mpv and other media players to allow for people to watch videos together over the Internet. Includes an mpv lua script to allow for chat messages to be input and displayed from within mpv.
+
 * [VidCutter](https://github.com/ozmartian/vidcutter):  
   A simple & fast video cutter & joiner powered by libmpv + FFmpeg and written in PyQt5.
 
