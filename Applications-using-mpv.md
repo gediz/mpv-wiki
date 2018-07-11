@@ -22,6 +22,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [libretro-mpv](https://github.com/libretro/libretro-mpv):  
   A libretro core based on libmpv.
 
+* [MPV-EASY Player](https://github.com/422658476/MPV-EASY-Player):  
+  A movie player based on mpv.
+
 * [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
   A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
 
