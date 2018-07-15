@@ -90,6 +90,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[Tcl/Tk context menu](https://gist.github.com/avih/bee746200b5712220b8bd2f230e535de)**  
   Configurable context-menu based on Tcl/Tk, for *nix/Windows and probably macOS too.
 
+* **[clock](https://gitlab.com/mozbugbox/mpv-script-mozbugbox)**  
+  Constantly show current time on the lower left corner of the video screen.
+
 * **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)**  
   Script to quickly convert and crop videos from within mpv, with a GUI.
 
@@ -98,6 +101,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 * **[crop](https://github.com/occivink/mpv-scripts#croplua)**  
   Crop the video by defining the target rectangle with the cursor
+
+* **[curvesman](https://gitlab.com/mozbugbox/mpv-script-mozbugbox)**  
+  Manipulate color curves filter of FFmpeg with hotkeys. Brighten up color, change color temperature/tone, hopefully more. Adjust yellow light tone to white light tone.
 
 * **[cycle-audio-device](https://gist.github.com/bitingsock/ad58ee5da560ecb922fa4a867ac0ecfd)**  
   Cycle through available audio devices with key binds.
@@ -149,6 +155,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 * **[Filenavigator](https://github.com/donmaiq/mpv-filenavigator)**  
   Navigate directories and open files from your system.
+
+* **[filter-test](https://gitlab.com/mozbugbox/mpv-script-mozbugbox)**  
+  Test mpv/FFmpeg video filter(vf) strings with editable popup dialog. 
 
 * **[find_subtitles](https://github.com/directorscut82/find_subtitles)**  
   (Down)load subtitles with subliminal.
