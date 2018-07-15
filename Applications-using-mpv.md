@@ -40,6 +40,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [SMPlayer](http://smplayer.sourceforge.net/):  
   A cross-platform graphical front-end for MPlayer and forks of Mplayer using GUI widgets offered by Qt.
 
+* [Stremio](https://www.stremio.com/):  
+  A media center designed to be the one-stop hub for video content. 
+
 * [xt7-player-mpv](https://github.com/kokoko3k/xt7-player-mpv):  
   A frontend to mpv with extra features.
 
