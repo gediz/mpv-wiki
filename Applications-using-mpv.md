@@ -40,9 +40,6 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [SMPlayer](http://smplayer.sourceforge.net/):  
   A cross-platform graphical front-end for MPlayer and forks of Mplayer using GUI widgets offered by Qt.
 
-* [Stremio](https://www.stremio.com/):  
-  A media center designed to be the one-stop hub for video content. 
-
 * [xt7-player-mpv](https://github.com/kokoko3k/xt7-player-mpv):  
   A frontend to mpv with extra features.
 
@@ -58,6 +55,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
   SpaceTV is an mpv-based plugin for the [SpaceFM](http://ignorantguru.github.io/spacefm/) file manager which allows SpaceFM to be used as a media center.  Since mpv doesn't include a GUI, SpaceFM can be used to select videos to play in mpv, and adds the ability to Resume Last and Resume Prior played videos.
 
   SpaceTV's [spacetv.sh script](https://raw.github.com/IgnorantGuru/spacefm-plugins/master/ig-spacetv/src/cstm_325c1cf6/spacetv.sh) can also be used independently of SpaceFM (it requires only mpv) to add more resume functionality to mpv.  It remembers the names of unfinished videos and can resume the last video played, or can step backwards through prior played videos.
+
+* [Stremio](https://www.stremio.com/):  
+  A media center designed to be the one-stop hub for video content, based on [stremio-shell](https://github.com/stremio/stremio-shell).
 
 * [Syncplay](https://syncplay.pl/):  
   Free cross-platform open source software that synchronises mpv and other media players to allow for people to watch videos together over the Internet. Includes an mpv lua script to allow for chat messages to be input and displayed from within mpv.
