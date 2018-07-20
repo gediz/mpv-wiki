@@ -223,7 +223,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv_discordRPC](https://github.com/noaione/mpv-discordRPC)**  
   Discord RPC integration for mpv using lua-discordRPC as base.
 
-* **[mpv_discordRPC](https://github.com/cniw/mpv-discordRPC) *(alternative version)* **  
+* **[mpv_discordRPC](https://github.com/cniw/mpv-discordRPC) *(alternative version)***  
   Discord Rich Presence intergation for mpv Media Player. Added some features and support: Linux, MacOS and Windows.
 
 * **[mpv_slicing](https://github.com/Kagami/mpv_slicing)**  
