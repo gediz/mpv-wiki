@@ -355,7 +355,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[stats](https://github.com/Argon-/mpv-stats/)**  
   Display some statistics about the currently played file on-screen.
 
-* **[streamcache](https://github.com/lvml/mpv-plugin-streamcache)**  
+* **[streamcache](https://gitlab.com/lvml/mpv-plugin-streamcache)**  
   Provides for more network-glitch-robust caching of live streams by adjusting replay speed.
 
 * **[timer](https://github.com/AdamD2/mpv-timer)**  
