@@ -1,5 +1,5 @@
 # Intel and AMD
-With recent `mesa` and `ffmpeg`, both cards are supported by VA-API through `libva>=2.1`. Make sure that your system does not have the following packages, 
+With recent `mesa` and `ffmpeg`, both cards are supported by VA-API through `libva>=2.1`. Install `libva-intel-driver` and `libva-mesa-driver`. Make sure that your system does not have the following packages, 
 1. `libva-vdpau`
 2. `libva-va-gl`
 3. `libvdpau-va-gl`
