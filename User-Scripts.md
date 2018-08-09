@@ -193,6 +193,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)**  
   Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
 
+* **[live-filters](https://github.com/hdbhdb/mpv-live-filters)**  
+  Add, remove or toggle ffmpeg video filters during mpv playback.
+
 * **[lua-mpris](https://github.com/dodo/lua-mpris)**  
   Adds mpris support to mpv.
 
