@@ -66,7 +66,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autoload](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)**  
   Automatically load playlist entries before and after the currently playing file, by scanning the directory.
 
-* **[auto-profiles](https://github.com/wm4/mpv-scripts/blob/master/auto-profiles.lua)**  
+* **[auto-profiles](https://github.com/wiiaboo/mpv-scripts/blob/master/auto-profiles.lua)**  
   Automatically apply profiles based on predicates written as Lua expressions.
 
 * **[autosub](https://gist.github.com/selsta/ce3fb37e775dbd15c698)**  
@@ -165,7 +165,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[firequalizer15](https://github.com/mfcc64/mpv-scripts/blob/master/firequalizer15.lua)**  
   Linear phase 15-bands equalizer.
 
-* **[fix_sub_timing](https://github.com/wm4/mpv-scripts/blob/master/fix-sub-timing.lua)**  
+* **[fix_sub_timing](https://github.com/wiiaboo/mpv-scripts/blob/master/fix-sub-timing.lua)**  
   Compute the correct speed/delay of subtitles by manually synching two points in time.
 
 * **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/scripts/avail/fpsadjust.lua)**  
@@ -205,7 +205,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[createchapter](https://github.com/shinchiro/mpv-createchapter)**  
   Similar as `mark-chapter` but with ability to export valid xml file.
 
-* **[minesweeper](https://github.com/wm4/mpv-scripts#mineslua)**  
+* **[minesweeper](https://github.com/wiiaboo/mpv-scripts/blob/master/mines.lua)**  
   Minesweeper game.
 
 * **[mpegts-truncate](https://github.com/hoehermann/mpv-mpegts-truncate)**  
