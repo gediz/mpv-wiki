@@ -352,6 +352,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[sub-sentences](https://github.com/kelciour/mpv-scripts/blob/master/sub-sentences.lua)**  
   Generate subtitles with sentences.
 
+* **[sub-voracious](https://github.com/kelciour/mpv-scripts/blob/master/sub-voracious.lua)**  
+  Reading and listening practice.
+
 * **[subs2srs](https://github.com/kelciour/mpv-scripts/blob/master/subs2srs.lua)**  
   Automatically add new card in Anki with audio, picture and text.
 
