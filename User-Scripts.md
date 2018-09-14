@@ -84,8 +84,8 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[bookmark](https://github.com/sorayuki-winter/mpv-plugin-bookmark)**  
   Record and resume last play in current playing folder
 
-* **[boss-key](https://gist.github.com/detuur/7ea3609b8826d0e6f6bbc730d54a963c)**  
-  Minimise and pause video at the same time, Windows only so far.
+* **[boss-key](https://github.com/detuur/mpv-scripts)**  
+  **UPDATED VERSION**. Minimise and pause video at the same time. Windows/Linux. Eliminated the time lag in previous versions.
 
 * **[Tcl/Tk context menu](https://gist.github.com/avih/bee746200b5712220b8bd2f230e535de)**  
   Configurable context-menu based on Tcl/Tk, for *nix/Windows and probably macOS too.
