@@ -72,7 +72,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autosub](https://gist.github.com/selsta/ce3fb37e775dbd15c698)**  
   Automatically download subtitles using **subliminal**.
 
-* **[betterchapters](https://gist.github.com/Hakkin/4f978a5c87c31f7fe3ae)**  
+* **[betterchapters](https://gist.github.com/Hakkin/4f978a5c87c31f7fe3ae) ([update](https://github.com/mpv-player/mpv/issues/4738#issuecomment-321298846))**  
   Loads the next or previous playlist entry if there are no more chapters in the seek direction.
 
 * **[blackout](https://github.com/dya-tel/mpv-scripts)**  
