@@ -262,6 +262,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[open-file-dialog](https://github.com/rossy/mpv-open-file-dialog)**  
   (Windows) Launches a regular Windows file open dialog for loading videos.
 
+* **[osc-style](https://github.com/422658476/MPV-EASY-Player/tree/master/mpv-easy-data/osc-style)**  
+  Change the mpc osc to a more beautiful and practical look, which is the osc theme feature, a variety of styles to choose from.
+
 * **[osd-clock](https://github.com/blue-sky-r/mpv/blob/master/scripts/osd-clock.lua)**  
   Periodically shows OSD clock (many configurable options).
 
