@@ -199,6 +199,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[live-filters](https://github.com/hdbhdb/mpv-live-filters)**  
   Add, remove or toggle ffmpeg video filters during mpv playback.
 
+* **[local-language](https://github.com/422658476/MPV-EASY-Player/blob/master/portable-data/scripts/local-language.lua)**  
+  Let the text displayed by mpv osd become the language you are most familiar with, that is, language localization, such as 【volume: 100%】 becomes 【音量:100%】.
+
 * **[lua-mpris](https://github.com/dodo/lua-mpris)**  
   Adds mpris support to mpv.
 
