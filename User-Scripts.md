@@ -286,6 +286,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[Playlistmanager](https://github.com/donmaiq/Mpv-Playlistmanager)**  
   Helps with creating playlists, saving them and modifying your current playlist.
 
+* **[playlistnoplayback](https://github.com/422658476/MPV-EASY-Player/blob/master/portable-data/scripts/playlistnoplayback.lua)**  
+  If you enable the save play history and progress function, this lua script can solve the problem of automatically jumping to the previous playback progress when playing the next file when playing the playlist, that is, let the playlist always play the next file from the beginning every time. the limitations of this script, please see the comments section in the content.
+
 * **[progressbar](https://github.com/torque/mpv-progressbar)**  
   A minimalistic OSC replacement. It provides a small, unintrusive progress bar that persists at the bottom of the video window.
 
