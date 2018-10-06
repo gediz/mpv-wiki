@@ -307,6 +307,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[repl](https://github.com/rossy/mpv-repl)**  
   A REPL for input commands that is displayed on the video window.
 
+* **[rubberband_helper](https://github.com/jgreco/mpv-scripts/blob/master/rubberband_helper.lua)**  
+  [rubberband](https://github.com/lachs0r/rubberband) is great for keeping voices intelligible when the video playback is speed up, but it consumes a fair amount of CPU.  This script allows you to degrade the audio filter back to scaletempo when playback speeds are high enough to make rubberband pointless.  **Note:** mpv must be built with rubberband support; see `mpv --af=rubberband=help`
+
 * **[save-sub-delay](https://github.com/zc62/mpv-scripts/blob/master/save-sub-delay.lua)**  
   This script saves the sub-delay quantity for each file. When next time the file is opened, sub-delay is automatically restored.
 
