@@ -412,6 +412,9 @@ Improved fork of autosub, Automatically downloads subtitles if not present using
 * **[xrandr](https://github.com/lvml/mpv-plugin-xrandr)**  
   Automatically sets the display refresh rate to the one best suitable for the video played
 
+* **[youtube-quality](https://github.com/jgreco/mpv-youtube-quality)**  
+  A menu for changing youtube video quality (ytdl-format) on the fly, as though you were using the web player.
+
 * **[zones](https://github.com/wiiaboo/mpv-scripts/blob/master/zones.lua)**  
   Handles commands depending on where the mouse pointer is at, mostly for mouse wheel handling.
 
