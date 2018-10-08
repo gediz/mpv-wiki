@@ -217,17 +217,14 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpegts-truncate](https://github.com/hoehermann/mpv-mpegts-truncate)**  
   Removes beginning of MPEG TS file up to current position without re-writing the whole file.
 
+* **[mpv-bookmarker](https://github.com/nimatrueway/mpv-bookmark-lua-script)**  
+  Bookmark your favorite time on media files
+
 * **[mpv-Change-OSD-Media-Title](https://github.com/nmoorthy1/mpv-Change-OSD-Media-Title)**  
   Displays filename, percentage watched, current chapter, and number of frames dropped in the OSD media title and updates it whenever one of the values has changed.
 
 * **[mpv_crop_script](https://github.com/TheAMM/mpv_crop_script)**  
   Take cropped screenshots directly within mpv, without the need for external dependencies.
-
-* **[mpv_thumbnail_script](https://github.com/TheAMM/mpv_thumbnail_script)**  
-  Show preview thumbnails when hovering over the seekbar, without the need for external dependencies.
-
-* **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)**  
-  Show frame info, similar to ffdshow's OSD.
 
 * **[mpv_discordRPC](https://github.com/noaione/mpv-discordRPC)**  
   Discord RPC integration for mpv using lua-discordRPC as base.
@@ -235,8 +232,17 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv_discordRPC](https://github.com/cniw/mpv-discordRPC) *(alternative version)***  
   Discord Rich Presence integration for mpv Media Player. Added some features and support: Linux, MacOS and Windows.
 
+* **[mpv_frame_info](https://github.com/Kagami/mpv_frame_info)**  
+  Show frame info, similar to ffdshow's OSD.
+
+* **[mpv-history](https://gist.github.com/garoto/e0eb539b210ee077c980e01fb2daef4a)**  
+  Simple played media logger. Will generate a `mpvhistory.log` in the default mpv config folder (%APPDATA%/mpv/ or $HOME/.config/mpv/) in the format `[$DATE $TIME] $PATH ($?MEDIA-TITLE)`. Only tested on Windows.
+
 * **[mpv_slicing](https://github.com/Kagami/mpv_slicing)**  
   Cut uncompressed fragments of the video.
+
+* **[mpv_thumbnail_script](https://github.com/TheAMM/mpv_thumbnail_script)**  
+  Show preview thumbnails when hovering over the seekbar, without the need for external dependencies.
 
 * **[mpv-txt](https://github.com/jgreco/mpv-txt)**  
   Play text files using text-to-speech (TTS). (Works on Linux, MacOS; see Dependencies).
@@ -321,6 +327,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[show-stream-title](https://github.com/blue-sky-r/mpv/blob/master/scripts/show-stream-title.lua)**  
   Show OSD stream/channel title when switching the IPTV channels from m3u playlist.
+
+* **[simple-loader](https://github.com/fhlfibh/simple-loader)**  
+  (Linux) Browse dirs and files on OSD, and launch them with mpv.
 
 * **[simple-mpv-webui](https://github.com/open-dynaMIX/simple-mpv-webui)**  
   Web-based remote control.
@@ -420,15 +429,6 @@ Improved fork of autosub, Automatically downloads subtitles if not present using
 
 * **[~~addfile~~](https://github.com/devnikor/mpv-conf/blob/master/scripts/addfile.lua)**  
   ~~(OS X) Add subtitle or audio track to playing video file~~
-
-* **[simple-loader](https://github.com/fhlfibh/simple-loader)**  
-  (Linux) Browse dirs and files on OSD, and launch them with mpv.  
-
-* **[mpv-bookmarker](https://github.com/nimatrueway/mpv-bookmark-lua-script)**  
-  Bookmark your favorite time on media files
-
-* **[mpv-history](https://gist.github.com/garoto/e0eb539b210ee077c980e01fb2daef4a)**  
-  Simple played media logger. Will generate a `mpvhistory.log` in the default mpv config folder (%APPDATA%/mpv/ or $HOME/.config/mpv/) in the format `[$DATE $TIME] $PATH ($?MEDIA-TITLE)`. Only tested on Windows.
 
 If you want to write your own Lua scripts, have a look at the [documentation of mpv's Lua interface](https://mpv.io/manual/master/#lua-scripting).
 
