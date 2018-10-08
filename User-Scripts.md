@@ -418,8 +418,8 @@ Improved fork of autosub, Automatically downloads subtitles if not present using
 * **[zones](https://github.com/wiiaboo/mpv-scripts/blob/master/zones.lua)**  
   Handles commands depending on where the mouse pointer is at, mostly for mouse wheel handling.
 
-* **[addfile](https://github.com/devnikor/mpv-conf/blob/master/scripts/addfile.lua)**  
-  (OS X) Add subtitle or audio track to playing video file
+* **[~~addfile~~](https://github.com/devnikor/mpv-conf/blob/master/scripts/addfile.lua)**  
+  ~~(OS X) Add subtitle or audio track to playing video file~~
 
 * **[simple-loader](https://github.com/fhlfibh/simple-loader)**  
   (Linux) Browse dirs and files on OSD, and launch them with mpv.  
