@@ -400,7 +400,7 @@ Automatically apply profiles to certain directories or files.
 * **[total_playtime](https://github.com/oltodosel/mpv-scripts/blob/master/total_playtime.lua)**  
 Shows total playtime of current playlist.
 
-* **[trueautosub](https://gist.github.com/fullmetalsheep/28c397b200a7348027d983f31a7eddfa)**  
+* **[trueautosub](https://github.com/fullmetalsheep/mpv-iina-scripts)**  
 Improved fork of autosub, Automatically downloads subtitles if not present using **subliminal**. (osx/linux only)
 
 * **[tv-output](https://github.com/blue-sky-r/mpv/blob/master/scripts/tv.lua)**  
