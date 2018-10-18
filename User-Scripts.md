@@ -438,14 +438,10 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[LumaSharpenHook](https://gist.github.com/voltmtr/8b4404b4e23129b226b9e64863d3e28b)**  
   A sharpen filter similar to using Unsharp Mask in Photoshop ported from SweetFX shader pack.
 
-* **[Adaptive Sharpen](https://gist.github.com/igv/8a77e4eb8276753b54bb94c1c50c317e)**  
-  The shader tries to sharpen somewhat blurry edges the most, it avoids to sharpen near-flat areas and very sharp edges. One-pass version of a [HLSL](http://forum.doom9.org/showthread.php?t=172131) shader, that tweaked for a better compatibility with mpv. Tuned to work with opengl-hq.
-
-* **[SSimDownscaler](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)**  
-  Perceptually based downscaler. More information is [here](https://graphics.ethz.ch/~cengizo/imageDownscaling.htm).
-
-* **[SSimSuperRes](https://gist.github.com/igv/2364ffa6e81540f29cb7ab4c9bc05b6b)**  
-  The aim of this shader is to make corrections to the image upscaled by mpv built-in scaler (removes ringing artifacts, tries to restore original sharpness, etc).
+* **[SSimDownscaler, SSimSuperRes, Krig, Adaptive Sharpen, etc.](https://gist.github.com/igv)**  
+  * SSimDownscaler: Perceptually based downscaler. More information is [here](https://graphics.ethz.ch/~cengizo/imageDownscaling.htm).
+  * SSimSuperRes: The aim of this shader is to make corrections to the image upscaled by mpv built-in scaler (removes ringing artifacts, restores original sharpness, etc).
+  * Krig: Chroma scaler that uses luma information for high quality upscaling.
 
 * **[Noise](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/shaders/noise.glsl)**  
   Adds a tunable amount of grayscale noise to the output.
