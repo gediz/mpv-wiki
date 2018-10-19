@@ -138,7 +138,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[deframe](https://github.com/b4zz4/mpv-deframe)**  
   It removes the frame of youtube videos (press g)
 
-* **[drag-to-pan](https://github.com/occivink/mpv-scripts#drag-to-panlua)**  
+* **[drag-to-pan](https://github.com/occivink/mpv-image-viewer)**  
   Pan the current video or image with the cursor.
 
 * **[easycrop](https://github.com/aidanholm/mpv-easycrop)**  
