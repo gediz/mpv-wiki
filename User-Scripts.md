@@ -340,6 +340,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[skiptofade](https://gist.github.com/bossen/3cfe86a6cdd61452dbb96865128fb327)**  
   Seeks forward until a black screen appears. Built to skip openings. Uses the lavfi blackdetect filter. 
 
+* **[smartcopypaste](https://github.com/Eisa01/mpv-scripts)**  
+  Powerful copy paste feature. paste URL or local videos directly to mpv. Bookmark video and time by copying playing videos then paste to access bookmark. Much more explained in the link above.
+
 * **[sopcast](https://github.com/Akemi/mpv-sopcast-hook)**  
   Adds support for sop:// urls.
 
