@@ -150,7 +150,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[equalizer](https://gist.github.com/avih/41acff712abd32e1f436235388c8b523)**  
   5-bands equalizer with colorful display.
 
-* **[excerpt](https://github.com/lvml/mpv-plugin-excerpt)**  
+* **[excerpt](https://gitlab.com/lvml/mpv-plugin-excerpt)**  
   Allows you to quickly create excerpts from media files, you just have to set begin and end markers.
 
 * **[fastforward](https://github.com/jgreco/mpv-scripts/blob/master/fastfoward.lua)**  
@@ -424,7 +424,7 @@ Improved fork of autosub, Automatically downloads subtitles if not present using
 * **[webm](https://github.com/ElegantMonkey/mpv-webm)**  
   Simple WebM maker for mpv, with no external dependencies.
 
-* **[xrandr](https://github.com/lvml/mpv-plugin-xrandr)**  
+* **[xrandr](https://gitlab.com/lvml/mpv-plugin-xrandr)**  
   Automatically sets the display refresh rate to the one best suitable for the video played
 
 * **[youtube-quality](https://github.com/jgreco/mpv-youtube-quality)**  
