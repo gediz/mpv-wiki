@@ -103,6 +103,8 @@ It's rather complicated to get this to build correctly because RPI userland is a
 
 Once all this is done, run mpv with <code>mpv --hwdec=rpi --vo=rpi file.mkv</code>. Otherwise mpv might use software decoding, which tends to be too slow.
 
+If you get the error <code>mmal: mmal_vc_port_enable: failed to enable port vc.ril.video_render:in:0(I420): ENOMEM</code>, try increasing <code>gpu_mem</code> in <code>/boot/config.txt</code>.
+
 == (How) can I play YouTube playlists? ==
 
 Pretty much like anything else, just pass the playlist URL to mpv. Note that you need a link to the actual playlist (<code>https://www.youtube.com/playlist?list=...</code>), NOT to a video in the playlist (<code>https://www.youtube.com/watch?v=...&list=...&index=...</code>). You can get that link by clicking on the title of the playlist on the right.
