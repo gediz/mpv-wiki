@@ -289,7 +289,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[pause-when-minimize](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/pause-when-minimize.lua)**  
   Pauses the player video when minimizing, and unpauses it when brought up again.
 
-* **[peerflix-hook](https://gist.github.com/ElegantMonkey/bba287693830055a6bad90081c1ad4e2)**  
+* **[peerflix-hook](https://gist.github.com/ekisu/bba287693830055a6bad90081c1ad4e2)**  
   Allows streaming of magnet links using peerflix, similar to youtube-dl.
 
 * **[pitchcontrol](https://github.com/FichteFoll/mpv-scripts/blob/master/pitchcontrol.lua)**  
@@ -424,10 +424,10 @@ Improved fork of autosub, Automatically downloads subtitles if not present using
 * **[visualizer](https://github.com/mfcc64/mpv-scripts/blob/master/visualizer.lua)**  
   Various audio visualization.
 
-* **[vo_battery](https://gist.github.com/ElegantMonkey/04924e899648e84f2e18)**  
+* **[vo_battery](https://gist.github.com/ekisu/04924e899648e84f2e18)**  
   (Linux) Choose the VO based on if the laptop is on battery or not.
 
-* **[webm](https://github.com/ElegantMonkey/mpv-webm)**  
+* **[webm](https://github.com/ekisu/mpv-webm)**  
   Simple WebM maker for mpv, with no external dependencies.
 
 * **[xrandr](https://gitlab.com/lvml/mpv-plugin-xrandr)**  
