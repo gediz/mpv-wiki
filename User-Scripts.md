@@ -156,6 +156,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[fastforward](https://github.com/jgreco/mpv-scripts/blob/master/fastfoward.lua)**  
   Instead of skipping forward in media files, speed up the playback for a few seconds.  Playback speed decays back to 1x after a few seconds.  Tap rapidly or hold down to go faster.
 
+* **[fast-forward](https://github.com/zsugabubus/mpv-fastforward)**  
+  Another fast-forward plugin with some added features and a bit more customization options.
+
 * **[Filenavigator](https://github.com/donmaiq/mpv-filenavigator)**  
   Navigate directories and open files from your system.
 
