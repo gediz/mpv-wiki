@@ -311,7 +311,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
   Quickly scale the video player to a target size, with full control over target scale and max scale. Helps you effortlessly resize a video to fit on your desktop, or any other video dimensions you need!
 
 * **[recent](https://github.com/nightedt/mpv-scripts)**  
-  Load files from a recently played menu at idle or with a hotkey using a history log file in `scripts` directory.
+  Recently played menu using a history log file in `config` directory, display using a hotkey or automatically when idle.
 
 * **[redshift_toggle](http://repo.or.cz/q3cpma-dotfiles.git/blob_plain/HEAD:/.config/mpv/scripts/redshift_toggle.lua)**  
   Toggle redshift when loading a video file and when reaching the end of said file.
