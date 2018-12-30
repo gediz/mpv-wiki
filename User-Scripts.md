@@ -247,6 +247,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv-pdf](https://github.com/jgreco/mpv-pdf)**  
   View PDFs in mpv using ImageMagick.   Supports: Linux, MacOS
 
+* **[mpv_sort_script](https://github.com/TheAMM/mpv_sort_script)**  
+  Sort files and directories by name, age, size or randomly, recursively or when coming across a directory.
+
 * **[mpv_slicing](https://github.com/Kagami/mpv_slicing)**  
   Cut uncompressed fragments of the video.
 
