@@ -181,6 +181,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[fuzzydir](https://github.com/dya-tel/mpv-scripts)**  
   Allows using wildcards for `sub-file-paths` and `audio-file-paths`.
 
+* **[gallery-dl_hook](https://github.com/jgreco/mpv-scripts/blob/master/gallery-dl_hook.lua)**  
+  Load online image galleries (imgur, etc) as playlists using [gallery-dl](https://github.com/mikf/gallery-dl/).
+
 * **[gallery-view](https://github.com/occivink/mpv-gallery-view)**  
   View playlist in a grid view of thumbnails.
 
