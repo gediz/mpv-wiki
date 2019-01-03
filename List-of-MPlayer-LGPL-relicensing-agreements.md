@@ -116,6 +116,7 @@ Also have agreed (but no username, or have not contributed to MPlayer directly, 
 - Daniel Dawson
 - Romain Dolbeau
 - Arne Driescher
+- qwen dux
 - Aleksander V. Dyomin
 - "eng"
 - Johannes Feigl
