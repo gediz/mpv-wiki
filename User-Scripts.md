@@ -259,6 +259,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv-txt](https://github.com/jgreco/mpv-txt)**  
   Play text files using text-to-speech (TTS). (Works on Linux, MacOS; see Dependencies).
 
+* **[mpv-volnorm](https://gitlab.com/derobert/mpv-volnorm)**  
+  Client-server setup to provide EBU R.128 volume leveling to MPV, even if files stored on a server and played on multiple machines. (Works on Linux, probably all Unix-like; server in Perl).
+
 * **[mpvcontextmenu](https://gitlab.com/carmanaught/mpvcontextmenu)**  
   Comprehensive context-menu forked from [Tcl/Tk context menu](https://gist.github.com/avih/bee746200b5712220b8bd2f230e535de). Uses other scripts (see Requirements).
 
