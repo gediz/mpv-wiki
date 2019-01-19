@@ -45,6 +45,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 
 ## Other
 
+* [BlitzLoop](https://github.com/marcan/blitzloop):
+  A karaoke app inspired by Japanese karaoke machines.
+
 * [boram](https://github.com/Kagami/boram):  
   boram is a cross-platform WebM converter which embeds libmpv as Chromium PPAPI plugin in order to preview and interactively cut/crop media file to be encoded.
 
