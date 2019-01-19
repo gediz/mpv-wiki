@@ -45,7 +45,7 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 
 ## Other
 
-* [BlitzLoop](https://github.com/marcan/blitzloop):
+* [BlitzLoop](https://github.com/marcan/blitzloop):  
   A karaoke app inspired by Japanese karaoke machines.
 
 * [boram](https://github.com/Kagami/boram):  
