@@ -365,7 +365,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
   Powerful copy paste feature. Paste URL or local videos directly to mpv. Bookmark video and time by copying playing videos then paste to access bookmark. Add videos to playlist simply by pasting. Much more explained in the link above.
 
 * **[SmartHistory](https://github.com/Eisa01/mpv-scripts#smarthistory-script)**  
-  Powerful history feature. Log videos you open into `%APPDATA%\mpv\mpvHistory.log` along with time reached on each video. Optional resume by [ctrl]+[r] for all videos you have played previously and closed before completion (auto bookmark). Immediately find and play last opened video by [ctrl]+[l]. Much more explained in the link above.
+  Powerful history feature. Log videos you open into `%APPDATA%\mpv\mpvHistory.log` along with time reached on each video. Optional resume by [ctrl]+[r] for all videos you have played (auto bookmark). Immediately play last opened video by [ctrl]+[l]. Much more explained in the link above.
 
 * **[sopcast](https://github.com/Akemi/mpv-sopcast-hook)**  
   Adds support for sop:// urls.
