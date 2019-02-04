@@ -454,7 +454,7 @@ Improved fork of autosub, Automatically downloads subtitles if not present using
 * **[youtube-quality](https://github.com/jgreco/mpv-youtube-quality)**  
   A menu for changing youtube video quality (ytdl-format) on the fly, as though you were using the web player.
 
-* **[ytdl prefetch buffer](https://gist.github.com/bitingsock/f9a87ea158035d4a36899b559d611228)**  
+* **[ytdl prefetch resolver](https://gist.github.com/bitingsock/f9a87ea158035d4a36899b559d611228)**  
   Resolves the next url in the playlist using ytdl before the current file reaches the end. Using --prefetch-playlist along side this it allows i.e. youtube data to begin loading into cache ahead of time.
 
 * **[zones](https://github.com/wiiaboo/mpv-scripts/blob/master/zones.lua)**  
