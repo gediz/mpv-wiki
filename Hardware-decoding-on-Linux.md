@@ -7,6 +7,8 @@ With recent `mesa` and `ffmpeg`, both cards are supported by VA-API through `lib
 ## Intel
 You need to use `hwdec=vaapi` and other options can be configured according to your GPU. To make it permanent, add it to `~/.config/mpv/mpv.conf`.
 
+Intel HD graphics need `i965-va-driver` installed to work properly (at least on *debian stretch*).
+
 ## AMD
 Since dedicated graphics are going to be used, some environment variables are specified to instruct the driver to
 load specific modules.
