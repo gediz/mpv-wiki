@@ -51,6 +51,11 @@ The subtitles are sometimes a few frames out of sync, causing scene bleeds all o
 
 This is caused in particular by Crunchyroll’s broken stream muxing, which sometimes drops the first frame and then delays the video stream by two frames (rounded to milliseconds), hence delaying the subtitles by ``(1 / FPS) * 3`` usually fixes the issue (the value above assumes 23.976 FPS video).
 
+Distorted signs/typesetting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Use ``--sub-ass-vsfilter-blur-compat=no``.
+
 Messed up Character-Encoding (obsolete)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 (Note: This was apparently a one-time issue only)
