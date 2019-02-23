@@ -371,7 +371,8 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
   Powerful history features. Log videos you open into `%APPDATA%\mpv\mpvHistory.log` along with time reached on each video. Optional resume by [ctrl]+[r] for all videos you have played (auto bookmark). Immediately play last opened video by [ctrl]+[l]. Much more explained in the link above.
 
 * **[SimpleUndo](https://github.com/Eisa01/mpv-scripts#simpleundo-script)**  
-  Simple undo feature. If you accidentally seek/jump to a different time in the video, press [ctrl]+[z] to return to your previous time and vice-versa. More details in the link above.
+  Simple undo feature. If you accidentally seek/jump to a different time in the video,
+press [ctrl]+[z] to return to your previous time and vice-versa. More details in the link above.
 
 * **[sopcast](https://github.com/Akemi/mpv-sopcast-hook)**  
   Adds support for sop:// urls.
