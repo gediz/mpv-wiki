@@ -373,6 +373,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[SimpleUndo](https://github.com/Eisa01/mpv-scripts#simpleundo-script)**  
   Simple undo feature. If you accidentally seek/jump to a different time in the video, press undo [ctrl]+[z] to return to your previous time and vice-versa. More details in the link above.
 
+* **[UndoRedo](https://github.com/Eisa01/mpv-scripts#undoredo-script)**  
+  Undo and Redo feature for mpv.  If you seek/jump to a different time in the video, press undo [ctrl]+[z] to linearly undo the seeks/jumps in the video, and press redo [ctrl]+[y] to linearly return to previous undo positions. More details in the link above.
+
 * **[sopcast](https://github.com/Akemi/mpv-sopcast-hook)**  
   Adds support for sop:// urls.
 
