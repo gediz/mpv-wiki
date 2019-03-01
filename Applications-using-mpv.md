@@ -7,6 +7,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [Baka MPlayer](https://github.com/u8sand/Baka-MPlayer):  
   A cross-platform media player based on libmpv.
 
+* [Balss](https://github.com/nvlgit/Balss):  
+  Audiobook player.
+
 * [Deepin Movie](https://github.com/linuxdeepin/deepin-movie-reborn):  
   Deepin Movie is Deepin Desktop Environment Movie Player.
 
@@ -18,6 +21,12 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 
 * [Kawaii-Player](https://github.com/kanishka-linux/kawaii-player):  
   Multimedia player, Library Manager and portable media server based on python3 and pyqt5.
+
+* [KittehPlayer](https://github.com/NamedKitten/KittehPlayer):  
+  A video player based on Qt, QML and libmpv with themes for many online video players.
+
+* [KikoPlay](https://github.com/Protostars/KikoPlay):  
+  Danmaku player.
 
 * [libretro-mpv](https://github.com/libretro/libretro-mpv):  
   A libretro core based on libmpv.
