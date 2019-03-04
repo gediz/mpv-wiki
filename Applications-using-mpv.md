@@ -13,8 +13,8 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [Deepin Movie](https://github.com/linuxdeepin/deepin-movie-reborn):  
   Deepin Movie is Deepin Desktop Environment Movie Player.
 
-* [gnome-mpv](https://github.com/gnome-mpv/gnome-mpv):  
-  A simple GTK+ frontend for libmpv.
+* [Celluloid](https://github.com/celluloid-player/celluloid):  
+  A simple GTK+ frontend for libmpv. (formerly GNOME MPV)
 
 * [IINA](https://lhc70000.github.io/iina/):  
   A media player for macOS 10.10+ based on mpv.
@@ -22,11 +22,11 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [Kawaii-Player](https://github.com/kanishka-linux/kawaii-player):  
   Multimedia player, Library Manager and portable media server based on python3 and pyqt5.
 
-* [KittehPlayer](https://github.com/NamedKitten/KittehPlayer):  
-  A video player based on Qt, QML and libmpv with themes for many online video players.
-
 * [KikoPlay](https://github.com/Protostars/KikoPlay):  
   Danmaku player.
+
+* [KittehPlayer](https://github.com/NamedKitten/KittehPlayer):  
+  A video player based on Qt, QML and libmpv with themes for many online video players.
 
 * [libretro-mpv](https://github.com/libretro/libretro-mpv):  
   A libretro core based on libmpv.
@@ -34,14 +34,14 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [MoonPlayer](https://github.com/coslyk/moonplayer):  
   Video player that can play online videos
 
-* [MPV-EASY Player](https://github.com/422658476/MPV-EASY-Player):  
-  A movie player based on mpv.
-
 * [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
   A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
 
 * [mpv-android](https://github.com/mpv-android/mpv-android):  
   A media player for Android devices based on libmpv.
+
+* [MPV-EASY Player](https://github.com/422658476/MPV-EASY-Player):  
+  A movie player based on mpv.
 
 * [mpv.net](https://github.com/stax76/mpvnet):  
   Simple dotnet based player built with libmpv.
