@@ -31,6 +31,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [libretro-mpv](https://github.com/libretro/libretro-mpv):  
   A libretro core based on libmpv.
 
+* [MoonPlayer](https://github.com/coslyk/moonplayer):  
+  Video player that can play online videos
+
 * [MPV-EASY Player](https://github.com/422658476/MPV-EASY-Player):  
   A movie player based on mpv.
 
@@ -45,6 +48,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 
 * [OvoPlayer](http://ovoplayer.altervista.org):  
   Multi-platform audio player & manager using libmpv & other backends.
+
+* [qimgv](https://github.com/easymodo/qimgv):  
+  image viewer with optional video support
 
 * [SMPlayer](http://smplayer.sourceforge.net/):  
   A cross-platform graphical front-end for MPlayer and forks of Mplayer using GUI widgets offered by Qt.
@@ -62,6 +68,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 
 * [ff2mpv](https://github.com/woodruffw/ff2mpv):  
   A Firefox 52+ plugin for playing links in mpv.
+
+* [mpvQC](https://github.com/mpvqc/mpvQC):  
+  libmpv based application for quality control of videos
 
 * [Plaincast](https://github.com/aykevl/plaincast):  
   Plaincast emulates Chromecast and the YouTube app in it enough that you can play YouTube audio from the Android YouTube app. It is designed to run headless on the Raspberry Pi or similar devices.
