@@ -196,6 +196,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[image-viewer](https://github.com/occivink/mpv-image-viewer)**  
    Configurations, scripts and tips for using mpv as an image viewer.
 
+* **[jphonorifics](https://github.com/Nalapl3/mpv-jphonorifics)**  
+    Removing Japanese honorifics from subtitles on playback.
+
 * **[interSubs](https://github.com/oltodosel/interSubs)**  
   Interactive subtitles. Instantly translate selected word/sentence. Works on Linux, macOS.
 
