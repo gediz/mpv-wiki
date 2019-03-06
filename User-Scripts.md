@@ -244,7 +244,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv-history](https://gist.github.com/garoto/e0eb539b210ee077c980e01fb2daef4a)**  
   Simple played media logger. Will generate a `mpvhistory.log` in the default mpv config folder (%APPDATA%/mpv/ or $HOME/.config/mpv/) in the format `[$DATE $TIME] $PATH ($?MEDIA-TITLE)`. Only tested on Windows.
 
-* **[mpv-manga-reader](https://github.com/Dudemanguy911/mpv-manga-reader/tree/master)**
+* **[mpv-manga-reader](https://github.com/Dudemanguy911/mpv-manga-reader/tree/master)**  
   Script for using mpv as a manga reader.
 
 * **[mpv-pdf](https://github.com/jgreco/mpv-pdf)**  
