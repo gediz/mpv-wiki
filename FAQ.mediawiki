@@ -85,6 +85,10 @@ If you didn’t build mpv yourself, ask the packager to enable Lua.
 
 Also note that the OSC is invisible by default, but it should appear once you move the mouse over the mpv window.
 
+== I can't see the window when mpv plays audio files. ==
+
+Use <code>--force-window</code>.
+
 == What's the difference between opengl-hq, gpu-hq, etc.? ==
 
 The VO (video output) using GPU shader based rendering was renamed and updated a few times. Currently, the following things hold true:
