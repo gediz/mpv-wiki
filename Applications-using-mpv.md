@@ -89,6 +89,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [VidCutter](https://github.com/ozmartian/vidcutter):  
   A simple & fast video cutter & joiner powered by libmpv + FFmpeg and written in PyQt5.
 
+* [vmn](https://github.com/Dudemanguy911/vmn):  
+  An ncurses-based music player that uses libmpv as the backend.
+
 * [webm.py](https://github.com/Kagami/webm.py):  
   Converter which uses mpv for interactive cutting and cropping of videos being transcoded to WebM.
 
