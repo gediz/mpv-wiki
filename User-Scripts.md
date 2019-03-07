@@ -509,7 +509,7 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
   Converts equirectangular 360 degree video to be watchable, at a fixed perspective.
 
 * **[acme-0.5x](https://gist.github.com/bjin/15f307e7a1bdb55842bbb663ee1950ed)**  
-  fastest 0.5x prescaler for mpv, useful for 4K video playback on FHD screen.
+  fastest 0.5x prescaler for mpv, useful for 4K video playback on FHD screen (bypass chroma upscaling and color conversion in 4K resolution).
   
 ## VapourSynth Scripts
 
