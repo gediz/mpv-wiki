@@ -84,6 +84,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[blur-edges](https://github.com/occivink/mpv-scripts#blur-edgeslua)**  
   Replace black bars with a blurry copy of the video
 
+* **[bookmarker-menu](https://github.com/NurioHin/mpv-bookmarker)**  
+  A bookmarker menu to manage all your bookmarks in MPV, based on [mpv-bookmarker](https://github.com/nimatrueway/mpv-bookmark-lua-script) but with a menu
+
 * **[bookmark](https://github.com/sorayuki-winter/mpv-plugin-bookmark)**  
   Record and resume last play in current playing folder
 
