@@ -12,7 +12,7 @@ Tearing is generally not something a video player can do anything about. It depe
 
 Changing the compositor settings can sometimes help with tearing.
 
-=== OSX ===
+=== MacOS (OSX) ===
 
 Never seen it tearing.
 
@@ -174,7 +174,7 @@ Run mpv in [http://mpv.io/manual/master/#options-input-test input test mode]:
 
 Generally FFmpeg, simply because it has more features. Don't expect subtitles to work on Libav.
 
-== How can I make mpv the default application to open movie files on OSX? ==
+== How can I make mpv the default application to open movie files on MacOS (OSX)? ==
 
 <ul>
 <li><p>Install mpv as an app with Homebrew:</p>
