@@ -259,6 +259,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv-pdf](https://github.com/jgreco/mpv-pdf)**  
   View PDFs in mpv using ImageMagick.   Supports: Linux, MacOS
 
+* **[mpvSockets](https://github.com/wis/mpvSockets)**  
+  creates one IPC sockets per mpv instance, instead of one socket for the last started instance.   Supports: Linux, most likely MacOS too.
+
 * **[mpv_sort_script](https://github.com/TheAMM/mpv_sort_script)**  
   Sort files and directories by name, age, size or randomly, recursively or when coming across a directory.
 
@@ -421,7 +424,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[sub-replay](https://github.com/kelciour/mpv-scripts/blob/master/sub-replay.lua)**  
   Replay previous sentence.
 
-* **[sub-search](https://github.com/kelciour/mpv-scripts/blob/master/sub-search.lua)**  
+* **[sub-search](https://github.com/kelciour/Bcripts/blob/master/sub-search.lua)**  
   Search for phrase in subtitles and skip to it.
 
 * **[sub-sentences](https://github.com/kelciour/mpv-scripts/blob/master/sub-sentences.lua)**  
