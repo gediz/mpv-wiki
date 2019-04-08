@@ -55,6 +55,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [SMPlayer](http://smplayer.sourceforge.net/):  
   A cross-platform graphical front-end for MPlayer and forks of Mplayer using GUI widgets offered by Qt.
 
+* [wox-mpv-plugin](https://github.com/stax76/wox-mpv-plugin):
+  Wox launcher plugin that controls the mpv media player.
+
 * [xt7-player-mpv](https://github.com/kokoko3k/xt7-player-mpv):  
   A frontend to mpv with extra features.
 
