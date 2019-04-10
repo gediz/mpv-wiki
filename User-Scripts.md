@@ -232,6 +232,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpegts-truncate](https://github.com/hoehermann/mpv-mpegts-truncate)**  
   Removes beginning of MPEG TS file up to current position without re-writing the whole file.
 
+* **[mpv-acestream](https://github.com/Digitalone1/mpv-acestream)**  
+  Add AceStream protocol handler to mpv. Let the user open streams by dropping Acestream links into mpv GUI or by passing them as command line argument.
+
 * **[mpv-bookmarker](https://github.com/nimatrueway/mpv-bookmark-lua-script)**  
   Bookmark your favorite time on media files
 
