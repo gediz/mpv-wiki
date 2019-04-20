@@ -43,8 +43,8 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [MPV-EASY Player](https://github.com/422658476/MPV-EASY-Player):  
   A movie player based on mpv.
 
-* [mpv.net](https://github.com/stax76/mpv.net):  
-  A extendable/scriptable player for windows that is very similar to the original mpv player.
+* [mpv.net](https://mpv-net.github.io/mpv.net-web-site/):  
+  Player for windows that is very similar to the original mpv player, has a context menu, settings dialog and support for extensions.
 
 * [OvoPlayer](http://ovoplayer.altervista.org):  
   Multi-platform audio player & manager using libmpv & other backends.
