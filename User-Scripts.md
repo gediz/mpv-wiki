@@ -400,7 +400,7 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[speed-transition](https://github.com/zenyd/mpv-scripts)**  
   Increases playback speed if a subtitle will not be displayed soon. Resumes normal speed just before the subtitle shows up.
 
-* **[speed-transition-Audio](https://github.com/zenyd/mpv-scripts/blob/master/speed-transition.lua)**  
+* **[speed-transition-Audio](https://gist.github.com/bitingsock/e8a56446ad9c1ed92d872aeb38edf124)**  
   Experiment similar to [speed-transition](https://github.com/zenyd/mpv-scripts). changes playback speed based on volume thresholds.
 
 * **[subit](https://github.com/wiiaboo/mpv-scripts/blob/master/subit.lua)**  
