@@ -20,9 +20,6 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[mpv-assrt](https://github.com/AssrtOSS/mpv-assrt)**  
   Download subtitles from [assrt.net](http://assrt.net), with interactive OSD menu.
 
-* **[other.js](https://github.com/422658476/MPV-EASY-Player/blob/master/portable-data/scripts/other.js)**  
-  Automatically save the adjusted volume (other parameters are also OK) to the specified configuration file under the specified path, use other scripts to get the volume value before starting mpv, and pass it to mpv to become the automatic volume function.
-
 * **[screenshot-to-clipboard](https://github.com/zc62/mpv-scripts/blob/master/screenshot-to-clipboard.js)**  
   Generates a temp screenshot file on desktop then copy to clipboard. (Windows only)
 
