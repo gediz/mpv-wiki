@@ -75,6 +75,9 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [mpvQC](https://github.com/mpvqc/mpvQC):  
   libmpv based application for quality control of videos
 
+* [Olivia](https://github.com/keshavbhatt/olivia):  
+  Elegant cloud player for Linux using mpv in slave mode
+
 * [Plaincast](https://github.com/aykevl/plaincast):  
   Plaincast emulates Chromecast and the YouTube app in it enough that you can play YouTube audio from the Android YouTube app. It is designed to run headless on the Raspberry Pi or similar devices.
 
