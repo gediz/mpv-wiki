@@ -403,6 +403,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[speed-transition-Audio](https://gist.github.com/bitingsock/e8a56446ad9c1ed92d872aeb38edf124)**  
   Experiment similar to [speed-transition](https://github.com/zenyd/mpv-scripts). changes playback speed based on volume thresholds.
 
+* **[speed](https://github.com/oltodosel/mpv-scripts#speedlua)**  
+  Changing speed based on regex of filename/path.
+
 * **[subit](https://github.com/wiiaboo/mpv-scripts/blob/master/subit.lua)**  
   Yet another script for downloading subtitles using subliminal. Supports better customization of options, such as easy language selection, authentication for providers that need it, and support for URLs.
 
