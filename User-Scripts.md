@@ -45,8 +45,20 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autocrop](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autocrop.lua)**  
   Automatically crop the video by using lavfi's cropdetect filter to detect black bars.
 
+* **[autodeint](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)**  
+  Automatically deinterlace the video by using lavfi's idet filter to detect interlaced content.
+
+* **[auto-keep-gui-open](https://github.com/VideoPlayerCode/mpv-tools/)**  
+  Intelligently switches mpv's "keep-open" behavior based on whether you are running in video-mode or audio-only mode.
+
+* **[autoload](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)**  
+  Automatically load playlist entries before and after the currently playing file, by scanning the directory.
+
 * **[autoloop](https://github.com/zc62/mpv-scripts/blob/master/autoloop.lua)**  
   Automatically loops files that are under a given duration (default 5 seconds).
+
+* **[auto-profiles](https://github.com/wiiaboo/mpv-scripts/blob/master/auto-profiles.lua)**  
+  Automatically apply profiles based on predicates written as Lua expressions.
 
 * **[autosave](https://gist.github.com/Hakkin/5489e511bd6c8068a0fc09304c9c5a82)**  
   Periodically saves "watch later" data during playback, rather than only saving on quit.
@@ -57,21 +69,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autospeedwin](https://github.com/kevinlekiller/mpv_scripts/tree/master/autospeedwin)**  
   To adjust monitor refresh rate and video speed for almost 1:1 playback. (Windows)
 
-* **[autodeint](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autodeint.lua)**  
-  Automatically deinterlace the video by using lavfi's idet filter to detect interlaced content.
-
-* **[auto-keep-gui-open](https://github.com/VideoPlayerCode/mpv-tools/)**  
-  Intelligently switches mpv's "keep-open" behavior based on whether you are running in video-mode or audio-only mode.
-
-* **[autoload](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)**  
-  Automatically load playlist entries before and after the currently playing file, by scanning the directory.
-
-* **[auto-profiles](https://github.com/wiiaboo/mpv-scripts/blob/master/auto-profiles.lua)**  
-  Automatically apply profiles based on predicates written as Lua expressions.
-
 * **[autosub](https://github.com/DavidDeprost/mpv-autosub)**  
   Fully automatically download subtitles when they are not present:  
-  - **No hotkeys required!**  
+  - **No hotkeys required**  
   - Windows, Mac and Linux
   - Clear setup instructions
 
