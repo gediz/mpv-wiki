@@ -70,8 +70,10 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Automatically apply profiles based on predicates written as Lua expressions.
 
 * **[autosub](https://github.com/DavidDeprost/mpv-autosub)**  
-  Fully automatically download subtitles when they are not present. **No hotkeys required**.  
-  (Cross-platform: **Windows, Mac and Linux**)
+  Fully automatically download subtitles when they are not present:  
+  - **No hotkeys required!**  
+  - Windows, Mac and Linux
+  - Clear setup instructions
 
 * **[autosub](https://github.com/vayan/autosub-mpv/blob/master/autosub.lua)**  
   Automatically download subtitles using **subliminal**.
