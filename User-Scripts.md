@@ -71,7 +71,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 * **[autosub](https://github.com/DavidDeprost/mpv-autosub)**  
   Fully automatically download subtitles when they are not present. **No hotkeys required**.  
-  (Cross-platform support: **Windows, Mac and Linux!**)
+  (Cross-platform: **Windows, Mac and Linux**)
 
 * **[autosub](https://github.com/vayan/autosub-mpv/blob/master/autosub.lua)**  
   Automatically download subtitles using **subliminal**.
