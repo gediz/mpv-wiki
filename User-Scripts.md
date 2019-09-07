@@ -105,6 +105,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[clock](https://gitlab.com/mozbugbox/mpv-script-mozbugbox)**  
   Constantly show current time on the lower left corner of the video screen.
 
+* **[contact-sheet](https://github.com/occivink/mpv-gallery-view)**  
+  Display thumbnails of the current file in the style of a contact sheet
+
 * **[convert_script](https://gist.github.com/Zehkul/25ea7ae77b30af959be0)**  
   Script to quickly convert and crop videos from within mpv, with a GUI.
 
@@ -195,9 +198,6 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 * **[gallery-dl_hook](https://github.com/jgreco/mpv-scripts/blob/master/gallery-dl_hook.lua)**  
   Load online image galleries (imgur, etc) as playlists using [gallery-dl](https://github.com/mikf/gallery-dl/).
-
-* **[gallery-view](https://github.com/occivink/mpv-gallery-view)**  
-  View playlist in a grid view of thumbnails.
 
 * **[gpufreq](https://gist.github.com/CounterPillow/0b764ed14c609024c9188383f7dce033)**  
   Show current and maximum GPU frequencies for GPUs using the DRM stack on Linux.
@@ -339,6 +339,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[playlistnoplayback](https://github.com/422658476/MPV-EASY-Player/blob/master/portable-data/scripts/playlistnoplayback.lua)**  
   If you enable the save play history and progress function, this lua script can solve the problem of automatically jumping to the previous playback progress when playing the next file when playing the playlist, that is, let the playlist always play the next file from the beginning every time. the limitations of this script, please see the comments section in the content.
+
+* **[playlist-view](https://github.com/occivink/mpv-gallery-view)**  
+  Display and navigate the playlist in a grid view of thumbnails.
 
 * **[progressbar](https://github.com/torque/mpv-progressbar)**  
   A minimalistic OSC replacement. It provides a small, unintrusive progress bar that persists at the bottom of the video window.
