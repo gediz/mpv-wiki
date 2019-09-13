@@ -263,6 +263,16 @@ Or use a script like https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/aut
 
 Lua 5.3 is a different language from 5.1 or 5.2, so it won't be supported to avoid breaking all user scripts. Lua 5.1, Lua 5.2, and LuaJIT are also different, but the differences are relatively minor.
 
+== Why is there no DVD/Bluray menu support? And DVD/BD support in general. ==
+
+DVD menu support existed since early times, but was removed because it was a maintenance nightmare. It affected unrelated parts of the player deeply, and prevented improving more important features. In addition, it never worked well. Later, DVD menu support was added again using rewritten code (and then Bluray menu support). However, despite the rewrite, it still affected the player core (preventing improvements in other areas), and it still did not work well.
+
+The opinion of the developers is that menu support is cursed, and not worth implementing anyway. In addition to the monumental effort required to make it work well, only very few users benefit from it. It is a fact that playing DVDs/BDs gives a much better user experienced when ripped to files, which precludes menu support.
+
+As a consequence, mpv only has some fallback support for optical media discs. Please don't report issues to it, as there is little chance of any improvements done to it.
+
+If you are a developer and want to improve DVD/BD support in mpv, you are welcome to do so. But note that intrusive changes to the playback core will most likely not be accepted. Most code related to it must be isolated in a separate module (for example stream_blurray.c, although it's allowed to change the layer at which the module is implemented).
+
 == How is mpv related to MPlayer? ==
 
 The relation between the two projects is mostly historic. They should be considered two separate projects. mpv and MPlayer are different software, incompatible to each other. There is no overlap in developers and other project members between MPlayer and mpv. mpv is not a drop-in replacement for MPlayer, and the command line switches and behavior are different.
