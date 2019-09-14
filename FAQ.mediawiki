@@ -261,7 +261,9 @@ Or use a script like https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/aut
 
 == Why does mpv not support Lua 5.3? ==
 
-Lua 5.3 is a different language from 5.1 or 5.2, so it won't be supported to avoid breaking all user scripts. Lua 5.1, Lua 5.2, and LuaJIT are also different, but the differences are relatively minor.
+Lua 5.3 is a different language from 5.1 or 5.2. Simply switching to Lua 5.3 would probably break most user scripts. The changes that make 5.3 incompatible are larger and have a greater impact than the changes that were done from 5.1 to 5.2 (or between LuaJIT and 5.1/5.2). This is especially due to the introduction of the integer type. Moreover, this would mean dropping LuaJIT support, as LuaJIT supports the 5.1/5.2 language only.
+
+Supporting both languages for a time would be theoretically possible. But it would require separate backends, and significant effort to avoid the symbol conflicts between Lua 5.2 and 5.3 (maybe even impossible to do with distro-provided libs), so it won't be done.
 
 == Why is there no DVD/Bluray menu support? And DVD/BD support in general. ==
 
