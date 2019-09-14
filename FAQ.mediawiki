@@ -285,8 +285,6 @@ mpv is based on MPlayer's code. At first, there was the mplayer2 project, which 
 
 The reason for this fork was disagreement over the direction of development. While MPlayer focuses on maintenance and not breaking old code and features, mpv wanted to go into the other direction, modernization. This included merciless removal of code/features that were not considered worth maintaining due to being obscure and unused, or rewriting existing code to clean it up and to reduce bugs. Reducing maintenance burden by replacing MPlayer code with FFmpeg mechanisms was also a priority. mplayer2 was stuck between those positions - first going for mpv's direction, but then remaining stagnant with slow development. The mplayer2 project soon went inactive after the mpv fork, and is completely gone today.
 
-mpv went on, radically minimizing its code base, as seen here: [[https://0x0.st/Lyl.png]]
-
 We consider mpv's radical approach successful, making the code easier to work with, removing bugs, and making it easier to add new features. We added modern features wanted by users in exchange for removing large amounts of features barely anyone used anymore.
 
 One result is that mpv development has nothing to do with MPlayer development anymore. They are completely separate projects. The mplayer2 period might have contributed to the relative isolation between the two projects. After all these years of going separate directions, merging MPlayer and mpv back into one project wouldn't make sense.
