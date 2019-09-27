@@ -97,6 +97,14 @@ The VO (video output) using GPU shader based rendering was renamed and updated a
 * --profile=gpu-hq is for selecting a preset with advanced scaling and so on (replaces --vo=opengl-hq and --profile=opengl-hq)
 * GPU supports multiple backends, like d3d, opengl, vulkan (they are used by default in that order); use --gpu-api=vulkan to force e.g. vulkan, use --gpu-context=... to select specific backends.
 
+== I'm using vo=vaapi or vo=vdpau, but there are problems ==
+
+First off: DO NOT USE THESE VOs. They are broken and old. There is no reason to use them. Just don't override the VO selection and use the default. Some users seem to think using these VOs is required for hardware decoding. This is not true. If you want hardware decoding, use --hwdec=auto, which may use some of these APIs for decoding. (On older Nvidia drivers, you may need --gpu-context=x11 in addition.)
+
+These VOs use rather old video output APIs, which have been mostly abandoned by their vendors. In particular, vaapi is known to be thoroughly broken in most Intel drivers. It's not surprising to see major bugs and problems, and mpv can do nothing about it.
+
+In some cases, using them might be justified for performance (they might use a hardware overlay, most often these are just emulated with shaders though).
+
 == Video on RPI doesn't work, or is too slow ==
 
 You need to build FFmpeg with mmal support - this is not enabled by default in FFmpeg. mpv also needs to be compiled with mmal, and the Broadcom firmware libEGL. Otherwise hardware decoding and scaling cannot be enabled.
