@@ -262,6 +262,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv-history](https://gist.github.com/garoto/e0eb539b210ee077c980e01fb2daef4a)**  
   Simple played media logger. Will generate a `mpvhistory.log` in the default mpv config folder (%APPDATA%/mpv/ or $HOME/.config/mpv/) in the format `[$DATE $TIME] $PATH ($?MEDIA-TITLE)`. Only tested on Windows.
 
+* **[mpv-i3-floating-centered](https://github.com/mdnghtman/mpv-i3-floating-centered)**  
+  Show mpv window in the center of the display when it is in floating mode (i3wm)
+
 * **[mpv-manga-reader](https://github.com/Dudemanguy911/mpv-manga-reader/tree/master)**  
   Script for using mpv as a manga reader.
 
