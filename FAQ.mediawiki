@@ -180,7 +180,9 @@ Run mpv in [http://mpv.io/manual/master/#options-input-test input test mode]:
 
 == Is FFmpeg or Libav preferred for use with mpv? ==
 
-Generally FFmpeg, simply because it has more features. Don't expect subtitles to work on Libav.
+Generally FFmpeg, simply because it has more features. Don't expect subtitles to work on Libav. Libav support may be broken at times, because they did not yet add certain FFmpeg API changes which mpv relies on.
+
+Do not confuse Libav with e.g. libavcodec. libavcodec is a library that is provided by both the FFmpeg and Libav projects. Their APIs are almost the same, with subtle differences.
 
 == How can I make mpv the default application to open movie files on MacOS (OSX)? ==
 
@@ -267,6 +269,24 @@ Either pass all files to mpv, e.g. run this in the directory with the files:
 <pre>mpv *.*</pre>
 Or use a script like https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua .
 
+== FFmpeg ABI compatibility ==
+
+mpv does not support linking against FFmpeg versions it was not built with, even
+if the linked version is supposedly ABI-compatible with the version it was
+compiled against. Expect malfunctions, crashes, and security issues if you
+do it anyway.
+
+The reason for not supporting this is because it creates far too much complexity
+with little to no benefit, coupled with absurd and unusable FFmpeg API
+artifacts.
+
+Newer mpv versions will refuse to start if runtime and compile time FFmpeg
+library versions mismatch. It will print this error message (cut short), and then exit:
+
+<pre>mpv was compiled against a different version of FFmpeg/Libav...</pre>
+
+To fix this, rebuild mpv.
+
 == Why does mpv not support Lua 5.3? ==
 
 Lua 5.3 is a different language from 5.1 or 5.2. Simply switching to Lua 5.3 would probably break most user scripts. The changes that make 5.3 incompatible are larger and have a greater impact than the changes that were done from 5.1 to 5.2 (or between LuaJIT and 5.1/5.2). This is especially due to the introduction of the integer type. Moreover, this would mean dropping LuaJIT support, as LuaJIT supports the 5.1/5.2 language only.
@@ -287,7 +307,7 @@ If you are a developer and want to improve DVD/BD support in mpv, you are welcom
 
 The relation between the two projects is mostly historic. They should be considered two separate projects. mpv and MPlayer are different software, incompatible to each other. There is no overlap in developers and other project members between MPlayer and mpv. mpv is not a drop-in replacement for MPlayer, and the command line switches and behavior are different.
 
-MPlayer users should not expect that mpv is in any way similar to it. Both are CLI video players, and have common roots, but in some areas there are radical differences.
+MPlayer users should not expect that mpv is in any way similar to it. Both are CLI video players, and have common roots, but in some areas there are radical differences. An old and outdated summary of changes can be found here: https://github.com/mpv-player/mpv/blob/master/DOCS/mplayer-changes.rst
 
 mpv is based on MPlayer's code. At first, there was the mplayer2 project, which forked away from MPlayer roughly in 2008, and went different ways from it. (It was renamed to mplayer2 only a few years later, causing general confusion.) In 2012, some newer developers, who joined mplayer2 development around 2011, forked mplayer2 again. This second fork was then renamed to mpv.
 
