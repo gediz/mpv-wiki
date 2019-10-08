@@ -25,9 +25,6 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [KikoPlay](https://github.com/Protostars/KikoPlay):  
   Danmaku player.
 
-* [KittehPlayer](https://github.com/NamedKitten/KittehPlayer):  
-  A video player based on Qt, QML and libmpv with themes for many online video players.
-
 * [libretro-mpv](https://github.com/libretro/libretro-mpv):  
   A libretro core based on libmpv.
 
