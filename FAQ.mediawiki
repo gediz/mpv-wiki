@@ -253,11 +253,11 @@ The mpv youtube-dl wrapper script calls <code>youtube-dl -J</code> on URLs that 
 
 See the manual for available options: https://mpv.io/manual/master/#options-ytdl
 
-== Why does the cache not work for Twitch (HLS sites) and some youtube links? ==
+== Why were some cache options removed or changed (stream cache)? ==
 
-Twitch uses HLS, some youtube links use segmented DASH. These are both segmented streaming protocols, for which no single, monolithic stream exists. The classic stream cache works only for unsegmented input, so it can't cache these sites.
+Starting with mpv 0.30.0, some cache options have been removed (`--cache-default`, `--cache-initial`, `--cache-seek-min`, `--cache-backbuffer`, `--cache-file`, `--cache-file-size`), or changed (`--cache` does not take a size in KB anymore). This is a consequence of removing the stream cache, which was a ringbuffer of input data between demuxer and network level.
 
-This is not an issue for the demuxer packet cache introduced in mpv 0.28.0. This extends the memory cache for demuxed packets and makes it seekable (in exchange for some wasted memory and CPU). It can be controlled with https://mpv.io/manual/master/#options-demuxer-seekable-cache and https://mpv.io/manual/master/#options-demuxer-max-back-bytes .
+Caching is now done on the demuxing layer (between demuxer and decoder), which is controlled by separate options: `--cache-secs`, `--demuxer-readahead-secs`, `--demuxer-max-bytes`, `--demuxer-max-back-bytes`. Instead of `--cache-file`, `--cache-on-disk` is available.
 
 == On Windows, why does mpv.exe not attach to the console and what does mpv.com do? ==
 
