@@ -255,9 +255,11 @@ See the manual for available options: https://mpv.io/manual/master/#options-ytdl
 
 == Why were some cache options removed or changed (stream cache)? ==
 
-Starting with mpv 0.30.0, some cache options have been removed (`--cache-default`, `--cache-initial`, `--cache-seek-min`, `--cache-backbuffer`, `--cache-file`, `--cache-file-size`), or changed (`--cache` does not take a size in KB anymore). This is a consequence of removing the stream cache, which was a ringbuffer of input data between demuxer and network level.
+Starting with mpv 0.30.0, some cache options have been removed (<code>--cache-default</code>, <code>--cache-initial</code>, <code>--cache-seek-min</code>, <code>--cache-backbuffer</code>, <code>--cache-file</code>, <code>--cache-file-size</code>), or changed (<code>--cache</code> does not take a size in KB anymore). This is a consequence of removing the stream cache, which was a ringbuffer of input data between demuxer and network level.
 
-Caching is now done on the demuxing layer (between demuxer and decoder), which is controlled by separate options: `--cache-secs`, `--demuxer-readahead-secs`, `--demuxer-max-bytes`, `--demuxer-max-back-bytes`. Instead of `--cache-file`, `--cache-on-disk` is available.
+Caching is now done on the demuxing layer (between demuxer and decoder), which is controlled by separate options: <code>--cache-secs</code>, <code>--demuxer-readahead-secs</code>, <code>--demuxer-max-bytes</code>, <code>--demuxer-max-back-bytes</code>. Instead of <code>--cache-file</code>, <code>--cache-on-disk</code> is available.
+
+The reason for the stream cache removal was that it mainly wasted memory, reduced performance, increased code complexity, and tended to cause weird bugs due to the cache layer not reflecting some of the underlaying stream's behavior exactly.
 
 == On Windows, why does mpv.exe not attach to the console and what does mpv.com do? ==
 
