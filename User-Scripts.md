@@ -475,6 +475,9 @@ Shows total playtime of current playlist.
 * **[trueautosub](https://github.com/fullmetalsheep/mpv-iina-scripts)**  
 Improved fork of autosub, Automatically downloads subtitles if not present using **subliminal**. (osx/linux only)
 
+* **[tts-subs](https://github.com/jgreco/mpv-scripts/blob/master/tts-subs.lua)**  
+Use voice synthesis to read subtitles out-loud (Currently uses `say` on MacOS.  Could be adapted to use espeak.  PR for windows support welcome.)
+
 * **[tv-output](https://github.com/blue-sky-r/mpv/blob/master/scripts/tv.lua)**  
   (Linux) TV output handling - activate on mpv playback and deactivate on mpv shutdown.
 
