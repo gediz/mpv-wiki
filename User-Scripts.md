@@ -352,6 +352,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[quick-scale](https://github.com/VideoPlayerCode/mpv-tools/)**  
   Quickly scale the video player to a target size, with full control over target scale and max scale. Helps you effortlessly resize a video to fit on your desktop, or any other video dimensions you need!
 
+* **[radio-title](https://github.com/olivierlemoal/mpv-radio-title-script/)**  
+  Automatically fetch current playing title from webradio website when not provided by stream.
+
 * **[recent](https://github.com/nightedt/mpv-scripts)**  
   Recently played menu using a history log file in `config` directory, display using a hotkey or automatically when idle.
 
@@ -417,6 +420,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[speed](https://github.com/oltodosel/mpv-scripts#speedlua)**  
   Changing speed based on regex of filename/path.
+
+* **[spotify](https://github.com/olivierlemoal/mpv-spotify-script)**  
+  Add current playing title to an user defined Spotify playlist.
 
 * **[subit](https://github.com/wiiaboo/mpv-scripts/blob/master/subit.lua)**  
   Yet another script for downloading subtitles using subliminal. Supports better customization of options, such as easy language selection, authentication for providers that need it, and support for URLs.
