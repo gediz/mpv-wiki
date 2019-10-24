@@ -31,7 +31,7 @@ Here is a list of third-party programs which use mpv or libmpv in some form. The
 * [MoonPlayer](https://github.com/coslyk/moonplayer):  
   Video player that can play online videos
 
-* [mpc-qt](https://github.com/wm4/mpc-qt):  
+* [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
   A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
 
 * [mpv-android](https://github.com/mpv-android/mpv-android):  
