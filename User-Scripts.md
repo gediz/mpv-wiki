@@ -244,6 +244,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv-bookmarker](https://github.com/nimatrueway/mpv-bookmark-lua-script)**  
   Bookmark your favorite time on media files
 
+* **[mpv-BoxToWide](https://github.com/Samillion/mpv-boxtowide)**  
+  A simple mpv script to change 4:3 aspect-ratio of video files/streams to 16:9 automatically.
+
 * **[mpv-Change-OSD-Media-Title](https://github.com/nmoorthy1/mpv-Change-OSD-Media-Title)**  
   Displays filename, percentage watched, current chapter, and number of frames dropped in the OSD media title and updates it whenever one of the values has changed.
 
@@ -270,6 +273,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[mpv-pdf](https://github.com/jgreco/mpv-pdf)**  
   View PDFs in mpv using ImageMagick.   Supports: Linux, MacOS
+
+* **[mpv-ytdlAutoFormat](https://github.com/Samillion/mpv-ytdlautoformat)**  
+  A simple mpv LUA script to auto change ytdl-format for Youtube and Twitch or the domains you desire, to 480p or the quality you desire.
 
 * **[mpvSockets](https://github.com/wis/mpvSockets)**  
   creates one IPC sockets per mpv instance, instead of one socket for the last started instance.   _Supports_: Linux, most likely MacOS too.
