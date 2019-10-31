@@ -2,6 +2,8 @@
 
 Here is a list of third-party programs which use mpv or libmpv in some form. These are **unofficial 3rd party projects** which are not necessarily directly supported by mpv. Anyone can add their own project by editing this wiki.
 
+This is not a list of recommendations, just something to give 3rd party projects visibility. Many of these projects target niche uses only, or are unmaintained. In particular, there is no mpv GUI frontend recommended by the developers.
+
 ## GUI frontends
 
 * [Baka MPlayer](https://github.com/u8sand/Baka-MPlayer):  
