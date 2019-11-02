@@ -2,7 +2,7 @@
 
 Here is a list of third-party programs which use mpv or libmpv in some form. These are **unofficial 3rd party projects** which are not necessarily directly supported by mpv. Anyone can add their own project by editing this wiki.
 
-This is not a list of recommendations, just something to give 3rd party projects visibility. Many of these projects target niche uses only, or are unmaintained. In particular, there is no mpv GUI frontend recommended by the developers.
+This is not a list of recommendations, just something to give 3rd party projects visibility. Many of these projects target niche uses only, or are unmaintained. In particular, there is no mpv GUI frontend officially recommended by the developers.
 
 ## GUI frontends
 
@@ -34,7 +34,7 @@ This is not a list of recommendations, just something to give 3rd party projects
   Video player that can play online videos
 
 * [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
-  A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc.
+  A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc. (Unmaintained, abandoned.)
 
 * [mpv-android](https://github.com/mpv-android/mpv-android):  
   A media player for Android devices based on libmpv.
