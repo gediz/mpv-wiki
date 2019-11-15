@@ -319,6 +319,10 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[ontop-playback](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/ontop-playback.lua)**  
   Disables the ontop property when pausing, and enables it again when unpausing the video, if it was disabled. Change it only when the player is not in fullscreen to prevent screen flickering.
 
+* **[ontop-only-while-playing](https://github.com/kungfubeaner/mpv-ontop-only-while-playing-lua/blob/master/on_top_only_while_playing.lua)** 
+Ontop is only active during video playback. Ontop is automatically disabled during idle, pause and is able
+to be dynamically disabled without having to restart unlike the previous script.
+
 * **[open-file-dialog](https://github.com/rossy/mpv-open-file-dialog)**  
   (Windows) Launches a regular Windows file open dialog for loading videos.
 
