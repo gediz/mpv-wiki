@@ -11,6 +11,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[Colorbox](https://github.com/VideoPlayerCode/mpv-tools/)**  
   Apply color correction presets.
 
+* **[copyTime](https://github.com/Arieleg/mpv-copyTime)**  
+  Get the current time of the video and copy it to the clipboard with the format HH:MM:SS.MS .
+
 * **[Gallerizer](https://github.com/VideoPlayerCode/mpv-tools/)**  
   Image gallery autoloader for mpv.
 
