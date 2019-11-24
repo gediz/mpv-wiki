@@ -97,6 +97,13 @@ The VO (video output) using GPU shader based rendering was renamed and updated a
 * --profile=gpu-hq is for selecting a preset with advanced scaling and so on (replaces --vo=opengl-hq and --profile=opengl-hq)
 * GPU supports multiple backends, like d3d, opengl, vulkan (they are used by default in that order); use --gpu-api=vulkan to force e.g. vulkan, use --gpu-context=... to select specific backends.
 
+== Hardware decoding doesn't work ==
+
+* use --hwdec=auto or --hwdec=auto-copy instead of anything else
+* make sure all hwdec backends are compiled in
+* make sure the file you're playing can be hardware decoded at all (this is for example not the case with 10 bit h264 video)
+* some codecs need to be explicitly enabled with --hwdec-codecs
+
 == I'm using vo=vaapi or vo=vdpau, but there are problems ==
 
 First off: DO NOT USE THESE VOs. They are broken and old. There is no reason to use them. Just don't override the VO selection and use the default. Some users seem to think using these VOs is required for hardware decoding. This is not true. If you want hardware decoding, use --hwdec=auto, which may use some of these APIs for decoding. (On older Nvidia drivers, you may need --gpu-context=x11 in addition.)
