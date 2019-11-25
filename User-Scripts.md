@@ -147,8 +147,10 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[locate-file](https://github.com/nimatrueway/mpv-locatefile-lua-script)**  
   Locate current media file on your OS file browser 
 
-* **[delogo](https://github.com/b4zz4/mpv-delogo)**  
+* **[delogo](https://github.com/b4zz4/mpv-delogo)**
+ *** deprecated according to project page. tested and does not work.  
   It removes the logo of the channels in a video (press n)
+
 
 * **[deframe](https://github.com/b4zz4/mpv-deframe)**  
   It removes the frame of youtube videos (press g)
