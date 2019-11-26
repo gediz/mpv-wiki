@@ -69,11 +69,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[autospeedwin](https://github.com/kevinlekiller/mpv_scripts/tree/master/autospeedwin)**  
   To adjust monitor refresh rate and video speed for almost 1:1 playback. (Windows)
 
-* **[autosub](https://github.com/DavidDeprost/mpv-autosub)**  
-  Fully automatically download subtitles when they are not present:  
-  - **No hotkeys required**  
-  - Windows, Mac and Linux
-  - Clear setup instructions
+* **[autosub](https://github.com/davidde/mpv-autosub)**  
+  Fully automatic subtitle downloading. No hotkeys required.  
+  Clear setup instructions for **Windows, Mac and Linux**.
 
 * **[autosub](https://github.com/vayan/autosub-mpv/blob/master/autosub.lua)**  
   Automatically download subtitles using **subliminal**.
