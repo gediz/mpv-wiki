@@ -74,6 +74,46 @@ Unfortunately, this can cause stability issues - GL applications sometimes rando
 <li> Unrelated, but if you have performance issues, try <code>echo high > /sys/class/drm/card0/device/power_dpm_force_performance_level</code>.</li>
 </ul>
 
+== Recommended GPU hardware ==
+
+Since mpv normally renders video with shaders rather than fixed function video hardware (it does that for the sake of quality and consistency), the GPU hardware and the quality of its drivers is very important for mpv tro function well.
+
+We're only portraying the situation on Linux. The author doesn't know the situation on Windows. Apple is completely incompetent and evil in the graphics area, please don't buy their products.
+
+=== amdgpu (open source) ===
+
+These seem to work pretty well. There are some consistent issues, but there is hope. Their discrete GPUs are usually powerful enough to handle even advanced render settings at high resolutions and frame rates.
+
+=== amdgpu-pro (closed source) ===
+
+Unknown. Might work well, but may cause additional problems in theory. Since open source amdgpu drivers work prertty well (and supposedly better and amdgpu-pro), it's possible that they only provide an additional source of problems.
+
+In any case, you can switch to amdgpu drivers without losing much.
+
+=== Intel ===
+
+Their hardware is relatively weak, and their drivers are chaotic. If you manage to pick the right driver versions, things will probably work very well up to medium settings. However, there are frequent problems (some of them seemingly never being fixed), and it is known that driver release versions have bugs not present in git. Also, they always start new drivers instead of imnproving what they have, which will make your live as Intel user stressful.
+
+Not recommended. However, if your PC is a laptop, you should probably prefer pure Intel over hybrid graphics, at least at this time.
+
+=== Nvidia ===
+
+No. Their hardware may be pretty good, but their drivers are problematic. They are closed source and tend to replace system libraries at installation. In addition, they tend to be behind the open source APIs (for example, there is still no presentation feedback at all oin their GL implementation). Nvidia drivers also seem to cause frequent system stability problems. There are weird quirks like huge user-noticable timeouts at initialization, which shouldn't exist at all.
+
+While Nvidia used to be recommended in the past (at least by the author), it keeps getting worse.
+
+=== Mobile ===
+
+Why would you buy a device that was designed to spy on you for the purpose of making megacorps even richer? That's kind of stupid, you know.
+
+Anyway, all mobile GPUs are bad, both in the hardware implementation, drivers, and the fact that mobile devices are not very powerful, unless you're fine with them draining your battery in minutes.
+
+=== ARM/Linux ===
+
+There are many "embedded" or "mini computer" boards with powerful ARM chips. Consumers usually run Linux on them. They are all trash in all aspects.
+
+Although mpv has some support for RPI and Rockchip devices, which may or may not work well for you.
+
 == I am using NVIDIA G-Sync on Windows and running mpv in fullscreen mode reduces the frame rate of other displays ==
 
 This is likely caused by the way G-Sync interacts with Windows’ compositor. Using <code>--opengl-backend=win</code> should fix this because mpv gets an exclusive fullscreen window that way. The compositor unredirects exclusive fullscreen windows and is not forced to run at their frame rate.
