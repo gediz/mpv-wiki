@@ -86,19 +86,19 @@ These seem to work pretty well. There are some consistent issues, but there is h
 
 === amdgpu-pro (closed source) ===
 
-Unknown. Might work well, but may cause additional problems in theory. Since open source amdgpu drivers work prertty well (and supposedly better and amdgpu-pro), it's possible that they only provide an additional source of problems.
+Unknown. Might work well, but may cause additional problems in theory. Since open source amdgpu drivers work prertty well (and supposedly better than amdgpu-pro in some cases), it's possible that they only provide an additional source of problems.
 
 In any case, you can switch to amdgpu drivers without losing much.
 
 === Intel ===
 
-Their hardware is relatively weak, and their drivers are chaotic. If you manage to pick the right driver versions, things will probably work very well up to medium settings. However, there are frequent problems (some of them seemingly never being fixed), and it is known that driver release versions have bugs not present in git. Also, they always start new drivers instead of imnproving what they have, which will make your live as Intel user stressful.
+Their hardware is relatively weak, and their drivers are chaotic. If you manage to pick the right driver versions, things will probably work very well up to medium settings. However, there are frequent problems (some of them seemingly never being fixed), and it is known that driver release versions have bugs not present in git. Also, they always start new drivers instead of improving what they have, which will make your live as Intel user stressful.
 
 Not recommended. However, if your PC is a laptop, you should probably prefer pure Intel over hybrid graphics, at least at this time.
 
 === Nvidia ===
 
-No. Their hardware may be pretty good, but their drivers are problematic. They are closed source and tend to replace system libraries at installation. In addition, they tend to be behind the open source APIs (for example, there is still no presentation feedback at all oin their GL implementation). Nvidia drivers also seem to cause frequent system stability problems. There are weird quirks like huge user-noticable timeouts at initialization, which shouldn't exist at all.
+No. Their hardware may be pretty good, but their drivers are problematic. They are closed source and tend to replace system libraries at installation. In addition, they tend to be behind the open source APIs (for example, there is still no presentation feedback at all in their GL implementation). Nvidia drivers also seem to cause frequent system stability problems. There are weird quirks like huge user-noticable timeouts at initialization, which shouldn't exist at all.
 
 While Nvidia used to be recommended in the past (at least by the author), it keeps getting worse.
 
