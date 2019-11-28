@@ -76,7 +76,7 @@ Unfortunately, this can cause stability issues - GL applications sometimes rando
 
 == Recommended GPU hardware ==
 
-Since mpv normally renders video with shaders rather than fixed function video hardware (it does that for the sake of quality and consistency), the GPU hardware and the quality of its drivers is very important for mpv tro function well.
+Since mpv normally renders video with shaders rather than fixed function video hardware (it does that for the sake of quality and consistency), the GPU hardware and the quality of its drivers is very important for mpv to function well.
 
 We're only portraying the situation on Linux. The author doesn't know the situation on Windows. Apple is completely incompetent and evil in the graphics area, please don't buy their products.
 
