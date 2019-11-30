@@ -26,6 +26,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[screenshot-to-clipboard](https://github.com/zc62/mpv-scripts/blob/master/screenshot-to-clipboard.js)**  
   Generates a temp screenshot file on desktop then copy to clipboard. (Windows only)
 
+* **[takeSsSequence](https://github.com/Arieleg/mpv-takeSsSequence)**
+  Take a sequence of equispaced screenshots.
+
 * **[VideoPlayerCode's Modules.js (for developers)](https://github.com/VideoPlayerCode/mpv-tools/tree/master/scripts/modules.js)**  
   Tons of pre-written, open source JavaScript modules which helps you rapidly create your own JS user scripts (including a very helpful [script config](https://github.com/VideoPlayerCode/mpv-tools/blob/master/scripts/modules.js/Options.js) system based on mpv's Lua `mp.options` API). All modules are free to use (and extend) in your own scripts!
 
