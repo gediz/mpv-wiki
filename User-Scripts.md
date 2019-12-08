@@ -332,6 +332,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 Ontop is only active during video playback. Ontop is automatically disabled during idle, pause and is able
 to be dynamically disabled without having to restart unlike the previous script.
 
+* **[open-imdb-page](https://github.com/ctlaltdefeat/mpv-open-imdb-page)**  
+  Opens the IMDb page that corresponds to the currently playing media file.
+
 * **[open-file-dialog](https://github.com/rossy/mpv-open-file-dialog)**  
   (Windows) Launches a regular Windows file open dialog for loading videos.
 
