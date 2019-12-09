@@ -208,6 +208,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[gpufreq](https://gist.github.com/CounterPillow/0b764ed14c609024c9188383f7dce033)**  
   Show current and maximum GPU frequencies for GPUs using the DRM stack on Linux.
 
+* **[groupwatch_sync](https://github.com/po5/groupwatch_sync)**  
+  Quickly get back in sync with a group watch by adjusting playback speed.
+
 * **[KDialog-open-files](https://gist.github.com/ntasos/d1d846abd7d25e4e83a78d22ee067a22)**  
 Use KDE's KDialog to add files to playlist, subtitles to playing video or open URLs.
 
@@ -222,6 +225,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[last.fm scrobbler](https://github.com/l29ah/w3crapcli/blob/master/last.fm/mpv-lastfm.lua)**  
   Sends the information about playing tracks to [last.fm](http://last.fm/), see http://www.last.fm/help/faq?category=99 for more info.
+
+* **[libass_sub_selector](https://github.com/po5/libass_sub_selector)**  
+  Visually select individual subtitles a la PotPlayer.
 
 * **[live-filters](https://github.com/hdbhdb/mpv-live-filters)**  
   Add, remove or toggle ffmpeg video filters during mpv playback.
@@ -282,6 +288,12 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[mpv-pdf](https://github.com/jgreco/mpv-pdf)**  
   View PDFs in mpv using ImageMagick.   Supports: Linux, MacOS
+
+* **[mpv_irc](https://github.com/po5/mpv_irc)**  
+  Display lines from an IRC channel or any text file.
+
+* **[mpv_sponsorblock](https://github.com/po5/mpv_sponsorblock)**  
+  Script to skip sponsored segments of YouTube videos.
 
 * **[mpv-ytdlAutoFormat](https://github.com/Samillion/mpv-ytdlautoformat)**  
   A simple mpv LUA script to auto change ytdl-format for Youtube and Twitch or the domains you desire, to 480p or the quality you desire.
@@ -493,6 +505,9 @@ to be dynamically disabled without having to restart unlike the previous script.
 
 * **[timer](https://github.com/AdamD2/mpv-timer)**  
   Allows the user to set a starting time and an ending time and see the time elapsed between those points with millisecond precision.
+
+* **[trackselect](https://github.com/po5/trackselect)**  
+  Automatically select your preferred tracks based on title.
 
 * **[tree-profiles](https://github.com/fbriere/mpv-scripts/blob/master/scripts/tree-profiles.lua)**  
 Automatically apply profiles to certain directories or files.
