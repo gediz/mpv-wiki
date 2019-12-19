@@ -512,6 +512,9 @@ to be dynamically disabled without having to restart unlike the previous script.
 * **[tree-profiles](https://github.com/fbriere/mpv-scripts/blob/master/scripts/tree-profiles.lua)**  
 Automatically apply profiles to certain directories or files.
 
+* **[trim.lua](https://github.com/aerobounce/trim.lua)**  
+Create a trim of video files without transcoding. Utilizes ffprobe to fetch accurate keyframes.
+
 * **[total_playtime](https://github.com/oltodosel/mpv-scripts/blob/master/total_playtime.lua)**  
 Shows total playtime of current playlist.
 
