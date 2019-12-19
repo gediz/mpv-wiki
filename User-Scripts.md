@@ -1,7 +1,7 @@
 # User Scripts
 
 Here is a list of scripts that users of mpv have published, adding functionality that is not part of the core mpv player.
-Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their own script by editing this wiki. Scripts are usually placed in `~/.config/mpv/scripts/`.
+Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their own script by editing this wiki. Scripts are usually placed in `~/.config/mpv/scripts/` (Linux) or `%AppData%\mpv\scripts\` (Windows).
 
 ## JavaScript
 
