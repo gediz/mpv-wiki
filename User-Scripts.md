@@ -429,13 +429,13 @@ to be dynamically disabled without having to restart unlike the previous script.
   Seeks forward until a black screen appears. Built to skip openings. Uses the lavfi blackdetect filter. 
 
 * **[SmartCopyPaste](https://github.com/Eisa01/mpv-scripts#smartcopypaste-script)**  
-  Powerful copy paste features. Paste URL or local videos directly to mpv. Copy URL or path of currently playing video then paste to access at a later time. Add videos to playlist simply by pasting. Much more explained in the link above.
+  Powerful copy paste features. Paste URL or local videos directly to mpv. Copy URL or currently playing video in mpv player then paste to access at a later time. Add videos to playlist simply by pasting. Much more explained in the link above.
 
 * **[SmartCopyPaste-II](https://github.com/Eisa01/mpv-scripts#smartcopypaste-ii-script)**  
-  Powerful copy paste and bookmark features using a log file `%APPDATA%\mpv\mpvClipboard.log`. Paste URL or local videos directly to mpv. Bookmark video and time by copying playing videos then paste to access bookmark. Add videos to playlist simply by pasting. Much more explained in the link above.
+  Powerful copy paste and bookmark features using a log file; log file location for Windows OS: `%APPDATA%\mpv\mpvClipboard.log`, for Linux OS and MAC OS: `~\.config\mpv\mpvClipboard.log`. Paste URL or local videos directly to mpv. Copy URL or currently playing video in mpv player then paste to access at a later time. Bookmark video and its time by copying then paste to access bookmark. Much more explained in the link above.
 
 * **[SmartHistory](https://github.com/Eisa01/mpv-scripts#smarthistory-script)**  
-  Powerful history features. Log videos you open into `%APPDATA%\mpv\mpvHistory.log` along with time reached on each video. Optional resume by [ctrl]+[r] for all videos you have played (auto bookmark). Immediately play last opened video by [ctrl]+[l]. Much more explained in the link above.
+  Powerful history features that logs videos that you opened into a log file along with the time you have reached on each video; log file location for Windows OS: `%APPDATA%\mpv\mpvHistory.log`, for Linux OS and MAC OS: `~\.config\mpv\mpvHistory.log`. Optional resume by [ctrl]+[r] for all videos you have played (auto bookmark). Immediately play last opened video by [ctrl]+[l]. Much more explained in the link above.
 
 * **[SimpleUndo](https://github.com/Eisa01/mpv-scripts#simpleundo-script)**  
   Simple undo feature. If you accidentally seek/jump to a different time in the video, press undo [ctrl]+[z] to return to your previous time and vice-versa. More details in the link above.
