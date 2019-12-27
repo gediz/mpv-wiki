@@ -368,6 +368,9 @@ to be dynamically disabled without having to restart unlike the previous script.
 * **[peerflix-hook](https://gist.github.com/ekisu/bba287693830055a6bad90081c1ad4e2)**  
   Allows streaming of magnet links using peerflix, similar to youtube-dl.
 
+* **[persist-properties](https://github.com/d87/mpv-persist-properties)**  
+  Keeps volume and other properties between sessions
+
 * **[pitchcontrol](https://github.com/FichteFoll/mpv-scripts/blob/master/pitchcontrol.lua)**  
   Adjusts audio pitch in half-tone steps.
 
