@@ -129,6 +129,14 @@ Also note that the OSC is invisible by default, but it should appear once you mo
 
 Use <code>--force-window</code>.
 
+== Why do we recommend X11 over Wayland? ==
+
+Wayland is a protocol designed to make implementing desktop environments like Gnome and KDE easier. Its design is incompatible with programs like mpv, which try to have a small footprint and try to stay independent of desktop environment. On the other hand, X11 has decades of polish behind it, which tried to solve such issues without making everything depend on desktop environment libraries. As a result, mpv will always look and behave worse in a Wayland environment.
+
+A good example are windows decorations: on X11, decorations are rendered by the server, so they always look the same, no matter what desktop environment the program was designed for. On Wayland, you would need to link the desktop environment's libraries or go through much larger effort to get "native" window decorations. mpv would suddenly depend on Gnome, GTK, KDE, or Qt. We don't want this, thus we have to rely on X11.
+
+We recommend running a full X server, i.e. a real X session, not something like Xwayland. Xwayland has frequent issues which may ruin video playback.
+
 == What's the difference between opengl-hq, gpu-hq, etc.? ==
 
 The VO (video output) using GPU shader based rendering was renamed and updated a few times. Currently, the following things hold true:
