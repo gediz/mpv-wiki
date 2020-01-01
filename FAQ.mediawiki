@@ -129,6 +129,18 @@ Also note that the OSC is invisible by default, but it should appear once you mo
 
 Use <code>--force-window</code>.
 
+== I use GNOME Wayland and I have x/y/z problem! ==
+
+GNOME is most likely the most popular desktop environment on linux, and it defaults to Wayland on most distributions. This is unfortunate because there are many GNOME Wayland-specific issues with mpv that users mistake for being mpv or wayland bugs when in fact it's a GNOME problem. Until these are issues are fixed upstream, GNOME mpv users should specifically use the Xorg session or another Wayland compositor if they want a bug-free experience. Below is a short list of known issues.
+
+<ul>
+<li>GNOME wayland is known to potentially have [https://gitlab.gnome.org/GNOME/mutter/issues/957 random vsync spikes and mistimed frames]. This happens in both wayland and xwayland and <em>only</em> in GNOME. Until at least this is fixed, we can't even begin to consider recommending GNOME wayland.
+<li>GNOME wayland has no server side decorations because they do delibrately do not support the [https://gitlab.gnome.org/GNOME/mutter/issues/217 xdg-decoration protocol] which is a proper [https://cgit.freedesktop.org/wayland/wayland-protocols/tree/unstable/xdg-decoration/xdg-decoration-unstable-v1.xml upstream protocol]. Users can use <code>--gpu-context=x11egl</code> or <code>--gpu-context=x11</code> to get decorations on GNOME wayland or use another compositor that supports xdg-decoration.
+<li>GNOME wayland does not support the [https://gitlab.gnome.org/GNOME/mutter/issues/20 zwp idle inhibit manager protocol]. This means that screen blanking will occur during video playblack depending on the user's settings. A workaround is to use launch mpv with the gnome-specific <code>gnome-session-inhibit</code>.
+</ul>
+
+In short if you use GNOME Wayland and encounter an issue, please double check that it is actually an mpv issue before reporting it. A good rule of thumb is to check if it also occurs in both a wlroots-based compositor (i.e. sway) and weston. If so, it is probably our bug, but if not, GNOME is likely to blame.
+
 == Why do we recommend X11 over Wayland? ==
 
 Wayland is a protocol designed to make implementing desktop environments like Gnome and KDE easier. Its design is incompatible with programs like mpv, which try to have a small footprint and try to stay independent of desktop environment. On the other hand, X11 has decades of polish behind it, which tried to solve such issues without making everything depend on desktop environment libraries. As a result, mpv will always look and behave worse in a Wayland environment.
