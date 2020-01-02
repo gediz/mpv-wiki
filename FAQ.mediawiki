@@ -141,6 +141,14 @@ GNOME is most likely the most popular desktop environment on linux, and it defau
 
 In short if you use GNOME Wayland and encounter an issue, please double check that it is actually an mpv issue before reporting it. A good rule of thumb is to check if it also occurs in both a wlroots-based compositor (i.e. sway) and weston. If so, it is probably our bug, but if not, GNOME is likely to blame.
 
+== Is GNOME actively sabotaging the Linux Desktop? ==
+
+Clearly they are, see previous FAQ entry. They consider their "desktop" to be a separate platform (they consider non-GNOME desktops like KDE on the same level as win32 and OSX). It's unknown why GNOME puts lots of effort into ensuring a very basic level of compatibility (like using Wayland instead of their own protocol), but stubbornly refuse to implement other very simple standard mechanisms that help with integration (like the window decoration or idle inhibit protocols).
+
+On the other hand, the methods they provide for integrating with GNOME are technically bad and unacceptable, such as depending on GTK and giving it control over your window just to render CSDs, or needing dbus for disabling the screensaver during playback.
+
+Is GNOME's apparent behavior stupid or evil? You decide. The end result is that the "Linux Desktop" remains a dumb shit show. Writing software only for win32 or OSX is a much nicer experience, thus bad consequences for Linux.
+
 == Should I use X11 or Wayland? ==
 
 Only consider using Wayland with mpv if you pass the following criteria.
