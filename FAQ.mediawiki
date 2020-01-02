@@ -154,7 +154,7 @@ If you pass all of that, then Wayland <em>should</em> perform just as well as X1
 
 <ul>
 <li>[https://gitlab.freedesktop.org/wayland/wayland-protocols/tree/master/unstable/xdg-decoration xdg-decoration] (used for server side decorations): Plasma and Sway/wlroots
-<li>[https://gitlab.freedesktop.org/wayland/wayland-protocols/tree/master/unstable/idle-inhibit idle-inhibit] (used for preventing screen blanking): Plasma and Weston
+<li>[https://gitlab.freedesktop.org/wayland/wayland-protocols/tree/master/unstable/idle-inhibit idle-inhibit] (used for preventing screen blanking): Plasma and Sway/wlroots
 <li>[https://gitlab.freedesktop.org/wayland/wayland-protocols/tree/master/stable/presentation-time presentation-time] (used for presentation feedback): Sway/wlroots and Weston
 </ul>
 
