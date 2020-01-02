@@ -141,13 +141,22 @@ GNOME is most likely the most popular desktop environment on linux, and it defau
 
 In short if you use GNOME Wayland and encounter an issue, please double check that it is actually an mpv issue before reporting it. A good rule of thumb is to check if it also occurs in both a wlroots-based compositor (i.e. sway) and weston. If so, it is probably our bug, but if not, GNOME is likely to blame.
 
-== Why do we recommend X11 over Wayland? ==
+== Should I use X11 or Wayland? ==
 
-Wayland is a protocol designed to make implementing desktop environments like Gnome and KDE easier. Its design is incompatible with programs like mpv, which try to have a small footprint and try to stay independent of desktop environment. On the other hand, X11 has decades of polish behind it, which tried to solve such issues without making everything depend on desktop environment libraries. As a result, mpv will always look and behave worse in a Wayland environment.
+Only consider using Wayland with mpv if you pass the following criteria.
+<ul>
+<li> You don't use a NVIDIA graphics card. No GBM means no real wayland support (EGLStreams doesn't count).
+<li> You don't use GNOME (see the [https://github.com/mpv-player/mpv/wiki/FAQ#I_use_GNOME_Wayland_and_I_have_xyz_problem above section]).
+<li> You (probably) need to be on at least EGL 1.5. Users on EGL 1.4 have had several reports of [https://github.com/mpv-player/mpv/issues/7063 performance issues] and [https://github.com/mpv-player/mpv/issues/7106 mistimed frames/jitter spikes]. It isn't 100% certain that this is the cause, but it's probably safer to just use X11 if your hardware is EGL 1.4. If you really need Wayland, you can give <code>--vo=wlshm</code> a try although it will have worse quality.
+</ul>
 
-A good example are windows decorations: on X11, decorations are rendered by the server, so they always look the same, no matter what desktop environment the program was designed for. On Wayland, you would need to link the desktop environment's libraries or go through much larger effort to get "native" window decorations. mpv would suddenly depend on Gnome, GTK, KDE, or Qt. We don't want this, thus we have to rely on X11.
+If you pass all of that, then Wayland <em>should</em> perform just as well as X11 and you can pick whatever you like better. mpv does its best to be independent of specific desktop environments and compositors, so we only support upstream wayland-protocols and not other desktop specific libraries or compositor specific protocols. Certain wayland compositors only support certain wayland-protocols, so they may not have every feature the mpv wayland backend supports. Here's a quick list of some notable protocols mpv uses and what compositors support what.
 
-We recommend running a full X server, i.e. a real X session, not something like Xwayland. Xwayland has frequent issues which may ruin video playback.
+<ul>
+<li>[https://gitlab.freedesktop.org/wayland/wayland-protocols/tree/master/unstable/xdg-decoration xdg-decoration] (used for server side decorations): Plasma and Sway/wlroots
+<li>[https://gitlab.freedesktop.org/wayland/wayland-protocols/tree/master/unstable/idle-inhibit idle-inhibit] (used for preventing screen blanking): Plasma and Weston
+<li>[https://gitlab.freedesktop.org/wayland/wayland-protocols/tree/master/stable/presentation-time presentation-time] (used for presentation feedback): Sway/wlroots and Weston
+</ul>
 
 == What's the difference between opengl-hq, gpu-hq, etc.? ==
 
