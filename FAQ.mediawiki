@@ -363,6 +363,18 @@ This is _not_ a matter of porting mpv's Lua code to 5.3. The problem is with the
 
 Supporting both languages for a time would be theoretically possible. But it would require separate backends, and significant effort to avoid the symbol conflicts between Lua 5.2 and 5.3 (maybe even impossible to do with distro-provided libs), so it won't be done.
 
+== What is the rar file format and why is it stupid? ==
+
+RAR is an archive file format like zip. It is proprietary and there is not much code around that can handle it fully. Everyone should use the 7zip format instead - there is no reason to use rar. The time of proprietary file formats designed to sell software that handles it ought to be over. RAR is basically a relict of the past.
+
+Multimedia related, it is unfortunately somewhat common to distribute large video files in uncompressed multi-volume RAR archives. This is almost the absolutely worst way to distribute media anyone could come up with. It's stupid because it requires support in every media player (limiting your choices), _will_ be inefficient in some ways, and is an absolutely unnecessary relict from the past, where it was stupid too. Apparently the people creating these live in the past.
+
+It is somewhat expected from media players to handle these. mpv currently does so through libarchive. Unfortunately its support for multi-volume archives is not very good.
+
+Please do not report bugs about this to mpv. Pester libarchive for better uncompressed/multi-volume RAR support instead.
+
+mpv before release 0.30.0 had some special code for uncompressed RAR for this purpose. This code was lifted from VLC, but VLC removed this code years ago. This code used to work better, but was unacceptable to keep for maintenance reasons. It is unlikely that this code is readded.
+
 == Why is there no DVD/Bluray menu support? And DVD/BD support in general. ==
 
 DVD menu support existed since early times, but was removed because it was a maintenance nightmare. It affected unrelated parts of the player deeply, and prevented improving more important features. In addition, it never worked well. Later, DVD menu support was added again using rewritten code (and then Bluray menu support). However, despite the rewrite, it still affected the player core (preventing improvements in other areas), and it still did not work well.
