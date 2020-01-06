@@ -180,7 +180,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[fast-forward](https://github.com/zsugabubus/mpv-fastforward)**  
   Another fast-forward plugin with some added features and a bit more customization options.
 
-* **[Filenavigator](https://github.com/donmaiq/mpv-filenavigator)**  
+* **[filenavigator](https://github.com/jonniek/mpv-filenavigator)**  
   Navigate directories and open files from your system.
 
 * **[filter-test](https://gitlab.com/mozbugbox/mpv-script-mozbugbox)**  
@@ -328,8 +328,8 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[myshows](https://github.com/gim-/mpv-plugin-myshows)**  
   Marks currently watched episode on MyShows website.
 
-* **[nextfile](https://github.com/donmaiq/mpv-nextfile)**  
-  Force opens next or previous file in the currently playing files folder.
+* **[nextfile](https://github.com/jonniek/mpv-nextfile)**  
+  Force opens next or previous file in the currently playing files directory.
 
 * **[notify](https://github.com/rohieb/mpv-notify)**  
   Adds desktop notifications to the mpv media player, which show metadata like artist, album name and track name when the track changes.
@@ -374,8 +374,8 @@ to be dynamically disabled without having to restart unlike the previous script.
 * **[pitchcontrol](https://github.com/FichteFoll/mpv-scripts/blob/master/pitchcontrol.lua)**  
   Adjusts audio pitch in half-tone steps.
 
-* **[Playlistmanager](https://github.com/donmaiq/Mpv-Playlistmanager)**  
-  Helps with creating playlists, saving them and modifying your current playlist.
+* **[playlistmanager](https://github.com/jonniek/mpv-playlistmanager)**  
+  This script allows you to see and interact with your playlist in an intuitive way.
 
 * **[playlistnoplayback](https://github.com/422658476/MPV-EASY-Player/blob/master/portable-data/scripts/playlistnoplayback.lua)**  
   If you enable the save play history and progress function, this lua script can solve the problem of automatically jumping to the previous playback progress when playing the next file when playing the playlist, that is, let the playlist always play the next file from the beginning every time. the limitations of this script, please see the comments section in the content.
