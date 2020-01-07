@@ -135,7 +135,7 @@ GNOME is most likely the most popular desktop environment on linux, and it defau
 
 <ul>
 <li>GNOME wayland is known to potentially have [https://gitlab.gnome.org/GNOME/mutter/issues/957 random vsync spikes and mistimed frames]. This happens in both wayland and xwayland and <em>only</em> in GNOME. Until at least this is fixed, we can't even begin to consider recommending GNOME wayland.
-<li>GNOME wayland has no server side decorations because they do delibrately do not support the [https://gitlab.gnome.org/GNOME/mutter/issues/217 xdg-decoration protocol] which is a proper [https://cgit.freedesktop.org/wayland/wayland-protocols/tree/unstable/xdg-decoration/xdg-decoration-unstable-v1.xml upstream protocol]. Users can use <code>--gpu-context=x11egl</code> or <code>--gpu-context=x11</code> to get decorations on GNOME wayland or use another compositor that supports xdg-decoration.
+<li>GNOME wayland has no server side decorations because they do deliberately do not support the [https://gitlab.gnome.org/GNOME/mutter/issues/217 xdg-decoration protocol] which is a proper [https://cgit.freedesktop.org/wayland/wayland-protocols/tree/unstable/xdg-decoration/xdg-decoration-unstable-v1.xml upstream protocol]. Users can use <code>--gpu-context=x11egl</code> or <code>--gpu-context=x11</code> to get decorations on GNOME wayland or use another compositor that supports xdg-decoration.
 <li>GNOME wayland does not support the [https://gitlab.gnome.org/GNOME/mutter/issues/20 zwp idle inhibit manager protocol]. This means that screen blanking will occur during video playblack depending on the user's settings. A workaround is to use launch mpv with the gnome-specific <code>gnome-session-inhibit</code>.
 </ul>
 
