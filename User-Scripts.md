@@ -368,7 +368,7 @@ to be dynamically disabled without having to restart unlike the previous script.
 * **[peerflix-hook](https://gist.github.com/ekisu/bba287693830055a6bad90081c1ad4e2)**  
   Allows streaming of magnet links using peerflix, similar to youtube-dl.
 
-* **[mpv-peerflix-hook](https://github.com/noctuid/mpv-peerflix-hook)**
+* **[mpv-peerflix-hook](https://github.com/noctuid/mpv-peerflix-hook)**  
   Alternate version of the above gist that works with multiple running peerflix instances and only kills the correct peerflix instance when exiting.
 
 * **[persist-properties](https://github.com/d87/mpv-persist-properties)**  
