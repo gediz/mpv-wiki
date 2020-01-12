@@ -159,6 +159,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[drag-to-pan](https://github.com/occivink/mpv-image-viewer)**  
   Pan the current video or image with the cursor.
 
+* **[drcbox](https://gist.github.com/richardpl/0c8011dc23d7ac7b7831b2e6d680114f)**
+  Dynamic Audio Normalizer filter with visual feedback.
+
 * **[easycrop](https://github.com/aidanholm/mpv-easycrop)**  
   Manually crop a video during playback.
 
