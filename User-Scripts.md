@@ -100,6 +100,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[channel mixer](https://gist.github.com/bitingsock/1e7ef04a151963b38e347a723d7e3201)**  
   A set of keybindings using a modifier (Shift or Ctrl) and the function keys (F8-F12) to can adjust the mixing level of surround channels on the fly.
 
+* **[chapterskip](https://github.com/po5/chapterskip)**  
+  Automatically skip chapters based on title.
+
 * **[copyTime](https://github.com/Arieleg/mpv-copyTime)**  
   Get the current time of the video and copy it to the clipboard with the format HH:MM:SS.MS .
 
