@@ -313,6 +313,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[mpv_slicing](https://github.com/Kagami/mpv_slicing)**  
   Cut uncompressed fragments of the video.
 
+* **[mpv_slicing_copying](https://github.com/snylonue/mpv_slicing_copy)**
+  A fork from [mpv_slicing](https://github.com/Kagami/mpv_slicing). It will cut fragments of the video in original format instead of RGB
+
 * **[mpv_thumbnail_script](https://github.com/TheAMM/mpv_thumbnail_script)**  
   Show preview thumbnails when hovering over the seekbar, without the need for external dependencies.
 
