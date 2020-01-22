@@ -343,6 +343,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[notify](https://github.com/rohieb/mpv-notify)**  
   Adds desktop notifications to the mpv media player, which show metadata like artist, album name and track name when the track changes.
 
+* **[notify-send](https://github.com/emilazy/mpv-notify-send)**
+  A simpler and more recent notifications script for libnotify-compatible (i.e. Unix-like) notifications daemons only. Supports cover art.
+
 * **[oled-screensaver](https://github.com/Akemi/mpv-oled-screensaver)**  
   To prevent burn-ins on OLED TVs, this script fades-in a black screen after 15 seconds when paused in fullscreen.
 
