@@ -95,7 +95,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
   Record and resume last play in current playing folder
 
 * **[boss-key](https://github.com/detuur/mpv-scripts)**  
-  **UPDATED VERSION**. Minimise and pause video at the same time. Windows/Linux. Eliminated the time lag in previous versions.
+  Minimise and pause video at the same time. Windows/Linux. Eliminated the time lag in previous versions.
 
 * **[channel mixer](https://gist.github.com/bitingsock/1e7ef04a151963b38e347a723d7e3201)**  
   A set of keybindings using a modifier (Shift or Ctrl) and the function keys (F8-F12) to can adjust the mixing level of surround channels on the fly.
@@ -216,6 +216,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 * **[groupwatch_sync](https://github.com/po5/groupwatch_sync)**  
   Quickly get back in sync with a group watch by adjusting playback speed.
+
+* **[histogram](https://github.com/detuur/mpv-scripts)**  
+  Exposes a configurable way to overlay ffmpeg histograms in mpv. There is a substantial amount of config available.
 
 * **[KDialog-open-files](https://gist.github.com/ntasos/d1d846abd7d25e4e83a78d22ee067a22)**  
 Use KDE's KDialog to add files to playlist, subtitles to playing video or open URLs.
@@ -445,6 +448,9 @@ to be dynamically disabled without having to restart unlike the previous script.
 
 * **[skiptofade](https://gist.github.com/bossen/3cfe86a6cdd61452dbb96865128fb327)**  
   Seeks forward until a black screen appears. Built to skip openings. Uses the lavfi blackdetect filter. 
+
+* **[skiptosilence](https://github.com/detuur/mpv-scripts)**  
+  This script skips to the next silence in the file. The intended use for this is to skip until the end of an opening or ending sequence, at which point there's often a short period of silence.
 
 * **[SmartCopyPaste](https://github.com/Eisa01/mpv-scripts#smartcopypaste-script)**  
   Powerful copy paste features. Paste URL or local videos directly to mpv. Copy URL or currently playing video in mpv player then paste to access at a later time. Add videos to playlist simply by pasting. Much more explained in the link above.
