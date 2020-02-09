@@ -39,6 +39,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[acompressor](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/acompressor.lua)**  
   Dynamic range compressor using acompressor ffmpeg filter with controls to dynamically adjust parameters.
 
+* **[always-play-on-startup](https://github.com/AN3223/dotfiles/blob/master/.config/mpv/scripts/always-play-on-startup.lua)**  
+  Always play on startup, never start playback in a paused state.
+
 * **[audio-balance](https://github.com/wiiaboo/mpv-scripts/blob/master/audio-balance.lua)**  
   Port of mpv's balance property to FFmpeg lavfi pan filter.
 
@@ -62,6 +65,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 
 * **[auto-profiles](https://github.com/wiiaboo/mpv-scripts/blob/master/auto-profiles.lua)**  
   Automatically apply profiles based on predicates written as Lua expressions.
+
+* **[auto-save-state](https://github.com/AN3223/dotfiles/blob/master/.config/mpv/scripts/auto-save-state.lua)**  
+  Periodically saves progress with write-watch-later-config, and also cleans up the watch later data after the file is finished playing (so playlists may continue at the correct file).
 
 * **[autosave](https://gist.github.com/Hakkin/5489e511bd6c8068a0fc09304c9c5a82)**  
   Periodically saves "watch later" data during playback, rather than only saving on quit.
@@ -201,6 +207,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[fix_sub_timing](https://github.com/wiiaboo/mpv-scripts/blob/master/fix-sub-timing.lua)**  
   Compute the correct speed/delay of subtitles by manually synching two points in time.
 
+* **[force-window-profile](https://github.com/AN3223/dotfiles/blob/master/.config/mpv/scripts/force-window-profile.lua)**  
+  Applies the force-window profile when force-window is set (i.e. when starting mpv from the .desktop file)
+
 * **[fpsadjust](https://github.com/haasn/gentoo-conf/blob/xor/home/nand/.mpv/scripts/avail/fpsadjust.lua)**  
   Automatically adjust playback speed to synchronize the video to the display if possible (eg. by adjusting 23.976 Hz to 24 Hz for better compatibility with a 60 Hz display).
 **Obsolete:** mpv now has a native display-sync option.
@@ -336,6 +345,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 
 * **[multi-command-if](https://github.com/VideoPlayerCode/mpv-tools/)**  
   Very powerful conditional logic and multiple action engine for your keybindings, without having to write a single line of code!
+
+* **[multisocket](https://github.com/AN3223/dotfiles/blob/master/.config/mpv/scripts/multisocket.lua)**  
+  Creates a numbered socket for each instance of mpv
 
 * **[myshows](https://github.com/gim-/mpv-plugin-myshows)**  
   Marks currently watched episode on MyShows website.
@@ -563,6 +575,9 @@ Use voice synthesis to read subtitles out-loud (Currently uses `say` on MacOS.  
 * **[webm](https://github.com/ekisu/mpv-webm)**  
   Simple WebM maker for mpv, with no external dependencies.
 
+* **[when-to-loop](https://github.com/AN3223/dotfiles/blob/master/.config/mpv/scripts/when-to-loop.lua)**  
+  Intelligently decide when mpv should loop, i.e. while shuffling or while playing a short file.
+
 * **[xrandr](https://gitlab.com/lvml/mpv-plugin-xrandr)**  
   Automatically sets the display refresh rate to the one best suitable for the video played
 
@@ -632,6 +647,8 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[mpv-mpris](https://github.com/hoyon/mpv-mpris)**  
   Adds support for MPRIS2 protocol
 
+* **[shutup](https://github.com/AN3223/dotfiles/blob/master/.config/mpv/scripts/shutup.c)**  
+  Set --quiet when stderr or stdout aren't connected to a terminal
 
 ## Other
 
