@@ -443,6 +443,9 @@ to be dynamically disabled without having to restart unlike the previous script.
 * **[seek-to](https://github.com/occivink/mpv-scripts#seek-tolua)**  
   Seek to an absolute timestamp specified via keyboard input.
 
+* **[scale-win](https://gist.github.com/garoto/920b7456d2bdd8f48aa8e7094a12ce47)**
+  Restore old "window-scale" behavior, so to make "add window-scale +/-<value>" keybinds work again when any of the autofit-* options are defined.
+
 * **[show-filename](https://github.com/yuukidach/mpv-scripts)**  
   Show the name of the current playing file.
 
