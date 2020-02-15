@@ -17,4 +17,3 @@ Both of them use the libmpv client API: https://github.com/mpv-player/mpv/blob/m
 - Ruby: https://github.com/woodruffw/ruby-mpv
 - JavaScript: https://github.com/rcombs/node-mpv
 - JavaScript (PPAPI): https://github.com/Kagami/mpv.js
-- Rust: https://github.com/Cobrand/mpv-rs
