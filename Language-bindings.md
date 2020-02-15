@@ -7,7 +7,7 @@ Both of them use the libmpv client API: https://github.com/mpv-player/mpv/blob/m
 
 ### Internal bindings
 
-- Lua: https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst
+- Lua: https://mpv.io/manual/master/#lua-scripting
 - JavaScript: https://mpv.io/manual/master/#javascript
 
 ### External bindings
