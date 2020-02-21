@@ -229,6 +229,9 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[histogram](https://github.com/detuur/mpv-scripts)**  
   Exposes a configurable way to overlay ffmpeg histograms in mpv. There is a substantial amount of config available.
 
+* **[history-bookmark](https://github.com/yuukidach/mpv-scripts)**
+  Create a history file to store the episode we watched last time. And let us can easily jump to the video we watched last time.
+
 * **[KDialog-open-files](https://gist.github.com/ntasos/d1d846abd7d25e4e83a78d22ee067a22)**  
 Use KDE's KDialog to add files to playlist, subtitles to playing video or open URLs.
 
