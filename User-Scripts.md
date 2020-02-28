@@ -349,6 +349,9 @@ Use KDE's KDialog to add files to playlist, subtitles to playing video or open U
 * **[multi-command-if](https://github.com/VideoPlayerCode/mpv-tools/)**  
   Very powerful conditional logic and multiple action engine for your keybindings, without having to write a single line of code!
 
+* **[multiloop](https://github.com/unusualpepe/mpv-multiloop)**  
+  Loop over multiple A-B points (and save them for future use)
+
 * **[multisocket](https://github.com/AN3223/dotfiles/blob/master/.config/mpv/scripts/multisocket.lua)**  
   Creates a numbered socket for each instance of mpv
 
