@@ -656,6 +656,9 @@ If you want to write your own Lua scripts, have a look at the [documentation of 
 * **[mpv-mpris](https://github.com/hoyon/mpv-mpris)**  
   Adds support for MPRIS2 protocol
 
+* **[mpv-libunity](https://github.com/mrlotfi/mpv-libunity)**  
+  Shows a progress bar on your panel/dock using libunity
+
 * **[shutup](https://github.com/AN3223/dotfiles/blob/master/.config/mpv/scripts/shutup.c)**  
   Set --quiet when stderr or stdout aren't connected to a terminal
 
