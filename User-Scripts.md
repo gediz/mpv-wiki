@@ -575,6 +575,9 @@ Use voice synthesis to read subtitles out-loud (Currently uses `say` on MacOS.  
 * **[unseen-playlistmaker](https://github.com/donmaiq/unseen-playlistmaker)**  
   Keeps track of watched files locally, and creates playlists of unwatched files.
 
+* **[uosc](https://github.com/darsain/uosc)**  
+  Minimalist proximity based UI replacement. [Video preview](https://darsain.github.io/uosc/preview.webm).
+
 * **[visualizer](https://github.com/mfcc64/mpv-scripts/blob/master/visualizer.lua)**  
   Various audio visualization.
 
