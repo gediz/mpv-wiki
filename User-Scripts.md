@@ -500,8 +500,14 @@ to be dynamically disabled without having to restart unlike the previous script.
 * **[speed](https://github.com/oltodosel/mpv-scripts#speedlua)**  
   Changing speed based on regex of filename/path.
 
+* **[speed](https://github.com/vflorelle/mpv-scripts#speed)**  
+  Always show current playback speed on the OSD
+
 * **[spotify](https://github.com/olivierlemoal/mpv-spotify-script)**  
   Add current playing title to an user defined Spotify playlist.
+
+* **[sub](https://github.com/vflorelle/mpv-scripts#sub)**  
+  Select subtitle by id via input box (Windows)
 
 * **[subit](https://github.com/wiiaboo/mpv-scripts/blob/master/subit.lua)**  
   Yet another script for downloading subtitles using subliminal. Supports better customization of options, such as easy language selection, authentication for providers that need it, and support for URLs.
