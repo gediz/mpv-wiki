@@ -186,7 +186,7 @@ Most of these scripts are **unofficial 3rd party scripts**. Anyone can add their
 * **[exit-fullscreen](https://github.com/zc62/mpv-scripts/blob/master/exit-fullscreen.lua)**  
   If you use `--keep-open=yes`, this script exits fullscreen mode when the playback reaches the end of file/playlist.
 
-* **[fastforward](https://github.com/jgreco/mpv-scripts/blob/master/fastfoward.lua)**  
+* **[fastforward](https://github.com/jgreco/mpv-scripts/blob/master/fastforward.lua)**  
   Instead of skipping forward in media files, speed up the playback for a few seconds.  Playback speed decays back to 1x after a few seconds.  Tap rapidly or hold down to go faster.
 
 * **[fast-forward](https://github.com/zsugabubus/mpv-fastforward)**  
