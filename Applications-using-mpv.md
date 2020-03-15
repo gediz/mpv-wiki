@@ -34,7 +34,7 @@ This is not a list of recommendations, just something to give 3rd party projects
   Video player that can play online videos
 
 * [mpc-qt](https://github.com/cmdrkotori/mpc-qt):  
-  A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc. (Unmaintained, abandoned.)
+  A media player based on libmpv which aims to reproduce most of the interface and functionality of mpc-hc. (Unmaintained, abandoned, [unmaintained backup](https://github.com/wm4/mpc-qt).)
 
 * [mpv-android](https://github.com/mpv-android/mpv-android):  
   A media player for Android devices based on libmpv.
